@@ -1,0 +1,29 @@
+{% include 'custom/system/global/html-header.html' %} {% include 'custom/system/global/header-landing-page.html' %}
+
+
+<!--Site Content-->
+<section class="site-content two-column-alt" role="main">
+  <div class="inner-wrap">
+    <article class="site-content-primary">
+      {% header "site_content_primary" overrideable=True, value='A clear and bold header', label='Header' %}
+      
+      {% widget_container "module_13947308956984127" overrideable=False, label='Flexible Column' %}
+        {% widget_block rich_text "module_13947308979154331" overrideable=True, label='New Module' %}
+          {% widget_attribute "html" %} 
+          {% end_widget_attribute %}
+        {% end_widget_block %} 
+      {% end_widget_container %}
+    </article>
+    <aside class="site-content-secondary">
+     {% form "form" %}
+      {% widget_container "site_content_secondary" overrideable=False, label='Flexible Column' %} {% end_widget_container %}
+    </aside>
+    <section class="additional-content">
+      {% widget_container "additional_content" overrideable=False, label='Flexible Column' %}
+      {% end_widget_container %}
+    </section>
+  </div>
+</section>
+
+
+{% include 'custom/system/global/footer-landing-page.html' %} {% include 'custom/system/global/html-footer.html' %}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html bgcolor="{{ background_color }}" style="margin: 0; padding: 0; background-color: {{ background_color }}">
+    <head>
+        <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+        <meta property="og:title" content="{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}">
+        <meta name="twitter:title" content="{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}">
+        {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}" />{% endif %}
+        <style type="text/css">
+        /*<![CDATA[*/
+            /* iOS automatically adds a link to addresses */
+            /* Style the footer with the same color as the footer text */
+            #footer a {
+                color: {{ secondary_font_color }};
+                -webkit-text-size-adjust: none;
+                text-decoration: underline;
+                font-weight: normal
+            }
+
+            {% if email_main_body_box_shadow_css and email_main_body_box_shadow_css != '' %}
+            #main_body {
+                box-shadow: {{ email_main_body_box_shadow_css }};
+            }
+            {% endif %}            
+
+            /* Hide preview text on rendering */
+            #preview_text {
+                display: none;
+            }
+
+        /*]]>*/
+        </style>
+        <!-- http://www.emailon@cid.com/blog/details/C13/ensure_that_your_entire_email_is_rendered_by_default_in_the_iphone_ipad -->
+        <!--                                                                                                                     -->
+        <!--                                                                                                                     -->
+        <!--                            _/    _/            _/          _/_/_/                        _/                         -->
+        <!--                           _/    _/  _/    _/  _/_/_/    _/        _/_/_/      _/_/    _/_/_/_/                      -->
+        <!--                          _/_/_/_/  _/    _/  _/    _/    _/_/    _/    _/  _/    _/    _/                           -->
+        <!--                         _/    _/  _/    _/  _/    _/        _/  _/    _/  _/    _/    _/                            -->
+        <!--                        _/    _/    _/_/_/  _/_/_/    _/_/_/    _/_/_/      _/_/        _/_/                         -->
+        <!--                                                               _/                                                    -->
+        <!--                                                              _/                                                     -->
+        <!--                                                                                                                     -->
+        <!--                                                 Extra White Space!                                                  -->
+        <!--                                                                                                                     -->
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    </head>
+    <body bgcolor="{{ background_color }}" style="margin: 0; padding: 0;  background-color: {{ background_color }}" marginheight="0" marginwidth="0" topmargin="0">
+
+        <!-- Preview text (text which appears right after subject) -->
+        <div id="preview_text" style="display:none!important">{% text "preview_text" label="Preview Text <span class=help-text>This will be used as the preview text that displays in some email clients</span>", value="", no_wrapper=True %}</div>
+
+        <!-- start container -->
+        <table bgcolor="{{ background_color }}" style="background-color: {{ background_color }}; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none" cellpadding="0" cellspacing="0" border="0" width="100%">
+             <tr>
+                <td bgcolor="{{ background_color }}" style="background-color: {{ background_color }};">
+                    <div align="center">
+                        <table cellpadding="0" width="{{ email_body_width }}" cellspacing="0" border="0">
+                            <tr>
+                                <td align="center" bgcolor="{{ background_color }}" style="background-color: {{ background_color }}">
+                                    <!-- start header section -->
+                                    <div class="header-container-wrapper">
+    <table class="wrappertable" cellpadding="0" cellspacing="0" border="0" width="{{ email_body_width }}">
+<tr class="scaffold" style="font-size:0; height: 0px" height="0"><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td></tr>
+
+        <tr>
+            <td valign="top" colspan=12 width="100.0%" class="" style="width:100.0%; text-align: left; padding: 0; font-family: {{ primary_font }}; font-size: {{ primary_font_size }}; line-height: 1.5em; color: {{ primary_font_color }}; ">
+                <div class="widget-span widget-type-email_view_as_web_page " style="" data-widget-type="email_view_as_web_page">
+{% if content.create_page %}
+                    <div style="padding-top: 15px; font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: right; font-size: 9px; line-height: 1.34em; color: {{ secondary_font_color }}">
+    Not rendering correctly? View this email as a web page <a class="hubspot-mergetag" style="color: {{ secondary_font_color }}; text-decoration: underline; white-space: nowrap" data-viewaswebpage="true" href="{{ view_as_page_url }}">here</a>.
+</div>
+{% endif %}
+
+                </div><!--end widget-span -->
+            </td>
+        </tr>
+    </table>
+</div><!--end header wrapper -->
+                                    <!-- end header section -->
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="{{ background_color }}" style="padding: 10px 20px; background-color: {{ background_color }}">
+                    <div align="center">
+                        <table cellpadding="0" width="{{ email_body_width }}" cellspacing="0" border="0">
+                            <tr>
+                                <td id="main_body" width="{{ email_body_width }}" bgcolor="{{ body_color }}" style="padding: {{ email_body_padding }}px; background-color: {{ body_color }}; {{ email_body_border_css }}; border-radius: 4px">
+                                    <div align="center">
+                                        <table cellpadding="0" width="{{ email_body_width }}" cellspacing="0" border="0">
+                                            <!-- start content -->
+                                            <tr>
+                                                <td style="padding: 0; background-color: {{ body_color }}">
+                                                    <div align="center">
+                                                        <table cellpadding="0" cellspacing="0" border="0" width="100%" style="font-family: {{ primary_font }}; font-size: {{ primary_font_size }}; line-height: 1.5em; color: {{ primary_font_color }}">
+                                                            <tr>
+                                                                <td>
+                                                                    <div align="center">
+                                                                        <!-- start body section -->
+                                                                        <div class="body-container-wrapper">
+    <table class="wrappertable" cellpadding="0" cellspacing="0" border="0" width="{{ email_body_width }}">
+<tr class="scaffold" style="font-size:0; height: 0px" height="0"><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td></tr>
+
+        <tr>
+            <td valign="top" colspan=12 width="100.0%" class="" style="width:100.0%; text-align: left; padding: 0; font-family: {{ primary_font }}; font-size: {{ primary_font_size }}; line-height: 1.5em; color: {{ primary_font_color }}; ">
+                <div class="widget-span widget-type-logo " style="" data-widget-type="logo">
+                    <div class="layout-widget-wrapper">
+                        {% logo "logo_image" suppress_company_name=True, overrideable=True, label='Logo' %}
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" colspan=12 width="100.0%" class="" style="width:100.0%; text-align: left; padding: 0; font-family: {{ primary_font }}; font-size: {{ primary_font_size }}; line-height: 1.5em; color: {{ primary_font_color }}; ">
+                <div class="widget-span widget-type-rich_text " style="font-size: 12px; line-height: 1.5em; text-align: center; " data-widget-type="rich_text">
+                    <div class="layout-widget-wrapper">
+                        {% widget_block rich_text "column1" label='Column Above Body'  %}
+                            {% widget_attribute "html" %}{% end_widget_attribute %}
+                        {% end_widget_block %}
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" colspan=12 width="100.0%" class="" style="width:100.0%; text-align: left; padding: 0; font-family: {{ primary_font }}; font-size: {{ primary_font_size }}; line-height: 1.5em; color: {{ primary_font_color }}; ">
+                <div class="widget-span widget-type-email_body " style="" data-widget-type="email_body">
+                    
+{% content_attribute "email_body" %}
+<p>Hi {{contact.firstname}},</p>
+<p>This is an example of an email in HubSpot. You can add and format text, include your own images, and even personalize the message with details about the recipient, like their {{contact.company}} or {{contact.city}}.</p>
+<p>In HubSpot, the Email tool is closely linked with the <em>Lists</em> and <em>Workflows</em> tools. You can create a list of recipients on the "Sending" tab up above. If you want this email to be part of a nurturing series, you can make it part of a workflow.</p>
+<p>Need help? Check out the documentation on <a href="http://help.hubspot.com/articles/Tutorial/how-to-use-email-tool">creating an email</a>, <a href="http://help.hubspot.com/articles/How_To_Doc/how-to-create-a-smart-list-in-hubspot">creating a list</a>, or <a href="http://help.hubspot.com/articles/Tutorial/set-up-workflows">creating a workflow</a>.</p>
+{% end_content_attribute %}
+                
+
+                </div><!--end widget-span -->
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" colspan=12 width="100.0%" class="" style="width:100.0%; text-align: left; padding: 0; font-family: {{ primary_font }}; font-size: {{ primary_font_size }}; line-height: 1.5em; color: {{ primary_font_color }}; ">
+                <div class="widget-span widget-type-text " style="padding: 10px 0px 0px 0px; text-align: right; " data-widget-type="text">
+                    <div class="layout-widget-wrapper">
+                        {% text "social_sharing_label" label='Social Sharing Label' %}
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" colspan=12 width="100.0%" class="" style="width:100.0%; text-align: left; padding: 0; font-family: {{ primary_font }}; font-size: {{ primary_font_size }}; line-height: 1.5em; color: {{ primary_font_color }}; ">
+                <div class="widget-span widget-type-social_sharing " style="padding: 10px 0px 0px 0px; text-align: right; " data-widget-type="social_sharing">
+                    <div class="layout-widget-wrapper">
+                        {% widget_block social_sharing "Social Sharing" label='Social Sharing', use_page_url=False  %}
+                        {% end_widget_block %}
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+            </td>
+        </tr>
+    </table>
+</div><!--end body wrapper -->
+                                                                        <!-- end body section -->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end content -->
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="{{ background_color }}" style="background-color: {{ background_color }}; padding: 13px {{ email_body_padding }}px">
+                    <div align="center">
+                        <table cellpadding="0" width="{{ email_body_width }}" cellspacing="0" border="0">
+                            <tr>
+                                <td align="center" bgcolor="{{ background_color }}" style="background-color: {{ background_color }}">
+                                    <!-- start footer section -->
+                                    <div class="footer-container-wrapper">
+    <table class="wrappertable" cellpadding="0" cellspacing="0" border="0" width="{{ email_body_width }}">
+<tr class="scaffold" style="font-size:0; height: 0px" height="0"><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td><td colspan="1" height="0" width="8.33%" style="line-height: 0px; font-size: 0px; height: 0px">&nbsp;</td></tr>
+
+        <tr>
+            <td valign="top" colspan=12 width="100.0%" class="" style="width:100.0%; text-align: left; padding: 0; font-family: {{ primary_font }}; font-size: {{ primary_font_size }}; line-height: 1.5em; color: {{ primary_font_color }}; ">
+                <div class="widget-span widget-type-email_can_spam " style="" data-widget-type="email_can_spam">
+                    <p id="footer" style="font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; text-align: center; font-size: 12px; line-height: 1.34em; color: {{ secondary_font_color }}; display: block">
+{{ site_settings.company_name }}
+&nbsp;&nbsp;{{ site_settings.company_street_address_1 }}
+&nbsp;{{ site_settings.company_street_address_2 }}
+&nbsp;{{ site_settings.company_city }},
+&nbsp;{{ site_settings.company_state }}
+&nbsp;&nbsp;{{ site_settings.company_zip }}
+&nbsp;&nbsp;{{ site_settings.company_country }}
+<br/><br/>
+You received this email because you are subscribed to {{ subscription_name }} from {{ site_settings.company_name }}.
+<br/><br/>
+Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}" style="text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};">email preferences</a> to choose the types of emails you receive.
+<br/><br/>
+&nbsp;<a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}" style="text-decoration: underline; whitespace: nowrap; color: {{ secondary_font_color }};">Unsubscribe from all future emails</a>&nbsp;
+</p>
+
+                </div><!--end widget-span -->
+            </td>
+        </tr>
+    </table>
+</div><!--end footer wrapper -->
+                                    <!-- end footer section -->
+                                </td>
+                            </tr>
+                            <tr>
+                                {% hubspot_footer %}
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!-- end container -->
+    </body>
+</html>
+

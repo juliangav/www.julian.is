@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+//WordPress Related Meta Info
+/*!
+Theme Name: 	Default Template
+Theme URI: 		http://julian.is
+Description: 	Default theme for .
+Version: 		1.0
+Author: 		Julian Gaviria
+Author URI: 	julian.is
+Tags: 			starkers, naked, clean, basic, html5, boilerplate, sass, smacss
+*/
+
+//Mixin Libraries
+@import "css/bourbon/bourbon";
+@import "css/neat/neat";
+
+//Core
+@import "css/base/base";
+
+//HubSpot Related Meta Info
+/*! {% include "hubspot/styles/responsive/required_base.css" %}*/
+/*!
+[hubspot-metadata]
+{
+    "path": "custom/page/web_page_basic/style.css"
+}
+[end-hubspot-metadata]
+*/

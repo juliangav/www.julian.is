@@ -1,0 +1,347 @@
+.site-wrap {
+  background: $white;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+/*=============== Site Header ===============*/
+
+.site-header-wrap {
+  //background-image:url(img/bg-site-intro.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.site-header {
+  border-bottom: 1px solid $base-border-color;
+  .inner-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.site-nav-container {
+  @include mq(medium) {
+    width: 13em;
+    float: right;
+    //background-color:orange;
+    margin-right: 1em;
+  }
+  @include mq(large) {
+    width: 15em;
+  }
+}
+
+.site-logo {
+  // background-color:red;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  // background-color:green;
+  width: 16.25em;
+  float: left;
+  height: $nav-height;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  figure {
+    background-color: $blue;
+    display: block;
+    height: 4.5em;
+    width: 4.5em;
+    line-height: 4.5em;
+    border-radius: 100%;
+    text-align: center;
+    //font-size: .75em;
+    float: left;
+    img {
+      vertical-align: middle;
+      width: 90%;
+    }
+  }
+  figcaption {
+    @extend h2;
+    line-height: 1;
+    float: left;
+    margin-left: .35em;
+    font-size: 2.2em;
+    margin-top: .20em;
+    margin-bottom: 0;
+  }
+}
+
+.sh-sticky-wrap {
+  @include mq(large) {
+    height: $nav-height;
+    &.stuck {
+      .site-nav-container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.sh-utility-nav {
+  overflow: hidden;
+  height: $nav-height;
+  .social-wrap {
+    width: 10em;
+    display: none;
+    a {
+      height: $nav-height;
+      //background-color:green;
+      line-height: $nav-height;
+    }
+  }
+  @include mq(medium) {
+    .social-wrap {
+      width: 10em;
+    }
+    text-align: right;
+    //float: right;
+    width:10em;
+    float:right;
+    //background-color:red;
+    .social-wrap {
+      display: inline-block;
+    }
+  }
+  @include mq(large) {
+    .social-wrap {
+      width: 10em;
+    }
+    width: 10em;
+  }
+}
+
+.site-search {}
+
+//Site Header Icons
+.sh-icons {
+  float: right;
+  @include mq(medium) {}
+}
+
+%sh-ico {
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  padding-top: 1.2em;
+  width: 2em;
+  margin-left: 1em;
+  text-align: center;
+  //background-color:red;
+  text-decoration: none;
+  span {
+    font-size: .75em;
+  }
+  @include mq(medium) {
+    //float:right;
+  }
+}
+
+.sh-ph {
+  margin: 0;
+  i {
+    font-style: normal;
+    //display:none;
+  }
+  @include mq(medium) {
+    font-size: $medium-font-size;
+    i {
+      //display:inline;
+    }
+  }
+}
+
+.sh-ico-search {
+  background-image: url(img/ico-search.svg);
+  @extend %sh-ico;
+}
+
+.sh-ico-menu {
+  background-image: url(img/ico-nav.svg);
+  @extend %sh-ico;
+  @include mq(medium) {
+    display: none;
+  }
+}
+
+
+/*=============== Site Intro ===============*/
+
+.site-intro {
+  text-align: center;
+  .inner-wrap {
+    padding-top: $baseline*20;
+    padding-bottom: $baseline*20;
+  }
+}
+
+
+/*=============== Site Content ===============*/
+
+//Layout formatting is in patterns.scss
+.site-content {}
+
+.site-content-primary {}
+
+.site-content-secondary {}
+
+
+/*=============== Site Footer ===============*/
+
+.site-footer {
+  background-color: $blue;
+  text-align: center;
+  color: $white;
+  .social-wrap {
+    overflow: hidden;
+    width: 15em;
+    margin: 0 auto;
+    a {
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+.sf-small {
+  background-color: $medium-gray;
+  text-align: center;
+  .inner-wrap {
+    padding-top: $baseline*2;
+    padding-bottom: $baseline*2;
+  }
+}
+
+//This removes the blank space Webtrax adds to the footer
+img[name=pphLoggerImage] {
+  display: none;
+}
+
+
+/*=============== Search ===============*/
+
+.search-table {
+  display: table;
+  width: 100%;
+  float: right;
+  padding: 0;
+}
+
+.search-row {
+  display: table-row;
+  width: 100%;
+}
+
+.search-cell1 {
+  display: table-cell;
+  padding-right: 0.4375em;
+}
+
+.search-cell2 {
+  display: table-cell;
+  width: 2.1875em;
+  border: 0;
+}
+
+.search-text {
+  font-size: .8em;
+  width: 100%;
+  height: 2.3em;
+  border: 1px solid red;
+  float: left;
+  padding-left: .5em;
+  margin-bottom: 0 !important;
+}
+
+.search-submit {
+  width: 100%;
+  height: 2.3em;
+  border: 0;
+  float: right;
+  background: url(img/ico-search.svg) no-repeat center center !important;
+}
+
+.no-svg {
+  .search-submit {
+    background: url(img/ico-search.png) no-repeat center center !important;
+  }
+}
+
+@include mq(medium) {
+  .site-search {
+    width: 100%;
+  }
+  .search-text {
+    height: 2.3em;
+  }
+  .search-submit {
+    height: 2.3em;
+  }
+}
+
+@include mq(large) {
+  .search {}
+  .search-text {}
+}
+
+.search-module {
+  background-color: $base-color;
+  height: 6em;
+  margin-top: -6em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.47);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  @include transition (all .2s ease-in-out);
+  &.active {
+    margin-top: 0;
+  }
+  .inner-wrap {
+    padding: 0.3em 1.5em 1em;
+  }
+}
+
+.search-exit {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  //position:absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/*=============== Portfolio Section ===============*/
+
+.ps-item {
+  //border-top: 1px solid $base-border-color;
+  @include span-columns(12 of 12);
+  @include mq(medium) {
+    @include span-columns(6 of 12);
+    &:nth-child(2n) {
+      @include omega;
+    }
+  }
+}
+
+.section-header {
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2 {
+    margin-top: 0;
+  }
+}

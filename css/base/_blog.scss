@@ -1,0 +1,84 @@
+
+/* ===== DEFAULTS FOR ALL BLOGS =====  */
+
+//fix facebook share height issue
+.fb_iframe_widget {
+	span {
+		height: 24px !important;
+	}
+}
+
+//fix recaptcha table alignment issue
+#recaptcha_table {
+	table-layout: initial !important;
+	height: 126px;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+//pagination spacing
+.blog-pagination {
+	font-size: 1.7em;
+	font-weight: bold;
+	a {
+		margin-right: 2em;
+		text-decoration: none;
+	}
+}
+
+//read more link
+.more-link {
+	font-size: 1.4em;
+	text-decoration: none;
+}
+
+//post seperator & spacing
+.post-item {
+	border-bottom: 5px solid $light-gray;
+	padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+    
+
+//author specific
+.hs-author-avatar {
+	float: left;
+	margin-right: 1.5em;
+	img {
+		border-bottom: 1px solid #adadad;
+	}
+}
+.hs-author-social-label {
+	font-size: 1.3em;
+}
+.hs-author-bio {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+.hs-author-profile {
+	background: #F2F2F2;
+  padding: .2em 2em 2em 2em;
+}
+.hs-author-listing-header {
+  padding-top: 1em;
+  margin-top: .3em;
+  color: #b9b9b9;
+}
+.hs-author-social-links {
+	a {
+		text-decoration: none;
+	}
+	img {
+		opacity: .7;
+		width: em(30);
+		height: em(30);
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+/*   end defaults   */
+

@@ -1,0 +1,31 @@
+{% include 'custom/system/global/html-header.html' %} {% include 'custom/system/global/header.html' %}
+<!--Site Content-->
+<section class="site-content two-column" role="main">
+  <div class="inner-wrap">
+    <article class="site-content-primary">
+      {% header "page_header" overrideable=True, value='A clear and bold header', label='Header' %} {% widget_container "site_content_primary" overrideable=False, label='Flexible Column' %} {% widget_block rich_text "module_13947308979154331" overrideable=True, label='New Module' %} {% widget_attribute "html" %} {% end_widget_attribute %} {% end_widget_block %} {% end_widget_container %}
+
+      <!--Google Search Script -->
+
+      <form class="search-form sf-header" action="/search/" method="get">
+        <div class="search-table">
+          <div class="search-row">
+            <div class="search-cell1">
+              <input id="search-site" class="search-text" title="Search Our Site" name="q" type="text" value="" placeholder="Search Website">
+            </div>
+            <div class="search-cell2">
+              <input class="search-submit" title="Search" alt="Search" type="submit" value="">
+            </div>
+          </div>
+        </div>
+      </form>
+    </article>
+    <aside class="site-content-secondary">
+      {% widget_container "site_content_secondary" overrideable=False, label='Flexible Column' %} {% widget_block raw_html "module_13947309136524795" overrideable=True, label='Custom HTML' %} {% end_widget_block %} {% end_widget_container %}
+    </aside>
+    <section class="additional-content">
+      {% widget_container "additional_content" overrideable=False, label='Flexible Column' %} {% end_widget_container %}
+    </section>
+  </div>
+</section>
+{% include 'custom/system/global/footer.html' %} {% include 'custom/system/global/html-footer.html' %}
