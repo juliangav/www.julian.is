@@ -161,9 +161,10 @@ p {
 }
 
 a {
-  @include transition(color 0.1s linear);
+  @include transition(all 0.1s linear);
   color: $base-link-color;
-  text-decoration: underline;
+  text-decoration: none;
+
   &:hover {
     color: $hover-link-color;
   }
@@ -173,7 +174,14 @@ a {
     outline: none;
   }
 }
-
+.site-content, .site-intro {
+  a {
+    border-bottom:3px solid #DDD;
+    &:hover {
+      border-bottom:3px solid $base-color;
+    }
+  }
+}
 hr {
   border-bottom: $base-border;
   border-left: none;

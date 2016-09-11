@@ -44,7 +44,7 @@ $base-background-color: white;
 
 
 // Link Colors
-$base-link-color: $base-accent-color;
+$base-link-color: $blue;
 $hover-link-color: darken($base-accent-color, 15);
 
 // Border color
@@ -66,7 +66,7 @@ $form-font-family: $base-font-family;
 $nav-font-size:em(16);
 $nav-font-size-medium:em(16);
 $nav-height:em(81);
-$nav-background:transparent;
+$nav-background:$white;
 $nav-background-mobile:$nav-background;
 $nav-text-color:$blue;
 $nav-text-color-hover:$blue;

@@ -735,16 +735,21 @@ p {
   font-weight: normal; }
 
 a {
-  -webkit-transition: color 0.1s linear;
-  -moz-transition: color 0.1s linear;
-  transition: color 0.1s linear;
-  color: #95A4B6;
-  text-decoration: underline; }
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  color: #23507a;
+  text-decoration: none; }
   a:hover {
     color: #687d97; }
   a:active, a:focus {
     color: #687d97;
     outline: none; }
+
+.site-content a, .site-intro a {
+  border-bottom: 3px solid #DDD; }
+  .site-content a:hover, .site-intro a:hover {
+    border-bottom: 3px solid #23507a; }
 
 hr {
   border-bottom: 1px solid #eeeeee;
@@ -1082,7 +1087,7 @@ button, input[type="submit"] {
   background-image: url(img/ico-white-arrow-right.svg); }
 
 .site-nav, #hs_menu_wrapper_primary_nav {
-  background-color: transparent; }
+  background-color: #ffffff; }
   .site-nav span, #hs_menu_wrapper_primary_nav span {
     white-space: nowrap; }
   @media (min-width: 40em) {
@@ -1091,7 +1096,7 @@ button, input[type="submit"] {
       position: relative;
       top: 0;
       left: 0;
-      background-color: transparent; } }
+      background-color: #ffffff; } }
 
 .sn-level-1, #hs_menu_wrapper_primary_nav > ul {
   margin: 0;
@@ -1102,14 +1107,14 @@ button, input[type="submit"] {
 
 .sn-li-l1, .hs-menu-depth-1 {
   display: block;
-  border-bottom: 1px solid rgba(13, 13, 13, 0);
-  background-color: transparent;
+  border-bottom: 1px solid white;
+  background-color: #ffffff;
   position: relative;
   -webkit-transition: background-color .2s ease-in-out;
   -moz-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out; }
   .sn-li-l1 a.active, .hs-menu-depth-1 a.active {
-    background-color: transparent; }
+    background-color: #e6e6e6; }
   .sn-li-l1 span, .hs-menu-depth-1 span {
     font-size: 1em; }
   .sn-li-l1.has-subnav .m-subnav-arrow, .sn-li-l1.menu-item-has-children .m-subnav-arrow, .sn-li-l1.hs-item-has-children .m-subnav-arrow, .hs-menu-depth-1.has-subnav .m-subnav-arrow, .hs-menu-depth-1.menu-item-has-children .m-subnav-arrow, .hs-menu-depth-1.hs-item-has-children .m-subnav-arrow {
@@ -1126,7 +1131,7 @@ button, input[type="submit"] {
         width: 40px;
         height: 5.0625em;
         position: absolute;
-        background-color: transparent;
+        background-color: #f7f7f7;
         right: 0;
         top: 0px; }
         .sn-li-l1.has-subnav .m-subnav-arrow.active, .sn-li-l1.menu-item-has-children .m-subnav-arrow.active, .sn-li-l1.hs-item-has-children .m-subnav-arrow.active, .hs-menu-depth-1.has-subnav .m-subnav-arrow.active, .hs-menu-depth-1.menu-item-has-children .m-subnav-arrow.active, .hs-menu-depth-1.hs-item-has-children .m-subnav-arrow.active {
@@ -1158,7 +1163,7 @@ button, input[type="submit"] {
       height: 5.0625em;
       float: left;
       border-bottom: 0;
-      border-right: 1px solid rgba(13, 13, 13, 0);
+      border-right: 1px solid white;
       text-align: center;
       font-weight: bold; }
       .sn-li-l1 span, .hs-menu-depth-1 span {
@@ -1253,7 +1258,7 @@ button, input[type="submit"] {
         display: none; } }
 
 .site-nav-container {
-  background-color: transparent;
+  background-color: #ffffff;
   width: 17em;
   height: 100%;
   right: -17em;
@@ -1341,7 +1346,7 @@ This is used to separate sections/modules of the website while still keeping a c
 </section>
 */
 .inner-wrap, .inner-wrap-narrow, .inner-wrap-wide, .inner-wrap-fullwidth {
-  max-width: 75em;
+  max-width: 68.75em;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em 1em 1.5em 1em; }
@@ -1678,7 +1683,7 @@ a.close:hover {
         border-top-right-radius: 0;
         border-top: 0; } }
     .accordion-tabs .tab-link:hover {
-      color: #95A4B6;
+      color: #23507a;
       border-bottom: 0; }
     .accordion-tabs .tab-link:focus {
       outline: none; }
@@ -2099,16 +2104,72 @@ figure {
   margin: 0 auto; }
 
 /*=============== Site Header ===============*/
-.site-header-wrap {
+.sh-sticky-wrap {
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 10000; }
+  @media (min-width: 60em) {
+    .sh-sticky-wrap {
+      height: 5.0625em;
+      position: relative; }
+      .sh-sticky-wrap.stuck {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.75); }
+        .sh-sticky-wrap.stuck .site-nav {
+          opacity: 1; }
+        .sh-sticky-wrap.stuck .site-logo figure:after {
+          opacity: 0; }
+        .sh-sticky-wrap.stuck .site-logo figcaption {
+          opacity: 1; } }
+
+.site-header-wrap {
+  position: relative; }
+
+.particles-js-canvas-el {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: .5; }
 
 .site-header {
-  border-bottom: 1px solid #eeeeee; }
+  height: 5.0625em; }
   .site-header .inner-wrap, .site-header .inner-wrap-narrow, .site-header .inner-wrap-wide, .site-header .inner-wrap-fullwidth {
     padding-top: 0;
     padding-bottom: 0; }
+
+@media (min-width: 40em) {
+  .site-header-home .site-nav {
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out; } }
+.site-header-home .site-logo figure:after {
+  content: '';
+  background-image: url(img/julian-headshot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+.site-header-home .site-logo figcaption {
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
 
 @media (min-width: 40em) {
   .site-nav-container {
@@ -2130,6 +2191,8 @@ figure {
   padding-top: .3em;
   padding-bottom: .3em; }
   .site-logo figure {
+    position: relative;
+    overflow: hidden;
     background-color: #23507a;
     display: block;
     height: 4.5em;
@@ -2148,15 +2211,6 @@ figure {
     font-size: 2.2em;
     margin-top: .2em;
     margin-bottom: 0; }
-
-@media (min-width: 60em) {
-  .sh-sticky-wrap {
-    height: 5.0625em; }
-    .sh-sticky-wrap.stuck .site-nav-container {
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 0; } }
 
 .sh-utility-nav {
   overflow: hidden;
@@ -2183,7 +2237,9 @@ figure {
         width: 10em; } }
 
 .sh-icons {
-  float: right; }
+  float: right;
+  z-index: 2;
+  position: relative; }
 
 .sh-ico-search, .sh-ico-menu {
   background-repeat: no-repeat;
@@ -2218,8 +2274,29 @@ figure {
 .site-intro {
   text-align: center; }
   .site-intro .inner-wrap, .site-intro .inner-wrap-narrow, .site-intro .inner-wrap-wide, .site-intro .inner-wrap-fullwidth {
-    padding-top: 10em;
-    padding-bottom: 10em; }
+    padding-top: 5em;
+    padding-bottom: 5em; }
+
+.si-signature {
+  max-width: 20em; }
+
+.si-signature-inline {
+  max-width: 6em;
+  margin-bottom: -.875em; }
+
+.si-h1 {
+  font-size: 2.5em;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: normal;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  z-index: 2; }
+
+.si-subtext {
+  position: relative;
+  font-weight: bold;
+  z-index: 2; }
 
 /*=============== Site Content ===============*/
 /*=============== Site Footer ===============*/

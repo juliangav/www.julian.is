@@ -8,21 +8,95 @@
 
 /*=============== Site Header ===============*/
 
-.site-header-wrap {
+.sh-sticky-wrap {
   //background-image:url(img/bg-site-intro.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
+  z-index:10000;
 
+  @include mq(large) {
+    height:$nav-height;
+    position:relative;
+    
+    &.stuck {
+    
+      position:fixed;
+      left:0;
+      right:0;
+      top:0;
+      background-color:rgba(255,255,255,.75);
+   
+    
+      //border-bottom: 1px solid $base-border-color;
+      .site-nav {
+        opacity:1;
+      }
+      .site-logo {
+        figure {
+          &:after {
+            opacity:0;
+          }
+        }
+        figcaption {
+          opacity:1;
+        }
+      }
+   
+  }
+  }
+}
+.site-header-wrap {
+  position:relative;
+}
+.particles-js-canvas-el {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  opacity:.5;
+}
 .site-header {
-  border-bottom: 1px solid $base-border-color;
+  //border-bottom: 1px solid $base-border-color;
+  //@include transition (border .5s ease-in-out);
+  height:$nav-height;
   .inner-wrap {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-
+.site-header-home {
+  //border-bottom: 1px solid white;
+  .site-nav {
+    
+    
+    @include mq(medium) {
+      opacity:0;
+      @include transition (opacity .5s ease-in-out);
+    } 
+  }
+  .site-logo {
+    figure {
+      &:after {
+      content:'';
+      background-image:url(img/julian-headshot.jpg);
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:center center;
+      display:block;
+      position:absolute;
+      top:0; right:0; bottom:0; left:0;
+      border-radius:100%;
+      @include transition (all .5s ease-in-out);
+    }
+    }
+    figcaption {
+      opacity:0;
+      @include transition (all .5s ease-in-out);
+    }
+  }
+}
 .site-nav-container {
   @include mq(medium) {
     width: 13em;
@@ -48,6 +122,8 @@
   padding-top: .3em;
   padding-bottom: .3em;
   figure {
+    position:relative;
+    overflow:hidden;
     background-color: $blue;
     display: block;
     height: 4.5em;
@@ -73,23 +149,19 @@
   }
 }
 
-.sh-sticky-wrap {
-  @include mq(large) {
-    height: $nav-height;
-    &.stuck {
-      .site-nav-container {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-      }
-    }
-  }
-}
+// .sh-sticky-wrap {
+//   @include mq(large) {
+//     height: $nav-height;
+    
+//   }
+// }
 
 .sh-utility-nav {
   overflow: hidden;
+
   height: $nav-height;
+
+
   .social-wrap {
     width: 10em;
     display: none;
@@ -125,6 +197,8 @@
 //Site Header Icons
 .sh-icons {
   float: right;
+  z-index:2;
+  position:relative;
   @include mq(medium) {}
 }
 
@@ -179,11 +253,33 @@
 .site-intro {
   text-align: center;
   .inner-wrap {
-    padding-top: $baseline*20;
-    padding-bottom: $baseline*20;
+    padding-top: $baseline*10;
+    padding-bottom: $baseline*10;
   }
 }
-
+.si-signature {
+  max-width:20em;
+  //margin-bottom:-.875em;
+}
+.si-signature-inline {
+  max-width:6em;
+  margin-bottom:-.875em;
+}
+.si-h1 {
+  font-size:2.5em;
+  font-family:$base-font-family;
+  font-weight:normal;
+  margin-top:$baseline*3;
+  margin-bottom:$baseline*3;
+  position:relative;
+  z-index:2;
+}
+.si-subtext {
+  position:relative;
+  //margin-top:$baseline*5;
+  font-weight:bold;
+  z-index:2;
+}
 
 /*=============== Site Content ===============*/
 
