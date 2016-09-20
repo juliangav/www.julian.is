@@ -8,9 +8,7 @@ author: Julian Gaviria
 
 Why not? I spend most of my days trying to figure out design; whether I'm working with a junior designer trying to teach him a certain concept of web design or I'm figuring out a stubborn front-end development bug, documentation on what I come across on a daily basis could be of good use to other designers in my field of work.
 
-I recently wrote an email explaining a concept to the entire strategy team at my current agency. The email went step by step through the reasoning behind the concept, questions that I figured would come up, and examples of the implementations. 
-
-To my suprise, the the email was actually well received; the production manager went ahead and added this email as part of our documentation, a few strategists messaged me to say thanks for the good explanation, and one even suggested that I should start blogging...hence here I am.
+I recently wrote an email explaining a concept to the entire strategy team at my current agency. The email went step by step through the reasoning behind the concept, questions that I figured would come up, and examples of the implementations. It felt awesome putting this together and to my surprise it was well received; someone actually suggested I start blogging...and here I am.
 
 <h2>What to expect</h2>
 
