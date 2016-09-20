@@ -1,0 +1,23 @@
+---
+layout: blog
+title: Journal
+permalink: /journal/
+---
+
+
+{% for post in site.posts %}
+   <article class="bf-item">
+   	
+   	<time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
+  
+    <div class="bf-content">
+    	<h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      
+      <p class="bf-excerpt">{{ post.excerpt }}</p>
+    </div>
+   </article>
+
+
+  
+    
+  {% endfor %}

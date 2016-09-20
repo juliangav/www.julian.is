@@ -13,9 +13,24 @@ body {
     font-size:.75em;
   }
 }
-
+@mixin alt-font-family {
+  font-family:$alt-font-family;
+  font-style:italic;
+  font-weight:normal;
+  //text-transform: lowercase;
+}
 //Base Fonts
 @mixin base-font-size {
+  font-size: em(16);
+  @include mq(medium) {
+    font-size: em(18);
+  }
+  @include mq(large) {
+    font-size: em(18);
+  }
+}
+
+@mixin small-font-size {
   font-size: em(16);
   @include mq(medium) {
     font-size: em(18);
@@ -112,23 +127,29 @@ h6 {
 }
 
 h1 {
-  font-size: $display-font-size;
+  @include display-font-size;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   color: $base-color;
+  text-align:center;
+  color:$light-blue;
+  //@include alt-font-family;
+  font-family:$base-font-family;
+  font-weight:300;
 }
 
 h2 {
-  font-size: $xlarge-font-size;
+  @include xlarge-font-size;
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight:500 !important;
 }
 
 h3 {
-  font-size: $large-font-size;
+  @include medium-font-size;
   margin-top: 24px;
   margin-bottom: 16px;
+  color:$light-blue;
 }
 
 h4 {
@@ -151,12 +172,12 @@ h6 {
 
 p {
   margin: 16px 0;
-  font-size:$base-font-size;
+  @include medium-font-size;
   font-weight:300;
 }
 
 .emph {
-  font-size: 1.5em;
+  @include medium-font-size;
   font-weight: normal;
 }
 
@@ -181,6 +202,14 @@ a {
       border-bottom:3px solid $base-color;
     }
   }
+}
+.link-style-inverted {
+
+    border-bottom:3px solid $light-blue;
+    &:hover {
+      border-bottom:3px solid #DDD;
+    }
+ 
 }
 hr {
   border-bottom: $base-border;

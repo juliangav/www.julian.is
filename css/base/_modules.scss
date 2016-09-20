@@ -48,6 +48,7 @@
 }
 .site-header-wrap {
   position:relative;
+  border-bottom:$base-border;
 }
 .particles-js-canvas-el {
   position:absolute;
@@ -72,7 +73,7 @@
     
     
     @include mq(medium) {
-      opacity:0;
+      //opacity:0;
       @include transition (opacity .5s ease-in-out);
     } 
   }
@@ -99,13 +100,13 @@
 }
 .site-nav-container {
   @include mq(medium) {
-    width: 13em;
+    width: 20em;
     float: right;
     //background-color:orange;
     margin-right: 1em;
   }
   @include mq(large) {
-    width: 15em;
+    width: 25em;
   }
 }
 
@@ -253,8 +254,8 @@
 .site-intro {
   text-align: center;
   .inner-wrap {
-    padding-top: $baseline*10;
-    padding-bottom: $baseline*10;
+    padding-top: $baseline*15;
+    padding-bottom: $baseline*15;
   }
 }
 .si-signature {
@@ -273,6 +274,8 @@
   margin-bottom:$baseline*3;
   position:relative;
   z-index:2;
+  font-style:normal;
+  //text-transform: normal !important;
 }
 .si-subtext {
   position:relative;
@@ -297,6 +300,13 @@
   background-color: $blue;
   text-align: center;
   color: $white;
+  a {
+    @extend .link-style-inverted;
+    color:$white;
+  }
+  p {
+    @include small-font-size;
+  }
   .social-wrap {
     overflow: hidden;
     width: 15em;

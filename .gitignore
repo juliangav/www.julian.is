@@ -64,3 +64,8 @@ upload_to_cos.exe
 # track these files, if they exist
 !.gitignore
 !.editorconfig
+
+
+_site
+.sass-cache
+.jekyll-metadata

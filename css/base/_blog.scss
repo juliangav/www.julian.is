@@ -1,84 +1,62 @@
+.blog-feed {
+	//border-bottom:$base-border;
+	//padding-bottom:$baseline*3;
+	// background-color:lighten($light-gray,5%);
+	// .bf-date {
+	// 	background-color:$white;
+	// }
+}
 
-/* ===== DEFAULTS FOR ALL BLOGS =====  */
-
-//fix facebook share height issue
-.fb_iframe_widget {
+.bf-item {
+	margin-bottom:$baseline*5;
+}
+.bf-date {
+	float:left;
+	margin-right:1em;
+	background-color:lighten($light-gray,4%);
+	display:block;
+	height:4em;
+	width:4em;
+	border-radius:100%;
+	line-height:4em;
+	text-align:center;
+	font-family:$header-font-family;
+	text-transform:uppercase;
+	color:$blue;
 	span {
-		height: 24px !important;
+		display:inline-block;
+		line-height:1em;
+		vertical-align:middle;
 	}
 }
 
-//fix recaptcha table alignment issue
-#recaptcha_table {
-	table-layout: initial !important;
-	height: 126px;
-  overflow: hidden;
-  margin-bottom: 1em;
-}
-
-//pagination spacing
-.blog-pagination {
-	font-size: 1.7em;
-	font-weight: bold;
-	a {
-		margin-right: 2em;
-		text-decoration: none;
+.bf-content {
+	display:block;
+	overflow:hidden;
+	
+	@include mq(medium) {
+		//@include span-columns(9 of 12);
 	}
 }
-
-//read more link
-.more-link {
-	font-size: 1.4em;
-	text-decoration: none;
+.bf-title {
+	margin-top:0;
+	@include large-font-size;
+}
+.bf-excerpt {
+	margin-bottom:0;
 }
 
-//post seperator & spacing
-.post-item {
-	border-bottom: 5px solid $light-gray;
-	padding-bottom: 2em;
-  margin-bottom: 2em;
-}
 
-    
+.page-date {
+	text-align:center;
+	text-transform:uppercase;
+	font-size:1.25em;
+	span {
+		background-image:url(img/ico-time.svg);
+		background-repeat: no-repeat;
+		background-size:.875em;
+		background-position: center left;
+		padding-left:1em;
 
-//author specific
-.hs-author-avatar {
-	float: left;
-	margin-right: 1.5em;
-	img {
-		border-bottom: 1px solid #adadad;
 	}
 }
-.hs-author-social-label {
-	font-size: 1.3em;
-}
-.hs-author-bio {
-	font-size: 1.3em;
-	line-height: 1.5em;
-	margin-bottom: 1em;
-}
-.hs-author-profile {
-	background: #F2F2F2;
-  padding: .2em 2em 2em 2em;
-}
-.hs-author-listing-header {
-  padding-top: 1em;
-  margin-top: .3em;
-  color: #b9b9b9;
-}
-.hs-author-social-links {
-	a {
-		text-decoration: none;
-	}
-	img {
-		opacity: .7;
-		width: em(30);
-		height: em(30);
-		&:hover {
-			opacity: 1;
-		}
-	}
-}
-
-/*   end defaults   */
-
