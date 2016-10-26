@@ -662,12 +662,12 @@ body {
       font-size: 2em; } }
 
 .medium-font-size {
-  font-size: 1em;
+  font-size: 1.5em;
   margin-bottom: 2em;
   margin-top: 1.75em; }
   @media (min-width: 40em) {
     .medium-font-size {
-      font-size: 1.125em; } }
+      font-size: 1.5em; } }
   @media (min-width: 60em) {
     .medium-font-size {
       font-size: 1.5em; } }
@@ -722,13 +722,13 @@ h2, .site-logo figcaption {
       font-size: 2.5em; } }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.5em;
   margin-top: 24px;
   margin-bottom: 16px;
   color: #7e90a5; }
   @media (min-width: 40em) {
     h3 {
-      font-size: 1.125em; } }
+      font-size: 1.5em; } }
   @media (min-width: 60em) {
     h3 {
       font-size: 1.5em; } }
@@ -750,21 +750,21 @@ h6 {
 
 p {
   margin: 16px 0;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 300; }
   @media (min-width: 40em) {
     p {
-      font-size: 1.125em; } }
+      font-size: 1.5em; } }
   @media (min-width: 60em) {
     p {
       font-size: 1.5em; } }
 
 .emph, .section-header-wrap p, .page-intro p {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: normal; }
   @media (min-width: 40em) {
     .emph, .section-header-wrap p, .page-intro p {
-      font-size: 1.125em; } }
+      font-size: 1.5em; } }
   @media (min-width: 60em) {
     .emph, .section-header-wrap p, .page-intro p {
       font-size: 1.5em; } }
@@ -914,7 +914,7 @@ ul:not([class]) {
   ul:not([class]) li:not([class]) {
     position: relative;
     margin-bottom: 0.5em;
-    font-size: 1.3125em;
+    font-size: 1.5em;
     line-height: 1.5em; }
     ul:not([class]) li:not([class]) a {
       text-decoration: none;
@@ -931,6 +931,8 @@ ul:not([class]) {
       background-position: center center;
       background-size: .45em;
       background-repeat: no-repeat; }
+    ul:not([class]) li:not([class]) li {
+      font-size: 24px; }
 
 .bullet-style {
   clear: left;

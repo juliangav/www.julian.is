@@ -138,7 +138,7 @@ dl {
     li:not([class]) {
       position: relative;
       margin-bottom: $baseline;
-      font-size: $base-font-size;
+      font-size: $medium-font-size;
       line-height: 1.5em;
       // p {
       //   font-size: 1em;
@@ -159,6 +159,9 @@ dl {
         background-position: center center;
         background-size: .45em;
         background-repeat: no-repeat;
+      }
+      li {
+        font-size:24px;
       }
     }
   }

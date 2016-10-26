@@ -42,9 +42,9 @@ body {
 
 //Medium Fonts
 @mixin medium-font-size {
-  font-size: em(16);
+  font-size: $medium-font-size;
   @include mq(medium) {
-    font-size: em(18);
+    font-size: $medium-font-size;
   }
   @include mq(large) {
     font-size: $medium-font-size;
