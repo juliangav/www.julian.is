@@ -138,7 +138,7 @@ dl {
     li:not([class]) {
       position: relative;
       margin-bottom: $baseline;
-      @include large-font-size;
+      @include medium-font-size;
       line-height: 1.5em;
       // p {
       //   font-size: 1em;
