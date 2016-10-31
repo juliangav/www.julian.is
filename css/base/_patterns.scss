@@ -144,7 +144,7 @@ This is used to separate sections/modules of the website while still keeping a c
     &:hover {
       background-color: $white;
       .ce-header {
-        //color:$blue;
+         
       }
     }
     .ce-header {
@@ -247,7 +247,7 @@ This is used to separate sections/modules of the website while still keeping a c
       }
     }
     path {
-      fill: $light-blue;
+      fill: $base-accent-color;
       @include transition (all .1s linear);
     }
     &:hover {
@@ -346,7 +346,7 @@ a.close {
   //background: transparent url(http://cdn2.hubspot.net/hub/53/file-527841348-gif/close.gif?t=1402397452961) no-repeat top right;
   background-color: white;
   //background-color:rgba(255,255,255,.75);
-  color: $blue;
+  color: $base-color;
   text-align: center;
   float: left;
   padding: 0 $baseline;

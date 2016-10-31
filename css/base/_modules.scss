@@ -131,7 +131,7 @@
   figure {
     position: relative;
     overflow: hidden;
-    background-color: $blue;
+    background-color: $base-color;
     display: block;
     height: 4.5em;
     width: 4.5em;
@@ -376,7 +376,7 @@
 /*=============== Site Footer ===============*/
 
 .site-footer {
-  background-color: $blue;
+  background-color: $base-background-color;
   text-align: center;
   color: $white;
   a {

@@ -34,17 +34,18 @@ $gray:#999;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #eeeeee;
+$yellow:#dca000;
 
 
 // Base Colors
 $base-color:$blue;
 $base-accent-color:$light-blue;
 $base-font-color: $dark-gray;
-$base-background-color: $blue;
+$base-background-color: $base-color;
 
 
 // Link Colors
-$base-link-color: $blue;
+$base-link-color: $base-color;
 $hover-link-color: darken($base-accent-color, 15);
 
 // Border color
@@ -66,10 +67,10 @@ $form-font-family: $base-font-family;
 $nav-font-size:em(16);
 $nav-font-size-medium:em(16);
 $nav-height:em(81);
-$nav-background:$white;
-$nav-background-mobile:$nav-background;
-$nav-text-color:$blue;
-$nav-text-color-hover:$blue;
+$nav-background:transparent;
+$nav-background-mobile:$white;
+$nav-text-color:$base-color;
+$nav-text-color-hover:$base-color;
 $nav-hover:$light-gray;
 $nav-active-background:darken($nav-background, 10%);
 $nav-border:1px solid lighten($nav-background,5%);

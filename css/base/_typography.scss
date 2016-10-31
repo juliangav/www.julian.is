@@ -117,13 +117,13 @@ h6 {
   line-height: $header-line-height;
   //font-variant: small-caps;
   margin: 0;
-  color:$blue;
+  color:$base-color;
   span {
     font-family:$alt-font-family;
     font-style: italic;
     font-size:.5em;
     display:block;
-    color:$light-blue;
+    color:$base-accent-color;
   }
 }
 
@@ -133,7 +133,7 @@ h1 {
   margin-bottom: 34px;
   color: $base-color;
   text-align:center;
-  color:$light-blue;
+  color:$base-accent-color;
   //@include alt-font-family;
   font-family:$base-font-family;
   font-weight:300;
@@ -150,7 +150,7 @@ h3 {
   @include medium-font-size;
   margin-top: 24px;
   margin-bottom: 16px;
-  color:$light-blue;
+  color:$base-accent-color;
 }
 
 h4 {
@@ -206,7 +206,7 @@ a {
 }
 .link-style-inverted {
 
-    border-bottom:3px solid $light-blue;
+    border-bottom:3px solid $base-accent-color;
     &:hover {
       border-bottom:3px solid #DDD;
     }

@@ -183,7 +183,7 @@ This was pretty good insight in regards to user testing in ecommerce sites (the 
 <ul>
 	<li>Chickenshit Minimalism </li>
 	<li>Taft test - if images on a website are replaced with Taft and it improves the experience, you don’t need the images.</li>
-	<li><a href="http://www.webbloatscore.com/">www.webbloatscore.com</a>Web bloat score calculator </li>
+	<li><a href="http://www.webbloatscore.com/">www.webbloatscore.com</a> Web bloat score calculator </li>
 </ul>
 
 
