@@ -328,18 +328,4 @@ Mind blown. The calc example for responsive typography was something I wasn't aw
 
 Let’s make a web that’s resilient in the way it works. Yup, got it.
 
-<!-- 
-
-
-<b>Q:</b> 
-<br><b>A:</b>
-
-<b>Q:</b> 
-<br><b>A:</b>
-
-<b>Q:</b> 
-<br><b>A:</b> -->
-
-
-
-<p><i>Giving my fingers a rest... the rest of my notes will be up shortly! </i></p>
+View <a href="http://julian.is/article/smashingconf-barcelona-2016-day-2/">day 2 notes</a>

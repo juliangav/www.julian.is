@@ -5,6 +5,7 @@ body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: 1em;
+  font-weight:300;
   line-height: $base-line-height;
   @include mq(mediumv) {
     font-size:.875em;
@@ -42,7 +43,7 @@ body {
 
 //Medium Fonts
 @mixin medium-font-size {
-  font-size: $medium-font-size;
+  font-size: $base-font-size;
   @include mq(medium) {
     font-size: $medium-font-size;
   }
@@ -53,9 +54,9 @@ body {
 
 //Large Fonts
 @mixin large-font-size {
-  font-size: $medium-font-size*.75;
+  font-size: $large-font-size*.75;
   @include mq(medium) {
-    font-size: $medium-font-size*.9;
+    font-size: $large-font-size*.9;
   }
   @include mq(large) {
     font-size: $large-font-size;

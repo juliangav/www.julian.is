@@ -338,7 +338,8 @@ font-weight:bold;
 
 .snc-header {
   text-align: center;
-  padding: 1em;
+  padding: .3em $baseline*2;
+  overflow:hidden;
   @include mq(medium) {
     padding: 0;
   }
