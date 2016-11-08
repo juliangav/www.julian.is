@@ -4,7 +4,7 @@ title:  "SmashingConf Barcelona 2016 Day 2 Notes"
 author: Julian Gaviria
 ---
 
-First day was a blast. Learned a ton of stuff I had know idea I didn't know and that I'm able to use in production now. I'm surprised to say that the second day has been even better. Again, just a disclaimer that these notes weren't edited and they were added just as they were jotted down. Enjoy!
+First day was a blast. Learned a ton of new stuff that I wasn't privy to before (and able to use in production). I'm surprised to say that the second day has been even better. Again, just a disclaimer that these notes weren't edited and they were added just as they were jotted down. Enjoy!
 
 <h2>John Allsopp - The Mystery Speaker (<a href="http://alistapart.com/article/dao" target="_blank">Dao of Web Design</a>)</h2>
 
