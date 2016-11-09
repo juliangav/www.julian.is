@@ -224,6 +224,8 @@ $('.smooth-scroll').click(function(e) {
   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-0}, 1000);
 });
 
+
+
 //Styles
 // $(document).ready(function() {
 //  $('.site-content *').removeAttr("style");

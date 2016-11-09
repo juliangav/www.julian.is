@@ -29,6 +29,8 @@
       }
       .site-logo {
         figure {
+          margin:0;
+          padding:0;
           &:after {
             opacity: 0;
           }
@@ -70,7 +72,9 @@
     padding-bottom: 0;
   }
 }
+.site-logo {
 
+}
 .site-header-home {
   //border-bottom: 1px solid white;
   .site-nav {
@@ -81,6 +85,7 @@
   }
   .site-logo {
     figure {
+     
       &:after {
         content: '';
         background-image: url(img/julian-headshot.jpg);
@@ -138,6 +143,8 @@
     line-height: 4.5em;
     border-radius: 100%;
     text-align: center;
+    margin:0;
+     box-shadow:none;
     //font-size: .75em;
     float: left;
     img {
@@ -508,15 +515,33 @@ img[name=pphLoggerImage] {
 
 
 /*=============== Portfolio Section ===============*/
+.work-section {
+  border-bottom:1px solid $base-border-color;
+}
 
 .ps-item {
   //border-top: 1px solid $base-border-color;
+  
   @include span-columns(12 of 12);
   @include mq(medium) {
     @include span-columns(6 of 12);
     &:nth-child(2n) {
       @include omega;
     }
+  }
+  border-bottom:0 !important;
+  padding:$baseline;
+  .section-header {
+    background-color:lighten($light-gray,4.5%);
+    padding:$baseline*2;
+    margin-bottom:0;
+    @include transition (background .2s ease-in-out);
+  }
+  &:hover {
+    .section-header {
+     background-color:$light-gray;
+  }
+
   }
 }
 
@@ -529,4 +554,5 @@ img[name=pphLoggerImage] {
   h2 {
     margin-top: 0;
   }
+  margin-bottom:$baseline*4;
 }

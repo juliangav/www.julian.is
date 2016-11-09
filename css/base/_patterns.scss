@@ -62,10 +62,14 @@ This is used to separate sections/modules of the website while still keeping a c
 
 .section-header {
   text-align: left;
+  //margin-bottom:$baseline*2;
   h1,
   h2,
   h3 {
     font-weight: normal;
+  }
+  @include mq(large) {
+   // margin-bottom:
   }
 }
 
@@ -476,8 +480,16 @@ hr {
 figure {
   margin: 0;
   padding: 0;
-}
+  margin:$baseline*4 0 $baseline*4 0;
+  //border:1px solid $base-border-color;
+  img {
+    //box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 
+}
+figcaption {
+  margin-top:$baseline*2;
+}
 .wp-pagenavi {
   > * {
     margin-right: .75em;
@@ -814,4 +826,28 @@ figure {
   //     background-repeat: no-repeat;
   //     background-image: url(http://cdn2.hubspot.net/hubfs/1793355/img/ico-arrow-orange.svg);
   //   }
+}
+
+
+/*=============== Icon Links ===============*/
+%ico-links {
+
+  background-position:center left;
+  background-repeat:no-repeat;
+  padding-left:1em;
+  background-size: .8em;
+}
+.ico-twitter {
+  @extend %ico-links;
+  background-image:url(img/ico-twitter.svg);
+  
+  
+}
+
+.ico-linkedin {
+  @extend %ico-links;
+  background-image:url(img/ico-linkedin.svg);
+  
+ 
+  
 }
