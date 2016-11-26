@@ -1,11 +1,50 @@
-body {
+/**
+ * @license
+ * MyFonts Webfont Build ID 3313719, 2016-11-25T18:08:30-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ProximaNova-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ * 
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ * 
+ * Webfont: ProximaNova-LightIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light-it/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3313719
+ * Licensed pageviews: 1,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+  
+@font-face {font-family: 'ProximaNova';font-weight:bold;src: url('webfonts/329037_0_0.eot');src: url('webfonts/329037_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/329037_0_0.woff2') format('woff2'),url('webfonts/329037_0_0.woff') format('woff'),url('webfonts/329037_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova';font-weight:normal;src: url('webfonts/329037_1_0.eot');src: url('webfonts/329037_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/329037_1_0.woff2') format('woff2'),url('webfonts/329037_1_0.woff') format('woff'),url('webfonts/329037_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ProximaNova';font-weight:normal;font-style:italic;src: url('webfonts/329037_2_0.eot');src: url('webfonts/329037_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/329037_2_0.woff2') format('woff2'),url('webfonts/329037_2_0.woff') format('woff'),url('webfonts/329037_2_0.ttf') format('truetype');}
+ 
+
+
+ body {
   //@include font-feature-settings("kern","liga","frac", "pnum");
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: 1em;
-  font-weight:300;
+  font-weight:normal;
   line-height: $base-line-height;
   @include mq(mediumv) {
     font-size:.875em;
@@ -238,6 +277,8 @@ cite {
     content: "\2014 \00A0";
   }
 }
-b {
-  color:$blue;
+b, strong {
+  //color:$blue;
+  font-family: "ProximaNova";
+  //font-weight:normal;
 }
