@@ -27,6 +27,7 @@ module.exports = function(grunt) {
       css: {
         files: ['*.scss', 'css/**/*.scss', 'css/**/**/*.scss'],
         tasks: ['sass'],
+        tasks: ['sass','criticalcss'],
         options: {
           spawn: false,
         }
@@ -47,14 +48,28 @@ module.exports = function(grunt) {
         }
       }
     },
+    criticalcss: {
+        dist: {
+            options: {
+                url: "http://127.0.0.1:4000/",
+                width: 1200,
+                height: 900,
+                outputfile: "critical.css",
+                filename: "style.css", // Using path.resolve( path.join( ... ) ) is a good idea here
+                buffer: 800*1024,
+                ignoreConsole: false
+            }
+        }
+    },
   });
 
   // 3. Where we tell Grunt we plan to use this plug-in.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-criticalcss');
 
   // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-  grunt.registerTask('default', ['uglify', 'sass', 'watch']);
+  grunt.registerTask('default', ['uglify', 'sass', 'watch','criticalcss']);
 
 };

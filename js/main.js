@@ -1,10 +1,10 @@
 //PNG Fallback
-if (!Modernizr.svg) {
-  var images = $('img[data-png-fallback]');
-  images.each(function(i) {
-    $(this).attr('src', $(this).data('png-fallback'));
-  });
-}
+// if (!Modernizr.svg) {
+//   var images = $('img[data-png-fallback]');
+//   images.each(function(i) {
+//     $(this).attr('src', $(this).data('png-fallback'));
+//   });
+// }
 
 //Toggle Boxes
 $(document).ready(function() {
