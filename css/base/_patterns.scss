@@ -69,7 +69,7 @@ This is used to separate sections/modules of the website while still keeping a c
     font-weight: normal;
   }
   @include mq(large) {
-   // margin-bottom:
+    // margin-bottom:
   }
 }
 
@@ -147,9 +147,7 @@ This is used to separate sections/modules of the website while still keeping a c
   &.active {
     &:hover {
       background-color: $white;
-      .ce-header {
-         
-      }
+      .ce-header {}
     }
     .ce-header {
       &:after {
@@ -212,7 +210,7 @@ This is used to separate sections/modules of the website while still keeping a c
 
 .social-wrap {
   overflow: hidden;
-  width:15em;
+  width: 15em;
   margin: 0 auto;
   a {
     display: block;
@@ -221,18 +219,10 @@ This is used to separate sections/modules of the website while still keeping a c
     text-align: center;
     position: relative;
     @include transition (all .2s ease-in-out);
-    &:nth-child(1n) {
-        
-      }
-      &:nth-child(2n) {
-        
-      }
-      &:nth-child(3n) {
-        
-      }
-      &:nth-child(4n) {
-       
-      }
+    &:nth-child(1n) {}
+    &:nth-child(2n) {}
+    &:nth-child(3n) {}
+    &:nth-child(4n) {}
     &:hover {
       &:nth-child(1n) {
         background-color: #c73b6f;
@@ -240,8 +230,8 @@ This is used to separate sections/modules of the website while still keeping a c
       &:nth-child(2n) {
         background-color: #4099FF;
         path {
-        fill: $white;
-      }
+          fill: $white;
+        }
       }
       &:nth-child(3n) {
         background-color: #4875B4;
@@ -480,16 +470,17 @@ hr {
 figure {
   margin: 0;
   padding: 0;
-  margin:$baseline*4 0 $baseline*4 0;
+  margin: $baseline*4 0 $baseline*4 0;
   //border:1px solid $base-border-color;
   img {
     //box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
+}
 
-}
 figcaption {
-  margin-top:$baseline*2;
+  margin-top: $baseline*2;
 }
+
 .wp-pagenavi {
   > * {
     margin-right: .75em;
@@ -830,24 +821,48 @@ figcaption {
 
 
 /*=============== Icon Links ===============*/
-%ico-links {
 
-  background-position:center left;
-  background-repeat:no-repeat;
-  padding-left:1em;
+%ico-links {
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding-left: 1em;
   background-size: .8em;
 }
+
 .ico-twitter {
   @extend %ico-links;
-  background-image:url(img/ico-twitter.svg);
-  
-  
+  background-image: url(img/ico-twitter.svg);
 }
 
 .ico-linkedin {
   @extend %ico-links;
-  background-image:url(img/ico-linkedin.svg);
-  
- 
-  
+  background-image: url(img/ico-linkedin.svg);
+}
+
+.language-markup {
+  background-color: $light-gray;
+  padding: $baseline*3;
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: .95em;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    padding: 0;
+    color: #333;
+  }
+}
+
+.img-border {
+  border:1px solid $base-border-color;
+}
+.emph-section {
+  background-color:$light-gray;
 }
