@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://julian.is/</loc>
+  <lastmod>2017-01-15T06:30:16+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/about/</loc>
+  <lastmod>2017-01-15T06:30:16+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/work/</loc>
+  <lastmod>2017-01-15T06:30:17+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/journal/</loc>
+  <lastmod>2017-01-15T06:30:17+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/gdd-case-study-hylok/</loc>
+  <lastmod>2017-01-15T06:30:17+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/building-security/</loc>
+  <lastmod>2017-01-15T06:30:17+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/mattei-compressors/</loc>
+  <lastmod>2017-01-15T06:30:17+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/thomas-publishing/</loc>
+  <lastmod>2017-01-15T06:30:18+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/article/baseline-for-fast-loading-websites/</loc>
+  <lastmod>2017-01-15T06:30:18+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/article/hubspot-inbound-2016-designers-perspective/</loc>
+  <lastmod>2017-01-15T06:30:18+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/article/smashingconf-barcelona-2016-day-2/</loc>
+  <lastmod>2017-01-15T06:30:18+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/article/smashingconf-barcelona-2016-day-1/</loc>
+  <lastmod>2017-01-15T06:30:19+00:00</lastmod>
+</url>
+<url>
+  <loc>https://julian.is/article/why-ive-started-writing/</loc>
+  <lastmod>2017-01-15T06:30:19+00:00</lastmod>
+</url>
+</urlset>

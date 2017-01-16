@@ -87,7 +87,7 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 .social-wrap svg{ display: inline-block; vertical-align: middle; }
 figure{ padding: 0px; margin: 2em 0px; }
 .site-wrap{ background-color: rgb(255, 255, 255); position: relative; overflow: hidden; margin: 0px auto; background-position: initial initial; background-repeat: initial initial; }
-.sh-sticky-wrap{ background-size: cover; z-index: 10000; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }
+.sh-sticky-wrap{ background-size: cover; z-index: 1000; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }
 @media (min-width: 60em){
 .sh-sticky-wrap{ height: 5.0625em; position: relative; }
 }

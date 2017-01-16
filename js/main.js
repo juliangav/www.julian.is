@@ -60,6 +60,36 @@ $(document).ready(function() {
     mainClass: 'mfp-fade', //The actual animation
   });
 });
+
+$(document).ready(function() {
+  $('.lightbox-form').magnificPopup({
+    type: 'image',
+    removalDelay: 500, //Delaying the removal in order to fit in the animation of the popup
+    mainClass: 'mfp-fade', //The actual animation
+  });
+});
+
+
+$(document).ready(function() {
+  $('.newsletter-form').magnificPopup({
+    items: {
+          src: '#newsletter-form' //ID of inline element
+        },
+        type: 'inline',
+        removalDelay: 500, //Delaying the removal in order to fit in the animation of the popup
+        mainClass: 'mfp-fade', //The actual animation
+  });
+});
+
+
+// items: {
+//           src: '#delayed-popup' //ID of inline element
+//         },
+//         type: 'inline',
+//         removalDelay: 500, //Delaying the removal in order to fit in the animation of the popup
+//         mainClass: 'mfp-fade', //The actual animation
+
+
 $(document).ready(function() {
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
     disableOn: 700,

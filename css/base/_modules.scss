@@ -13,7 +13,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  z-index: 10000;
+  z-index: 1000;
   @include mq(large) {
     height: $nav-height;
     position: relative;
