@@ -64,8 +64,9 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 @media (min-width: 40em){
 .sn-level-1{ height: 5.0625em; }
 }
-.sn-li-l1{ display: block; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: white; background-color: transparent; position: relative; transition: background-color 0.2s ease-in-out; -webkit-transition: background-color 0.2s ease-in-out; }
-.sn-li-l1 span{ font-size: 1em; }
+.sn-li-l1{ display: block; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); background-color: transparent; position: relative; text-align: center; transition: background-color 0.2s ease-in-out; -webkit-transition: background-color 0.2s ease-in-out; }
+.sn-li-l1:first-child{ border-top-width: 1px; border-top-style: solid; border-top-color: rgb(238, 238, 238); }
+.sn-li-l1 span{ font-size: 1.3125em; }
 .sn-li-l1 > a{ display: block; height: 5.0625em; line-height: 5.0625em; color: rgb(35, 80, 122); text-decoration: none; padding: 0px 1em; }
 @media (min-width: 40em){
 .sn-li-l1{ height: 5.0625em; float: left; border-bottom-width: 0px; border-right-width: 1px; border-right-style: solid; border-right-color: rgba(13, 13, 13, 0); text-align: center; font-weight: bold; }
@@ -83,11 +84,11 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 @media (min-width: 80em){
 .sn-li-l1 > a{ padding: 0px 0em; }
 }
-.site-nav-container{ background-color: rgb(255, 255, 255); width: 17em; height: 100%; right: -17em; top: 0px; bottom: 0px; z-index: 1000; position: absolute; transition: all 0.25s ease-in-out; -webkit-transition: all 0.25s ease-in-out; }
+.site-nav-container{ background-color: rgb(255, 255, 255); width: 17em; height: 100%; right: -17em; top: 0px; bottom: 0px; z-index: 1000; position: absolute; transition: right 0.5s, box-shadow 0.5s, ease-in-out; -webkit-transition: right 0.5s, box-shadow 0.5s, ease-in-out; }
 @media (min-width: 40em){
-.site-nav-container{ width: auto; height: auto; right: auto; bottom: auto; top: auto; position: static; background-color: transparent; }
+.site-nav-container{ width: auto; height: auto; right: auto; bottom: auto; top: auto; position: static; background-color: transparent; box-shadow: none !important; }
 }
-.site-nav-container-screen{ position: absolute; display: none; z-index: 999; left: 0px; right: 0px; bottom: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.498039); }
+.site-nav-container-screen{ position: absolute; display: none; z-index: 999; left: 0px; right: 0px; bottom: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.498039); opacity: 0; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; }
 @media (min-width: 40em){
 .site-nav-container-screen{ display: none !important; }
 }
@@ -108,7 +109,7 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 .social-wrap svg{ display: inline-block; vertical-align: middle; }
 figure{ padding: 0px; margin: 2em 0px; }
 .site-wrap{ background-color: rgb(255, 255, 255); position: relative; overflow: hidden; margin: 0px auto; background-position: initial initial; background-repeat: initial initial; }
-.sh-sticky-wrap{ background-size: cover; z-index: 10000; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }
+.sh-sticky-wrap{ background-size: cover; z-index: 1000; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }
 @media (min-width: 60em){
 .sh-sticky-wrap{ height: 5.0625em; position: relative; }
 }
@@ -126,22 +127,17 @@ figure{ padding: 0px; margin: 2em 0px; }
 .site-header-home .site-nav{ transition: opacity 0.5s ease-in-out; -webkit-transition: opacity 0.5s ease-in-out; }
 }
 .site-header-home .site-logo figure::after{ content: ''; background-image: url(img/julian-headshot.jpg); background-size: cover; display: block; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; border-top-left-radius: 100%; border-top-right-radius: 100%; border-bottom-right-radius: 100%; border-bottom-left-radius: 100%; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }
-@media (min-width: 40em){
-.site-nav-container{ width: 20em; float: right; margin-right: 1em; }
-}
-@media (min-width: 60em){
-.site-nav-container{ width: 25em; }
-}
 .site-logo{ overflow: hidden; display: block; text-decoration: none; font-size: 1em; float: left; height: 5.0625em; padding-top: 0.3em; padding-bottom: 0.3em; }
 .site-logo figure{ position: relative; overflow: hidden; background-color: rgb(35, 80, 122); display: block; height: 4.5em; width: 4.5em; line-height: 4.5em; border-top-left-radius: 100%; border-top-right-radius: 100%; border-bottom-right-radius: 100%; border-bottom-left-radius: 100%; text-align: center; margin: 0px; box-shadow: none; float: left; }
 .site-logo figure img{ vertical-align: middle; width: 90%; }
-.sh-utility-nav{ overflow: hidden; height: 5.0625em; }
-.sh-utility-nav .social-wrap{ width: 10em; display: none; }
-.sh-utility-nav .social-wrap a{ height: 5.0625em; line-height: 5.0625em; }
+.sh-utility-nav{ overflow: hidden; height: 3.375em; clear: both; margin-top: 2em; }
+.sh-utility-nav .social-wrap{ width: 10em; }
+.sh-utility-nav .social-wrap a{ height: 3.375em; line-height: 3.375em; }
 @media (min-width: 40em){
-.sh-utility-nav{ text-align: right; width: 10em; float: right; }
+.sh-utility-nav{ height: 5.0625em; clear: none; margin-top: 0px; text-align: right; width: 10em; float: right; }
 .sh-utility-nav .social-wrap{ width: 10em; }
 .sh-utility-nav .social-wrap{ display: inline-block; }
+.sh-utility-nav .social-wrap a{ height: 5.0625em; line-height: 5.0625em; }
 }
 @media (min-width: 60em){
 .sh-utility-nav{ width: 10em; }
@@ -170,6 +166,14 @@ figure{ padding: 0px; margin: 2em 0px; }
 .site-nav-container .snc-header{ overflow: hidden; }
 .site-nav-container .sh-ico-info{ clear: both; }
 .site-nav-container .sh-ico-info span{ -webkit-transform: rotate(-90deg); }
+@media (min-width: 40em){
+.site-nav-container{ width: auto; margin-right: 0px; float: right; position: relative; }
+.site-nav-container .snc-header{ float: right; }
+.site-nav-container .site-nav{ float: right; width: 20em; margin-right: 1em; }
+}
+@media (min-width: 60em){
+.site-nav-container .site-nav{ width: 25em; margin-right: 1em; }
+}
 .work-section{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
 *{ box-sizing: border-box; }
 img{ max-width: 100%; height: auto; }
@@ -180,11 +184,8 @@ img{ display: inline-block; vertical-align: middle; }
  
 
 
-
-
-
- <link rel="preload" href="https://julian.is/style.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://julian.is/style.css"></noscript>
+ <link rel="preload" href="/style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/style.css"></noscript>
     <script>
     /*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
     (function(w){

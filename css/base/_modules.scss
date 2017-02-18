@@ -29,8 +29,8 @@
       }
       .site-logo {
         figure {
-          margin:0;
-          padding:0;
+          margin: 0;
+          padding: 0;
           &:after {
             opacity: 0;
           }
@@ -72,9 +72,9 @@
     padding-bottom: 0;
   }
 }
-.site-logo {
 
-}
+.site-logo {}
+
 .site-header-home {
   //border-bottom: 1px solid white;
   .site-nav {
@@ -85,7 +85,6 @@
   }
   .site-logo {
     figure {
-     
       &:after {
         content: '';
         background-image: url(img/julian-headshot.jpg);
@@ -109,17 +108,7 @@
   }
 }
 
-.site-nav-container {
-  @include mq(medium) {
-    width: 20em;
-    float: right;
-    //background-color:orange;
-    margin-right: 1em;
-  }
-  @include mq(large) {
-    width: 25em;
-  }
-}
+
 
 .site-logo {
   // background-color:red;
@@ -143,8 +132,8 @@
     line-height: 4.5em;
     border-radius: 100%;
     text-align: center;
-    margin:0;
-     box-shadow:none;
+    margin: 0;
+    box-shadow: none;
     //font-size: .75em;
     float: left;
     img {
@@ -170,17 +159,23 @@
 // }
 .sh-utility-nav {
   overflow: hidden;
-  height: $nav-height;
+  height: $nav-height/1.5;
+  //float:right; 
+  clear: both;
+  margin-top: 2em;
   .social-wrap {
     width: 10em;
-    display: none;
+    //display: none;
     a {
-      height: $nav-height;
+      height: $nav-height/1.5;
       //background-color:green;
-      line-height: $nav-height;
+      line-height: $nav-height/1.5;
     }
   }
   @include mq(medium) {
+    height:$nav-height;
+    clear:none;
+    margin-top:0;
     .social-wrap {
       width: 10em;
     }
@@ -191,6 +186,10 @@
     //background-color:red;
     .social-wrap {
       display: inline-block;
+      a {
+        height:$nav-height;
+        line-height:$nav-height;
+      }
     }
   }
   @include mq(large) {
@@ -348,9 +347,13 @@
   }
 }
 
+
+
+
 .site-nav-container {
   .snc-header {
     overflow: hidden;
+    
   }
   .sh-ico-info {
     clear: both;
@@ -363,12 +366,33 @@
       }
     }
   }
+  @include mq(medium) {
+    width:auto;
+    margin-right:0;
+    float:right;
+    position:relative;
+    .snc-header {
+      float:right;
+    }
+    .site-nav {
+      float:right;
+      width:20em;
+      margin-right:1em;
+    }
+  }
+  @include mq(large) {
+    .site-nav {
+      width:25em;
+      margin-right:1em;
+    }
+  }
 }
 
 .pi-h1 {
-  position:relative;
-  z-index:2;
+  position: relative;
+  z-index: 2;
 }
+
 
 /*=============== Site Content ===============*/
 
@@ -515,13 +539,13 @@ img[name=pphLoggerImage] {
 
 
 /*=============== Portfolio Section ===============*/
+
 .work-section {
-  border-bottom:1px solid $base-border-color;
+  border-bottom: 1px solid $base-border-color;
 }
 
 .ps-item {
   //border-top: 1px solid $base-border-color;
-  
   @include span-columns(12 of 12);
   @include mq(medium) {
     @include span-columns(6 of 12);
@@ -532,16 +556,15 @@ img[name=pphLoggerImage] {
   border-bottom:0 !important;
   padding:$baseline;
   .section-header {
-    background-color:lighten($light-gray,4.5%);
-    padding:$baseline*2;
-    margin-bottom:0;
+    background-color: lighten($light-gray, 4.5%);
+    padding: $baseline*2;
+    margin-bottom: 0;
     @include transition (background .2s ease-in-out);
   }
   &:hover {
     .section-header {
-     background-color:$light-gray;
-  }
-
+      background-color: $light-gray;
+    }
   }
 }
 

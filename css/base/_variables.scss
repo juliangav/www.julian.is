@@ -64,8 +64,9 @@ $form-font-family: $base-font-family;
 
 
 // Navigation
-$nav-font-size:em(16);
+$nav-font-size-mobile:em(21);
 $nav-font-size-medium:em(16);
+$nav-font-size:em(16);
 $nav-height:em(81);
 $nav-background:transparent;
 $nav-background-mobile:$white;
@@ -74,7 +75,7 @@ $nav-text-color-hover:$base-color;
 $nav-hover:$light-gray;
 $nav-active-background:darken($nav-background, 10%);
 $nav-border:1px solid lighten($nav-background,5%);
-$nav-border-mobile:1px solid lighten($nav-background-mobile,5%);
+$nav-border-mobile:1px solid $light-gray;
 
 
 $nav-spacing-mobile:$baseline*2;
@@ -90,3 +91,14 @@ $nav-subnav-border:1px solid lighten($nav-hover,10%);
 $nav-subnav-hover:darken($nav-subnav-background, 10%);
 
 $nav-mobile-width:17em;
+
+// Nav Mobile
+$nav-text-align-mobile:center;
+
+// Nav Medium
+$nav-text-align-medium:center;
+
+
+
+
+
