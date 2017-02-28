@@ -2,6 +2,7 @@
 layout: post
 title:  "A Simple Baseline for Fast Loading Accessible&nbsp;Websites"
 author: Julian Gaviria
+description:  Page speed is a limitation that influences creativity and impacts accessibility, but unfortunately it is also a behind the scenes act that usually gets overlooked. Saving images for the web isn’t cutting it anymore.
 ---
 
 Websites have reached a point where the maturity of graphic design has caught up with the state of web development. But what about accessibility? As the web keeps getting prettier to look at, it also keeps getting heavier and slower to load. Page speed is a limitation that influences creativity and impacts accessibility, but unfortunately it is also a behind the scenes act that usually gets overlooked. 

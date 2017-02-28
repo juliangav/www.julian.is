@@ -18,7 +18,7 @@ email: juliangaviria@me.com
 description: > # this means to ignore newlines until "baseurl:"
   Hey there, I'm Julian, a polyskilled designer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://julian.is" # the base hostname & protocol for your site
+url: "https://julian.is" # the base hostname & protocol for your site
 twitter_username: juliangav
 github_username:  juliangav
 permalink: /article/:title/
