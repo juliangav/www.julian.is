@@ -146,6 +146,10 @@
   @include base-font-size;
 }
 
+.small-font-size {
+  @include small-font-size;
+}
+
 h1,
 h2,
 h3,
@@ -195,7 +199,7 @@ h3 {
 h4 {
   font-size: $medium-font-size;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 
 h5 {
@@ -211,7 +215,7 @@ h6 {
 }
 
 p {
-  margin: 16px 0;
+  margin: 0 0 16px 0;
   @include medium-font-size;
   font-weight:300;
 }
@@ -281,4 +285,5 @@ b, strong {
   //color:$blue;
   font-family: "ProximaNova";
   //font-weight:normal;
+  color:$blue;
 }

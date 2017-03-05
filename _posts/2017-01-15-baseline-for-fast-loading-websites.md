@@ -5,7 +5,7 @@ author: Julian Gaviria
 description:  Not going to bore you with a philosophical approach, this is a solid baseline with actionable steps to immediately make your website faster & more accessible.
 excerpt: Not going to bore you with a philosophical approach, this is a solid baseline with actionable steps to immediately make your website faster & more accessible. 
 category: Development
-tags: [webperf, optimization, perceived performance]
+tags: [WebPerf, Optimization, PerceivedPerformance]
 
 ---
 

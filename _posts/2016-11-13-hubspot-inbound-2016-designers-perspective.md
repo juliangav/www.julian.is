@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "INBOUND 2016 &ndash; A Designer's Perspective with a Roundup of&nbsp;Tools"
+title:  "INBOUND 2016 &mdash; A Designer's Perspective with a Roundup of&nbsp;Tools"
 author: Julian Gaviria
 description: It’s difficult for some folks to see the value in a designer attending a marketing conference, but anyone with a decent understanding of design knows that with context, you create better work.
 excerpt: It’s difficult for some folks to see the value in a designer attending a marketing conference, but anyone with a decent understanding of design knows that with context, you create better work.

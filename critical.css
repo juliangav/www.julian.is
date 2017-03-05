@@ -24,7 +24,7 @@ h1{ font-size: 2.8125em; }
 @media (min-width: 60em){
 h1{ font-size: 3.125em; }
 }
-p{ margin: 16px 0px; font-size: 1.3125em; font-weight: 300; }
+p{ margin: 0px 0px 16px; font-size: 1.3125em; font-weight: 300; }
 @media (min-width: 40em){
 p{ font-size: 1.5em; }
 }
@@ -49,6 +49,7 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 .sn-li-l1 > a{ display: block; height: 5.0625em; line-height: 5.0625em; color: rgb(35, 80, 122); text-decoration: none; padding: 0px 1em; }
 @media (min-width: 40em){
 .sn-li-l1{ height: 5.0625em; float: left; border-bottom-width: 0px; border-right-width: 1px; border-right-style: solid; border-right-color: rgba(13, 13, 13, 0); text-align: center; font-weight: bold; }
+.sn-li-l1:first-child{ border-top-width: 0px; }
 .sn-li-l1 span{ font-size: 1em; }
 .sn-li-l1:nth-child(1n){ width: 25%; }
 .sn-li-l1:nth-child(2n){ width: 25%; }
@@ -83,7 +84,7 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 .inner-wrap{ padding: 2.5em 1.5em; }
 }
 .social-wrap{ overflow: hidden; width: 15em; margin: 0px auto; }
-.social-wrap a{ display: block; float: left; width: 33.333%; text-align: center; position: relative; transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; }
+.social-wrap a{ display: block; float: left; width: 25%; text-align: center; position: relative; transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; }
 .social-wrap a path{ fill: #7e90a5; transition: all 0.1s linear; -webkit-transition: all 0.1s linear; }
 .social-wrap svg{ display: inline-block; vertical-align: middle; }
 figure{ padding: 0px; margin: 2em 0px; }
@@ -110,17 +111,17 @@ figure{ padding: 0px; margin: 2em 0px; }
 .site-logo figure{ position: relative; overflow: hidden; background-color: rgb(35, 80, 122); display: block; height: 4.5em; width: 4.5em; line-height: 4.5em; border-top-left-radius: 100%; border-top-right-radius: 100%; border-bottom-right-radius: 100%; border-bottom-left-radius: 100%; text-align: center; margin: 0px; box-shadow: none; float: left; }
 .site-logo figure img{ vertical-align: middle; width: 90%; }
 .sh-utility-nav{ overflow: hidden; height: 3.375em; clear: both; margin-top: 2em; }
-.sh-utility-nav .social-wrap{ width: 10em; }
+.sh-utility-nav .social-wrap{ width: 12em; }
 .sh-utility-nav .social-wrap a{ height: 3.375em; line-height: 3.375em; }
 @media (min-width: 40em){
-.sh-utility-nav{ height: 5.0625em; clear: none; margin-top: 0px; text-align: right; width: 10em; float: right; }
-.sh-utility-nav .social-wrap{ width: 10em; }
+.sh-utility-nav{ height: 5.0625em; clear: none; margin-top: 0px; text-align: right; width: 12em; float: right; }
+.sh-utility-nav .social-wrap{ width: 12em; }
 .sh-utility-nav .social-wrap{ display: inline-block; }
 .sh-utility-nav .social-wrap a{ height: 5.0625em; line-height: 5.0625em; }
 }
 @media (min-width: 60em){
-.sh-utility-nav{ width: 10em; }
-.sh-utility-nav .social-wrap{ width: 10em; }
+.sh-utility-nav{ width: 12em; }
+.sh-utility-nav .social-wrap{ width: 12em; }
 }
 .sh-icons{ float: right; z-index: 2; position: relative; padding-top: 0.3em; }
 .site-intro{ text-align: center; }

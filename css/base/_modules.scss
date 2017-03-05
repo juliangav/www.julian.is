@@ -164,7 +164,7 @@
   clear: both;
   margin-top: 2em;
   .social-wrap {
-    width: 10em;
+    width: 12em;
     //display: none;
     a {
       height: $nav-height/1.5;
@@ -177,11 +177,11 @@
     clear:none;
     margin-top:0;
     .social-wrap {
-      width: 10em;
+      width: 12em;
     }
     text-align: right;
     //float: right;
-    width:10em;
+    width:12em;
     float:right;
     //background-color:red;
     .social-wrap {
@@ -194,9 +194,9 @@
   }
   @include mq(large) {
     .social-wrap {
-      width: 10em;
+      width: 12em;
     }
-    width: 10em;
+    width: 12em;
   }
 }
 
@@ -578,4 +578,11 @@ img[name=pphLoggerImage] {
     margin-top: 0;
   }
   margin-bottom:$baseline*4;
+}
+
+.share-btns {
+  text-align:center;
+  p {
+   font-size:$base-font-size;
+  }
 }

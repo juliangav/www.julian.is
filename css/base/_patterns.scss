@@ -215,7 +215,7 @@ This is used to separate sections/modules of the website while still keeping a c
   a {
     display: block;
     float: left;
-    width: 33.333%;
+    width: 25%;
     text-align: center;
     position: relative;
     @include transition (all .2s ease-in-out);
@@ -228,17 +228,23 @@ This is used to separate sections/modules of the website while still keeping a c
         background-color: #c73b6f;
       }
       &:nth-child(2n) {
-        background-color: #4099FF;
+        background-color: #171515;
         path {
           fill: $white;
         }
       }
       &:nth-child(3n) {
-        background-color: #4875B4;
+        background-color: #4099FF;
+        path {
+          fill: $white;
+        }
       }
       &:nth-child(4n) {
-        background-color: orange;
+        background-color: #4875B4;
       }
+      // &:nth-child(4n) {
+      //   background-color: orange;
+      // }
     }
     path {
       fill: $base-accent-color;
@@ -489,16 +495,52 @@ figcaption {
 
 
 /*=============== Lightbox / Magnific Popup  ===============*/
-
+.newsletter-popup {
+  &.mfp-bg {
+    background-color: $blue;
+  }
+  // &.mfp-fade.mfp-bg.mfp-ready {
+  //   opacity: .95;
+  // }
+  &.mfp-close-btn-in .mfp-close {
+    color:$white;
+  }
+}
+.np-logo {
+  img {
+    max-width:15em;
+    display:block;
+    margin:0 auto;
+  }
+}
 .white-popup {
+  //   position: relative;
+  // background: #FFF;
+  // padding: 20px;
+  // width: auto;
+  // max-width: 500px;
+  // margin: 20px auto;
   position: relative;
-  background: #FFF;
-  padding: 20px;
-  width: auto;
-  max-width: 500px;
+  background: transparent;
+  // padding: 20px;
+  // width: auto;
+  max-width: em(600);
   margin: 20px auto;
+  
+  .mfp-close {
+    color: $white;
+  }
+  h2, p {
+    color: $white;
+  }
   > * {
     margin-top: 0;
+  }
+  label {
+    display:none;
+  }
+  input[type=text] {
+    color:$blue;
   }
 }
 
@@ -514,7 +556,7 @@ figcaption {
 /* overlay animate in */
 
 .mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
+  opacity: 0.95;
 }
 
 
@@ -839,9 +881,17 @@ figcaption {
   background-image: url(img/ico-linkedin.svg);
 }
 
+.ico-facebook {
+  @extend %ico-links;
+  background-image: url(img/ico-facebook.svg);
+}
+
 .language-markup {
-  background-color: $light-gray;
+  background-color: lighten($light-gray,4%);
+  border:1px solid $light-gray;
   padding: $baseline*3;
+  border-radius:em(4);
+
   code {
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     font-size: .95em;
@@ -865,4 +915,11 @@ figcaption {
 }
 .emph-section {
   background-color:$light-gray;
+}
+
+
+/*=============== Testing ===============*/
+.test-improvement {
+  color:$green;
+  font-weight:bold;
 }
