@@ -9,6 +9,9 @@ h1{ font-size: 2em; margin: 0.67em 0px; }
 img{ border: 0px; }
 svg:not(:root){ overflow: hidden; }
 figure{ margin: 0px; }
+ input{ color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; }
+ input[type="submit"]{ -webkit-appearance: button; cursor: pointer; }
+input{ line-height: normal; }
 body{ -webkit-font-smoothing: antialiased; background-color: rgb(35, 80, 122); color: rgb(51, 51, 51); font-family: ProximaNova, sans-serif; font-size: 1em; font-weight: normal; line-height: 1.5; }
 @media (max-height: 46em) and (min-width: 60em){
 body{ font-size: 0.875em; }
@@ -33,7 +36,15 @@ p{ font-size: 1.5em; }
 }
 a{ transition: all 0.1s linear; -webkit-transition: all 0.1s linear; color: rgb(35, 80, 122); text-decoration: none; }
 img{ margin: 0px; max-width: 100%; }
+input, label{ display: block; font-family: ProximaNova, sans-serif; font-size: 1.3125em; }
+label{ font-weight: bold; margin-bottom: 0.375em; }
+ input[type="email"], input[type="text"]{ box-sizing: border-box; transition: border-color; -webkit-transition: border-color; background-color: white; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border: 1px solid rgb(238, 238, 238); box-shadow: rgba(0, 0, 0, 0.0588235) 0px 1px 3px inset; font-family: ProximaNova, sans-serif; font-size: 1.3125em; margin-bottom: 0.75em; padding: 0.5em; width: 100%; }
 ul{ margin: 0px; padding: 0px; list-style-type: none; }
+ input[type="submit"]{ position: relative; -webkit-font-smoothing: antialiased; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; color: white; display: inline-block; font-weight: bold; line-height: 1; padding: 0.75em 1em; text-decoration: none; transition: background 0.1s linear; -webkit-transition: background 0.1s linear; }
+ input[type="submit"]::after{ content: ''; }
+ input[type="submit"]{ background-color: rgb(126, 144, 165); }
+ input[type="submit"]::after{ background-color: rgb(99, 118, 141); }
+ input[type="submit"]{ -webkit-appearance: none; border: none; cursor: pointer; vertical-align: middle; white-space: nowrap; }
 .site-nav{ background-color: rgb(255, 255, 255); }
 .site-nav span{ white-space: nowrap; }
 @media (min-width: 40em){
@@ -88,6 +99,12 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 .social-wrap a path{ fill: #7e90a5; transition: all 0.1s linear; -webkit-transition: all 0.1s linear; }
 .social-wrap svg{ display: inline-block; vertical-align: middle; }
 figure{ padding: 0px; margin: 2em 0px; }
+.np-logo img{ max-width: 15em; display: block; margin: 0px auto; }
+.white-popup{ position: relative; background-color: transparent; max-width: 37.5em; margin: 20px auto; background-position: initial initial; background-repeat: initial initial; }
+.white-popup h2, .white-popup p{ color: rgb(255, 255, 255); }
+.white-popup > *{ margin-top: 0px; }
+.white-popup label{ display: none; }
+.white-popup input[type="text"]{ color: rgb(35, 80, 122); }
 .site-wrap{ background-color: rgb(255, 255, 255); position: relative; overflow: hidden; margin: 0px auto; background-position: initial initial; background-repeat: initial initial; }
 .sh-sticky-wrap{ background-size: cover; z-index: 1000; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }
 @media (min-width: 60em){
@@ -155,6 +172,7 @@ figure{ padding: 0px; margin: 2em 0px; }
 .site-nav-container .site-nav{ width: 25em; margin-right: 1em; }
 }
 .work-section{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.mfp-hide{ display: none !important; }
 *{ box-sizing: border-box; }
 img{ max-width: 100%; height: auto; }
 img{ }

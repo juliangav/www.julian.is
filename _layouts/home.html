@@ -30,6 +30,9 @@ h1{ font-size: 2em; margin: 0.67em 0px; }
 img{ border: 0px; }
 svg:not(:root){ overflow: hidden; }
 figure{ margin: 0px; }
+ input{ color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: inherit; margin: 0px; }
+ input[type="submit"]{ -webkit-appearance: button; cursor: pointer; }
+input{ line-height: normal; }
 body{ -webkit-font-smoothing: antialiased; background-color: rgb(35, 80, 122); color: rgb(51, 51, 51); font-family: ProximaNova, sans-serif; font-size: 1em; font-weight: normal; line-height: 1.5; }
 @media (max-height: 46em) and (min-width: 60em){
 body{ font-size: 0.875em; }
@@ -45,7 +48,7 @@ h1{ font-size: 2.8125em; }
 @media (min-width: 60em){
 h1{ font-size: 3.125em; }
 }
-p{ margin: 16px 0px; font-size: 1.3125em; font-weight: 300; }
+p{ margin: 0px 0px 16px; font-size: 1.3125em; font-weight: 300; }
 @media (min-width: 40em){
 p{ font-size: 1.5em; }
 }
@@ -54,7 +57,15 @@ p{ font-size: 1.5em; }
 }
 a{ transition: all 0.1s linear; -webkit-transition: all 0.1s linear; color: rgb(35, 80, 122); text-decoration: none; }
 img{ margin: 0px; max-width: 100%; }
+input, label{ display: block; font-family: ProximaNova, sans-serif; font-size: 1.3125em; }
+label{ font-weight: bold; margin-bottom: 0.375em; }
+ input[type="email"], input[type="text"]{ box-sizing: border-box; transition: border-color; -webkit-transition: border-color; background-color: white; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border: 1px solid rgb(238, 238, 238); box-shadow: rgba(0, 0, 0, 0.0588235) 0px 1px 3px inset; font-family: ProximaNova, sans-serif; font-size: 1.3125em; margin-bottom: 0.75em; padding: 0.5em; width: 100%; }
 ul{ margin: 0px; padding: 0px; list-style-type: none; }
+ input[type="submit"]{ position: relative; -webkit-font-smoothing: antialiased; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; color: white; display: inline-block; font-weight: bold; line-height: 1; padding: 0.75em 1em; text-decoration: none; transition: background 0.1s linear; -webkit-transition: background 0.1s linear; }
+ input[type="submit"]::after{ content: ''; }
+ input[type="submit"]{ background-color: rgb(126, 144, 165); }
+ input[type="submit"]::after{ background-color: rgb(99, 118, 141); }
+ input[type="submit"]{ -webkit-appearance: none; border: none; cursor: pointer; vertical-align: middle; white-space: nowrap; }
 .site-nav{ background-color: rgb(255, 255, 255); }
 .site-nav span{ white-space: nowrap; }
 @media (min-width: 40em){
@@ -70,6 +81,7 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 .sn-li-l1 > a{ display: block; height: 5.0625em; line-height: 5.0625em; color: rgb(35, 80, 122); text-decoration: none; padding: 0px 1em; }
 @media (min-width: 40em){
 .sn-li-l1{ height: 5.0625em; float: left; border-bottom-width: 0px; border-right-width: 1px; border-right-style: solid; border-right-color: rgba(13, 13, 13, 0); text-align: center; font-weight: bold; }
+.sn-li-l1:first-child{ border-top-width: 0px; }
 .sn-li-l1 span{ font-size: 1em; }
 .sn-li-l1:nth-child(1n){ width: 25%; }
 .sn-li-l1:nth-child(2n){ width: 25%; }
@@ -104,10 +116,16 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 .inner-wrap{ padding: 2.5em 1.5em; }
 }
 .social-wrap{ overflow: hidden; width: 15em; margin: 0px auto; }
-.social-wrap a{ display: block; float: left; width: 33.333%; text-align: center; position: relative; transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; }
+.social-wrap a{ display: block; float: left; width: 25%; text-align: center; position: relative; transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; }
 .social-wrap a path{ fill: #7e90a5; transition: all 0.1s linear; -webkit-transition: all 0.1s linear; }
 .social-wrap svg{ display: inline-block; vertical-align: middle; }
 figure{ padding: 0px; margin: 2em 0px; }
+.np-logo img{ max-width: 15em; display: block; margin: 0px auto; }
+.white-popup{ position: relative; background-color: transparent; max-width: 37.5em; margin: 20px auto; background-position: initial initial; background-repeat: initial initial; }
+.white-popup h2, .white-popup p{ color: rgb(255, 255, 255); }
+.white-popup > *{ margin-top: 0px; }
+.white-popup label{ display: none; }
+.white-popup input[type="text"]{ color: rgb(35, 80, 122); }
 .site-wrap{ background-color: rgb(255, 255, 255); position: relative; overflow: hidden; margin: 0px auto; background-position: initial initial; background-repeat: initial initial; }
 .sh-sticky-wrap{ background-size: cover; z-index: 1000; background-position: 50% 50%; background-repeat: no-repeat no-repeat; }
 @media (min-width: 60em){
@@ -131,17 +149,17 @@ figure{ padding: 0px; margin: 2em 0px; }
 .site-logo figure{ position: relative; overflow: hidden; background-color: rgb(35, 80, 122); display: block; height: 4.5em; width: 4.5em; line-height: 4.5em; border-top-left-radius: 100%; border-top-right-radius: 100%; border-bottom-right-radius: 100%; border-bottom-left-radius: 100%; text-align: center; margin: 0px; box-shadow: none; float: left; }
 .site-logo figure img{ vertical-align: middle; width: 90%; }
 .sh-utility-nav{ overflow: hidden; height: 3.375em; clear: both; margin-top: 2em; }
-.sh-utility-nav .social-wrap{ width: 10em; }
+.sh-utility-nav .social-wrap{ width: 12em; }
 .sh-utility-nav .social-wrap a{ height: 3.375em; line-height: 3.375em; }
 @media (min-width: 40em){
-.sh-utility-nav{ height: 5.0625em; clear: none; margin-top: 0px; text-align: right; width: 10em; float: right; }
-.sh-utility-nav .social-wrap{ width: 10em; }
+.sh-utility-nav{ height: 5.0625em; clear: none; margin-top: 0px; text-align: right; width: 12em; float: right; }
+.sh-utility-nav .social-wrap{ width: 12em; }
 .sh-utility-nav .social-wrap{ display: inline-block; }
 .sh-utility-nav .social-wrap a{ height: 5.0625em; line-height: 5.0625em; }
 }
 @media (min-width: 60em){
-.sh-utility-nav{ width: 10em; }
-.sh-utility-nav .social-wrap{ width: 10em; }
+.sh-utility-nav{ width: 12em; }
+.sh-utility-nav .social-wrap{ width: 12em; }
 }
 .sh-icons{ float: right; z-index: 2; position: relative; padding-top: 0.3em; }
 .site-intro{ text-align: center; }
@@ -175,6 +193,7 @@ figure{ padding: 0px; margin: 2em 0px; }
 .site-nav-container .site-nav{ width: 25em; margin-right: 1em; }
 }
 .work-section{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.mfp-hide{ display: none !important; }
 *{ box-sizing: border-box; }
 img{ max-width: 100%; height: auto; }
 img{ }
@@ -309,8 +328,53 @@ img{ display: inline-block; vertical-align: middle; }
     }( this ));
 
     </script>
+    
 
+  <meta property="og:locale" content="en_US" /> {% if page.layout == 'post' %}
+  <meta property="og:type" content="article"> {% else %}
+  <meta property="og:type" content="website"> {% endif %} {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}"> {% else %}
+  <meta property="og:title" content="{{ site.title }}"> {% endif %} {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}"> {% else %}
+  <meta property="og:description" content="{{ site.description }}"> {% endif %} {% if page.url %}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}"> {% endif %} {% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ site.url }}/about/"> {% endif %} {% if page.image %}
+  <meta property="og:image" content="/assets/{{ page.image }}"> {% else %}
+  <meta property="og:image" content="https://julian.is/img/julian-signature-blue.jpg"> {% endif %} {% if page.categories %} {% for category in page.categories limit:1 %}
+  <meta property="article:section" content="{{ category }}"> {% endfor %} {% endif %} {% if page.tags %} {% for tag in page.tags %}
+  <meta property="article:tag" content="{{ tag }}"> {% endfor %} {% endif %}
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="fb:app_id" content="275156446240779">
 
+   <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@juliangav">
+<meta name="twitter:creator" content="@juliangav"> {% if page.title %}
+<meta name="twitter:title" content="{{ page.title }}"> {% else %}
+<meta name="twitter:title" content="{{ site.title }}"> {% endif %} {% if page.url %}
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}"> {% endif %} {% if page.description %}
+<meta name="twitter:description" content="{{ page.description }}"> {% else %}
+<meta name="twitter:description" content="{{ site.description }}"> {% endif %} {% if page.image %}
+<meta name="twitter:image:src" content="{{ site.url }}/assets/{{ page.image }}"> {% else %}
+<meta name="twitter:image:src" content="https://julian.is/img/julian-signature-blue.jpg"> {% endif %}
+
+  <script>
+  window['_fs_debug'] = false;
+  window['_fs_host'] = 'www.fullstory.com';
+  window['_fs_org'] = '3GGD6';
+  window['_fs_namespace'] = 'FS';
+  (function(m,n,e,t,l,o,g,y){
+      if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+      g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+      o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+      y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+      g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+      g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+      g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+      d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+      ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+  })(window,document,window['_fs_namespace'],'script','user');
+  </script>
 </head>
 
 <body>
