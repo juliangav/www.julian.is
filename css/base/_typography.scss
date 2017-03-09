@@ -247,6 +247,28 @@ a {
     }
   }
 }
+
+// p {
+//   a {
+//     text-decoration:none;
+//     // text-shadow:em(3) 0 0 #fff, -em(3) 0 0 #fff,
+//     //   0 em(3) 0 #fff, 0 -em(3) 0 #fff,
+//     //   em(3) 0 0 #fff, -em(3) 0 0 #fff,
+//     //   0 em(3) 0 #fff, 0 -em(3) 0 #fff;
+
+//      text-shadow:
+//    -0.03em -0.03em 0 #fff, 0.03em -0.03em 0 #fff, -0.03em 0.03em 0 #fff, 0.03em 0.03em 0 #fff;
+//       background-image: linear-gradient(to right, #DDD 0%, #DDD 100%);
+//       background-repeat:repeat-x;
+//       background-position: bottom -0.1em center;
+//       background-size: 100% em(3.5);
+//       @include transition(all 0.5s linear);
+//       //background-color:red;
+//       &:hover {
+//         background-image: linear-gradient(to right, $green 0%, $green 100%);
+//       }
+//   }
+// }
 .link-style-inverted {
 
     border-bottom:3px solid $base-accent-color;

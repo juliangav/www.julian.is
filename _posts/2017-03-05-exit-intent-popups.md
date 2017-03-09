@@ -1,18 +1,17 @@
 ---
- 
-
 layout: post
 title:  "Exit Intent Popups &mdash; A/B Testing, Data, &amp; Code"
 author: Julian Gaviria
 description:  As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work.
 excerpt: As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work.
-category: [development, UX]
-tags: [CRO, ABTest, Code]
+category: [Development, UX]
+tags: [ExitIntent, CRO, ABTest, Code]
 image: og-exit-intent-popup.jpg
+time: 5 Minutes
 
 ---
 
-As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent popups” or, if you prefer to sound like a smartass, “exit intent interstitials.
+As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent popups” or, if you prefer to sound like a smartass, “exit intent interstitials".
 
 (You’re more than welcome to [skip my ramble and go straight to the code](#code){:class="smooth-scroll"}.)
 
@@ -101,7 +100,9 @@ We then tested multiple variations, and we’ve consistently improved conversion
 
 Pretty cool, right? Time to try it for yourself...
 
-<h2 id="code">The Code &mdash; Step by Step Instructions</h2>
+<h2 id="code">How to Setup an Exit Intent Popup</h2>
+
+<p>This section is a geared a bit more towards developers, so if you're a marketer, simply share this section with your developer (or anyone who knows how to add JavaScript to a website). If you're still having trouble, <a href="mailto:me@julian.is">reach out to me</a> and I will gladly help out.</p>
 
 <h3>Step 1: Choosing a Lightbox Script</h3>
 

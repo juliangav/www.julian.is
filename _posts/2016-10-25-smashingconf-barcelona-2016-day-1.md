@@ -4,7 +4,7 @@ title:  "SmashingConf Barcelona 2016 Day 1 Notes"
 author: Julian Gaviria
 description: Marcin Wichary with Typography, Val Head and animation, & Jessica Svendsen with just being so darn original, need I say more?
 excerpt: Marcin Wichary with Typography, Val Head and animation, & Jessica Svendsen just being so darn original, need I say more?
-
+time: 13 Minutes
 
 ---
 

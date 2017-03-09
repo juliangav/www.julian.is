@@ -80,22 +80,23 @@ This is used to separate sections/modules of the website while still keeping a c
   overflow: hidden;
 }
 
-.media-object-img {
-  width: 20%;
-  float: left;
-  display: block;
-  margin-right: 5%;
+.mo-img {
+  @include span-columns(2.25 of 12);
+  //margin-right: 5%;
+  margin-top:0;
+  margin-bottom:0;
   img {
     width: 100%;
+    border-radius:100%;
+    overflow:hidden;
   }
 }
 
-.media-object-body {
-  width: 75%;
-  float: left;
+.mo-body {
+@include span-columns(9.75 of 12);
 }
 
-.media-object-header {
+.mo-header {
   margin-top: 0;
   margin-bottom: .15em;
 }

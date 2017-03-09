@@ -4,6 +4,7 @@ title:  "INBOUND 2016 &mdash; A Designer's Perspective with a Roundup of&nbsp;To
 author: Julian Gaviria
 description: It’s difficult for some folks to see the value in a designer attending a marketing conference, but anyone with a decent understanding of design knows that with context, you create better work.
 excerpt: It’s difficult for some folks to see the value in a designer attending a marketing conference, but anyone with a decent understanding of design knows that with context, you create better work.
+time: 2 Minutes
 ---
 
 It’s difficult for some folks to see the value in a designer attending a marketing conference such as <a href="http://www.inbound.com/" target="_blank">INBOUND 2016</a>, but anyone with a decent understanding of design knows that with context, you create better work. The best designs were not put together by a designer working in isolation, the best designs were put together by a designer that was aware of the material and concept at hand with an understanding that went beyond the surface level. 

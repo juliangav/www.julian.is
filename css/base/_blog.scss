@@ -47,16 +47,40 @@
 }
 
 
-.page-date {
+.post-meta {
 	text-align:center;
 	text-transform:uppercase;
 	font-size:1.25em;
-	span {
-		background-image:url(img/ico-time.svg);
-		background-repeat: no-repeat;
+	
+}
+%post-meta-ico {
+	background-repeat: no-repeat;
 		background-size:.875em;
 		background-position: center left;
 		padding-left:1em;
+		margin:0 .25em;
+}
+.post-date {
+	@extend %post-meta-ico;
+		background-image:url(img/ico-calendar.svg);
+		
 
 	}
+	.post-reading-time {
+@extend %post-meta-ico;
+		background-image:url(img/ico-time.svg);
+	}
+
+.share-btns {
+  text-align:center;
+  p {
+   font-size:$base-font-size;
+  }
+}
+.share-btns-v2 {
+  margin-top:$baseline*4;
+}
+.post-tags {
+	color:$blue;
+	text-transform:uppercase;
 }
