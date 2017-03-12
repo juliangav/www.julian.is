@@ -1,0 +1,25 @@
+{
+  "short_name": "julian",
+  "name": "Julian Gaviria — Web Designer",
+  "icons": [
+    {
+      "src": "img/jg-launcher-icon-1x.jpg",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/jg-launcher-icon-2x.jpg",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/jg-launcher-icon-4x.jpg",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#23507a",
+  "display": "browser",
+  "theme_color": "#23507a"
+}
