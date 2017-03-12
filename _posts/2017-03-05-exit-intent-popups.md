@@ -11,7 +11,7 @@ time: 5 Minutes
 
 ---
 
-As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent popups” or, if you prefer to sound like a smartass, “exit intent interstitials".
+As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent popups” or, if you prefer to sound like a smartass, “exit intent interstitials."
 
 (You’re more than welcome to [skip my ramble and go straight to the code](#code){:class="smooth-scroll"}.)
 
@@ -27,7 +27,7 @@ It’s not magic. It’s not big brother. It’s not a crazy complicated algorit
 Even though this technique has been around for a few years, momentum skyrocketed when [Google announced](https://webmasters.googleblog.com/2016/08/helping-users-easily-access-content-on.html){:target="_blank"} that as of January 10, 2017, websites would be penalized for the relationship between mobile searches and intrusive interstitials. The search engine giant has picked up on the poor UX these popups cause on smaller screens. The penalty only applies if the interstitial appears on a page directly after arriving from a Google-mobile search result. Nothing is stopping Google from moving forward with a full-fledged desktop initiative, so future-proof now. 
 
 
-All of these considerations and the carefully planning is more than worth it — exit intent popups convert like crazy, and that’s what you’re here for, yes?
+All of these considerations and the careful planning is more than worth it — exit intent popups convert like crazy, and that’s what you’re here for, yes?
 
 
  Okay, enough with the theory. Let’s get into practicality and implementation. Over the past few months, we at [RPM](https://rpm.thomasnet.com){:target="_blank"} have been doing some heavy testing on exit intent to see what yields the best results — take a look at some of our findings below:
