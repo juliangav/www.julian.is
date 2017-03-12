@@ -10,7 +10,7 @@ time: 7 Minutes
 
 First day was a blast. Learned a ton of new stuff that I wasn't privy to before (and able to use in production). I'm surprised to say that the second day has been even better. Again, just a disclaimer that these notes weren't edited and they were added just as they were jotted down. Enjoy!
 
-<h2>John Allsopp - The Mystery Speaker (<a href="http://alistapart.com/article/dao" target="_blank">Dao of Web Design</a>)</h2>
+<h2>John Allsopp - The Mystery Speaker (<a href="http://alistapart.com/article/dao" target="_blank" rel="noopener">Dao of Web Design</a>)</h2>
 
 <a href="https://twitter.com/johnallsopp">@johnallsopp</a> / <a href="http://webdirections.org">webdirections.org</a>
 
@@ -38,7 +38,7 @@ Predicting the future is what John’s good at. He predicted responsive design a
 
 <h2>Laura Elizabeth - Selling Design Systems</h2>
 
-<a href="https://twitter.com/laurium" target="_blank">@laurium</a> / <a href="http://lauraelizabeth.co" target="_blank">lauraelizabeth.co</a>
+<a href="https://twitter.com/laurium" target="_blank" rel="noopener">@laurium</a> / <a href="http://lauraelizabeth.co" target="_blank" rel="noopener">lauraelizabeth.co</a>
 
 <ul>
 	<li>The smaller of the company, the less need for a fully fledged design system. </li>
@@ -71,7 +71,7 @@ It's interesting to see how little data there is in regards to how pattern libra
 
 <h2>Jen Simmons - Revolutionize your page: Real Art Direction on the web</h2>
 
-<a href="https://twitter.com/jensimmons" target="_blank">@jensimmons</a> / <a href="http://jensimmons.com/" target="_blank">jensimmons.com</a>
+<a href="https://twitter.com/jensimmons" target="_blank" rel="noopener">@jensimmons</a> / <a href="http://jensimmons.com/" target="_blank" rel="noopener">jensimmons.com</a>
 
 <ul>
 	<li>Art direction is a conversation</li>
@@ -79,14 +79,14 @@ It's interesting to see how little data there is in regards to how pattern libra
 	<li>Layout should not be a multiple choice question - it should be an essay question</li>
 	<li>Don’t make a frame work out of CSS Grid. CSS grid is a framework built right into the browser.</li>
 	<li>We have 100 years worth of graphic design inspiration. </li>
-	<li><a href="http://labs.jensimmons.com" target="_blank">labs.jensimmons.com</a> - The Experimental Layout Lab of Jen Simmons</li>
+	<li><a href="http://labs.jensimmons.com" target="_blank" rel="noopener">labs.jensimmons.com</a> - The Experimental Layout Lab of Jen Simmons</li>
 	<li>Initial letter (drop caps) - property pp::first-letter {} (right now is only is safari 9 and 10)</li>
-	<li>Feature queries - for browsers that don’t support use support queries: @supports (initial-letter: 4) or (-webkit-iniital-letter: 4 ) {codehere} <a href="https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/" target="_blank">https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/</a></li>
+	<li>Feature queries - for browsers that don’t support use support queries: @supports (initial-letter: 4) or (-webkit-iniital-letter: 4 ) {codehere} <a href="https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/" target="_blank" rel="noopener">https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/</a></li>
 	<li>margin: auto; in flexport will give you vertical centering</li>
 	<li>Dropped and raised caps; Non-rectangular shapes; Images specified in both dimensions; Sizing based on edges;</li>
-	<li><a href="http://flexboxdefense.com" target="_blank">flexboxdefense.com</a> &amp; <a href="http://flexboxfroggy.com" target="_blank">flexboxfroggy.com</a> - games to play to familiarize yourself with flex box</li>
+	<li><a href="http://flexboxdefense.com" target="_blank" rel="noopener">flexboxdefense.com</a> &amp; <a href="http://flexboxfroggy.com" target="_blank" rel="noopener">flexboxfroggy.com</a> - games to play to familiarize yourself with flex box</li>
 	<li>Think about the HTML only experience. Not only for screenreaders, but what happens when Siri or Cortana wake up in a few years and start reading websites to people?</li>
-	<li><a href="http://www.layout.land" target="_blank">layout.land</a> - website Jen's building similar to CSS Garden</li>
+	<li><a href="http://www.layout.land" target="_blank" rel="noopener">layout.land</a> - website Jen's building similar to CSS Garden</li>
 	
 </ul>
 
@@ -108,10 +108,10 @@ It's interesting to see how little data there is in regards to how pattern libra
 A good amount of detail into how making your website look less generic through art direction and what’s currently possible through CSS.  It seems like CSS Grid Layouts have evolved since the last time I gave them ago; definitely worth giving them a second try. I had no idea that support queries were a thing. So what’s the point of using modernizr? This talk definitely disrupts my current process and one that I’m anxious to pick apart and implement once I get home. 
 
 <h3>Slide Deck</h3>
-<a href="https://speakerdeck.com/jensimmons/revolutionize-your-page-40min-fall-2016?utm_content=buffer4d7b8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer" target="_blank">https://speakerdeck.com/jensimmons/revolutionize-your-page-40min-fall-2016?utm_content=buffer4d7b8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer</a>
+<a href="https://speakerdeck.com/jensimmons/revolutionize-your-page-40min-fall-2016?utm_content=buffer4d7b8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer" target="_blank" rel="noopener">https://speakerdeck.com/jensimmons/revolutionize-your-page-40min-fall-2016?utm_content=buffer4d7b8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer</a>
 
 <h2>Adrian Zumbrunner - Designing Choice</h2>
-<a href="https://twitter.com/azumbrunnen_">@azumbrunnen_</a> / <a href="http://azumbrunnen.me" target="_blank">azumbrunnen.me</a>
+<a href="https://twitter.com/azumbrunnen_">@azumbrunnen_</a> / <a href="http://azumbrunnen.me" target="_blank" rel="noopener">azumbrunnen.me</a>
 
 <ul>
 	<li>Good design is about making choices.</li>
@@ -144,7 +144,7 @@ This talk gave me some insight as to way Apple over simplifies their products to
 
 <h2>Christian Holst - Conversion Rate Optimization Techniques in Ecommerce</h2>
 
-<a href="https://twitter.com/KiehnHolst" target="_blank">@KiehnHolst</a> / <a href="http://baymard.com" target="_blank">baymard.com</a>
+<a href="https://twitter.com/KiehnHolst" target="_blank" rel="noopener">@KiehnHolst</a> / <a href="http://baymard.com" target="_blank" rel="noopener">baymard.com</a>
 
 <ul>
 	<li>68.81% cart abandonment rate (avg. across 34 different studies)</li>
@@ -182,7 +182,7 @@ This talk gave me some insight as to way Apple over simplifies their products to
 This was pretty good insight in regards to user testing in ecommerce sites (the majority of my testing is for content marketing websites). THere are a few things that I could transfer over; e.g. form fields that convert less, infinit scrolling vs pagination vs load more button, etc.
 
 <h2>Maciej Ceglowski - The Website Obesity Crisis</h2>
-<a href="https://twitter.com/baconmeteor" target="_blank">@baconmeteor</a> / <a href="http://idlewords.com" target="_blank">idlewords.com</a>
+<a href="https://twitter.com/baconmeteor" target="_blank" rel="noopener">@baconmeteor</a> / <a href="http://idlewords.com" target="_blank" rel="noopener">idlewords.com</a>
 
 <ul>
 	<li>Chickenshit Minimalism </li>

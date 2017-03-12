@@ -24,13 +24,13 @@ It’s not magic. It’s not big brother. It’s not a crazy complicated algorit
 
 (Bonus: Later on in this post, you’ll get step-by-step instructions on how to add it to your website’s existing lightbox/popup scripts, so keep reading.)
 
-Even though this technique has been around for a few years, momentum skyrocketed when [Google announced](https://webmasters.googleblog.com/2016/08/helping-users-easily-access-content-on.html){:target="_blank"} that as of January 10, 2017, websites would be penalized for the relationship between mobile searches and intrusive interstitials. The search engine giant has picked up on the poor UX these popups cause on smaller screens. The penalty only applies if the interstitial appears on a page directly after arriving from a Google-mobile search result. Nothing is stopping Google from moving forward with a full-fledged desktop initiative, so future-proof now. 
+Even though this technique has been around for a few years, momentum skyrocketed when [Google announced](https://webmasters.googleblog.com/2016/08/helping-users-easily-access-content-on.html){:target="_blank" rel="noopener"} that as of January 10, 2017, websites would be penalized for the relationship between mobile searches and intrusive interstitials. The search engine giant has picked up on the poor UX these popups cause on smaller screens. The penalty only applies if the interstitial appears on a page directly after arriving from a Google-mobile search result. Nothing is stopping Google from moving forward with a full-fledged desktop initiative, so future-proof now. 
 
 
 All of these considerations and the careful planning is more than worth it — exit intent popups convert like crazy, and that’s what you’re here for, yes?
 
 
- Okay, enough with the theory. Let’s get into practicality and implementation. Over the past few months, we at [RPM](https://rpm.thomasnet.com){:target="_blank"} have been doing some heavy testing on exit intent to see what yields the best results — take a look at some of our findings below:
+ Okay, enough with the theory. Let’s get into practicality and implementation. Over the past few months, we at [RPM](https://rpm.thomasnet.com){:target="_blank" rel="noopener"} have been doing some heavy testing on exit intent to see what yields the best results — take a look at some of our findings below:
 
 <h2>A/B Test: Delayed Popup vs. Exit Intent Popup</h2>
 
@@ -106,7 +106,7 @@ Pretty cool, right? Time to try it for yourself...
 
 <h3>Step 1: Choosing a Lightbox Script</h3>
 
-This could work with any script of choice, but over the years I’ve found [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/){:target="_blank"} to be one of the most well documented, versatile, and lightweight popup scripts around. But whatever you do, don’t build a lightbox script from scratch, even though the concept is relatively simple, there are many intricacies to take into consideration in order to provide a good user experience. 
+This could work with any script of choice, but over the years I’ve found [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/){:target="_blank" rel="noopener"} to be one of the most well documented, versatile, and lightweight popup scripts around. But whatever you do, don’t build a lightbox script from scratch, even though the concept is relatively simple, there are many intricacies to take into consideration in order to provide a good user experience. 
 
 <h3>Step 2: Adding the Exit Intent Listener</h3>
 Once Magnific Popup is up and running, add the following code to your main.js — assuming all of your custom js code in a file similarly named file:
@@ -172,7 +172,7 @@ Once this is all set, you can style it a bit with some custom CSS:
 
 And now you have your very own exit intent popup. Congratulations! (Sorry, no “exit-intent technology” here — there’s no such thing.)
 
-I'm curious to hear about what you’ve learned from this post, ways to improve patterns or how you’ve used popups. Don’t hesitate to [tweet](https://twitter.com/juliangav){:target="_blank"} at me. 
+I'm curious to hear about what you’ve learned from this post, ways to improve patterns or how you’ve used popups. Don’t hesitate to [tweet](https://twitter.com/juliangav){:target="_blank" rel="noopener"} at me. 
 
 If you're interested in optimizing the load time of your website, I recently wrote [A Simple Baseline for Fast Loading Accessible Websites]({% post_url 2017-01-15-baseline-for-fast-loading-websites %}).
 

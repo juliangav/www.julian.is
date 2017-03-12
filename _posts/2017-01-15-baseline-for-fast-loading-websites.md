@@ -25,7 +25,7 @@ Gzip is the wizard behind the curtain that makes the web as a whole much faster 
 
 Technically, you can Gzip any file on your website but due to the time it takes to process, the only files worth gzipping are the big three: HTML, CSS, & JS. Images and videos are already compressed (they better be if you’re producing these assets for the web) and the amount of time it would take Gzip to compress them further would outweigh the amount of load time saved with the smaller file size.
 
-However, Gzip doesn’t get enabled by default on most hosts (you can check to see if your website’s [Gzipped](http://checkgzipcompression.com/){:target="_blank"}). Setting this up is usually on the server side and depending on your hosting company, you can just reach out to them and ask them to enable it. This can also be done via the .htaccess on Apache with the following code snippet: 
+However, Gzip doesn’t get enabled by default on most hosts (you can check to see if your website’s [Gzipped](http://checkgzipcompression.com/){:target="_blank" rel="noopener"}). Setting this up is usually on the server side and depending on your hosting company, you can just reach out to them and ask them to enable it. This can also be done via the .htaccess on Apache with the following code snippet: 
 
 <pre class="language-markup"><code>SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/javascript application/x-javascript application/x-httpd-php
@@ -77,7 +77,7 @@ Below are the same two tests done to my website, which is using a CDN:
 
 The loading times here are relatively similar despite the distance of the two locations where the request was made. Both ISPs were served the content of my website from a server relatively close to their physical location which kept loading times down to a minimum.
 
-Seems pretty effective, but you probably need the knowledge of a senior back-end developer to set this up, right? Nope, all you need is the ability to change your domain’s nameservers to the ones provided by your CDN service of choice (I use [CloudFlare](https://www.cloudflare.com/cdn/){:target="_blank"}) and you’ll be good to go. Nothing on the hosting end changes and this won’t break the bank. Do it now!
+Seems pretty effective, but you probably need the knowledge of a senior back-end developer to set this up, right? Nope, all you need is the ability to change your domain’s nameservers to the ones provided by your CDN service of choice (I use [CloudFlare](https://www.cloudflare.com/cdn/){:target="_blank" rel="noopener"}) and you’ll be good to go. Nothing on the hosting end changes and this won’t break the bank. Do it now!
 
 
 
@@ -85,15 +85,15 @@ Seems pretty effective, but you probably need the knowledge of a senior back-end
 
 Let’s start with the baseline: images should be saved at no higher than 60% quality when exporting from any image editing software (mostly Photoshop). This is the difference between a [1000x650 JPG]({{ site.baseurl }}/img/kimbo-100-quality.jpg){:class="lightbox"}{:title="1000x650 JPG weighing 330kb when saved at 100%"} weighing 330kb when saved at 100% and the [same image]({{ site.baseurl }}/img/kimbo-100-quality.jpg){:class="lightbox"}{:title="1000x650 JPG weighing 88kb when saved at 60%"} weighing 88kb at 60%. Yes, this matters when every other website nowadays includes 3+ hero images rotating on the homepage.  
 
-If we save below 60%, the quality of the image begins to visibly drop. However, we can apply additional image compression that removes bloat added by metadata and unnecessary code (yes, images are made up of code) without affecting the quality of the image. Since Photoshop doesn’t take the initiative to remove this bloat, we can turn to tools such as [ImageOptim](https://imageoptim.com/mac){:target="_blank"} or the web based [jpeg.io](https://www.jpeg.io/){:target="_blank"} to do the heavy lifting.
+If we save below 60%, the quality of the image begins to visibly drop. However, we can apply additional image compression that removes bloat added by metadata and unnecessary code (yes, images are made up of code) without affecting the quality of the image. Since Photoshop doesn’t take the initiative to remove this bloat, we can turn to tools such as [ImageOptim](https://imageoptim.com/mac){:target="_blank" rel="noopener"} or the web based [jpeg.io](https://www.jpeg.io/){:target="_blank" rel="noopener"} to do the heavy lifting.
 
-Download your website’s images folder, run it through ImageOptim, and reupload it. Google [PageSpeed Inisghts](https://developers.google.com/speed/pagespeed/insights/){:target="_blank"} will thank you.
+Download your website’s images folder, run it through ImageOptim, and reupload it. Google [PageSpeed Inisghts](https://developers.google.com/speed/pagespeed/insights/){:target="_blank" rel="noopener"} will thank you.
 
 <h3>What about PNGs?</h3>
 
 Not all images are created equally; PNGs tend to be way heavier than JPGs mostly because of the complexity of their transparency capability. Transparency in modern web design is necessary, but can easily get out of hand with an optimistic designer focusing on just the aesthetics. 
 
-Here’s where [ImageAlpha](https://pngmini.com/){:target="_blank"} comes into play; similar to ImageOptim, ImageAlpha caters specifically to PNGs. 
+Here’s where [ImageAlpha](https://pngmini.com/){:target="_blank" rel="noopener"} comes into play; similar to ImageOptim, ImageAlpha caters specifically to PNGs. 
 
 <div class="emph-section rows-of-2 text-aligncenter">
 	<figure><img src="{{ site.baseurl }}/img/png-photoshop.png" alt="PNG Photoshop Export">
@@ -113,7 +113,7 @@ That’s a 64% reduction in size. Keep in mind that running images through Image
 
 Yes you can! But this should be limited to simple flat graphics such as my logo or the social media icons on this site. SVGs are great for presenting vector graphics that are resolution independent; you can scale my logo to be 10x bigger without pixelating or increasing file size. You can also directly embed SVGs into a web page without linking out to another file and therefore avoiding the extra HTTP request made to the browser. Technically, you can transform a complex graphic such as the 3D cover above into vector and present it as an SVG, but this will end up weighing significantly more than a PNG (just don’t do it).
 
-There are many advantages SVGs but this deserves a blog post of it’s own (if not a book). A handful of developers such as [Sara Soueidan](https://twitter.com/SaraSoueidan){:target="_blank"} & [Chris Coyier](https://css-tricks.com/){:target="_blank"} dedicate a good chunk of their careers to the complexities of SVGs. 
+There are many advantages SVGs but this deserves a blog post of it’s own (if not a book). A handful of developers such as [Sara Soueidan](https://twitter.com/SaraSoueidan){:target="_blank" rel="noopener"} & [Chris Coyier](https://css-tricks.com/){:target="_blank" rel="noopener"} dedicate a good chunk of their careers to the complexities of SVGs. 
 
 <h2>Perceived Performance</h2>
 
@@ -135,7 +135,7 @@ Below you'll see an example of the same website with Critical CSS enabled:
 
 Even though both versions of the website have the exact same assets to load, the start-render time of the Critical CSS version was 67% faster than the original. 
 
-This can get easily automated with the use of a Gulp/Grunt plugin. Smashing Magazine wrote a [detailed article](https://www.smashingmagazine.com/2015/08/understanding-critical-css/){:target="_blank"} on the subject with great insight on how to use in production. 
+This can get easily automated with the use of a Gulp/Grunt plugin. Smashing Magazine wrote a [detailed article](https://www.smashingmagazine.com/2015/08/understanding-critical-css/){:target="_blank" rel="noopener"} on the subject with great insight on how to use in production. 
 
 
 
@@ -152,4 +152,4 @@ Some of the basics become second nature to us and become a blind spot when speak
 </ul>
 
 
-Do you have straight forward & quick to setup techniques you include in your websites? Join the conversation on [Twitter](https://twitter.com/juliangav){:target="_blank"}.
+Do you have straight forward & quick to setup techniques you include in your websites? Join the conversation on [Twitter](https://twitter.com/juliangav){:target="_blank" rel="noopener"}.

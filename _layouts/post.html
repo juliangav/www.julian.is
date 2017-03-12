@@ -31,10 +31,10 @@ layout: post
 
 <div class="share-btns">
 <p>Sharing is caring:&nbsp;
-<a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" class="ico-twitter g-social-share">Twitter</a>&nbsp;
+<a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>&nbsp;
 <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}
-&summary={{ page.description }}&source=julian.is" target="_blank" class="ico-linkedin g-social-share">Linkedin</a>&nbsp;
-<a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="ico-facebook" class="ico-facebook g-social-share">Facebook</a>
+&summary={{ page.description }}&source=julian.is" target="_blank" rel="noopener" class="ico-linkedin g-social-share">Linkedin</a>&nbsp;
+<a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener" class="ico-facebook" class="ico-facebook g-social-share">Facebook</a>
 </p>
 </div>
 
@@ -48,7 +48,7 @@ layout: post
 
 <div class="share-btns-v2">
 <p>Hey! You should motivate me to write more by sharing this on  
-<a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" class="ico-twitter g-social-share">Twitter</a>. :)
+<a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>. :)
 </p>
 </div>
 
@@ -59,7 +59,7 @@ layout: post
     <img src="/img/julian-headshot-large.jpg" alt="Julian Gaviria">
   </figure>
   <div class="mo-body">
-    <p> I'm Julian, a Design/Development Director at <a href="http://rpm.thomasnet.com" target="_blank">Results-Powered Marketing</a>. I&nbsp;touch on topics such as UX/UI design, front-end development, and agency life. If you want a heads up as soon as I publish something, {% if page.title == "Exit Intent Popups &mdash; A/B Testing, Data, &amp; Code" %}
+    <p> I'm Julian, a Design/Development Director at <a href="http://rpm.thomasnet.com" target="_blank" rel="noopener">Results-Powered Marketing</a>. I&nbsp;touch on topics such as UX/UI design, front-end development, and agency life. If you want a heads up as soon as I publish something, {% if page.title == "Exit Intent Popups &mdash; A/B Testing, Data, &amp; Code" %}
       <a href="#" class="newsletter-form-ab-test-post">let&nbsp;me&nbsp;know</a>. {% else %}
       <a href="#" class="newsletter-form">let&nbsp;me&nbsp;know</a>. {% endif %}</p>
   </div>

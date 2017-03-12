@@ -8,13 +8,13 @@ time: 13 Minutes
 
 ---
 
-I've made it all the way out to Barcelona for my second <a href="http://smashingconf.com" target="_blank">SmashingConf</a>. I've attended plenty of conferences in the states but I wanted to learn something new in regards to both culture and web design. Needless to say, the first day at SmashingConf and my second day in Barcelona did not fall short of expectations. 
+I've made it all the way out to Barcelona for my second <a href="http://smashingconf.com" target="_blank" rel="noopener">SmashingConf</a>. I've attended plenty of conferences in the states but I wanted to learn something new in regards to both culture and web design. Needless to say, the first day at SmashingConf and my second day in Barcelona did not fall short of expectations. 
 
 Below are some of the notes I've taken during the first day of talks. Keep in mind that these notes weren't edited and they were added just as they were jotted down. Some information may be missing (I didn't jot everything down); if I've misquoted something or something needs fixing, please let me know and I'll address. Enjoy!
 
 
 <h2>Marcin Wichary - To Hell for Type</h2>
-<a href="https://twitter.com/mwichary" target="_blank">@mwichary</a>
+<a href="https://twitter.com/mwichary" target="_blank" rel="noopener">@mwichary</a>
 
 <h3>Talk Notes</h3>
 <ul><li>Poland did not have it’s own keyboards when computers began hitting mainstream. Most of the computers in Poland were individually imported from other countries (main the USA). </li>
@@ -47,10 +47,10 @@ Marcin fixed chrome and created patch that chrome has now implemented (awesome).
 
 <h3>My Takeaway</h3>
 
-Typography on the web is way more complicated than it's perceived. Just by the quotation example that Marcin presented, and this seems to be just the tip of the iceberg. There's a book that has been sitting on my bookshelf for quite some time now called <a href="https://abookapart.com/products/on-web-typography" target="_blank">"On Web Typography"</a> by Jason Santamaria. Even though it's a couple of years old now, I'll be dusting it off when I get home and give it a go. 
+Typography on the web is way more complicated than it's perceived. Just by the quotation example that Marcin presented, and this seems to be just the tip of the iceberg. There's a book that has been sitting on my bookshelf for quite some time now called <a href="https://abookapart.com/products/on-web-typography" target="_blank" rel="noopener">"On Web Typography"</a> by Jason Santamaria. Even though it's a couple of years old now, I'll be dusting it off when I get home and give it a go. 
 
 <h2>Val Head - Designing Meaningful Animation</h2>
-<a href="https://twitter.com/vlh" target="_blank">@vlh</a>
+<a href="https://twitter.com/vlh" target="_blank" rel="noopener">@vlh</a>
 
 <ul>
 	<li>We should use animation more on the web. Not everyone agrees.</li>
@@ -75,11 +75,11 @@ Typography on the web is way more complicated than it's perceived. Just by the q
 	<li>Choreography - Designing all your UI animations to feel logical and related; similar objects animate in similar ways; Entrances informs exits (be consistent by how things come in and out); match velocities (instead of durations).  </li>
 	<li>Sites for finding good examples of animation: 
 	<ul>
-		<li><a href="http://artofthetitle.com" target="_blank">artofthetitle.com</a> - title animations (behind the scenes)</li>
-		<li><a href="http://capptivate.co" target="_blank">capptivate.co</a> - gallery site of good iOS animations</li>
-		<li><a href="http://uyi.io" target="_blank">uyi.io</a> - collects good examples of web animations and categorizes them on how they work</li>
+		<li><a href="http://artofthetitle.com" target="_blank" rel="noopener">artofthetitle.com</a> - title animations (behind the scenes)</li>
+		<li><a href="http://capptivate.co" target="_blank" rel="noopener">capptivate.co</a> - gallery site of good iOS animations</li>
+		<li><a href="http://uyi.io" target="_blank" rel="noopener">uyi.io</a> - collects good examples of web animations and categorizes them on how they work</li>
 	</ul></li>
-	<li>Book Val Wrote - Designing Interface Animation - <a href="https://designinginterfaceanimation.com" target="_blank">https://designinginterfaceanimation.com</a> </li>
+	<li>Book Val Wrote - Designing Interface Animation - <a href="https://designinginterfaceanimation.com" target="_blank" rel="noopener">https://designinginterfaceanimation.com</a> </li>
 </ul>
 
 
@@ -98,11 +98,11 @@ Typography on the web is way more complicated than it's perceived. Just by the q
 <h3>My Takeaway</h3>
 There's a science to animation and I'm going head first into the 12 principles of Animation by Disney that Val referenced.
 
-Cubic bezier has always been a bit of a mystery to me. But from Val's talk, it's simply the manual way of creating animations in comparison to the defaults that CSS comes with; you have more control over the specifics. Motivated to look into this a bit more since I've recently been doing A/B testing on animations and their impact on conversions. The tool reference, <a href="http://cubic-bezier.com" target="_blank">cubic-bezier.com</a> seems like an awesome starting point. 
+Cubic bezier has always been a bit of a mystery to me. But from Val's talk, it's simply the manual way of creating animations in comparison to the defaults that CSS comes with; you have more control over the specifics. Motivated to look into this a bit more since I've recently been doing A/B testing on animations and their impact on conversions. The tool reference, <a href="http://cubic-bezier.com" target="_blank" rel="noopener">cubic-bezier.com</a> seems like an awesome starting point. 
 
 
 <h2>Jessica Svendsen - Designing for Display</h2>
-<a href="https://twitter.com/jessicasvendsen" target="_blank">@jessicasvendsen</a> / <a href="http://jessicasvendsen.com" target="_blank">jessicasvendsen.com</a>
+<a href="https://twitter.com/jessicasvendsen" target="_blank" rel="noopener">@jessicasvendsen</a> / <a href="http://jessicasvendsen.com" target="_blank" rel="noopener">jessicasvendsen.com</a>
 
 <ul>
 	<li>"I am interested in imperfections, quirkiness, insanity, unpredictability. That’s what we really pay attention to anyway.”</li>
@@ -191,10 +191,10 @@ Testing is what my day to day job entails of nowadays. After many of the talks, 
 <ul>
 	<li>Art direction is storytelling (well, that’s part of it anywhere)</li>
 	<li>We’re wired for stories. When we get together with friends, we tell each other stories; we read stories to our children, etc.</li>
-	<li>Wrote article on A List Apart <a href="http://alistapart.com/article/artdirweb" target="_blank">“Art direction and the web”</a></li>
+	<li>Wrote article on A List Apart <a href="http://alistapart.com/article/artdirweb" target="_blank" rel="noopener">“Art direction and the web”</a></li>
 	<li>Two questions that are important: 1) what story are we telling; 2) how are we telling that story?</li>
 	<li>Author of Responsive Design Workflow</li>
-	<li> <a href="http://hansbrinker.com" target="_blank">Hans Brinker Budge Hotel</a> website is an example of art direction / tells a story</li>
+	<li> <a href="http://hansbrinker.com" target="_blank" rel="noopener">Hans Brinker Budge Hotel</a> website is an example of art direction / tells a story</li>
 	<li>"There’s no such thing as bad design, only inappropriate design" - Neville Brody</li>
 	<li>Why do we have bad art direction on the web? Lack of design foundation; Lack of critical thinking; Reliance on tools</li>
 	<li>The Design Funnel Manifesto: Define - Values and goals; Discover - Moods and metaphors; Generate - Ideas, define a concept; Create - A visual language (this is where components live); Design</li>
@@ -238,7 +238,7 @@ Testing is what my day to day job entails of nowadays. After many of the talks, 
 We’re all struggling with sameness on the web. Story telling is the way to solve this crisis. Plain and simple.
 
 <h2>Ulrika Malmgren - How testers can be a liability</h2>
-<a href="https://twitter.com/ulrikama" target="_blank">@ulrikama</a>
+<a href="https://twitter.com/ulrikama" target="_blank" rel="noopener">@ulrikama</a>
 
 <ul>
 	<li>Don’t test quality in - you need to build it in (don’t rely on someone catching your bugs, build your code strong from the beginning)</li>
@@ -246,9 +246,9 @@ We’re all struggling with sameness on the web. Story telling is the way to sol
 	<li>Testing is very creative, you have to think of so many different things and ways to break what your given</li>
 	<li>Testing is about understanding why, for whom and how; visualizing what know and what we’re missing; performing actions to have more info.</li>
 	<li>Programmers can’t test their own code MYTH</li>
-	<li><a href="https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/" target="_blank">The five keys to a successful Google Team</a> - Google</li>
-	<li><a href="http://cci.mit.edu/mciresearchpage.html" target="_blank">Measuring Collective Intelligence</a> - MIT</li>
-	<li><a href="http://www.satirworkshops.com/wp-content/uploads/2009/06/SatirTemperatureReading.pdf" target="_blank">Temperature Reading</a> - Virginia Satir</li>
+	<li><a href="https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/" target="_blank" rel="noopener">The five keys to a successful Google Team</a> - Google</li>
+	<li><a href="http://cci.mit.edu/mciresearchpage.html" target="_blank" rel="noopener">Measuring Collective Intelligence</a> - MIT</li>
+	<li><a href="http://www.satirworkshops.com/wp-content/uploads/2009/06/SatirTemperatureReading.pdf" target="_blank" rel="noopener">Temperature Reading</a> - Virginia Satir</li>
 	<li>How you communicate with your team is affecting how well you can perform</li>
 	<li>If it’s always the loud persons ideas that get heard, are they always the best of ideas?</li>
 	<li>User Story Mapping (book) - Looking at the users experience of something and having that as the baseline of how you organize your work.B2D - Behavior Driven Development</li>
@@ -279,7 +279,7 @@ Testing (QA) is highly underrated. What I've realized recently is that, as devel
 
 <h2>Sara Soueidan - SVG in Motion (A Case Study)</h2>
 
-<a href="https://twitter.com/SaraSoueidan" target="_blank">@SaraSoueidan</a>
+<a href="https://twitter.com/SaraSoueidan" target="_blank" rel="noopener">@SaraSoueidan</a>
 
 <ul>
 <li>She's the front-end developer behind the new Smashing Magazine website</li>
