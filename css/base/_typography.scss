@@ -25,40 +25,52 @@
  * © 2016 MyFonts Inc
 */
 
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: bold;
+  src: url('webfonts/329037_0_0.eot');
+  src: url('webfonts/329037_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/329037_0_0.woff2') format('woff2'), url('webfonts/329037_0_0.woff') format('woff'), url('webfonts/329037_0_0.ttf') format('truetype');
+}
 
-  
-@font-face {font-family: 'ProximaNova';font-weight:bold;src: url('webfonts/329037_0_0.eot');src: url('webfonts/329037_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/329037_0_0.woff2') format('woff2'),url('webfonts/329037_0_0.woff') format('woff'),url('webfonts/329037_0_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNova';font-weight:normal;src: url('webfonts/329037_1_0.eot');src: url('webfonts/329037_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/329037_1_0.woff2') format('woff2'),url('webfonts/329037_1_0.woff') format('woff'),url('webfonts/329037_1_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNova';font-weight:normal;font-style:italic;src: url('webfonts/329037_2_0.eot');src: url('webfonts/329037_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/329037_2_0.woff2') format('woff2'),url('webfonts/329037_2_0.woff') format('woff'),url('webfonts/329037_2_0.ttf') format('truetype');}
- 
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: normal;
+  src: url('webfonts/329037_1_0.eot');
+  src: url('webfonts/329037_1_0.eot?#iefix') format('embedded-opentype'), url('webfonts/329037_1_0.woff2') format('woff2'), url('webfonts/329037_1_0.woff') format('woff'), url('webfonts/329037_1_0.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: normal;
+  font-style: italic;
+  src: url('webfonts/329037_2_0.eot');
+  src: url('webfonts/329037_2_0.eot?#iefix') format('embedded-opentype'), url('webfonts/329037_2_0.woff2') format('woff2'), url('webfonts/329037_2_0.woff') format('woff'), url('webfonts/329037_2_0.ttf') format('truetype');
+}
 
- body {
+body {
   //@include font-feature-settings("kern","liga","frac", "pnum");
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: 1em;
-  font-weight:normal;
+  font-weight: normal;
   line-height: $base-line-height;
   @include mq(mediumv) {
-    font-size:.875em;
+    font-size: .875em;
   }
   @include mq(smallv) {
-    font-size:.75em;
+    font-size: .75em;
   }
 }
+
 @mixin alt-font-family {
-  font-family:$alt-font-family;
-  font-style:italic;
-  font-weight:normal;
+  font-family: $alt-font-family;
+  font-style: italic;
+  font-weight: normal;
   //text-transform: lowercase;
 }
+
 //Base Fonts
 @mixin base-font-size {
   font-size: em(16);
@@ -160,13 +172,23 @@ h6 {
   line-height: $header-line-height;
   //font-variant: small-caps;
   margin: 0;
-  color:$base-color;
+  color: $base-color;
   span {
-    font-family:$alt-font-family;
+    font-family: $alt-font-family;
     font-style: italic;
-    font-size:.5em;
-    display:block;
-    color:$base-accent-color;
+    font-size: .5em;
+    display: block;
+    color: $base-accent-color;
+  }
+  a {
+    &:focus {
+      background-color: $light-gray;
+    }
+  }
+  .link-style-inverted {
+    &:focus {
+      background-color: $light-blue;
+    }
   }
 }
 
@@ -175,25 +197,25 @@ h1 {
   margin-top: 0;
   margin-bottom: 34px;
   color: $base-color;
-  text-align:center;
-  color:$base-accent-color;
+  text-align: center;
+  color: $base-accent-color;
   //@include alt-font-family;
-  font-family:$base-font-family;
-  font-weight:300;
+  font-family: $base-font-family;
+  font-weight: 300;
 }
 
 h2 {
   @include xlarge-font-size;
   margin-top: 24px;
   margin-bottom: 16px;
-  font-weight:500 !important;
+  font-weight: 500;
 }
 
 h3 {
   @include medium-font-size;
   margin-top: 24px;
   margin-bottom: 16px;
-  color:$base-accent-color;
+  color: $base-accent-color;
 }
 
 h4 {
@@ -217,7 +239,7 @@ h6 {
 p {
   margin: 0 0 16px 0;
   @include medium-font-size;
-  font-weight:300;
+  font-weight: 300;
 }
 
 .emph {
@@ -229,7 +251,6 @@ a {
   @include transition(all 0.1s linear);
   color: $base-link-color;
   text-decoration: none;
-
   &:hover {
     color: $hover-link-color;
   }
@@ -237,13 +258,24 @@ a {
   &:focus {
     color: $hover-link-color;
     outline: none;
+    background-color: $light-gray;
   }
 }
-.site-content, .site-intro {
+
+p {
   a {
-    border-bottom:3px solid #DDD;
+    &:focus {
+      background-color: $light-gray;
+    }
+  }
+}
+
+.site-content,
+.site-intro {
+  a {
+    border-bottom: 3px solid #DDD;
     &:hover {
-      border-bottom:3px solid $base-color;
+      border-bottom: 3px solid $base-color;
     }
   }
 }
@@ -255,7 +287,6 @@ a {
 //     //   0 em(3) 0 #fff, 0 -em(3) 0 #fff,
 //     //   em(3) 0 0 #fff, -em(3) 0 0 #fff,
 //     //   0 em(3) 0 #fff, 0 -em(3) 0 #fff;
-
 //      text-shadow:
 //    -0.03em -0.03em 0 #fff, 0.03em -0.03em 0 #fff, -0.03em 0.03em 0 #fff, 0.03em 0.03em 0 #fff;
 //       background-image: linear-gradient(to right, #DDD 0%, #DDD 100%);
@@ -270,13 +301,15 @@ a {
 //   }
 // }
 .link-style-inverted {
-
-    border-bottom:3px solid $base-accent-color;
-    &:hover {
-      border-bottom:3px solid #DDD;
-    }
- 
+  border-bottom: 3px solid $base-accent-color;
+  &:hover {
+    border-bottom: 3px solid #DDD;
+  }
+  &:focus {
+    background-color: $light-blue;
+  }
 }
+
 hr {
   border-bottom: $base-border;
   border-left: none;
@@ -303,9 +336,11 @@ cite {
     content: "\2014 \00A0";
   }
 }
-b, strong {
+
+b,
+strong {
   //color:$blue;
   font-family: "ProximaNova";
   //font-weight:normal;
-  color:$blue;
+  color: $blue;
 }
