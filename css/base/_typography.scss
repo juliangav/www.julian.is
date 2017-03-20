@@ -222,6 +222,17 @@ h4 {
   font-size: $medium-font-size;
   margin-top: 16px;
   margin-bottom: 0;
+  margin-bottom: 16px;
+  span {
+    display:block;
+    font-size:1em;
+    font-weight:normal;
+    font-family: $header-font-family;
+    font-style: normal;
+   // color:$black;
+
+
+  }
 }
 
 h5 {

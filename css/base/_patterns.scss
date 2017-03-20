@@ -25,7 +25,7 @@ This is used to separate sections/modules of the website while still keeping a c
 
 .inner-wrap-narrow {
   @extend .inner-wrap;
-  max-width: em(1000);
+  max-width: em(950);
 }
 
 .inner-wrap-wide {
@@ -474,15 +474,7 @@ hr {
   clear: both;
 }
 
-figure {
-  margin: 0;
-  padding: 0;
-  margin: $baseline*4 0 $baseline*4 0;
-  //border:1px solid $base-border-color;
-  img {
-    //box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-}
+
 
 figcaption {
   //margin-top: $baseline*2;
@@ -892,7 +884,7 @@ figcaption {
   border:1px solid $light-gray;
   padding: $baseline*3;
   border-radius:em(4);
-
+  margin:$baseline*4 0 $baseline*4 0;
   code {
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     font-size: .95em;
@@ -923,4 +915,39 @@ figcaption {
 .test-improvement {
   color:$green;
   font-weight:bold;
+}
+
+
+/*=============== Blockquotes ===============*/
+
+blockquote {
+  background-color: lighten($light-gray,4%);
+  border:1px solid $light-gray;
+   padding: $baseline*3;
+  border-radius:em(4);
+  margin:$baseline*4 0 $baseline*4 0;
+  position:relative;
+  &:before {
+    font-size:16em;
+    z-index:0;
+    opacity:.15;
+    color:$light-blue;
+    content:'“';
+    position:absolute;
+    // height:3em;
+    // width:3em;
+    
+    left: 0;
+    top: 0;
+    line-height: .475em;
+  }
+  *:last-child {
+    margin-bottom:0 !important;
+  }
+  ul {
+    li:last-child {
+      margin-bottom:0 !important;
+    }
+    margin-bottom:0 !important;
+  }
 }

@@ -40,6 +40,7 @@ input, label{ display: block; font-family: ProximaNova, sans-serif; font-size: 1
 label{ font-weight: bold; margin-bottom: 0.375em; }
  input[type="email"], input[type="text"]{ box-sizing: border-box; transition: border-color; -webkit-transition: border-color; background-color: white; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border: 1px solid rgb(238, 238, 238); box-shadow: rgba(0, 0, 0, 0.0588235) 0px 1px 3px inset; font-family: ProximaNova, sans-serif; font-size: 1.3125em; margin-bottom: 0.75em; padding: 0.5em; width: 100%; }
 ul{ margin: 0px; padding: 0px; list-style-type: none; }
+figure{ max-width: 50em; margin: 2em auto; padding: 0px; }
  input[type="submit"]{ position: relative; -webkit-font-smoothing: antialiased; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; color: white; display: inline-block; font-weight: bold; line-height: 1; padding: 0.75em 1em; text-decoration: none; transition: background 0.1s linear; -webkit-transition: background 0.1s linear; }
  input[type="submit"]::after{ content: ''; }
  input[type="submit"]{ background-color: rgb(94, 114, 137); }
@@ -98,7 +99,6 @@ ul{ margin: 0px; padding: 0px; list-style-type: none; }
 .social-wrap a{ display: block; float: left; width: 25%; text-align: center; position: relative; transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; }
 .social-wrap a path{ fill: #5e7289; transition: all 0.1s linear; -webkit-transition: all 0.1s linear; }
 .social-wrap svg{ display: inline-block; vertical-align: middle; }
-figure{ padding: 0px; margin: 2em 0px; }
 .np-logo img{ max-width: 15em; display: block; margin: 0px auto; }
 .white-popup{ position: relative; background-color: transparent; max-width: 37.5em; margin: 20px auto; background-position: initial initial; background-repeat: initial initial; }
 .white-popup h2, .white-popup p{ color: rgb(255, 255, 255); }

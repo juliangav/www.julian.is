@@ -20,6 +20,6 @@
   ],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#23507a",
-  "display": "browser",
+  "display": "standalone",
   "theme_color": "#23507a"
 }

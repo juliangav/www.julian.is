@@ -115,7 +115,7 @@ Yes you can! But this should be limited to simple flat graphics such as my logo 
 
 There are many advantages SVGs but this deserves a blog post of it’s own (if not a book). A handful of developers such as [Sara Soueidan](https://twitter.com/SaraSoueidan){:target="_blank" rel="noopener"} & [Chris Coyier](https://css-tricks.com/){:target="_blank" rel="noopener"} dedicate a good chunk of their careers to the complexities of SVGs. 
 
-<h2>Perceived Performance</h2>
+<h2 id="perceived-performance">Perceived Performance</h2>
 
 Sometimes it’s more about how fast a website seems and not so much about the actual loading time. Humans are impatient and need to get entertained while they wait, if not they complain or, even worse, leave. Take for example the situation at a Houston airport where passenger complaints were overwhelmingly high in regards to the long waits at baggage claim. Instead of reducing wait times, airport executives increased the walking distance between the arrival gates and baggage claim. Passengers were now spending most of their time walking to baggage claim and by the time they arrived the wait time, if any, was minimal. Complaints suddenly disappeared. 
 

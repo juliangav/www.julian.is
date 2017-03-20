@@ -128,43 +128,75 @@ dl {
   }
 }
 
-
-  ul:not([class]) {
-    clear: left;
+ol:not([class]) {
+  clear: left;
+  //list-style-type: none;
+  margin-bottom: $base-spacing / 2;
+  padding-left: 0;
+  li:not([class]) {
     list-style-type: none;
-    margin-bottom: $base-spacing / 2;
-    padding-left: $base-spacing;
-    li:not([class]) {
-      position: relative;
-      margin-bottom: $baseline;
-      @include medium-font-size;
-      line-height: 1.5em;
-      // p {
-      //   font-size: 1em;
-      // }
-      a {
-        text-decoration: none;
-        font-weight: normal;
-      }
-      &:after {
-        content: '';
-        width: $base-spacing;
-        height: $base-spacing;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: -$base-spacing;
-        background-image: url(img/ico-bullet.svg);
-        background-position: center center;
-        background-size: .45em;
-        background-repeat: no-repeat;
-      }
-      li {
-        font-size:24px;
-      }
+    counter-increment: item;
+    position: relative;
+    margin-bottom: $baseline;
+    &:before {
+      font-weight: bold;
+      text-align: right;
+      content: counter(item) ".";
+      width: 1.5em;
+      display: inline-block;
+      padding-right: 0.25em;
+      color: $light-blue;
+    }
+    @include medium-font-size;
+    line-height: 1.5em;
+    // p {
+    //   font-size: 1em;
+    // }
+    a {
+      text-decoration: none;
+      font-weight: normal;
+    }
+    li {
+      font-size: 24px;
     }
   }
+}
 
+ul:not([class]) {
+  clear: left;
+  list-style-type: none;
+  margin-bottom: $base-spacing / 2;
+  padding-left: $base-spacing;
+  li:not([class]) {
+    position: relative;
+    margin-bottom: $baseline;
+    @include medium-font-size;
+    line-height: 1.5em;
+    // p {
+    //   font-size: 1em;
+    // }
+    a {
+      text-decoration: none;
+      font-weight: normal;
+    }
+    &:after {
+      content: '';
+      width: $base-spacing;
+      height: $base-spacing;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -$base-spacing;
+      background-image: url(img/ico-bullet.svg);
+      background-position: center center;
+      background-size: .45em;
+      background-repeat: no-repeat;
+    }
+    li {
+      font-size: 24px;
+    }
+  }
+}
 
 .bullet-style {
   clear: left;
@@ -201,8 +233,8 @@ dl {
 
 ol {
   clear: left;
-  list-style-type: decimal; 
-  list-style-position: inside; 
+  list-style-type: decimal;
+  list-style-position: inside;
   margin-bottom: $base-spacing / 2;
   padding-left: $base-spacing;
   li {
@@ -219,7 +251,6 @@ ol {
     }
   }
 }
-
 
 
 /* Tables */
@@ -248,97 +279,30 @@ td,
 th {
   vertical-align: middle;
 }
-/*=============== Spec Tables ===============*/
 
-.spec-table {
-  display: block;
-  width: 100%;
-  //margin:0 0 1em 0;
-  margin-bottom: $baseline*3;
-  background: lighten($light-gray, 12%);
-  //font-size:em(14);
+/* Images */
+main {
+  // figure {
+  //   max-width:em(800);
+  //   margin: 0 auto;
+  //   // img {
+  //   //   display: block;
+  //   //   margin: 0 auto;
+  //   //   max-width: 100%;
+  //   //   width: em(800);
+  //   // }
+  // }
 }
 
-.spec-thead {
-  display: block;
-}
-
-.spec-table-row {
-  display: block;
-  width: 100%;
-  //border-bottom:1px solid $gray;
-}
-
-.spec-colored-rows {
-  .row {
-    &:nth-child(2n+1) {
-      .cell {}
-    }
-  }
-}
-
-.spec-cell {
-  display: block;
-  //background-color:$greylight;
-  border: .2em solid $white;
-  padding: .5em .8em;
-  vertical-align: top;
-  //color:$blue;
-  p {
-    //font-size:.95em;
-    margin: .5em 0;
-  }
-  > ul {
-    margin: .5em 0;
-    > li {
-      margin-bottom: 0 !important;
-      //font-size:.7em;
-      ul {
-        padding: 0 0 0 1.8em;
-      }
-    }
-  }
-  input,
-  select {
-    width: 100%;
-  }
-}
-
-.spec-col {
-  display: table-column;
-}
-
-.spec-col-1 {
-  width: 100%;
-  // border-top:1px solid $light-gray;
-}
-
-.spec-col-2 {
-  width: 100%;
-  // border-top:1px solid $light-gray;
-}
-
-@include mq(medium) {
-  .spec-table {
-    display: table;
-  }
-  .spec-thead {
-    display: table-header-group;
-  }
-  .spec-table-row {
-    display: table-row;
-  }
-  .spec-cell {
-    display: table-cell;
-    p {
-      font-size: em(16);
-    }
-  }
-  .spec-spec-col-1 {
-    width: 30%;
-  }
-  .spec-spec-col-2 {
-    width: 70%;
+figure {
+  max-width: em(800);
+  margin: 0 auto;
+  padding: 0;
+  margin-top: $baseline*4;
+  margin-bottom: $baseline*4;
+  //border:1px solid $base-border-color;
+  img {
+    //box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
 }
 
