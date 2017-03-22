@@ -7,8 +7,6 @@ excerpt: I spend most of my days trying to figure out design & development; I ki
 time: 2 minutes
 ---
 
-
-
 Why not? I spend most of my days trying to figure out design; whether I'm working with a junior designer trying to teach him/her a certain web design concept or I'm figuring out a stubborn front-end development bug, documentation on what I come across on a daily basis could be of good use to other designers in my field of work.
 
 

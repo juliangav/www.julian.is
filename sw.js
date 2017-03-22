@@ -1,4 +1,4 @@
-var CACHE_NAME = 'site-cache';
+var CACHE_NAME = 'site-cache-v3';
 var urlsToCache = [
   '/',
   '/style.css',
@@ -51,6 +51,23 @@ self.addEventListener('fetch', function(event) {
 
           return response;
         }
+      );
+    })
+  );
+});
+
+self.addEventListener('activate', function(event) {
+
+  var cacheWhitelist = ['site-cache-v3'];
+
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
       );
     })
   );

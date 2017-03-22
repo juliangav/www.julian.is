@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Progressive Web Apps — Obtaining PWA Status & the Benefits"
+title:  "Progressive Web Apps — The Next Step in Responsive Web Design"
 author: Julian Gaviria
 description:  PWAs are here to stay, and using them today could improve the engagement, bounce rate, and conversion rates of your website. 
 excerpt: PWAs are here to stay, and using them today could improve the engagement, bounce rate, and conversion rates of your website.
@@ -23,7 +23,7 @@ Then, I saw CSS wizard, Harry Roberts, [tweet](https://twitter.com/csswizardry/s
 
 I wasn’t too impressed with the results, but I couldn’t shake the feeling that there was more to this. If anything, I figured I’d do this, write about it, and save any developers who stumble across my website a bit of time. But I was really surprised with what I found.
 
-I sought out to see if PWAs could benefit the work I do daily with content marketing websites, and I was able to reach 100/100. You’ll see exactly what I did toward the end of this article, but I figured while I’m here, we could talk through it together.
+I sought out to see if PWAs could benefit the work I do daily with content marketing websites, and I was able to reach 100/100. You’ll see exactly what I did toward the end of this article, but I figured while I’m here, we could walk through it together.
 
 To begin, let’s get on the same page and define exactly what a PWA is. Google (you might have heard of this company before) says:
 <blockquote>
@@ -125,11 +125,24 @@ And off to optimization land I went.
 
 ### First Step: Enable Service Workers
 
-To reach the baseline of a PWA, we’re looking to provide a rich offline experience with the caching capabilities of service workers. With regular caching, we’re able to download and keep certain assets of a website for a certain period of time in order to avoid downloading them over and over again (CSS files, JS files, images, etc). However, a Service Worker allows for your website to cache network responses and pretend to still have internet access, even if you’re in the middle of an internet deadzone. 
+To reach the baseline of a PWA, we’re looking to provide a rich offline experience with the caching capabilities of service workers. On top of regular file caching, Service workers goes the extra mile to cache network responses and pretend to still have internet access (even if you’re in the middle of an internet deadzone). 
 
-If you turn off your wifi and refresh this page, without service workers, you would get a “No Internet connection” error, but since I have them enabled, the browser responds with a 200 (successfully connected) instead. 
+To start the installation of service workers, place the following script in the footer of your global footer (unless you only need/want service workers on a specific section of your website):
 
-To enable, create a JS file named sw.js and place it in the root directory of your website with the following code:
+<pre class="language-markup"><code>if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}</code>
+</pre>
+
+Next, create a JS file named sw.js and place it in the root directory of your website with the following code:
 
 (Note: Make sure that style.css and production.min.js are replaced with your site’s specific CSS and JS files.)
 
@@ -192,7 +205,12 @@ self.addEventListener('fetch', function(event) {
 });</code>
 </pre>
 
-You can get the specifics as to what you’re actually doing with the code above from the [documentation put together for service workers](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers){:target="_blank" rel="noopener"} on the Google Developers website. For now, this is exactly what we need to cache 200 network response.
+
+For now, this is exactly what we need to cache a 200 netwrok response. I strongly recommend you get the specifics on the code above by going through the following documentation on the Google Developers website:
+* [Introduction to service workers](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers){:target="_blank" rel="noopener"} 
+* [Service workers life cycle](https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/lifecycle){:target="_blank" rel="noopener"}
+
+If you disconnect from the internet and refresh this page, the browser responds with a 200 (successfully connected) instead of a “no Internet connection”.
 
 This took care of the “App can load on offline/flaky connections” error and bumped my score up to 65/100. 
 
