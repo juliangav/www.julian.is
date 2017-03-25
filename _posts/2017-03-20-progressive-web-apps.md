@@ -21,7 +21,7 @@ Then, I saw CSS wizard, Harry Roberts, [tweet](https://twitter.com/csswizardry/s
 
 <figure><img src="{{ site.baseurl }}/assets/pwa-lighthouse-initial-audit.jpg" alt="Initial Lighthouse Audit" class="img-border"></figure>
 
-I wasn’t too impressed with the results, but I couldn’t shake the feeling that there was more to this. If anything, I figured I’d do this, write about it, and save any developers who stumble across my website a bit of time. But I was really surprised with what I found.
+I wasn’t too impressed with the results. I figured I’d look into this, write about it, and save any developers who stumble across my website a bit of time. But I was really surprised with what I found.
 
 I sought out to see if PWAs could benefit the work I do daily with content marketing websites, and I was able to reach 100/100. You’ll see exactly what I did toward the end of this article, but I figured while I’m here, we could walk through it together.
 
@@ -57,7 +57,7 @@ Using service workers, we’re able to “download” your website for offline u
 (Keep reading — I get a bit more detailed on this later on.)
 
 ### Native Browser Notifications
-If the website validates as a PWA, certain browsers take the initiative to of displaying notifications such as offering to add the website to the home screen of the user — the PWA equivalent of installing an app. 
+If the website validates as a PWA, certain browsers take the initiative of displaying notifications such as offering to add the website to the home screen of the user — the PWA equivalent of installing an app. 
 
 ### Enabling Push Notifications
 Push notifications are every developer and marketer's favorite native app feature. When leveraging the Push API, you have the ability to re-engage your audience even when your website’s not being accessed. 
@@ -112,7 +112,7 @@ Seems like a handful of steps, but if your website is already built on a foundat
 
 ## Getting My Website to PWA Status in Two Hours
 
-Okay, enough with the theory. Here’s how I, curious and determined, went ahead and started addressing the issues one by one that the [my initial Lighthouse report]({{ site.baseurl }}/assets/pwa-initial-lighthouse-report.pdf){:target="_blank"} came back with. 
+Curious and determined, I went ahead and started addressing one by one the issues that [my initial Lighthouse report]({{ site.baseurl }}/assets/pwa-initial-lighthouse-report.pdf){:target="_blank"} came back with. 
 
 I had to address:
 
@@ -127,7 +127,7 @@ And off to optimization land I went.
 
 To reach the baseline of a PWA, we’re looking to provide a rich offline experience with the caching capabilities of service workers. On top of regular file caching, Service workers goes the extra mile to cache network responses and pretend to still have internet access (even if you’re in the middle of an internet deadzone). 
 
-To start the installation of service workers, place the following script in the footer of your global footer (unless you only need/want service workers on a specific section of your website):
+To start the installation of service workers, place the following script in your global footer (unless you only need/want service workers on a specific section of your website):
 
 <pre class="language-markup"><code>if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -206,7 +206,7 @@ self.addEventListener('fetch', function(event) {
 </pre>
 
 
-For now, this is exactly what we need to cache a 200 netwrok response. I strongly recommend you get the specifics on the code above by going through the following documentation on the Google Developers website:
+For now, this is exactly what we need to cache a 200 network response. I strongly recommend you get the specifics on the code above by going through the following documentation on the Google Developers website:
 * [Introduction to service workers](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers){:target="_blank" rel="noopener"} 
 * [Service workers life cycle](https://developers.google.com/web/fundamentals/instant-and-offline/service-worker/lifecycle){:target="_blank" rel="noopener"}
 
@@ -250,6 +250,11 @@ Create a JSON file and name it manifest.json then add this file to the root of y
   "display": "standalone",
   "theme_color": "#23507a"
 }</code>
+</pre>
+
+Link to the file from within the &lt;head&gt; of your website with the link tag:
+
+<pre class="language-markup"><code>&lt;link rel="manifest" href="/manifest.json"&gt;</code>
 </pre>
 
 
@@ -321,7 +326,7 @@ I don’t even know what this means, but it didn’t seem like the author of tha
 
 I’m actually a designer. I just happen to dig code. 
 
-Not to discredit myself or to say that what I do easy, but I hope it illustrates that the baseline for a PWA is relatively simple. Let’s not make things sound more complicated than what they are.
+Not to discredit myself or to say that what I do is easy, but I hope it illustrates that the baseline for a PWA is relatively simple. Let’s not make things sound more complicated than what they are.
 
 (By the way, I copied and pasted the statements above from their sources.)
 
