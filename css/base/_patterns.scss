@@ -761,7 +761,7 @@ figcaption {
   @extend .btn;
   font-size: .75em;
   @include mq(medium) {
-    @extend .small-font-size;
+    //@extend .small-font-size;
     width: auto;
     float: none;
     text-align: center;

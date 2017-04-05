@@ -63,10 +63,9 @@ figure{ max-width: 50em; margin: 2em auto; padding: 0px; }
 .sn-li-l1{ height: 5.0625em; float: left; border-bottom-width: 0px; border-right-width: 1px; border-right-style: solid; border-right-color: rgba(13, 13, 13, 0); text-align: center; font-weight: bold; }
 .sn-li-l1:first-child{ border-top-width: 0px; }
 .sn-li-l1 span{ font-size: 1em; }
-.sn-li-l1:nth-child(1n){ width: 25%; }
-.sn-li-l1:nth-child(2n){ width: 25%; }
-.sn-li-l1:nth-child(3n){ width: 25%; }
-.sn-li-l1:nth-child(4n){ width: 25%; }
+.sn-li-l1:nth-child(1n){ width: 33.3%; }
+.sn-li-l1:nth-child(2n){ width: 33.3%; }
+.sn-li-l1:nth-child(3n){ width: 33.3%; }
 .sn-li-l1 > a{ padding: 0px 0em; }
 }
 @media (min-width: 60em){
@@ -88,13 +87,14 @@ figure{ max-width: 50em; margin: 2em auto; padding: 0px; }
 @media (min-width: 40em){
 .snc-header{ padding: 0px; }
 }
-.inner-wrap{ max-width: 68.75em; margin-left: auto; margin-right: auto; padding: 1.5em 1em; }
-.inner-wrap::after{ clear: both; content: ''; display: table; }
+.inner-wrap, .inner-wrap-narrow{ max-width: 68.75em; margin-left: auto; margin-right: auto; padding: 1.5em 1em; }
+.inner-wrap::after, .inner-wrap-narrow::after{ clear: both; content: ''; display: table; }
 .inner-wrap > :first-child{ margin-top: 0px; }
 .inner-wrap > :last-child{ margin-bottom: 0px; }
 @media (min-width: 40em){
-.inner-wrap{ padding: 2.5em 1.5em; }
+.inner-wrap, .inner-wrap-narrow{ padding: 2.5em 1.5em; }
 }
+.inner-wrap-narrow{ max-width: 59.375em; }
 .social-wrap{ overflow: hidden; width: 15em; margin: 0px auto; }
 .social-wrap a{ display: block; float: left; width: 25%; text-align: center; position: relative; transition: all 0.2s ease-in-out; -webkit-transition: all 0.2s ease-in-out; }
 .social-wrap a path{ fill: #5e7289; transition: all 0.1s linear; -webkit-transition: all 0.1s linear; }
@@ -169,9 +169,8 @@ figure{ max-width: 50em; margin: 2em auto; padding: 0px; }
 .site-nav-container .site-nav{ float: right; width: 20em; margin-right: 1em; }
 }
 @media (min-width: 60em){
-.site-nav-container .site-nav{ width: 25em; margin-right: 1em; }
+.site-nav-container .site-nav{ width: 20em; margin-right: 1em; }
 }
-.work-section{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
 .mfp-hide{ display: none !important; }
 *{ box-sizing: border-box; }
 img{ max-width: 100%; height: auto; }

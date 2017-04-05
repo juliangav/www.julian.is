@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Exit Intent Popups &mdash; A/B Testing, Data, &amp; Code"
+title:  "User Friendly Exit Intent Modals"
 author: Julian Gaviria
 description:  As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work.
 excerpt: As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work.
 category: [Development, UX]
-tags: [ExitIntent, CRO, ABTest, Code]
+tags: [ExitIntent, Modals, CRO, ABTest, Code]
 image: og-exit-intent-popup.jpg
 time: 5 Minutes
 
 ---
 
-As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent popups” or, if you prefer to sound like a smartass, “exit intent interstitials."
+As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent modals” or, if you prefer to sound Google smart, “exit intent interstitials."
 
 (You’re more than welcome to [skip my ramble and go straight to the code](#code){:class="smooth-scroll"}.)
 
