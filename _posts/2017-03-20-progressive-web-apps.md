@@ -338,6 +338,6 @@ I believe these are the next steps in our journey for a unified and accessible w
 
 ### Further Reading & Resources
 
-I put together a separate page for articles, videos, podcasts and tutorials that I came across.. I hope this helps you out. Enjoy!
+I put together a separate page for articles, videos, podcasts and tutorials that I came across. I hope this helps you out. Enjoy!
 
 [View PWA Resources &raquo;]({{ site.baseurl }}/article/progressive-web-apps/resources)

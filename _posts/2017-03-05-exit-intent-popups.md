@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "User Friendly Exit Intent Modals"
+title:  "User-Friendly Exit Intent Modals"
 author: Julian Gaviria
 description:  As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work.
 excerpt: As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work.
@@ -17,6 +17,10 @@ As users, we hate popups. We never click on them. They’re annoying. They get i
 
 In comparison to the intrusive popups that appear as soon as you visit a page (or in some cases, after a slight delay), an exit intent popup appears when the user shows an intent to exit the website (hence the name). This allows for the user to have a better experience on the website by not interrupting their visit until the very end when they’re ready to call it quits. 
 
+<figure>
+  <img src="{{ site.baseurl }}/assets/exit-intent-modal-example.jpg" alt="Example of an exit intent modal" class="img-border">
+  <figcaption>Exit Intent Modal Example (yes I know you hate it, but read on)</figcaption>
+</figure>
 
 Now, just so we’re on the same page, I’m not referring to those popups you see on any of those shady websites you've been visiting (you know, the ones that are almost impossible to exit from). Rather, let’s focus on the simple modal that shows up before you leave the website — where you’re free to close your window without being prohibited to do so (or being repeatedly asked if you’re <i>really, really</i> sure). <b>I've activated it for this blog post, go ahead and move your mouse off of the browser window</b>.
 
@@ -100,7 +104,7 @@ We then tested multiple variations, and we’ve consistently improved conversion
 
 Pretty cool, right? Time to try it for yourself...
 
-<h2 id="code">How to Setup an Exit Intent Popup</h2>
+<h2 id="code">Code for Exit Intent Popup</h2>
 
 <p>This section is a geared a bit more towards developers, so if you're a marketer, simply share this section with your developer (or anyone who knows how to add JavaScript to a website). If you're still having trouble, <a href="mailto:me@julian.is">reach out to me</a> and I will gladly help out.</p>
 

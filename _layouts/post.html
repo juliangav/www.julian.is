@@ -29,30 +29,14 @@ layout: post
 
 
 
-<!-- <hr>
-
-<div class="share-btns">
-<p>Sharing is caring:&nbsp;
-<a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>&nbsp;
-<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}
-&summary={{ page.description }}&source=julian.is" target="_blank" rel="noopener" class="ico-linkedin g-social-share">Linkedin</a>&nbsp;
-<a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener" class="ico-facebook" class="ico-facebook g-social-share">Facebook</a>
-</p>
-</div>
-
-<hr>
- -->
-<!-- <div class="post-tags"> 
-{% for tags in page.tags %}
-    #{{ tags }} 
-  {% endfor %}</div> -->
-
 
 <div class="share-btns-v2">
 <p>Hey! You should motivate me to write more by sharing this on  
-<a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>. :)
+<a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={% if page.alt-title %}{{ page.alt-title }}{% else %}{{ page.title }}{% endif %}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>. :)
 </p>
 </div>
+
+
 
 <hr>
 
@@ -68,104 +52,7 @@ layout: post
 </div>
 
 <hr>
-<!-- 
-<div class="relatedPosts">
 
-  <h3>Related post</h3>
-
-  {% comment %}---> the maximum number of related to posts 
-                    to be printed {% endcomment %}
-  {% assign maxRelated = 5 %}
-
-  {% comment %}---> the minimum number of common tags 
-                    to have for a post to be considered 
-                    as a related post {% endcomment %}
-  {% assign minCommonTags =  3 %}
-
-  {% assign maxRelatedCounter = 0 %}
-
-  {% for post in site.posts %}
-
-    {% assign sameTagCount = 0 %}
-    {% assign commonTags = '' %}
-
-    {% for tag in post.tags %}
-      {% comment %}---> Only compare if post is 
-                        not same as current page {% endcomment %}
-      {% if post.url != page.url %}
-        {% if page.tags contains tag %}
-          {% assign sameTagCount = sameTagCount | plus: 1 %}
-          {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
-          {% assign commonTags = commonTags | append: tagmarkup %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-
-    {% if sameTagCount >= minCommonTags %}
-      <article class="bf-item">
-   	
-   	<time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
-  
-    <div class="bf-content">
-    	<h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      
-      <p class="bf-excerpt">{{ post.excerpt }}</p>
-    </div>
-   </article>
-      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-      {% if maxRelatedCounter >= maxRelated %}
-        {% break %}
-      {% endif %}
-    {% endif %}
-
-  {% endfor %}
-
-</div> -->
-
-<!-- {% for post in site.posts limit:1 %}
-{% if post.url == page.url %}
-
-First blog post!
-{% else %}
-Not First Blog Post!
-{% endif %}
-{% endfor %} -->
-
-<!-- {% for post in site.posts limit:1 %}
-{% if post.url == page.url %}
-<article class="bf-item">
-   	
-   	<time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
-  
-    <div class="bf-content">
-    	<h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      
-      <p class="bf-excerpt">{{ post.excerpt }}</p>
-    </div>
-   </article>
-{% else %}
-Not First Blog Post!
-{% endif %}
-{% endfor %}
-
- -->
-
-
-<!-- {% for post in site.posts limit:1 %}
-{% if post.url != page.url %}
-<article class="bf-item">
-   	
-   	<time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
-  
-    <div class="bf-content">
-    	<h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      
-      <p class="bf-excerpt">{{ post.excerpt }}</p>
-    </div>
-   </article>
- {% endif %}
-{% endfor %}
- -->
 <h3>Related:</h3>
 {% for post in site.posts limit:1 offset:0  %}
 {% if post.url != page.url %}
@@ -200,22 +87,6 @@ Not First Blog Post!
    </article>
     {% endif %}
 {% endfor %}
-
-<!-- {% for post in site.posts limit:1 offset:1 %}
-{% if post.url != page.url %}
-<article class="bf-item">
-   	
-   	<time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
-  
-    <div class="bf-content">
-    	<h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      
-      <p class="bf-excerpt">{{ post.excerpt }}</p>
-    </div>
-   </article>
-   {% endif %}
-{% endfor %} -->
-
 
 
 

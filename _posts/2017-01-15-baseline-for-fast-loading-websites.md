@@ -39,7 +39,7 @@ Header append Vary User-Agent env=!dont-vary</code>
 
 There are different versions of Gzip depending on your host. Check that the above code works on your specific setup. 
 
-<h2>Use a CDN service to delegate content delivery</h2>
+<h2 id="cdn">Use a CDN service to delegate content delivery</h2>
 
 A Content Delivery Network (CDN) serves 3 main purposes: lowering bandwidth costs, global availability of content, and faster loading times.
 
