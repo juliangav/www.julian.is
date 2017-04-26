@@ -7,6 +7,7 @@ excerpt: Not going to bore you with a philosophical approach, this is a solid ba
 category: Development
 tags: [WebPerf, Optimization, PerceivedPerformance]
 time: 6 minutes
+comments: true
 
 ---
 

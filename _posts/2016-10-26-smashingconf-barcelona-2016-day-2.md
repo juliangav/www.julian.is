@@ -6,6 +6,7 @@ description: First day was a blast. I'm surprised to say that the second day has
 excerpt: John Allsopp (Dao of Web Design) runs us through predictions, Jen Simmons amazes with CSS, and Christian Holst with conversion rate optimization techniques in ecommerce. 
 tags: [ExitIntent, CRO, ABTest, Code]
 time: 7 Minutes
+comments: true
 ---
 
 First day was a blast. Learned a ton of new stuff that I wasn't privy to before (and able to use in production). I'm surprised to say that the second day has been even better. Again, just a disclaimer that these notes weren't edited and they were added just as they were jotted down. Enjoy!

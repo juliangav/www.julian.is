@@ -9,6 +9,7 @@ category: [Development]
 tags: [Static, JAMstack, WebPerf]
 image: og-static-jamstack.jpg
 time: 7.5 Minutes
+comments: true
 
 ---
 

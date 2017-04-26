@@ -2,97 +2,80 @@
 layout: post
 ---
 
-
 {% include shared/html-header.html %}
 <!--Site Header-->
 <div class="site-header-wrap" id="particles-js">
-{% include shared/header.html %}
-
-<div class="inner-wrap">
-	<h1>{{ page.title }}</h1>
-	<p class="post-meta"><span class="post-date">{{ page.date | date: "%B %-d, %Y"}}</span> {% if page.time %}<span class="post-reading-time">{{ page.time }}</span></p>{% endif %}
-
-
-	
-
-</div>
-</div>
-
-
-
-
-<section class="site-content" role="main">
-<div class="inner-wrap-narrow">
-<main id="main">
-  {{ content }}
-</main>
-
-
-
-
-<div class="share-btns-v2">
-<p>Hey! You should motivate me to write more by sharing this on  
-<a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={% if page.alt-title %}{{ page.alt-title }}{% else %}{{ page.title }}{% endif %}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>. :)
-</p>
-</div>
-
-
-
-<hr>
-
-<div class="media-object">
-  <figure class="mo-img">
-    <img src="/img/julian-headshot-large.jpg" alt="Julian Gaviria">
-  </figure>
-  <div class="mo-body">
-    <p> I'm Julian, a Design/Development Director at <a href="http://rpm.thomasnet.com" target="_blank" rel="noopener">Results-Powered Marketing</a>. I&nbsp;touch on topics such as UX/UI design, front-end development, and agency life. If you want a heads up as soon as I publish something, {% if page.title == "Exit Intent Popups &mdash; A/B Testing, Data, &amp; Code" %}
-      <a href="#" class="newsletter-form-ab-test-post">let&nbsp;me&nbsp;know</a>. {% else %}
-      <a href="#" class="newsletter-form">let&nbsp;me&nbsp;know</a>. {% endif %}</p>
+  {% include shared/header.html %}
+  <div class="inner-wrap">
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta"><span class="post-date">{{ page.date | date: "%B %-d, %Y"}}</span> {% if page.time %}<span class="post-reading-time">{{ page.time }}</span></p>{% endif %}
   </div>
 </div>
-
-<hr>
-
-<h3>Related:</h3>
-{% for post in site.posts limit:1 offset:0  %}
-{% if post.url != page.url %}
-<article class="bf-item">
-   	
-   	<time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
-  
-    <div class="bf-content">
-    	<h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      
-      <p class="bf-excerpt">{{ post.excerpt }}</p>
+<section class="site-content" role="main">
+  <div class="inner-wrap-narrow">
+    <main id="main">
+      {{ content }}
+    </main>
+    <div class="share-btns-v2">
+      <p>Hey! You should motivate me to write more by sharing this on
+        <a href="https://twitter.com/intent/tweet?original_referer={{ site.url }}{{ page.url }}&text={% if page.alt-title %}{{ page.alt-title }}{% else %}{{ page.title }}{% endif %}&url={{ site.url }}{{ page.url }}&via=juliangav&hashtags={% for tags in page.tags %}{{ tags }},{% endfor %}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>. :)
+      </p>
     </div>
-   </article>
-
-    {% endif %}
-{% endfor %}
-
-
-
-{% for post in site.posts limit:1 offset:1  %}
-{% if post.url != page.url %}
-
- <article class="bf-item">
-   	
-   	<time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
-  
-    <div class="bf-content">
-    	<h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      
-      <p class="bf-excerpt">{{ post.excerpt }}</p>
+    <hr>
+    <div class="media-object">
+      <figure class="mo-img">
+        <img src="/img/julian-headshot-large.jpg" alt="Julian Gaviria">
+      </figure>
+      <div class="mo-body">
+        <p> I'm Julian, a Design/Development Director at <a href="http://rpm.thomasnet.com" target="_blank" rel="noopener">Results-Powered Marketing</a>. I&nbsp;touch on topics such as UX/UI design, front-end development, and agency life. If you want a heads up as soon as I publish something, {% if page.title == "Exit Intent Popups &mdash; A/B Testing, Data, &amp; Code" %}
+          <a href="#" class="newsletter-form-ab-test-post">let&nbsp;me&nbsp;know</a>. {% else %}
+          <a href="#" class="newsletter-form">let&nbsp;me&nbsp;know</a>. {% endif %}</p>
+      </div>
     </div>
-   </article>
-    {% endif %}
-{% endfor %}
+    <hr>
+    <h3>Related:</h3> {% for post in site.posts limit:1 offset:0 %} {% if post.url != page.url %}
+    <article class="bf-item">
+      <time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
+      <div class="bf-content">
+        <h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="bf-excerpt">{{ post.excerpt }}</p>
+      </div>
+    </article>
+    {% endif %} {% endfor %} {% for post in site.posts limit:1 offset:1 %} {% if post.url != page.url %}
+    <article class="bf-item">
+      <time class="bf-date"><span>{{ post.date | date: "%b" }} {{ post.date | date: "%d" }} <br> <b>{{ post.date | date: "%Y" }}</b></span></time>
+      <div class="bf-content">
+        <h2 class="bf-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="bf-excerpt">{{ post.excerpt }}</p>
+      </div>
+    </article>
+    {% endif %} {% endfor %}
+  </div>
+  {% if page.comments %}
+  <section class="comments-section">
+    <div class="inner-wrap-narrow">
+      <div id="disqus_thread"></div>
+      <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
+      var disqus_config = function() {
+        this.page.url = "{{ site.url }}{{ page.url }}"; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
 
-
-</div>
+      (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        s.src = 'https://juliangav.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+  {% endif %}
 </section>
-
-
-{% include shared/footer.html %}
-{% include shared/html-footer.html %}
+{% include shared/footer.html %} {% include shared/html-footer.html %}

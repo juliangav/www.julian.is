@@ -8,6 +8,7 @@ category: [Development, UX]
 tags: [PWA, WebPerf, ServiceWorkers, WebAppManifest]
 image: og-progressive-web-apps.jpg
 time: 8 Minutes
+comments: true
 
 ---
 

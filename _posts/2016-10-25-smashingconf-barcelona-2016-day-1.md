@@ -5,7 +5,7 @@ author: Julian Gaviria
 description: Marcin Wichary with Typography, Val Head and animation, & Jessica Svendsen with just being so darn original, need I say more?
 excerpt: Marcin Wichary with Typography, Val Head and animation, & Jessica Svendsen just being so darn original, need I say more?
 time: 13 Minutes
-
+comments: true
 ---
 
 I've made it all the way out to Barcelona for my second <a href="http://smashingconf.com" target="_blank" rel="noopener">SmashingConf</a>. I've attended plenty of conferences in the states but I wanted to learn something new in regards to both culture and web design. Needless to say, the first day at SmashingConf and my second day in Barcelona did not fall short of expectations. 
