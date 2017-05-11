@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Static Websites &#x2B; JAMstack = <3"
-alt-title:  "Static Websites and JAMstack = <3"
+title:  "Static Websites &#x2B; JAMstack = &lt;3"
+alt-title:  "Static Websites and JAMstack = &lt;3"
 author: Julian Gaviria
-description:  Faster, secure, & flexible. Let's rethink the way we build websites. 
-excerpt: Fast, secure, & flexible. Let's rethink the way we build websites.
+description:  Let's rethink the way we build websites with a more fast, secure, and flexible&nbsp;approach.
+excerpt: Let's rethink the way we build websites with a more fast, secure, and flexible&nbsp;approach.
 category: [Development]
-tags: [Static, JAMstack, WebPerf]
+tags: [JAMstack, HeadlessCMS, StaticSiteGenerators, WebPerf]
 image: og-static-jamstack.jpg
 time: 7.5 Minutes
-comments: true
+comments: false
 
 ---
 
@@ -19,7 +19,7 @@ JAMstack stands for JavaScript, APIs, & Markup; it’s an approach to building w
 
 To present this in context, I’ll run you through the problems with dynamic websites, how we’re solving them with a static approach, and how to start putting together your own JAMstack.
 
-<h2>Problems Dynamic Websites Are Facing</h2>
+<h2 id="dynamic">Problems Dynamic Websites Are Facing</h2>
 
 Let's start with web performance. Regardless of [how well we optimize everything](https://julian.is/article/baseline-for-fast-loading-websites/) or how good of a job we do with with perceived performance, dynamic websites are SLOW. This is due to the amount of steps that have to take place in order to display the requested content everytime someone visits a web page. 
 
@@ -29,11 +29,11 @@ This is in addition to security concerns, expensive hosting, and the ever-changi
 
 So let's rethink our approach to building dynamic websites and start from <s>scratch</s> static.
 
-<h2>How Static Websites Differ</h2>
+<h2 id="static">How Static Websites Differ</h2>
 
-First, what's a static website? Nope, not a new technology, static websites have been around for ages. That Dreamweaver website you created back in college? That’s a static website. A website made up of HTML pages with pre-populated content.
+First, what's a static website? It's a new technology, static websites have been around for ages. That Dreamweaver website you created back in college? That’s a static website — a website made up of HTML pages with pre-populated content.
 
-When a browser requests the URL of a static page, the server returns the static page in it's entirety. There aren't calls to a database being made nor content being generated on the fly — the content is already there.
+When a browser requests the URL of a static page, the server returns the static page in its entirety. There aren't calls to a database being made nor content being generated on the fly — the content is already there.
 
 That doesn't mean we're putting together every page by hand (no way). There are different tools that address different layers of this technology stack. Yes, I'll run you through what these tools are, but first, let's go through some of the basic benefits:
 
@@ -65,9 +65,9 @@ We’re not dealing with expensive runtimes or complicated server setups — we�
 From the developer’s perspective, the JAMstack methodology doesn’t require us to learn a different backend language to build a data-driven website. We’re able to build on our foundation of HTML, CSS, and JS to build complex websites.
 
 
-Yes I know, static sites are awesome and I promise that setting up your JAMstack isn't all that difficult. Let's start!
+Yes, I know, static sites are awesome, and I promise that setting up your JAMstack isn't all that difficult. Let's get started!
 
-<h2>Step 1: Choose a Host &amp; CDN</h2>
+<h2 id="hosting">Step 1: Choose a Host &amp; CDN</h2>
 
 The beauty of static websites is that you’re able to host them anywhere. ANYWHERE.
 
@@ -78,7 +78,7 @@ I recently started playing around with the idea of moving to Amazon Web Services
 Although you are going to enjoy the flexibility (and affordability) of hosting, specially with larger scale websites, you want to make sure that you’re using a host with a fast CDN to deliver your static files. You have a bunch of options:
 
 <h3>Netlify</h3>
-Built from the ground up to host modern static websites, [Netlify](https://www.netlify.com/){:target="_blank" rel="noopener"} (they actually coined the term “JAMstack”) understands the static concept and provide a full suite of open source products that are focused around static websites (sorta like the WP Engine of static websites). They’re also the hosting platform behind the new redesign of Smashing Magazine. Plans are relatively affordable but if you have an open source project, they’ll host it for free.
+Built from the ground up to host modern static websites, [Netlify](https://www.netlify.com/){:target="_blank" rel="noopener"} (they actually coined the term “JAMstack”) understands the static concept and provide a full suite of open source products that are focused around static websites (sorta like the WP Engine of static websites). They’re also the hosting platform behind the new redesign of Smashing Magazine. Plans are relatively affordable, but if you have an open source project, they’ll host it for free.
 
 <h3>Amazon Web Services (AWS) S3</h3>
 [Amazon S3](https://aws.amazon.com/s3/){:target="_blank" rel="noopener"} is a utility storage service that’s used for backups and content storage as well as static websites. This is an ideal [hosting setup for a JAMstack website](https://habd.as/zero-to-http-2-aws-hugo/){:target="_blank" rel="noopener"}. If it’s your first time creating an AWS account, they’ll provide free hosting for the first 12 months.  
@@ -86,7 +86,7 @@ Built from the ground up to host modern static websites, [Netlify](https://www.n
 <h3>Custom Setups with CloudFlare</h3>
 If you like your current host, you can use [CloudFlare CDN](https://www.cloudflare.com/cdn/){:target="_blank" rel="noopener"} to delegate content delivery. This gives you the flexibility to keep what you have and enjoy the benefits of a fast CDN. Setup is straight forward and not too pricey.  
 
-<h2>Step 2: Decide on a Static Site Generator</h2>
+<h2 id="ssgs">Step 2: Decide on a Static Site Generator</h2>
 
 In order to avoid creating static html pages manually, you’re going to need a sturdy static site generator (SSG). An SSG is a command line interface (CLI) application — don’t run away yet, it’s a simple setup — that does all of the dynamic page generation legwork for you. (Need a primer? Here's a good [intro article on SSGs](https://davidwalsh.name/introduction-static-site-generators){:target="_blank" rel="noopener"}.)
 
@@ -112,7 +112,7 @@ As awesome as SSGs are, there are a few problems rooted in the fact that it gets
 
 In order to make this appealing to the masses, we need a dynamic layer in our current stack that provides a friendly admin UI…
 
-<h2>Step 3: Select a headless CMS</h2>
+<h2 id="headless-cms">Step 3: Select a headless CMS</h2>
 
 CMS-based websites consist of:
 
@@ -123,7 +123,7 @@ CMS-based websites consist of:
 
 Take WordPress for example. You publish content through the admin that then gets stored in a MySQL database. This content becomes available via PHP endpoints (the API), and you can then use these endpoints to grab the content you’ve created via admin and populate throughout the pages of your website. 
 
-It’s pretty convenient, but the limitations surface instantly — the scope of these PHP endpoints is your website (they won’t work anywhere else).
+It’s pretty convenient, but the limitations surface instantly — the scope of these PHP endpoints is your website. (They won’t work anywhere else.)
 
 A headless CMS removes the front-end/head (Get it? Headless!) of a website while still providing the efficiency and convenience of an admin, database, and API. It allows you to publish content without wedding you to a website/layout/template. The front-end doesn’t exist and that’s the beauty of it. 
 
@@ -137,11 +137,11 @@ With an API-driven CMS, you’re creating content that will be strictly delivere
 
 Head over to [headlesscms.org](https://headlesscms.org/){:target="_blank" rel="noopener"} for a full list of what’s currently available. 
 
-<h2>Now What?</h2>
+<h2 id="resources">Now What?</h2>
 
 Congrats! You’re well on your way to adopting the JAMstack and reaping the benefits of static websites. This is just the beginning; developers along with stakeholders are just beginning to acknowledge the benefits and flexibility of going static; agencies are starting to break the mold by introducing the [JAMstack approach to client websites](https://snipcart.com/blog/jamstack-clients-static-site-cms){:target="_blank" rel="noopener"}; and a plethora of tools and resources are becoming available on a daily basis. Make good use of this approach and let's make the internet better.
 
-<h3>Talking About Tools and Resources...</h3>
+<h3>Speaking of Tools and Resources...</h3>
 
 I've put together the entire list of articles, tools, videos, tutorials & other resources I came across when writing this article. Enjoy!
 

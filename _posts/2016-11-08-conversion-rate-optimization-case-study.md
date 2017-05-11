@@ -7,7 +7,7 @@ excerpt: I'll run you through a case study where we were able to increase conver
 category: [UX]
 tags: [CRO, GDD, CaseStudy]
 time: 5 Minutes
-comments: true
+comments: false
 ---
 
 Over the past year, we at <a href="http://rpm.thomasnet.com" target="_blank">Results-Powered Marketing</a> (the agency I work for) have integrated Growth-Driven Design into our approach to building and maintaining websites. For those unfamiliar, GDD is an agile approach applied to the website development process — the goal is to get something out the door as soon as possible, test, iterate, and keep making tweaks to drive better and stronger results for our clients.

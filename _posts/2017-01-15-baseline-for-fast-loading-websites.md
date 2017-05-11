@@ -6,8 +6,9 @@ description:  Not going to bore you with a philosophical approach, this is a sol
 excerpt: Not going to bore you with a philosophical approach, this is a solid baseline with actionable steps to immediately make your website faster & more accessible. 
 category: Development
 tags: [WebPerf, Optimization, PerceivedPerformance]
+image: og-fast-loading-websites.jpg
 time: 6 minutes
-comments: true
+comments: false
 
 ---
 

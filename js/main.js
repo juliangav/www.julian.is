@@ -141,6 +141,35 @@ addEvent(document, 'mouseout', function(evt) {
 });
 
 
+// $(document).ready(function() {
+//   var delayedPopup = setInterval(delayedPopupTimer, 8000);
+//   function delayedPopupTimer() {
+//     if (localStorage.getItem('exitintent_first_page') && localStorage.getItem('exitintent_second_page') && !localStorage.getItem('exitintent_show')) {
+//       setTimeout(function() {
+//         window.$.magnificPopup.open({
+//           items: {
+//             src: '#newsletter-form' //ID of inline element
+//           },
+//           type: 'inline',
+//           removalDelay: 500, //Delaying the removal in order to fit in the animation of the popup
+//           mainClass: 'newsletter-popup mfp-fade mfp-fade-side', //The actual animation
+//         });
+//       }); //Initial popup delay, 5 seconds
+//       localStorage.setItem('exitintent_show', 'true'); // Set the flag in localStorage
+//     }
+//   }
+
+//   if (localStorage.getItem('exitintent_first_page')) {
+//     localStorage.setItem('exitintent_second_page', 'true');
+//   };
+ 
+//   localStorage.setItem('exitintent_first_page', 'true'); // Set the flag in localStorage
+
+  
+// });
+
+
+
 //Delayed Popup with localstorage to show popup only once
 // $(document).ready(function() {
 //   if (!localStorage.getItem('popup_show')) {

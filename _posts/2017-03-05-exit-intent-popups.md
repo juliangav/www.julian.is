@@ -8,7 +8,7 @@ category: [Development, UX]
 tags: [ExitIntent, Modals, CRO, ABTest, Code]
 image: og-exit-intent-popup.jpg
 time: 5 Minutes
-comments: true
+comments: false
 
 ---
 
