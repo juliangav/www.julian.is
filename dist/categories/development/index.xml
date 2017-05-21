@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Julian Gaviria — Web Designer</title>
+    <link>https://julian.is/categories/development/</link>
+    <description>Recent content in Development on Julian Gaviria — Web Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 25 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://julian.is/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Static Websites &#43; JAMstack = &lt;3</title>
+      <link>https://julian.is/article/static-websites-and-jamstack/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://julian.is/article/static-websites-and-jamstack/</guid>
+      <description>I&amp;rsquo;m sure that by now you&amp;rsquo;ve heard about how static websites are the best thing since sliced bread. If you&amp;rsquo;re the type to stay on top of the latest, then you&amp;rsquo;ve also heard about Smashing Magazine ditching WordPress and moving to a JAMstack (probably how you ended up here).
+JAMstack stands for JavaScript, APIs, &amp;amp; Markup; it’s an approach to building websites that allows you to have all the web performance and security benefits of a static website along with the dynamic capabilities of a database-driven CMS.</description>
+    </item>
+    
+    <item>
+      <title>Progressive Web Apps — The Next Step in Responsive Web Design</title>
+      <link>https://julian.is/article/progressive-web-apps/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://julian.is/article/progressive-web-apps/</guid>
+      <description>Late last week, Smashing Magazine, one of the largest and most influential online publications for web design, posted on Facebook that their website was “now running as a Progressive Web App.”
+ Honestly, I didn’t think much of it. Progressive Web Apps are for the hardcore web application developers creating the next online cloud-based Photoshop (complicated stuff), right? I scrolled on and went about my day.
+Then, I saw CSS wizard, Harry Roberts, tweet about making some setting changes in CloudFlare and achieving the same.</description>
+    </item>
+    
+    <item>
+      <title>User-Friendly Exit Intent Modals</title>
+      <link>https://julian.is/article/exit-intent-popups/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://julian.is/article/exit-intent-popups/</guid>
+      <description>As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent modals” or, if you prefer to sound Google smart, “exit intent interstitials.</description>
+    </item>
+    
+    <item>
+      <title>A Simple Baseline for Fast Loading Accessible Websites</title>
+      <link>https://julian.is/article/baseline-for-fast-loading-websites/</link>
+      <pubDate>Sun, 15 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://julian.is/article/baseline-for-fast-loading-websites/</guid>
+      <description>Websites have reached a point where the maturity of graphic design has caught up with the state of web development. But what about accessibility? As the web keeps getting prettier to look at, it also keeps getting heavier and slower to load. Page speed is a limitation that influences creativity and impacts accessibility, but unfortunately it is also a behind the scenes act that usually gets overlooked.
+Saving images for the web isn’t cutting it anymore; we now have to take into consideration perceived load time, Gzip, CDNs, post-photoshop image optimization, etc, just to make our websites accessible (and to make Google happy, let’s not forget).</description>
+    </item>
+    
+  </channel>
+</rss>

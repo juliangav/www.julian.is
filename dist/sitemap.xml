@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://julian.is/article/static-websites-and-jamstack/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/progressive-web-apps/</loc>
+    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/exit-intent-popups/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/baseline-for-fast-loading-websites/</loc>
+    <lastmod>2017-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/hubspot-inbound-2016-designers-perspective/</loc>
+    <lastmod>2016-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/conversion-rate-optimization-case-study/</loc>
+    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/smashingconf-barcelona-2016-day-2/</loc>
+    <lastmod>2016-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/smashingconf-barcelona-2016-day-1/</loc>
+    <lastmod>2016-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/why-ive-started-writing/</loc>
+    <lastmod>2016-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/abtest/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article-resources/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/articles/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/casestudy/</loc>
+    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/code/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/cro/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/categories/development/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/exitintent/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/gdd/</loc>
+    <lastmod>2016-11-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/headlesscms/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/jamstack/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/modals/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/optimization/</loc>
+    <lastmod>2017-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/pages/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/perceivedperformance/</loc>
+    <lastmod>2017-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/progressive-web-apps/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/pwa/</loc>
+    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/serviceworkers/</loc>
+    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/article/static-websites-and-jamstack/resources/</loc>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/staticsitegenerators/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/</loc>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/categories/ux/</loc>
+    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/webappmanifest/</loc>
+    <lastmod>2017-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://julian.is/tags/webperf/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

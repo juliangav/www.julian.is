@@ -1,0 +1,19 @@
+{{ partial "html-header" . }}
+{{ partial "header" . }}
+ 
+
+<section class="site-content" role="main">
+  <div class="inner-wrap-narrow">
+    <main id="main">
+
+{{ range .Data.Pages }}
+   {{ .Render "li"}}
+
+{{ end }}
+    </main>
+
+</div>
+</section>
+
+{{ partial "footer" . }}
+{{ partial "html-footer" . }}

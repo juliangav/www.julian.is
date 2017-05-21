@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exitintent on Julian Gaviria — Web Designer</title>
+    <link>https://julian.is/tags/exitintent/</link>
+    <description>Recent content in Exitintent on Julian Gaviria — Web Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://julian.is/tags/exitintent/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>User-Friendly Exit Intent Modals</title>
+      <link>https://julian.is/article/exit-intent-popups/</link>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://julian.is/article/exit-intent-popups/</guid>
+      <description>As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent modals” or, if you prefer to sound Google smart, “exit intent interstitials.</description>
+    </item>
+    
+    <item>
+      <title>SmashingConf Barcelona 2016 Day 2 Notes</title>
+      <link>https://julian.is/article/smashingconf-barcelona-2016-day-2/</link>
+      <pubDate>Wed, 26 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://julian.is/article/smashingconf-barcelona-2016-day-2/</guid>
+      <description>First day was a blast. Learned a ton of new stuff that I wasn&amp;rsquo;t privy to before (and able to use in production). I&amp;rsquo;m surprised to say that the second day has been even better. Again, just a disclaimer that these notes weren&amp;rsquo;t edited and they were added just as they were jotted down. Enjoy!
+John Allsopp - The Mystery Speaker (Dao of Web Design) @johnallsopp / webdirections.org
+ Predictions “Computers in the future may weigh no more than 1.</description>
+    </item>
+    
+  </channel>
+</rss>

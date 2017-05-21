@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pwa on Julian Gaviria — Web Designer</title>
+    <link>https://julian.is/tags/pwa/</link>
+    <description>Recent content in Pwa on Julian Gaviria — Web Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://julian.is/tags/pwa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Progressive Web Apps — The Next Step in Responsive Web Design</title>
+      <link>https://julian.is/article/progressive-web-apps/</link>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://julian.is/article/progressive-web-apps/</guid>
+      <description>Late last week, Smashing Magazine, one of the largest and most influential online publications for web design, posted on Facebook that their website was “now running as a Progressive Web App.”
+ Honestly, I didn’t think much of it. Progressive Web Apps are for the hardcore web application developers creating the next online cloud-based Photoshop (complicated stuff), right? I scrolled on and went about my day.
+Then, I saw CSS wizard, Harry Roberts, tweet about making some setting changes in CloudFlare and achieving the same.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+{{ partial "html-header" . }}
+{{ partial "header" . }}
+
+
+<section class="site-content">
+
+  <div class="blog-feed">
+    <div class="inner-wrap-narrow">
+     <header class="section-header">
+      <h2>Recent Articles</h2>
+    </header>
+
+
+{{ range first 4 (where .Site.Pages "Section" "articles") }}
+   <article class="bf-item">
+    
+    <time class="bf-date"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b></span></time>
+  
+    <div class="bf-content">
+      <h2 class="bf-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      
+      <p class="bf-excerpt"> {{ .Description }}</p>
+    </div>
+   </article>
+
+{{ end }}
+
+  </div>
+  </div>
+</section>
+
+
+{{ partial "footer" . }}
+{{ partial "html-footer" . }}

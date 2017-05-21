@@ -1,0 +1,364 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3313719, 2016-11-25T18:08:30-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ProximaNova-Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ * 
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ * 
+ * Webfont: ProximaNova-LightIt by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light-it/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3313719
+ * Licensed pageviews: 1,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: bold;
+  src: url('fonts/proxima-nova/329037_0_0.eot');
+  src: url('fonts/proxima-nova/329037_0_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/329037_0_0.woff2') format('woff2'), url('fonts/proxima-nova/329037_0_0.woff') format('woff'), url('fonts/proxima-nova/329037_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: normal;
+  src: url('fonts/proxima-nova/329037_1_0.eot');
+  src: url('fonts/proxima-nova/329037_1_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/329037_1_0.woff2') format('woff2'), url('fonts/proxima-nova/329037_1_0.woff') format('woff'), url('fonts/proxima-nova/329037_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: normal;
+  font-style: italic;
+  src: url('fonts/proxima-nova/329037_2_0.eot');
+  src: url('fonts/proxima-nova/329037_2_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/329037_2_0.woff2') format('woff2'), url('fonts/proxima-nova/329037_2_0.woff') format('woff'), url('fonts/proxima-nova/329037_2_0.ttf') format('truetype');
+}
+
+body {
+  //@include font-feature-settings("kern","liga","frac", "pnum");
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: $base-line-height;
+  @include mq(mediumv) {
+    font-size: .875em;
+  }
+  @include mq(smallv) {
+    font-size: .75em;
+  }
+}
+
+@mixin alt-font-family {
+  font-family: $alt-font-family;
+  font-style: italic;
+  font-weight: normal;
+  //text-transform: lowercase;
+}
+
+//Base Fonts
+@mixin base-font-size {
+  font-size: em(16);
+  @include mq(medium) {
+    font-size: em(18);
+  }
+  @include mq(large) {
+    font-size: em(18);
+  }
+}
+
+@mixin small-font-size {
+  font-size: em(16);
+  @include mq(medium) {
+    font-size: em(18);
+  }
+  @include mq(large) {
+    font-size: em(18);
+  }
+}
+
+//Medium Fonts
+@mixin medium-font-size {
+  font-size: $base-font-size;
+  @include mq(medium) {
+    font-size: $medium-font-size;
+  }
+  @include mq(large) {
+    font-size: $medium-font-size;
+  }
+}
+
+//Large Fonts
+@mixin large-font-size {
+  font-size: $large-font-size*.75;
+  @include mq(medium) {
+    font-size: $large-font-size*.9;
+  }
+  @include mq(large) {
+    font-size: $large-font-size;
+  }
+}
+
+//xLarge Fonts
+@mixin xlarge-font-size {
+  font-size: $xlarge-font-size*.75;
+  @include mq(medium) {
+    font-size: $xlarge-font-size*.9;
+  }
+  @include mq(large) {
+    font-size: $xlarge-font-size;
+  }
+}
+
+//Display Fonts
+@mixin display-font-size {
+  font-size: $display-font-size*.75;
+  @include mq(medium) {
+    font-size: $display-font-size*.9;
+  }
+  @include mq(large) {
+    font-size: $display-font-size;
+  }
+}
+
+.display-font-size {
+  @include display-font-size;
+}
+
+.xlarge-font-size {
+  @include xlarge-font-size;
+}
+
+.large-font-size {
+  @include large-font-size;
+}
+
+.medium-font-size {
+  @include medium-font-size;
+  margin-bottom: $baseline*4;
+  margin-top: $baseline*3.5;
+}
+
+.base-font-size {
+  @include base-font-size;
+}
+
+.small-font-size {
+  @include small-font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+  //font-variant: small-caps;
+  margin: 0;
+  color: $base-color;
+  span {
+    font-family: $alt-font-family;
+    font-style: italic;
+    font-size: .5em;
+    display: block;
+    color: $base-accent-color;
+  }
+  a {
+    &:focus {
+      background-color: $light-gray;
+    }
+  }
+  .link-style-inverted {
+    &:focus {
+      background-color: $light-blue;
+    }
+  }
+}
+
+h1 {
+  @include display-font-size;
+  margin-top: 0;
+  margin-bottom: 34px;
+  color: $base-color;
+  text-align: center;
+  color: $base-accent-color;
+  //@include alt-font-family;
+  font-family: $base-font-family;
+  font-weight: 300;
+}
+
+h2 {
+  @include xlarge-font-size;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+h3 {
+  @include medium-font-size;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: $base-accent-color;
+}
+
+h4 {
+  font-size: $medium-font-size;
+  margin-top: 16px;
+  margin-bottom: 0;
+  margin-bottom: 16px;
+  span {
+    display:block;
+    font-size:1em;
+    font-weight:normal;
+    font-family: $header-font-family;
+    font-style: normal;
+   // color:$black;
+
+
+  }
+}
+
+h5 {
+  font-size: $base-font-size;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+h6 {
+  font-size: $base-font-size;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 0 0 16px 0;
+  @include medium-font-size;
+  font-weight: 300;
+}
+
+.emph {
+  @include medium-font-size;
+  font-weight: normal;
+}
+
+a {
+  @include transition(all 0.1s linear);
+  color: $base-link-color;
+  text-decoration: none;
+  &:hover {
+    color: $hover-link-color;
+  }
+  &:active,
+  &:focus {
+    color: $hover-link-color;
+    outline: none;
+    background-color: $light-gray;
+  }
+}
+
+p {
+  a {
+    &:focus {
+      background-color: $light-gray;
+    }
+  }
+}
+
+.site-content,
+.site-intro {
+  a {
+    border-bottom: 3px solid #DDD;
+    &:hover {
+      border-bottom: 3px solid $base-color;
+    }
+  }
+}
+.link-style {
+  a {
+    border-bottom: 3px solid #DDD;
+    &:hover {
+      border-bottom: 3px solid $base-color;
+    }
+  }
+}
+// p {
+//   a {
+//     text-decoration:none;
+//     // text-shadow:em(3) 0 0 #fff, -em(3) 0 0 #fff,
+//     //   0 em(3) 0 #fff, 0 -em(3) 0 #fff,
+//     //   em(3) 0 0 #fff, -em(3) 0 0 #fff,
+//     //   0 em(3) 0 #fff, 0 -em(3) 0 #fff;
+//      text-shadow:
+//    -0.03em -0.03em 0 #fff, 0.03em -0.03em 0 #fff, -0.03em 0.03em 0 #fff, 0.03em 0.03em 0 #fff;
+//       background-image: linear-gradient(to right, #DDD 0%, #DDD 100%);
+//       background-repeat:repeat-x;
+//       background-position: bottom -0.1em center;
+//       background-size: 100% em(3.5);
+//       @include transition(all 0.5s linear);
+//       //background-color:red;
+//       &:hover {
+//         background-image: linear-gradient(to right, $green 0%, $green 100%);
+//       }
+//   }
+// }
+.link-style-inverted {
+  border-bottom: 3px solid $base-accent-color;
+  &:hover {
+    border-bottom: 3px solid #DDD;
+  }
+  &:focus {
+    background-color: $light-blue;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+  &:before {
+    content: "\2014 \00A0";
+  }
+}
+
+b,
+strong {
+  //color:$blue;
+  font-family: "ProximaNova";
+  //font-weight:normal;
+  color: $blue;
+}

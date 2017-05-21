@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Julian Gaviria — Web Designer</title>
+    <link>https://julian.is/pages/</link>
+    <description>Recent content in Pages on Julian Gaviria — Web Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://julian.is/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://julian.is/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://julian.is/about/</guid>
+      <description>Hello! I’m a designer/developer based out of Jersey City, New Jersey. I have a huge passion for web design, front-end web development, and how it all comes together with good&amp;nbsp;ol’&amp;nbsp;UX. What I’m capable of doing Web design that works Not only can I paint a pretty picture, but I can make that pretty picture generate business. Whether It’s lead generation or ecommerce sales, I create designs tailored specifically for the business goals at hand.</description>
+    </item>
+    
+  </channel>
+</rss>
