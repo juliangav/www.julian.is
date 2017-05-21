@@ -20,3 +20,32 @@
   <meta name="twitter:url" content="{{ .Permalink }}" />
   <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" /> {{ with .Params.images }} {{ range first 1 . }}
   <meta name="twitter:image" content="{{ . | absURL }}" /> {{ end }} {{ end }}
+
+  {{ "<!-- ENTERING partial seo-schema.html -->" | safeHTML }}
+{{ if .IsPage }}
+ 
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "articleSection" : "{{ .Section }}",
+    "name" : "{{ .Title }}",
+    "headline" : "{{ .Title }}",
+    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "inLanguage" : "en-US",
+    "author" : "{{ .Site.Params.AuthorName }}",
+    "creator" : "{{ .Site.Params.AuthorName }}",
+    "accountablePerson" : "{{ .Site.Params.AuthorName }}",
+    "copyrightHolder" : "{{ .Site.Params.AuthorName }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "datePublished": "{{ .Date }}",
+    "dateModified" : "{{ .Date.Format " 2006-01-02T15:04:05-07:00 " | safeHTML }}",
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",{{ with .Params.images }} {{ range first 1 . }}
+    "image" : [ {{ . | absURL }} ],{{ end }} {{ end }}
+    "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} ]
+}
+</script>
+ 
+{{ end }}
+{{ "<!-- LEAVING partial seo-schema.html -->" | safeHTML }}
