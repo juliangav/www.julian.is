@@ -1,0 +1,7 @@
+<article class="bf-item">
+  <time class="bf-date"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b></span></time>
+  <div class="bf-content">
+    <h2 class="bf-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="bf-excerpt"> {{ .Description }}</p>
+  </div>
+</article>

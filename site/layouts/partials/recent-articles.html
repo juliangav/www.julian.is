@@ -1,0 +1,36 @@
+
+<div class="recent-articles">
+  <div class="inner-wrap-wide ">
+    <header class="section-header">
+      <h2>Recent Articles</h2>
+    </header>
+    <div class="bf-cards">
+      {{ range first 3 (where .Site.Pages "Section" "articles") }}
+      <a href="{{ .RelPermalink }}" class="bf-item-v2">
+        <div class="bf-content-v2">
+          <time class="bf-date-v2"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b> </span></time>
+          <h2 class="bf-title-v2"> {{ .Title }} </h2>
+          <p class="bf-excerpt-v2"> {{ .Description }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  <!-- 
+    <div class="inner-wrap-narrow">
+      <header class="section-header">
+        <h2>Recent Articles</h2>
+      </header>
+      
+        {{ range first 4 (where .Site.Pages "Section" "articles") }}
+        <article class="bf-item">
+          <time class="bf-date"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b></span></time>
+          <div class="bf-content">
+            <h2 class="bf-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p class="bf-excerpt"> {{ .Description }}</p>
+          </div>
+        </article>
+        {{ end }}
+     
+    </div> -->
+</div>
