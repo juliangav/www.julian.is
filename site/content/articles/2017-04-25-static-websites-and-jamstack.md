@@ -30,9 +30,9 @@ This is in addition to security concerns, expensive hosting, and the ever-changi
 
 So let's rethink our approach to building dynamic websites and start from <s>scratch</s> static.
 
-<h2 id="static">How Static Websites Differ</h2>
+<h2 id="static">What's a Static Website?</h2>
 
-First, what's a static website? It's a new technology, static websites have been around for ages. That Dreamweaver website you created back in college? That’s a static website — a website made up of HTML pages with pre-populated content.
+That Dreamweaver website you created back in college? That’s a static website — a website made up of HTML pages with pre-populated content. 
 
 When a browser requests the URL of a static page, the server returns the static page in its entirety. There aren't calls to a database being made nor content being generated on the fly — the content is already there.
 
