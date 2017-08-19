@@ -224,3 +224,15 @@ $('.smooth-scroll').click(function(e) {
   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination - 0 }, 1000);
 });
 
+
+// GA Events
+
+$(function() {
+function handleOutboundLinkClicks(event) {
+  ga('send', 'event', {
+    eventCategory: 'Outbound Link',
+    eventAction: 'click',
+    eventLabel: event.target.href
+  });
+}
+});
