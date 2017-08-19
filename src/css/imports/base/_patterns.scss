@@ -951,3 +951,44 @@ blockquote {
     margin-bottom:0 !important;
   }
 }
+
+
+/*=============== Progress Bar ===============*/
+progress {
+  z-index:1000000000;
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: em(3);
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: $blue;
+}
+
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: $blue;
+}
+
+progress::-moz-progress-bar {
+  background-color: $blue;
+}

@@ -18,7 +18,7 @@ Over the past two years I’ve dedicated part of my career to building a convers
 
 In hopes of saving you a few headaches, I've curated a list of some of the most important lessons learned. Enjoy!
 
-(Related: Here’s a [conversion rate optimization & GDD case study](/article//conversion-rate-optimization-case-study/) on one of the websites we tested on.)
+(Related: Here’s a [conversion rate optimization & GDD case study](/article/conversion-rate-optimization-case-study/) on one of the websites we tested on.)
 
 <h3>Table of Contents</h3>
 
@@ -67,7 +67,7 @@ Get cozy with Google Analytics. Set up goals that will help you keep track of al
 
 Once these goals are in place, set up individual segments of users that triggered the respective goals and analyze the hell out of it. You can compare segments of users that triggered a bad goal vs all users and see how these convert on the good goals. (I hope I didn’t lose you — [this guide](https://conversionxl.com/conversion-optimization/google-analytics-for-conversion-optimization/) does a way better job of explaining this than I did.) 
 
-Play around with Google Analytic's Behavior Flow tool. Set up a segment of your audience that has triggered your primary goal and see the path that was taken to get there. Look for pages with huge drop-offs and investigate.
+Play around with Google Analytics' Behavior Flow tool. Set up a segment of your audience that has triggered your primary goal and see the path that was taken to get there. Look for pages with huge drop-offs and investigate.
 
 <figure>
 	<img src="/assets/google-analytics-behavior-flow.jpg" alt="Google Analytics Behavior Flow" class="img-border">
@@ -86,7 +86,7 @@ Test the minimum version of your idea instead and build from there. Design isn�
 
 <h2 id="reproduce-results">It’s Difficult to Reproduce Results</h2>
 
-Just because you achieved statistical significance on a certain test doesn’t mean that it’s a pattern that will work everywhere. My team ran a test that [increased conversion rates on a landing page by 76%](https://rpm.thomasnet.com/success-stories/76-percent-increase-in-form-submissions) — only to have the same test decrease conversions for a different client and test inconclusive for another.
+Just because you achieved statistical significance on a certain test doesn’t mean that it’s a pattern that will work everywhere. My team ran a test that increased conversion rates on a landing page by 76% — only to have the same test decrease conversions for a different client and test inconclusive for another.
 
 There are a handful of different variables, some obvious and some not, that are present with every test and have a big impact on the outcome (audience, traffic source, content, goals, etc); the goal with an A/B test is to change one of these variables with hopes of producing positive results. 
 
@@ -126,7 +126,7 @@ Make it a habit to create a hypothesis when making any type of UX decisions on a
 
 User experience is at the heart of everything we do, and it’s not something that should be sacrificed to generate more leads. I’ve come across websites that completely destroy their user experience in order to generate a handful of more leads. Although this may produce more leads in the short term, bad UX leaves a bad impression on the user, which ends up producing long term brand damage and sacrificing usage/visits on your website. Not what you want.
 
-A/B testing is a very strong tactic, but it should only be one of the many in your toolbelt of user research and testing. Make the experience for your users an inivisible one. Figure out [user-friendly alternatives](/article/exit-intent-popups/) for some of those more aggressive tactics. 
+A/B testing is a very strong tactic, but it should only be one of the many in your toolbelt of user research and testing. Make the experience for your users an invisible one. Figure out [user-friendly alternatives](/article/exit-intent-popups/) for some of those more aggressive tactics. 
 
 <h2 id="resources">Some Tools &amp; Resources</h2>
 

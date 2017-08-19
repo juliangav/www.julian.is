@@ -1,6 +1,13 @@
 {{ partial "html-header" . }}
 {{ partial "header" . }}
 
+<!-- <div class="KW_progressContainer">
+    <div class="KW_progressBar">
+
+    </div>
+  </div> -->
+
+
 
 <section class="site-content" role="main">
   <div class="inner-wrap-narrow">
@@ -44,6 +51,10 @@
 {{ end }}
  </div>
  </section>
-
+<progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
 {{ partial "footer" . }}
 {{ partial "html-footer" . }}
