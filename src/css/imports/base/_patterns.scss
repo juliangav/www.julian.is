@@ -17,11 +17,13 @@ This is used to separate sections/modules of the website while still keeping a c
   > *:last-child {
     margin-bottom: 0;
   }
-  @include pad($baseline*3 $baseline*2 $baseline*3 $baseline*2);
+
+  padding: $baseline*3 $baseline*2 $baseline*3 $baseline*2;
   @include mq(medium) {
-    @include pad($baseline*5 $baseline*3 $baseline*5 $baseline*3);
+    padding:$baseline*5 constant(safe-area-inset-right) $baseline*5 constant(safe-area-inset-left);
   }
 }
+
 
 .inner-wrap-narrow {
   @extend .inner-wrap;
