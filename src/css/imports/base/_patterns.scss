@@ -8,7 +8,69 @@ This is used to separate sections/modules of the website while still keeping a c
   </div>
 </section>
 */
+.site-wrap {
+  //margin:constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left) !important;
+  // &:after {
+  //   content:"";
+  //   background-color:green;
+  //   width:31px;
+  //   height:209px;
+  //   position:fixed;
+  //   display:block;
+  //   left:0;
+  //   top:33px;
+  // }
+  // &:before {
+  //   content:"";
+  //   background-color:orange;
+  //   width:133px;
+  //   height:5px;
+  //   position:fixed;
+  //   display:block;
+  //   left:121px;
+  //   bottom:9px;
+  // }
+}
 
+// .constant-safe-area-top {
+//   background-color:orange;
+//   position:fixed;
+//   display:block;
+//   width:44px;
+//   height:20px;
+//   left:0;
+
+// }
+// .constant-safe-area-right {
+//   background-color:blue;
+//   position:fixed;
+//   display:block;
+//   width:20px;
+//   height:20px;
+
+// }
+// .constant-safe-area-bottom {
+//   background-color:green;
+//   position:fixed;
+//   display:block;
+//   width:20px;
+//   height:34px;
+//   bottom:0;
+
+// }
+// .constant-safe-area-left {
+//   background-color:pink;
+//   position:fixed;
+//   display:block;
+//   width:20px;
+//   height:20px;
+
+// }
+
+body {
+  //background-color:$green !important;
+
+}
 .inner-wrap {
   @include outer-container;
   > *:first-child {
@@ -20,6 +82,7 @@ This is used to separate sections/modules of the website while still keeping a c
 
   padding: $baseline*3 $baseline*2 $baseline*3 $baseline*2;
   @include mq(medium) {
+    padding: $baseline*3 $baseline*3 $baseline*3 $baseline*3;
     padding:$baseline*5 constant(safe-area-inset-right) $baseline*5 constant(safe-area-inset-left);
   }
 }
