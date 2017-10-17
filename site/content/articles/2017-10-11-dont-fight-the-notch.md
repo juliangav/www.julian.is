@@ -1,6 +1,6 @@
 ---
 title: "Don't Fight The Notch"
-description:  Prepping your site for iPhone X and the next generation of devices.
+description:  Coming to terms with the notch on the iPhone X and its effect on our designs.
 tags: [CSS, Mobile,]
 lastmod: 2017-10-17
 date: "2017-10-17"
@@ -8,6 +8,7 @@ time: 3 Minutes
 categories:
   - "Development"
 slug: "iphone-x-notch" 
+images: ["assets/og-dont-fight-the-notch.jpg"]
 comments: false
 
 
@@ -15,7 +16,7 @@ comments: false
 
 Unless you're off on a remote island and you've dismissed all technology from your life (props for somehow making your way here), I’m sure that by now you’ve heard of the upcoming iPhone X and it’s edge-to-edge display. In their effort to make a true all-screen phone, Apple introduced a “notch” that takes up part of the screen, encapsulating the front camera and additional sensors.
 
-Pretty interesting from a technology standpoint, but I’ll cut to the chase: This directly affects how our websites get formatted on these devices — it’s a pretty big deal.
+Pretty interesting from a design standpoint, but I’ll cut to the chase: This directly affects how our websites get formatted on these devices — it’s a pretty big deal.
 
 <figure>
 	<img src="/assets/iphone-x-landscape-viewport-fit-default.jpg" alt="Default Website Formatting on iPhone X">
@@ -41,7 +42,7 @@ Based on the [CSS Round Display Spec](https://drafts.csswg.org/css-round-display
 <pre class="language-markup"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"&gt;</code>
 </pre>
 
- This attribute, <code>viewport-fit</code>, accepts two other values: <code>auto</code>, the default behavior, and <code>contain</code> which, [according to the CSS Working Group](https://drafts.csswg.org/css-round-display/#viewport-fit-descriptor), is when “the initial layout viewport and the visual viewport are set to the largest rectangle which is inscribed in the display of the device.” To be honest, I’m not entirely sure what that means, but in this case it seems to have the same result as default.
+ This descriptor, <code>viewport-fit</code>, accepts two other values: <code>auto</code>, the default behavior, and <code>contain</code> which, [according to the CSS Working Group](https://drafts.csswg.org/css-round-display/#viewport-fit-descriptor), is when “the initial layout viewport and the visual viewport are set to the largest rectangle which is inscribed in the display of the device.” I’m not entirely sure what that means, but in this case it seems to have the same result as default.
 
 Getting back on track here... Now our website covers (get it?) the screen in its entirety. We now have make sure that the notch doesn’t interfere with any elements on the website — remember, those default margins were there for a reason.
 
@@ -50,7 +51,7 @@ Getting back on track here... Now our website covers (get it?) the screen in its
 	<figcaption>Website Formatting on iPhone X w/ viewport-fit=cover </figcaption>
 </figure>
 
-<h2>Safe areas & respecting them with constant()</h2>
+<h2>Avoiding Safe Areas with constant()</h2>
 
 Apple introduced <code>constant(safe-area-inset-*)</code>, which resolves to the dimensions needed by the user agent or browser to avoid the notch and other safe areas of the phone.
 
@@ -88,7 +89,7 @@ I was able to get a list of dimensions from the iPhone X Simulator in Xcode, and
 
 <figure class="figure-fullwidth">
 	<img src="/assets/iphone-x-notch-safe-area-dimensions.jpg" alt="iPhone X Safe Area Dimensions">
-	<figcaption>iPhone X Safe Area Dimensions</figcaption>
+	<figcaption>iPhone X Safe Area & Element Dimensions</figcaption>
 </figure>
 
 <h3>Elements</h3>
@@ -147,10 +148,9 @@ I was able to get a list of dimensions from the iPhone X Simulator in Xcode, and
 
 <h2>Closing Thoughts</h2>
 
-Were the design decisions made by Apple the correct ones? Maybe. Will this change the way we build websites? Yes, but so did responsive web design back in 2011 and [Progressive Web Apps](/article/progressive-web-apps/) within the last year at a much larger scale.
+Were the design decisions made by Apple the correct ones? Maybe. Will this change the way we build websites? Yes, but so did responsive web design back in 2011 and [Progressive Web Apps](/article/progressive-web-apps/) within the last year at a much larger scale. The reality of it is that we're part of an unpredictable industry; learning and adopting are the two habits that keep us afloat.
 
 Let’s take this change with a grain of salt and prep for what the future of mobile devices may have in store. 
-
 
 <h2>Resources</h2>
 
