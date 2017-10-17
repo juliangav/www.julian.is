@@ -2,48 +2,48 @@
 title: "Don't Fight The Notch"
 description:  Prepping your site for iPhone X and the next generation of devices.
 tags: [CSS, Mobile,]
-lastmod: 2017-10-11
-date: "2017-10-11"
-time: 5 Minutes
+lastmod: 2017-10-17
+date: "2017-10-17"
+time: 3 Minutes
 categories:
-  - "UX"
-slug: "the-notch" 
-images: ["assets/og-ab-testing-lessons-learned.jpg"]
+  - "Development"
+slug: "iphone-x-notch" 
 comments: false
 
 
 ---
 
-Unless you live under a rock, I’m sure that by now you’ve heard of the upcoming iPhone X and it’s edge-to-edge display. In their effort to make a true all-screen phone, Apple has introduced a “notch” that takes up part of the screen which encapsulates the front camera and additional sensors. This affects how our websites get formatted on these devices — it’s a pretty big deal. 
+Unless you're off on a remote island and you've dismissed all technology from your life (props for somehow making your way here), I’m sure that by now you’ve heard of the upcoming iPhone X and it’s edge-to-edge display. In their effort to make a true all-screen phone, Apple introduced a “notch” that takes up part of the screen, encapsulating the front camera and additional sensors.
+
+Pretty interesting from a technology standpoint, but I’ll cut to the chase: This directly affects how our websites get formatted on these devices — it’s a pretty big deal.
 
 <figure>
 	<img src="/assets/iphone-x-landscape-viewport-fit-default.jpg" alt="Default Website Formatting on iPhone X">
 	<figcaption>Default Website Formatting on iPhone X</figcaption>
 </figure>
 
-Safari takes the liberty to add default margins in order to respect the safe areas of the notch.
+You can see Safari adds default margins in order to buffer the safe areas of the notch.
 
-But as those who craft the web, we could choose to continue designing as is and let the browsers make design decisions for us. Or we could come to terms with reality, accept the next generation of device screens, and take full control of our designs.
-
-
-Regardless of what we think of the approach Apple took, the fact is that at the time of writing Safari takes up [51.24% of the mobile market share here in the United States](http://gs.statcounter.com/browser-market-share/mobile/united-states-of-america), and [17.74% world wide](http://gs.statcounter.com/browser-market-share/mobile/worldwide) — a ton of people are going to be viewing our websites through these displays. 
-
-No need for a complete overhaul of your existing code base. You can embrace the notch with two simple code changes.
+So for those who craft the web, we could choose to continue designing as is and let the browsers make design decisions for us. Or we could come to terms with reality, accept the next generation of device screens, and take full control of our designs. (What do you think I’m advocating for?)
 
 
+Regardless of our opinions of Apple’s approach, the fact is that at the time of writing this post, Safari takes up [51.24% of the mobile market share here in the United States](http://gs.statcounter.com/browser-market-share/mobile/united-states-of-america), and [17.74% world wide](http://gs.statcounter.com/browser-market-share/mobile/worldwide) — a ton of people are going to be viewing our websites through these displays. 
 
-<h2>Removing default margins with viewport-fit=cover</h2>
+No need for a complete overhaul of your existing code base, though. You can embrace the notch with two simple code changes.
 
-Based on the [CSS Round Display Spec](https://drafts.csswg.org/css-round-display/), we’re able to get websites to take up the whole screen by adding ‘viewport-fit=cover’ to the viewport meta tag in the &lt;head&gt;. Here's what mine looks like:
+
+<h2>Remove default margins with viewport-fit=cover</h2>
+
+Based on the [CSS Round Display Spec](https://drafts.csswg.org/css-round-display/), we’re able to get websites to take up the entire screen by adding <code>viewport-fit=cover</code> to the viewport meta tag in the &lt;head&gt;. Here's what mine looks like:
 
 
 
 <pre class="language-markup"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"&gt;</code>
 </pre>
 
- This attribute, 'viewport-fit', accepts two other values: 'auto', the default behavior, and 'contain' which, [according to the CSS Working Group](https://drafts.csswg.org/css-round-display/#viewport-fit-descriptor), is when "The initial layout viewport and the visual viewport are set to the largest rectangle which is inscribed in the display of the device" — not sure what that means, but in this case it seemed to have the same effect as default.
+ This attribute, <code>viewport-fit</code>, accepts two other values: <code>auto</code>, the default behavior, and <code>contain</code> which, [according to the CSS Working Group](https://drafts.csswg.org/css-round-display/#viewport-fit-descriptor), is when “the initial layout viewport and the visual viewport are set to the largest rectangle which is inscribed in the display of the device.” To be honest, I’m not entirely sure what that means, but in this case it seems to have the same result as default.
 
-Back on track, now our website covers (get it?) the whole screen. Next we make sure that the notch doesn't interfere with any elements on the website (remember, those default margins were there for a reason).
+Getting back on track here... Now our website covers (get it?) the screen in its entirety. We now have make sure that the notch doesn’t interfere with any elements on the website — remember, those default margins were there for a reason.
 
 <figure>
 	<img src="/assets/iphone-x-landscape-viewport-fit-cover.jpg" alt="Website Formatting on iPhone X w/ viewport-fit=cover">
@@ -52,14 +52,14 @@ Back on track, now our website covers (get it?) the whole screen. Next we make s
 
 <h2>Safe areas & respecting them with constant()</h2>
 
-Apple introduced 'constant(safe-area-inset-*)' which resolves to the dimensions needed by the user agent or browser to avoid the notch and other safe areas of the phone. 
+Apple introduced <code>constant(safe-area-inset-*)</code>, which resolves to the dimensions needed by the user agent or browser to avoid the notch and other safe areas of the phone.
 
 <pre class="language-markup"><code>.inner-wrap {
   padding:2.5em constant(safe-area-inset-right) 2.5em constant(safe-area-inset-left);
 }</code>
 </pre>
 
-Our content is now respecting the safe areas defined by the UA. 
+Our content is now respecting the safe areas defined by the UA.
 
 <figure>
 	<img src="/assets/iphone-x-horizontal-viewport-fit-cover.jpg" alt="Website Formatting on iPhone X w/ viewport-fit=cover and constant()">
@@ -68,17 +68,13 @@ Our content is now respecting the safe areas defined by the UA.
 
 
 
-At first, I wanted to bypass constant() and just use good ol' ems/rems. The problem is that the dimensions of these safe areas will most likely change in the future when other devices introduce safe areas and future versions of the iPhone are released. Avoiding constant() would be the equivalent of designing fixed-width mobile websites to only fit the iPhone.
+At first, I wanted to bypass constant() and just use good ol’ ems/rems. The problem is that the dimensions of these safe areas will most likely change when other devices introduce safe areas and future versions of the iPhone are released. Avoiding constant() would be the equivalent of designing fixed-width mobile websites to only fit the iPhone.
 
 Even if you were to take this approach today, the dimensions of the safe areas change when you go from landscape to portrait.
 
- 
-
-
-
 <h3>Fallback for constant()</h3>
 
-Browsers that don’t support constant() will display a value of 0 (that’s pretty much every browser except Safari at the time of writing). The following does the trick for me:
+Browsers that don’t support constant() will display a value of 0 (that’s pretty much every browser except Safari at the time of writing this post). The following does the trick for me:
 
 
 <pre class="language-markup"><code>.inner-wrap {
@@ -88,7 +84,7 @@ Browsers that don’t support constant() will display a value of 0 (that’s pre
 
 <h2>Dimensions in Pixels</h2>
 
-For your curiousity, I put together a list dimensions that I was able to get from the iPhone X Simulator in Xcode.
+I was able to get a list of dimensions from the iPhone X Simulator in Xcode, and now, I’m sharing it with you.
 
 <figure class="figure-fullwidth">
 	<img src="/assets/iphone-x-notch-safe-area-dimensions.jpg" alt="iPhone X Safe Area Dimensions">
@@ -149,30 +145,16 @@ For your curiousity, I put together a list dimensions that I was able to get fro
 </table>
 
 
+<h2>Closing Thoughts</h2>
+
+Were the design decisions made by Apple the correct ones? Maybe. Will this change the way we build websites? Yes, but so did responsive web design back in 2011 and [Progressive Web Apps](/article/progressive-web-apps/) within the last year at a much larger scale.
+
+Let’s take this change with a grain of salt and prep for what the future of mobile devices may have in store. 
 
 
+<h2>Resources</h2>
 
-<!-- <h3>Horizontal</h3>
-
-<figure>
-	<img src="/assets/iphone-x-horizontal-viewport-fit-default.jpg" alt="iPhone X Horizontal Viewport Fit Default">
-	<figcaption>Top: X
-Right: X
-Bottom: X
-Left: X</figcaption>
-</figure>
-
-
-
-<h3>Vertical</h3>
-
-<figure>
-	<img src="/assets/iphone-x-horizontal-viewport-fit-default.jpg" alt="iPhone X Horizontal Viewport Fit Default">
-	<figcaption>Top: X
-Right: X
-Bottom: X
-Left: X</figcaption>
-</figure>
- -->
-
-
+* [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) - The original article published by WebKit that drove everyone nuts
+* [Removing the White Bars in Safari on iPhone X](http://stephenradford.me/removing-the-white-bars-in-safari-on-iphone-x/) - Well put together article on removing the margins in the iPhone X
+* [“The Notch” and CSS](https://css-tricks.com/the-notch-and-css/) - Chris Coyier's take on the issue
+* [New WebKit Features in Safari 11](https://webkit.org/blog/7956/new-webkit-features-in-safari-11/) - Self-explanatory

@@ -251,6 +251,9 @@ p {
   margin: 0 0 16px 0;
   @include medium-font-size;
   font-weight: 300;
+  code {
+    font-size:.875em;
+  }
 }
 
 .emph {
