@@ -25,6 +25,8 @@ Late last week, Smashing Magazine, one of the largest and most influential onlin
 
 Honestly, I didn’t think much of it. Progressive Web Apps are for the hardcore web application developers creating the next online cloud-based Photoshop (complicated stuff), right? I scrolled on and went about my day.
 
+(Related: [A Simple Baseline for Fast Loading Websites](/article/baseline-for-fast-loading-websites/))
+
 Then, I saw CSS wizard, Harry Roberts, [tweet](https://twitter.com/csswizardry/status/839814781326483456) about making some setting changes in CloudFlare and achieving the same. It might have been a coincidence that I stumbled across two influencers discussing the same topic, but it still caught my eye. So out of curiosity, I installed [Lighthouse](https://developers.google.com/web/tools/lighthouse/), the Chrome plugin that both Smashing Magazine and Harry Roberts had used, and ran my website through it. 
 
 <figure><img src="/assets/pwa-lighthouse-initial-audit.jpg" alt="Initial Lighthouse Audit" class="img-border"></figure>
@@ -316,7 +318,7 @@ It took me about two hours to go from a 50/100 score to a 100/100 score. (Check 
 
 <blockquote><p>It's pretty much required that you're going to be using some form of JS framework or view library, like Angular or React.</p></blockquote>
 
-My site runs on a [static site generator](https://jekyllrb.com/) (just straight up HTML files). It’s made up of simple HTML, CSS and good ol’ jQuery. No component based, data binding, dynamic, complicated JS framework here. 
+My site runs on a [static site generator](/article/static-websites-and-jamstack/#ssgs) (just straight up HTML files). It’s made up of simple HTML, CSS and good ol’ jQuery. No component based, data binding, dynamic, complicated JS framework here. 
 
 If you skipped the beginning of this article, I’ve outlined exactly what the PWA criteria is (and it’s not React or Angular). Scroll back up!
 

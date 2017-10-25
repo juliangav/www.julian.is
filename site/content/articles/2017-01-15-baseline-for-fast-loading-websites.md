@@ -19,6 +19,8 @@ date: "2017-01-15"
 
 Websites have reached a point where the maturity of graphic design has caught up with the state of web development. But what about accessibility? As the web keeps getting prettier to look at, it also keeps getting heavier and slower to load. Page speed is a limitation that influences creativity and impacts accessibility, but unfortunately it is also a behind the scenes act that usually gets overlooked. 
 
+(Related: [Progressive Web Apps — The Next Step in Responsive Web Design](/article/progressive-web-apps/))
+
 Saving images for the web isn’t cutting it anymore; we now have to take into consideration perceived load time, Gzip, CDNs, post-photoshop image optimization, etc, just to make our websites accessible (and to make Google happy, let’s not forget). Seems as though we’re going backwards, but even though browsers and computers keep getting faster and faster, we now have a slew of mobile devices that we need to support (all depending on your target audience).  
 
 
