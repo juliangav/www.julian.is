@@ -9,6 +9,7 @@ categories:
   - "UX"
 slug: "ab-testing-lessons-learned" 
 images: ["assets/og-ab-testing-lessons-learned.jpg"]
+icon: /assets/aico-ab-testing-lessons-learned.svg
 comments: false
 
 

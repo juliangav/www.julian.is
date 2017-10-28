@@ -195,7 +195,7 @@ h6 {
 h1 {
   @include display-font-size;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 0.3em;
   color: $base-color;
   text-align: center;
   color: $base-accent-color;

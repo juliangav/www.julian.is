@@ -1,5 +1,6 @@
 <!--Site Header-->
-<div class="site-header-wrap" id="particles-js">
+{{ if eq .Kind "home" }}<div class="site-header-wrap site-header-wrap__home" id="particles-js">{{ else }}<div class="site-header-wrap" id="particles-js">{{ end }}
+
   <header class="site-header" role="banner">
     <div class="sh-sticky-wrap">
       <div class="inner-wrap">

@@ -7,7 +7,7 @@ excerpt: John Allsopp (Dao of Web Design) runs us through predictions, Jen Simmo
 tags: [ExitIntent, CRO, ABTest, Code]
 time: 7 Minutes
 comments: false
-
+icon: /assets/aico-smashing-magazine.svg
 slug: "smashingconf-barcelona-2016-day-2"
 date: "2016-10-26"
 

@@ -6,7 +6,7 @@ description: I spend most of my days trying to figure out design/development and
 excerpt: I spend most of my days trying to figure out design & development; I kinda want to share that with everyone.
 time: 2 minutes
 comments: false
-
+icon: /assets/aico-started-writing.svg
 slug: "why-ive-started-writing"
 date: "2016-09-19"
 

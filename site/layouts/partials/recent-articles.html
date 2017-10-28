@@ -1,36 +1,27 @@
-
-<div class="recent-articles">
-  <div class="inner-wrap-wide ">
-    <header class="section-header">
-      <h2>Recent Articles</h2>
+<div class="blog-feed">
+    <div class="inner-wrap">
+     <header class="section-header">
+      <h2>Latest stuff I've written</h2>
     </header>
-    <div class="bf-cards">
-      {{ range first 3 (where .Site.Pages "Section" "articles") }}
-      <a href="{{ .RelPermalink }}" class="bf-item-v2">
-        <div class="bf-content-v2">
-          <time class="bf-date-v2"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b> </span></time>
-          <h2 class="bf-title-v2"> {{ .Title }} </h2>
-          <p class="bf-excerpt-v2"> {{ .Description }}</p>
-        </div>
-      </a>
-      {{ end }}
-    </div>
-  </div>
-  <!-- 
-    <div class="inner-wrap-narrow">
-      <header class="section-header">
-        <h2>Recent Articles</h2>
-      </header>
+
+<div class="blog-feed__wrap">
+{{ range first 6 (where .Site.Pages "Section" "articles") }}
+  <!--  <article class="bf-item">
+    
+    <time class="bf-date"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b></span></time>
+  
+    <div class="bf-content">
+      <h2 class="bf-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       
-        {{ range first 4 (where .Site.Pages "Section" "articles") }}
-        <article class="bf-item">
-          <time class="bf-date"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b></span></time>
-          <div class="bf-content">
-            <h2 class="bf-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-            <p class="bf-excerpt"> {{ .Description }}</p>
-          </div>
-        </article>
-        {{ end }}
-     
-    </div> -->
+      <p class="bf-excerpt"> {{ .Description }}</p>
+    </div>
+   </article> -->
+
+ {{ .Render "li"}}
+
+{{ end }}
 </div>
+
+<h3 class="view-all-link"><a href="/articles">View All Articles</a></h3>
+  </div>
+  </div>

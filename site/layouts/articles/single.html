@@ -18,16 +18,16 @@
                 <p> I'm Julian, Director of User Experience at <a href="http://www.thomasnet.com" target="_blank" rel="noopener">THOMASNET.com</a>. I&nbsp;touch on topics such as UX/UI design, front-end development, and whatever I'm working on at the moment. If you want a heads up as soon as I publish something, <a href="#" class="newsletter-form">let&nbsp;me&nbsp;know</a>.</p>
             </div>
         </div>
-        <hr> {{ range first 2 (where .Site.Pages "Section" "articles") }} {{ if ne . $ }}
-        <article class="bf-item">
-            <time class="bf-date"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b></span></time>
-            <div class="bf-content">
-                <h2 class="bf-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                <p class="bf-excerpt"> {{ .Description }}</p>
-            </div>
-        </article>
-        {{ end }} {{ end }}
+        
     </div>
+
+
+{{ partial "recent-articles" . }}
+    
+
+
+
+
 </section>
 <progress value="0" id="progressBar">
     <div class="progress-container">

@@ -9,6 +9,7 @@ categories:
   - "UX"
 tags: [ExitIntent, Modals, CRO, ABTest, Code]
 images: ["assets/og-exit-intent-popup.jpg"]
+icon: /assets/aico-exit-intent-popup.svg
 time: 5 Minutes
 comments: false
 slug: "exit-intent-popups"

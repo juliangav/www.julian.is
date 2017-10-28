@@ -9,6 +9,7 @@ categories:
   - "UX"
 tags: [PWA, WebPerf, ServiceWorkers, WebAppManifest]
 images: ["assets/og-progressive-web-apps.jpg"]
+icon: /assets/aico-progressive-web-apps.svg
 time: 8 Minutes
 comments: false
 

@@ -6,7 +6,7 @@ description: Marcin Wichary with Typography, Val Head and animation, & Jessica S
 excerpt: Marcin Wichary with Typography, Val Head and animation, & Jessica Svendsen being so darn original, need I say more?
 time: 13 Minutes
 comments: false
-
+icon: /assets/aico-smashing-magazine.svg
 slug: "smashingconf-barcelona-2016-day-1"
 date: "2016-10-25"
 ---

@@ -6,7 +6,7 @@ description: It’s difficult for some folks to see the value in a designer atte
 excerpt: It’s difficult for some folks to see the value in a designer attending a marketing conference, but anyone with a decent understanding of design knows that with context, you create better work.
 time: 2 Minutes
 comments: false
-
+icon: /assets/aico-inbound.svg
 slug: "hubspot-inbound-2016-designers-perspective"
 date: "2016-11-13"
 ---

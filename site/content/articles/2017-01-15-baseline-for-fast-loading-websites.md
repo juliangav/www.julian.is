@@ -6,7 +6,8 @@ description:  A solid baseline with actionable steps to immediately make your we
 categories:
   - "Development"
 tags: [WebPerf, Optimization, PerceivedPerformance]
-images: ["assets/og-fast-loading-websites.jpg"]
+images: ["assets/og-simple-baseline-fast-loading-websites.jpg"]
+icon: /assets/aico-simple-baseline-fast-loading-websites.svg
 time: 6 minutes
 comments: false
 

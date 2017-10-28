@@ -9,6 +9,7 @@ categories:
   - "Development"
 slug: "static-websites-and-jamstack"
 images: ["assets/og-static-jamstack.jpg"]
+icon: /assets/aico-static-jamstack.svg
 comments: false
 
 

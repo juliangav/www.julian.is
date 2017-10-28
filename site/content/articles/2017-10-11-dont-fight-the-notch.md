@@ -9,6 +9,7 @@ categories:
   - "Development"
 slug: "iphone-x-notch" 
 images: ["assets/og-dont-fight-the-notch.jpg"]
+icon: /assets/aico-dont-fight-the-notch.svg
 comments: false
 
 

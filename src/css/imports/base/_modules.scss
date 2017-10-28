@@ -6,6 +6,7 @@
 }
 
 
+
 /*=============== Site Header ===============*/
 
 .sh-sticky-wrap {
@@ -22,8 +23,7 @@
       left: 0;
       right: 0;
       top: 0;
-      background-color: rgba(255, 255, 255, .75);
-      //border-bottom: 1px solid $base-border-color;
+      background-color: rgba(255, 255, 255, .75); //border-bottom: 1px solid $base-border-color;
       .site-nav {
         opacity: 1;
       }
@@ -47,6 +47,9 @@
   border-bottom: $base-border;
   @include mq(medium) {
     position: relative;
+  }
+  &.site-header-wrap__home {
+    border-bottom: 0;
   }
 }
 
@@ -72,7 +75,10 @@
     padding-bottom: 0;
   }
 }
-
+// .site-header__icon {
+//   max-width:.75em;
+//   margin-right:.2em;
+// }
 .site-logo {}
 
 .site-header-home {
@@ -115,8 +121,7 @@
   overflow: hidden;
   display: block;
   text-decoration: none;
-  font-size: 1em;
-  // background-color:green;
+  font-size: 1em; // background-color:green;
   //width: 16.25em;
   float: left;
   height: $nav-height;
@@ -133,8 +138,7 @@
     border-radius: 100%;
     text-align: center;
     margin: 0;
-    box-shadow: none;
-    //font-size: .75em;
+    box-shadow: none; //font-size: .75em;
     float: left;
     img {
       vertical-align: middle;
@@ -159,36 +163,31 @@
 // }
 .sh-utility-nav {
   overflow: hidden;
-  height: $nav-height/1.5;
-  //float:right; 
+  height: $nav-height/1.5; //float:right; 
   clear: both;
   margin-top: 2em;
   .social-wrap {
-    width: 12em;
-    //display: none;
+    width: 12em; //display: none;
     a {
-      height: $nav-height/1.5;
-      //background-color:green;
+      height: $nav-height/1.5; //background-color:green;
       line-height: $nav-height/1.5;
     }
   }
   @include mq(medium) {
-    height:$nav-height;
-    clear:none;
-    margin-top:0;
+    height: $nav-height;
+    clear: none;
+    margin-top: 0;
     .social-wrap {
       width: 12em;
     }
-    text-align: right;
-    //float: right;
+    text-align: right; //float: right;
     width:12em;
-    float:right;
-    //background-color:red;
+    float:right; //background-color:red;
     .social-wrap {
       display: inline-block;
       a {
-        height:$nav-height;
-        line-height:$nav-height;
+        height: $nav-height;
+        line-height: $nav-height;
       }
     }
   }
@@ -218,8 +217,7 @@
   padding-top: 1.2em;
   width: 2em;
   margin-left: 1em;
-  text-align: center;
-  //background-color:red;
+  text-align: center; //background-color:red;
   text-decoration: none;
   span {
     font-size: .75em;
@@ -232,8 +230,7 @@
 .sh-ph {
   margin: 0;
   i {
-    font-style: normal;
-    //display:none;
+    font-style: normal; //display:none;
   }
   @include mq(medium) {
     font-size: $medium-font-size;
@@ -257,6 +254,7 @@
 }
 
 
+
 /*=============== Site Intro ===============*/
 
 .site-intro {
@@ -274,8 +272,7 @@
 }
 
 .si-signature {
-  max-width: 20em;
-  //margin-bottom:-.875em;
+  max-width: 20em; //margin-bottom:-.875em;
 }
 
 .si-signature-inline {
@@ -291,13 +288,11 @@
   margin-bottom: $baseline*3;
   position: relative;
   z-index: 2;
-  font-style: normal;
-  //text-transform: normal !important;
+  font-style: normal; //text-transform: normal !important;
 }
 
 .si-subtext {
-  position: relative;
-  //margin-top:$baseline*5;
+  position: relative; //margin-top:$baseline*5;
   font-weight: bold;
   z-index: 2;
 }
@@ -310,22 +305,18 @@
   z-index: 2;
   border-radius: 100%;
   height: 2.5em;
-  width: 2.5em;
-  //line-height:3em;
+  width: 2.5em; //line-height:3em;
   // text-align:center;
-  display: inline-block;
-  // vertical-align: middle;
+  display: inline-block; // vertical-align: middle;
   position: relative;
-  float: right;
-  //margin-top:.3em;
+  float: right; //margin-top:.3em;
   @include transition (all .2s ease-in-out);
   span {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    //background-color:red;
+    left: 0; //background-color:red;
     display: block;
     text-indent: -99999em;
     overflow: hidden;
@@ -353,7 +344,6 @@
 .site-nav-container {
   .snc-header {
     overflow: hidden;
-    
   }
   .sh-ico-info {
     clear: both;
@@ -367,23 +357,23 @@
     }
   }
   @include mq(medium) {
-    width:auto;
-    margin-right:0;
-    float:right;
-    position:relative;
+    width: auto;
+    margin-right: 0;
+    float: right;
+    position: relative;
     .snc-header {
-      float:right;
+      float: right;
     }
     .site-nav {
-      float:right;
-      width:20em;
-      margin-right:1em;
+      float: right;
+      width: 20em;
+      margin-right: 1em;
     }
   }
   @include mq(large) {
     .site-nav {
-      width:20em;
-      margin-right:1em;
+      width: 20em;
+      margin-right: 1em;
     }
   }
 }
@@ -394,6 +384,7 @@
 }
 
 
+
 /*=============== Site Content ===============*/
 
 //Layout formatting is in patterns.scss
@@ -402,6 +393,7 @@
 .site-content-primary {}
 
 .site-content-secondary {}
+
 
 
 /*=============== Site Footer ===============*/
@@ -442,6 +434,7 @@
 img[name=pphLoggerImage] {
   display: none;
 }
+
 
 
 /*=============== Search ===============*/
@@ -531,11 +524,11 @@ img[name=pphLoggerImage] {
 .search-exit {
   float: right;
   margin-left: 10px;
-  margin-bottom: 5px;
-  //position:absolute;
+  margin-bottom: 5px; //position:absolute;
   top: 0;
   right: 0;
 }
+
 
 
 /*=============== Portfolio Section ===============*/
@@ -578,4 +571,54 @@ img[name=pphLoggerImage] {
     margin-top: 0;
   }
   margin-bottom:$baseline*4;
+}
+
+
+
+
+/*=============== Subscribe Module ===============*/
+
+.subscribe-module {
+  //background-color:lighten($light-gray,4%);
+  background-color: $blue;
+  border-top: $base-border;
+
+  h2,
+  h3,
+  p {
+    color: $white;
+    margin-bottom: 0;
+  }
+  .mc-label {
+    display: none;
+  }
+  .inner-wrap {
+    border-bottom: 1px solid $light-blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  @include mq(medium) {
+    .inner-wrap {
+      grid-template-columns: 7fr 5fr;
+    }
+  }
+}
+
+.subscribe-module__header {
+  h2,
+  h3 {
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.subscribe-module__form {
+  text-align: left;
+  @include mq(medium) {
+    text-align: right;
+  }
 }

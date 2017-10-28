@@ -9,7 +9,7 @@ categories:
 tags: [CRO, GDD, CaseStudy]
 time: 5 Minutes
 comments: false
-
+icon: /assets/aico-conversion-rate-optimization.svg
 slug: "conversion-rate-optimization-case-study"
 date: "2016-11-08"
 
