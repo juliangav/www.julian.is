@@ -1,5 +1,5 @@
 ---
-title: "Don't Fight The Notch"
+title: "Don't Fight The Notch — Designing for the iPhone X"
 description:  Coming to terms with the notch on the iPhone X and its effect on mobile design.
 tags: [CSS, Mobile,]
 lastmod: 2017-10-17
