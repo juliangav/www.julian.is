@@ -191,7 +191,7 @@ And now you have your very own exit intent popup. Congratulations! (Sorry, no �
 
 I'm curious to hear about what you’ve learned from this post, ways to improve patterns or how you’ve used popups. Don’t hesitate to [tweet](https://twitter.com/juliangav) at me. 
 
-If you're interested in optimizing the load time of your website, I recently wrote [A Simple Baseline for Fast Loading Accessible Websites]({% post_url 2017-01-15-baseline-for-fast-loading-websites %}).
+If you're interested in optimizing the load time of your website, I recently wrote [A&nbsp;Simple Baseline for Fast Loading Accessible Websites](/article/baseline-for-fast-loading-websites).
 
 
 <!--Delayed Popup-->
