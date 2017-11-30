@@ -19,6 +19,8 @@ I'm sure that by now you've heard about how static websites are the best thing s
 
 JAMstack stands for JavaScript, APIs, & Markup; it’s an approach to building websites that allows you to have all the web performance and security benefits of a static website along with the dynamic capabilities of a database-driven CMS.
 
+(Related: [Progressive Web Apps — The Next Step in Responsive Web Design](/article/progressive-web-apps/))
+
 To present this in context, I’ll run you through the problems with dynamic websites, how we’re solving them with a static approach, and how to start putting together your own JAMstack.
 
 <h2 id="dynamic">Problems Dynamic Websites Are Facing</h2>

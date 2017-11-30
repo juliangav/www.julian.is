@@ -19,6 +19,8 @@ Unless you're off on a remote island and you've dismissed all technology from yo
 
 Pretty interesting from a design standpoint, but I’ll cut to the chase: This directly affects how our websites get formatted on these devices — it’s a pretty big deal.
 
+(Related: [Static Websites + JAMstack = <3](/article/static-websites-and-jamstack/))
+
 <figure>
 	<img src="/assets/iphone-x-landscape-viewport-fit-default.jpg" alt="Default Website Formatting on iPhone X">
 	<figcaption>Default Website Formatting on iPhone X</figcaption>

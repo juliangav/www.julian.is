@@ -26,7 +26,7 @@ Late last week, Smashing Magazine, one of the largest and most influential onlin
 
 Honestly, I didn’t think much of it. Progressive Web Apps are for the hardcore web application developers creating the next online cloud-based Photoshop (complicated stuff), right? I scrolled on and went about my day.
 
-(Related: [A Simple Baseline for Fast Loading Websites](/article/baseline-for-fast-loading-websites/))
+(Related: [Static Websites + JAMstack = <3](/article/static-websites-and-jamstack/))
 
 Then, I saw CSS wizard, Harry Roberts, [tweet](https://twitter.com/csswizardry/status/839814781326483456) about making some setting changes in CloudFlare and achieving the same. It might have been a coincidence that I stumbled across two influencers discussing the same topic, but it still caught my eye. So out of curiosity, I installed [Lighthouse](https://developers.google.com/web/tools/lighthouse/), the Chrome plugin that both Smashing Magazine and Harry Roberts had used, and ran my website through it. 
 
