@@ -73,6 +73,11 @@
   .inner-wrap {
     padding-top: 0;
     padding-bottom: 0;
+    display:flex;
+    justify-content:space-between;
+    &:after {
+      display:none;
+    }
   }
 }
 // .site-header__icon {
@@ -372,7 +377,7 @@
   }
   @include mq(large) {
     .site-nav {
-      width: 20em;
+      width: 25em;
       margin-right: 1em;
     }
   }

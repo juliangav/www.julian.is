@@ -57,10 +57,10 @@ body {
   font-weight: normal;
   line-height: $base-line-height;
   @include mq(mediumv) {
-    font-size: .875em;
+    //font-size: .875em;
   }
   @include mq(smallv) {
-    font-size: .75em;
+    //font-size: .75em;
   }
 }
 
