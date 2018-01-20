@@ -30,11 +30,12 @@ gulp.task("build-preview", ["sass", "js", "fonts", "images", "hugo-preview"]);
 
 
 
-gulp.task("sass", function () {
-  return gulp.src('./src/css/*.scss')
+gulp.task("sass", () => (
+  gulp.src('./src/css/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist'));
-});
+    .pipe(gulp.dest("./dist"))
+    .pipe(browserSync.stream())
+));
 
 // gulp.task("js", (cb) => {
 //   const myConfig = Object.assign({}, webpackConfig);
@@ -86,6 +87,7 @@ gulp.task("server", ["hugo", "sass", "js", "fonts", "images"], () => {
   });
   gulp.watch("./src/js/*.js", ["js"]);
   gulp.watch("./src/css/*/*/*.scss", ["sass"]);
+  gulp.watch("./src/css/*/*.scss", ["sass"]);
   gulp.watch("./src/img/**/*", ["images"]);
   gulp.watch("./src/fonts/**/*", ["fonts"]);
   gulp.watch("./site/**/*", ["hugo"]);

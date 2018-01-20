@@ -1,0 +1,76 @@
+.article-preview__list {
+	//background-color:red;
+	@include display-grid;
+	grid-template-columns: 1fr;
+}
+.article-preview__container {
+	//border-bottom:$base-border;
+	@include transition (background .2s ease-in-out);
+	&:hover {
+		background-color:#f8f8f8;
+		.article-preview__date  {
+			background-color:$white;
+		}
+	}
+}
+
+.article-preview {
+	//background-color:orange;
+	@include margin-fix;
+	display:flex;
+	justify-content:flex-start;
+}
+
+.article-preview__header {
+	margin-top:0;
+	//margin-bottom:0;
+}
+
+.article-preview__date {
+		float:left;
+	margin-right:1em;
+	background-color:lighten($light-gray,4%);
+	display:block;
+	height:4em;
+	width:4em;
+	min-width:4em;
+	border-radius:100%;
+	line-height:4em;
+	text-align:center;
+	font-family:$header-font-family;
+	text-transform:uppercase;
+	color:$base-color;
+	@include transition (background .2s ease-in-out);
+	span {
+		display:inline-block;
+		line-height:1em;
+		vertical-align:middle;
+	}
+	i {
+		font-size:1.5em;
+		font-style:normal;
+		font-weight:bold;
+	}
+}
+
+.article-preview__body {
+	@include margin-fix;
+}
+
+
+.ico-lab {
+	    display: flex;
+    align-items: center;
+    justify-content: center;
+	&:before {
+		content:'';
+		display:inline-block;
+		height:1em; width:1em;
+		background-image:url(/assets/aico-lab.svg);
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:100%;
+		margin-right:.25em;
+
+	}
+}

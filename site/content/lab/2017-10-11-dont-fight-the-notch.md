@@ -1,15 +1,14 @@
 ---
-title: "Don't Fight The Notch — Designing for the iPhone X"
-description:  Coming to terms with the notch on the iPhone X and its effect on mobile design.
+title: "Scroll Progress Bars — Do They Work?"
+description:  A/B Testing Reading Position Indicators
 tags: [CSS, Mobile,]
 lastmod: 2017-10-17
 date: "2017-10-17"
 time: 3 Minutes
 categories:
   - "Development"
-slug: "iphone-x-notch" 
+slug: "scroll-progress-bar" 
 images: ["assets/og-dont-fight-the-notch.jpg"]
-icon: /assets/aico-dont-fight-the-notch.svg
 comments: false
 
 

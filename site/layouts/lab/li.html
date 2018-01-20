@@ -1,0 +1,11 @@
+<div class=" article-preview__container">
+<div class="inner-wrap-narrow">
+    <article class="article-preview">
+        <time class="article-preview__date"><span><b>{{ .Date.Format "Jan 2" }}</b> <br> {{ .Date.Format "2006" }}</span></time>
+        <div class="article-preview__body">
+            <h2 class="article-preview__header"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p class="article-preview__excerpt"> {{ .Description }}</p>
+        </div>
+    </article>
+</div>
+</div>

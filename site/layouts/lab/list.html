@@ -1,0 +1,13 @@
+{{ partial "html-header" . }} 
+{{ partial "header" . }}
+<section class="site-content" role="main">
+  
+    <main id="main">
+      
+        {{ range .Data.Pages }} {{ .Render "li"}} {{ end }}
+     
+    </main>
+    
+</section>
+{{ partial "footer" . }} 
+{{ partial "html-footer" . }}

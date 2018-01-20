@@ -13,3 +13,9 @@
 	display:block;
 	margin:0  auto;
 }
+
+@mixin display-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 24px;
+}
