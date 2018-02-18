@@ -7,7 +7,7 @@ permalinks:
   articles: /article/:slug/
   article-resources: /article/:slug/resources/
 params:
-  Description: "Hey there, I'm Julian, a designer/developer that enjoys testing everything."
+  Description: "Hey there, I'm Julian, a designer/developer who enjoys testing everything."
   AuthorName: "Julian Gaviria"
   GitHubUser: "juliangav"
   images: ["/img/julian-signature-blue.jpg"]
