@@ -221,7 +221,8 @@ $('.smooth-scroll').click(function(e) {
   e.preventDefault();
   var elementClicked = $(this).attr("href");
   var destination = $(elementClicked).offset().top;
-  $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination - 0 }, 1000);
+  var headerHeight = $('.site-header').height();
+  $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination - headerHeight }, 1000);
 });
 
 
