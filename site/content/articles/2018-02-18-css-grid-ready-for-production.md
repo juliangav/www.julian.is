@@ -4,7 +4,7 @@ description:  The fact that CSS Grid is ready to use in production is no secret,
 tags: [CSS, CSSGrid,]
 lastmod: 2018-02-18
 date: "2018-02-18"
-time: 4 Minutes
+time: 5 Minutes
 categories:
   - "Development"
 slug: "css-grid-ready-for-production" 
@@ -33,10 +33,10 @@ From team buy-in to implementation and fallbacks, here's the approach we took at
 
 <ol>
 	<li><a href="#why-css-grid" class="smooth-scroll">What the hell is CSS Grid</a></li>
-	<li><a href="#team-buy-in" class="smooth-scroll">What sold the team on leaving Bootstrap for Grid</a></li>
+	<li><a href="#team-buy-in" class="smooth-scroll">The team's “aha” moment on switching over to Grid</a></li>
 	<li><a href="#css-grid-foundation" class="smooth-scroll">Laying the CSS Grid foundation</a></li>
 	<li><a href="#css-grid-fallbacks" class="smooth-scroll">Fallbacks for browsers without support</a></li>
-	<li><a href="#css-grid-flexbox" class="smooth-scroll">CSS Grid vs Flexbox</a></li>
+	<li><a href="#css-grid-flexbox" class="smooth-scroll">CSS Grid vs. Flexbox</a></li>
 
 	<li><a href="#conclusion" class="smooth-scroll">To conclude</a></li>
 
@@ -44,34 +44,34 @@ From team buy-in to implementation and fallbacks, here's the approach we took at
 
 <h2 id="why-css-grid">What the hell is CSS Grid</h2>
 
-(For all you know-it-alls, feel free <a href="#team-buy-in" class="smooth-scroll">to skip the baseline knowledge stuff</a>.)
+(For all you know-it-alls, <a href="#team-buy-in" class="smooth-scroll">feel free to skip</a> the baseline knowledge stuff.)
 
-CSS Grid Layout is NOT a new framework. It is not a shiny new browser feature that appeared out of no where. CSS Grid is a spec which standardizes the approach to layouts on the web a spec that has been seven years in the making. It's a HUGE reason for designers, developers, and everyone in between to celebrate. 
+CSS Grid Layout is NOT a new framework. It is not a shiny new browser feature that appeared out of nowhere. CSS Grid is a spec which standardizes the approach to layouts on the web — a spec that has been seven years in the making. It's a HUGE reason for designers, developers, and everyone in between to celebrate.
 
 Ironically enough, [CSS Grid was originally proposed by Microsoft](https://blogs.msdn.microsoft.com/ie/2011/04/14/ie10-platform-preview-and-css-features-for-adaptive-layouts/) back in April of 2011. (MS peeps, you guys are doing an awesome job now btw, but some of us old school folk may or may not still be holding a grudge...)
 
 
-The unprefixed version of the spec was first made available in Firefox, Chrome, and Safari in March of 2017. On October 16 2017, Microsoft finally released Edge 16 with full support — making this the day which CSS Grid Layout was officially adopted by all major browsers (I warned you of the irony).
+The unprefixed version of the spec was first made available in Firefox, Chrome, and Safari in March of 2017. On October 16 2017, Microsoft finally released Edge 16 with full support — making this the day CSS Grid Layout was officially adopted by all major browsers (I warned you of the irony).
 
 
 
 
-Deciding on CSS Grid was pretty simple: we wanted to build a future proof site with a lean front-end design foundation. Leveraging browser native functionality where possible in order to keep performance & efficiency at the forefront.
+Deciding on CSS Grid was pretty simple: we wanted to build a future proof site with a lean front-end design foundation, leveraging browser-native functionality where possible in order to keep performance & efficiency at the forefront.
 
 
 I won't bore you with any additional details here, plenty has been written on the web explaining the [benefits of CSS Grid over existing solutions](https://hackernoon.com/how-css-grid-beats-bootstrap-85d5881cf163). 
 
-<h2 id="team-buy-in">What sold the team on leaving Bootstrap for Grid</h2>
+<h2 id="team-buy-in">The team's “aha” moment on switching over to Grid</h2>
 
-Let’s face it, you know that CSS Grid is awesome and efficient at the both maintenance and performance levels, but not everyone gives a crap about CSS and understands it like you do. This is especially true when you’re dealing with a team of software & front-end engineers who think of CSS as being synonymous with Bootstrap (but super talented none-the-less).
+Let’s face it, you know CSS Grid is awesome and worth adopting now, but not everyone gives a crap about CSS and understands it like you do. This is especially true when you’re dealing with a team of software & front-end engineers who think of CSS as being synonymous with Bootstrap (but super talented none-the-less).
 
 <!-- Technically, I wasn’t a developer on this project. Instead, I was spearheading the design side. On paper, my say was limited to the UI/UX design decisions.  -->
 
-Initially, it was a difficult to get buy-in knowing that the spec had only been available in major browsers for a handful of months. It also didn't help that we had already chosen Bootstrap as our foundational framework — one that already comes packaged with a widely adopted grid system based on flexbox. 
+Initially, it was a difficult to get buy-in knowing that the spec had been available in major browsers for only a handful of months. It also didn't help that we had already chosen Bootstrap as our foundational framework — one that already comes packaged with a widely adopted grid system based on Flexbox. 
 
 <!-- Like any competent development team, if it’s not practical, they didn’t want to hear about it. This was especially true with the 3 month deadline we were given. No time to experiment.  -->
 
-The “aha” moment came when we were putting together the following component that required a change in the order of the markup for the alternate variation: 
+The “aha” moment came when we were putting together the following component which required a change in the markup order for the alternating variation: 
 
 
 <figure><video width="100%" height="auto" controls>
@@ -79,17 +79,38 @@ The “aha” moment came when we were putting together the following component 
   Your browser does not support the video tag.
 </video>
 
-<figcaption>Simple example of Grid Template Areas — one of the main selling points of CSS Grid</figcaption></figure>
+<figcaption><a href="https://www.thomasnet.com/network/" target="_blank">Simple example</a> of Grid Template Areas which won the team over</figcaption></figure>
 
-Not a ground-breaking design pattern, but keeping the markup consistent while alternating the design was crucial to the scalability and efficiency of the component-based design system we were putting together. 
-
-
-Grid Template Areas — the feature that will convince most flexbox fanatics that Grid is the superior layout approach (more on Grid vs Flexbox further below). The ability to switch the order of elements without touching markup or any implementing any JS wizardry immediately won the team over and made CSS Grid a no-brainer.
+Not a groundbreaking design pattern, but keeping the markup consistent while alternating the design was crucial to the scalability and efficiency of the component-based design system we were putting together. 
 
 
-(P.S. Yes, I know that there are a ton of different ways to skin a cat and I'm pretty sure you would've been able to recreate the same alternating set of patterns without making changes to the markup using only floats in 1.5 lines of code while typing blindfolded — I get it, you're cool, but just being transparent with what worked for us.)
+[Grid Template Areas](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) — the feature that will convince most Flexbox fanatics that Grid is the superior layout approach (more on Grid vs. Flexbox further below). The ability to switch the order of elements without touching markup or implementing any JS wizardry immediately won the team over and made CSS Grid a no-brainer.
 
-Now that the team was on board, it was time to get to work and figure out how to we wanted to implement CSS Grid.
+
+(P.S. Yes, I know that there are a ton of different ways to skin a cat and I'm pretty sure you would've been able to recreate the same alternating set of patterns without making changes to the markup using only floats in 1.5 lines of code while typing blindfolded — I get it, you know karate, I'm just being transparent with what worked for us.)
+
+<!-- Now that the team was on board, it was time to get to work and figure out how to we wanted to implement CSS Grid. -->
+
+<h2 id="css-grid-flexbox">CSS Grid vs. Flexbox</h2>
+
+When we began looking into CSS Grid, the same question surfaced over and over again: 
+
+<blockquote class="text-aligncenter">
+  <p>Can't you just do this with Flexbox?</p>
+  <cite>Every single developer on the team</cite>
+</blockquote>
+
+Yes and no. At a basic level:
+
+* Flexbox allows you to setup rules in a single dimension, meaning you have to choose either rows or columns but not both. 
+* CSS Grid on the other hand is 2 dimensional, allowing you to simultaneously address both rows and columns in addition to providing a deeper set of rules specifically designed for layouts.
+
+(And as I mentioned above, CSS Grid has Grid Template Areas, which is the reason most developers I've spoken to have adopted Grid.)
+
+
+Instead of choosing one over the other, we agreed to use CSS Grid at the layout level and Flexbox at the component level (arranging child items of components). Although there's some overlap and and in some cases both could be used interchangeably, abiding by this rule helped us avoid any confusion in gray areas.
+
+Now that the team was on board and use cases were defined, it was time to get to work and figure out how to we wanted to implement and scale CSS Grid. 
 
 <h2 id="css-grid-foundation">Laying the CSS Grid foundation</h2>
 
@@ -169,11 +190,16 @@ This helped us out in about 75% of scenarios. For the rest we created custom CSS
 
 <h2 id="css-grid-fallbacks">Fallbacks for browsers without support</h2>
 
-Staying true to the mobile-first approach, we served a one column layout as our starting point and avoided using grid until after the medium breakpoint.
+We chose [Modernizr](https://modernizr.com/) as our fallback approach — we found this to be the best option, which allowed us to cleanly separate fallback code from our base. 
 
-[Modernizr](https://modernizr.com/) lets us know when CSS Grid is not available by adding the class “no-cssgrid” to the body of the page. For browser’s lacking grid, we would use simple floats with percentages for width and padding for gutters. 
+When CSS Grid is not available, Modernizr adds <code>.no-cssgrid</code> to the <code>html</code> tag of the page. This allowed us to write nested rules of simple floats with percentages for browsers without support.
 
-We made sure to keep this simple by setting the limit to only one set of rules in medium viewport sizes and up.
+<!-- Staying true to the mobile-first approach, we served a one column layout as our starting point and avoided using grid until after the medium breakpoint.  -->
+
+
+
+<!-- 
+[Modernizr](https://modernizr.com/) lets us know when CSS Grid is not available by adding the class “no-cssgrid” to the body of the page. For browser’s lacking grid, we would use simple floats with percentages for width and padding for gutters.  -->
 
 <pre class="language-markup"><code>.no-cssgrid {
     .cols-2 {
@@ -221,25 +247,47 @@ We made sure to keep this simple by setting the limit to only one set of rules i
 
  
 
-Make sure to include media queries in your fallbacks. At the time of writing, the mobile agent Google uses to perform their [mobile-friendly test](https://search.google.com/test/mobile-friendly) does not support Grid — adding fallbacks to without media queries returned all of our pages as “not mobile-friendly" (we learned this the hard way).
+We kept this simple by setting the limit to one set of rules in medium viewport sizes and up. 
 
-We chose not to go the [Feature Query](https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/) route since this lacks support in older browsers including IE11. It just didn't make sense to include a fallback to a fallback feature. In the case of CSS Grid, rules that are added won't have any effect in browsers that don't have support.
+At the time of writing, the mobile agent Google uses to perform their [mobile-friendly test](https://search.google.com/test/mobile-friendly) does not support Grid — adding fallbacks to without media queries returned all of our pages as “not mobile-friendly" (we learned this the hard way).
 
-There are some fallback methods that suggest adding floats within the same code as CSS Grid without using Modernizr. Not a fan of this approach since it mixes fallback code with production code — making it really hard for any developer to pick up and understand what the hell's going on.
+We chose not to go the [Feature Query](https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/) route since this lacks support in older browsers including IE11. Adding a fallback to a fallback defeats the purpose of the feature.
 
-<h2 id="css-grid-flexbox">CSS Grid vs Flexbox</h2>
+In the case of CSS Grid, rules that are added won't have any effect in browsers that don't have support.
 
-We decided to stay away from the CSS Grid vs Flexbox debacle and decided to make them play nice together.
+There are some fallback methods that suggest adding floats within the same code as CSS Grid without using Modernizr. Not a fan of this approach since it mixes fallback code with the rest of your code — this makes it really hard for any developer to pick up and understand what the hell's going on.
 
-Early on we decided that we would use CSS Grid at the layout level and Flexbox at the component level (child items of the components inside of the layout containers). Although there is some overlap and both could be used interchangeably in some cases, abiding by this rule helped us avoid any confusion in the gray areas.
+<h2 id="conclusion">To conclude</h2>
 
-<h2>Bonus: My Fav CSS Grid Features</h2>
+<!-- It has been close to a month since we've launched and so far maintenance the website has been smooth  and metrics of the website for users without Grid support surprisingly went up.
 
-<h2 id="conclusion">To Conclude</h2>
+These, I believe, are two of main factors holding back designers &amp; developers in decision-making roles from adopting the awesomeness of Grid at a larger scale. 
+ -->
 
 
 
-CSS Grid provides a standardized approach to layouts on the web. Let's celebrate this.
+
+Two of main factors holding back decision-makers from adopting the awesomeness of Grid at larger scale are maintenance and website metrics. 
+
+So far it has been close to a month since we've launched — website maintenance has been smooth and key metrics of the website for users on IE11 and other legacy browsers surprisingly went up.
+
+
+Personally, I haven't been this excited to integrate a feature into my workflow since I discovered semantic 
+markup back in 2005. CSS Grid provides a standardized approach to layouts on the web. Let's celebrate this.
+
+
+
+
+
+
+
+<!-- <h2>Bonus: My Fav CSS Grid Features</h2>
+
+
+
+
+
+CSS Grid provides a standardized approach to layouts on the web. Let's celebrate this. -->
 
 <h2>Resources</h2>
 
@@ -249,3 +297,4 @@ CSS Grid provides a standardized approach to layouts on the web. Let's celebrate
 * [The New CSS Layout (Book)](https://abookapart.com/products/the-new-css-layout) - Book written by Rachel Andrew (part of the A Book Apart series).
 * [Can I Use CSS Grid Layout](https://caniuse.com/#feat=css-grid) - Browser support for CSS Grid globally is at 82% at the time of writing.
 
+A very special thanks to [Jen Simmons](http://jensimmons.com) and [Rachel Andrew](https://rachelandrew.co.uk) for providing the resources and spearheading the CSS Grid movement over the past 7 years. They're the reason this article was able to come together.
