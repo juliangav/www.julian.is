@@ -1,6 +1,6 @@
 ---
 title: "Proof that CSS Grid is Ready For Production at Scale"
-description:  The fact that CSS Grid is ready to use in production is no secret, but here's proof that you could use CSS Grid today.
+description:  From team buy-in to implementation and fallbacks, here's the approach we took at Thomas with the implementation of CSS Grid.
 tags: [CSS, CSSGrid,]
 lastmod: 2018-03-01
 date: "2018-03-01"
