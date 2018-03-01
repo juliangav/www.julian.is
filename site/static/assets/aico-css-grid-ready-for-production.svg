@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="410px" height="410px" viewBox="0 0 410 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>aico-css-grid-ready-for-production</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="aico-css-grid-ready-for-production" fill="#23507A">
+            <rect id="Rectangle" x="330" y="110" width="80" height="80"></rect>
+            <rect id="Rectangle" x="0" y="330" width="80" height="80"></rect>
+            <rect id="Rectangle" x="110" y="330" width="80" height="80"></rect>
+            <rect id="Rectangle" x="330" y="220" width="80" height="80"></rect>
+            <rect id="Rectangle-2" x="0" y="110" width="300" height="190"></rect>
+            <rect id="Rectangle-3" x="0" y="0" width="410" height="80"></rect>
+            <rect id="Rectangle-3" x="221" y="330" width="189" height="80"></rect>
+        </g>
+    </g>
+</svg>
