@@ -1,36 +1,31 @@
 ---
-title: "Proof that CSS Grid is Ready For Production at Scale"
-description:  From team buy-in to implementation and fallbacks, here's the approach we took at Thomas with the implementation of CSS Grid.
+title: "How We Adopted CSS Grid at Scale"
+description:  From team buy-in to fallbacks, here's the approach we took at Thomas with the implementation of CSS Grid.
 tags: [CSS, CSSGrid,]
 lastmod: 2018-03-01
 date: "2018-03-01"
 time: 5 Minutes
 categories:
   - "Development"
-slug: "css-grid-ready-for-production" 
-images: ["assets/og-css-grid-ready-for-production.jpg"]
-icon: /assets/aico-css-grid-ready-for-production.svg
+slug: "css-grid-at-scale" 
+images: ["assets/og-css-grid-at-scale.jpg"]
+icon: /assets/aico-css-grid-at-scale.svg
 comments: false
 
 
 ---
 
 
-Lean in close. I’m going to let you in on a little secret... <i>CSS Grid is ready for production — like right now.</i>
-
-Actually, the fact that CSS Grid is ready to use in production isn't <i>really</i> a secret — Rachel Andrew has been [telling us this since July of 2017](https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/). She’s even curated a [list of websites using CSS Grid in production today](https://cssgrid.design/). 
-
-Yes, the majority of the websites listed are tech related with target audiences most likely running a browser with CSS Grid support. Hell, I'm using Grid on this website with zero fallbacks because 99% of my visitors are using supporting browsers. 
+Last month we launched the redesign of [Thomasnet.com](https://www.thomasnet.com) — the backbone of the american manufacturing industry (and the company that happens to employ me full-time). A redesign with which we decided to go all-in with CSS Grid.
 
 
 
-But what about the rest of the web, which still seems to have a significant amount of users on browsers without support? Well...
+This is a website that in January alone received 100k+ visitors on Internet Explorer 11 — the main culprit of browsers without CSS Grid support.
 
 
-Last month we launched the redesign of [Thomasnet.com](https://www.thomasnet.com) using CSS Grid. It's a website that in January alone received 100k+ visitors on Internet Explorer 11 — the main culprit of browsers without support.
+The fact that CSS Grid is ready to use in production isn't <i>really</i> a secret — Rachel Andrew has been [telling us this since July of 2017](https://rachelandrew.co.uk/archives/2017/07/04/is-it-really-safe-to-start-using-css-grid-layout/). She’s even curated a [list of websites using CSS Grid in production today](https://cssgrid.design/). 
 
-
-From team buy-in to implementation and fallbacks, here's the approach we took at Thomas with the implementation of CSS Grid.
+From team buy-in to fallbacks, here's the approach we took at Thomas with the implementation of CSS Grid.
 
 <h3>Table of Contents</h3>
 
