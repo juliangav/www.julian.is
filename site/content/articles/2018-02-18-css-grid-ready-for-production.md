@@ -16,7 +16,7 @@ comments: false
 ---
 
 
-Last month we launched the redesign of [Thomasnet.com](https://www.thomasnet.com) — the backbone of the american manufacturing industry (and the company that happens to employ me full-time). A redesign with which we decided to go all-in with CSS Grid.
+Last month we launched the redesign of [Thomasnet.com](https://www.thomasnet.com) — the backbone of the american manufacturing industry (and the company that happens to employ me full-time). A redesign in which we decided to go all-in with CSS Grid.
 
 
 
@@ -185,7 +185,9 @@ This helped us out in about 75% of scenarios. For the rest we created custom CSS
 
 <h2 id="css-grid-fallbacks">Fallbacks for browsers without support</h2>
 
-We chose [Modernizr](https://modernizr.com/) as our fallback approach — we found this to be the best option because we were able to cleanly separate fallback code from our base.
+We decided not to make layouts identical in legacy browsers as this would only double our work. In some of the fancier layouts we put together, we defaulted to a standard two-column layout as a fallback. We've come to notice that as long as the website is usable and the experience isn't broken, users in legacy browsers don't really mind not being served the latest and greatest version of the layout.
+
+[Modernizr](https://modernizr.com/) as our fallback approach of choice — we found this to be the best option because we were able to cleanly separate fallback code from our base.
 
 When CSS Grid is not available, Modernizr adds <code>.no-cssgrid</code> to the <code>html</code> tag of the page. This allowed us to write nested rules of simple floats with percentages for browsers without support.
 
@@ -246,14 +248,16 @@ In the case of CSS Grid, rules that are added won't have any effect in browsers 
 
 There are some fallback methods that suggest adding floats within the same code as CSS Grid without using Modernizr. I'm not a fan of this approach since it mixes fallback code with the rest of your code, which makes it difficult for any developer to pick up and understand what's going on.
 
+
+
+
+
+
 <h2 id="conclusion">To conclude</h2>
 
 Risk adversity is a big part of what holds decision-makers back from adopting any new technology or features at larger scale. We need to make sure that decisions made on technology are efficient and maintainable, and they won't put the organization at risk by tanking important metrics.
 
-In the weeks since launching the website, maintenance has been smooth and key metrics of the website for users on IE11 and other legacy browsers have surprisingly gone up.
-
-I didn't put this article together to show you a ground-breaking way of using CSS Grid or to show you that the way we used it is the correct way (it could use some improvement). I simply put this article together to show you that Grid is ready to get integrated into your everyday workflow.
-
+In the weeks since launching the website, maintenance has been smooth and key metrics of the website for users on IE11 and other legacy browsers have surprisingly gone up. Is CSS Grid ready for production? I'll leave that up to you to decide.
 
 CSS Grid provides a standardized approach to layouts on the web, and we should celebrate this.
 
