@@ -111,7 +111,7 @@ Now that the team was on board and different use cases were addressed, it was ti
 
 
 
-With five developers working simultaneously on the front-end of the website and an aggressive three month deadlinec, our foundation had to be spot on in order maintain a fast-paced coordinated effort.
+With five developers working simultaneously on the front-end of the website and an aggressive three month deadline, our foundation had to be spot on in order maintain a fast-paced coordinated effort.
 
 
 
