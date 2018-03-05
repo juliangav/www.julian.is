@@ -255,7 +255,7 @@ There are some fallback methods that suggest adding floats within the same code 
 
 <h2 id="conclusion">To conclude</h2>
 
-Risk adversity is a big part of what holds decision-makers back from adopting any new technology or features at larger scale. We need to make sure that decisions made on technology are efficient and maintainable, and they won't put the organization at risk by tanking important metrics.
+Risk aversion is a big part of what holds decision-makers back from adopting any new technology or features at larger scale. We need to make sure that decisions made on technology are efficient and maintainable, and they won't put the organization at risk by tanking important metrics.
 
 In the weeks since launching the website, maintenance has been smooth and key metrics of the website for users on IE11 and other legacy browsers have surprisingly gone up. Is CSS Grid ready for production? I'll leave that up to you to decide.
 
