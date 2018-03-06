@@ -16,7 +16,7 @@ comments: false
 ---
 
 
-Last month we launched the redesign of [Thomasnet.com](https://www.thomasnet.com) — the backbone of the american manufacturing industry (and the company that happens to employ me full-time). A redesign in which we decided to go all-in with CSS Grid.
+Last month we launched the redesign of [Thomasnet.com](https://www.thomasnet.com) — the backbone of the American manufacturing industry (and the company that happens to employ me full-time). A redesign in which we decided to go all-in with CSS Grid.
 
 
 
