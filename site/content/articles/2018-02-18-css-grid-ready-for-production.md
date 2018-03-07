@@ -187,7 +187,7 @@ This helped us out in about 75% of scenarios. For the rest we created custom CSS
 
 We decided not to make layouts identical in legacy browsers as this would only double our work. In some of the fancier layouts we put together, we defaulted to a standard two-column layout as a fallback. We've come to notice that as long as the website is usable and the experience isn't broken, users in legacy browsers don't really mind not being served the latest and greatest version of the layout.
 
-[Modernizr](https://modernizr.com/) as our fallback approach of choice — we found this to be the best option because we were able to cleanly separate fallback code from our base.
+[Modernizr](https://modernizr.com/) was our fallback approach of choice — we found this to be the best option because we were able to cleanly separate fallback code from our base.
 
 When CSS Grid is not available, Modernizr adds <code>.no-cssgrid</code> to the <code>html</code> tag of the page. This allowed us to write nested rules of simple floats with percentages for browsers without support.
 
