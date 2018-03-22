@@ -359,3 +359,21 @@
 }
 
 .snc-footer {}
+
+
+.sh-icons .sh-ico-info {
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.5em;
+}
+
+.site-nav-container .sh-ico-info {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+}
+
+.site-nav-container.active {
+  position: fixed;
+  z-index: 3147483647;
+}
