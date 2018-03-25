@@ -1,4 +1,4 @@
-var CACHE_NAME = 'site-cache-v2v196';
+var CACHE_NAME = 'site-cache-v2v197';
 var urlsToCache = [
   '/',
   '/style.css',
@@ -58,7 +58,7 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', function(event) {
 
-  var cacheWhitelist = ['site-cache-v2v196'];
+  var cacheWhitelist = ['site-cache-v2v197'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
