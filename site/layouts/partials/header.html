@@ -129,7 +129,7 @@
     <h1>{{ if eq .Kind "taxonomy" }}#{{ end }}{{ .Title }}</h1>
     
     {{ if isset .Params "date" }}
-    {{ if eq .Section "articles" }}<p class="post-meta"><span class="post-date">{{ .Date.Format "January 2, 2006" }}</span> <span class="post-reading-time">{{ .Params.Time }}</span></p>{{ end }}{{ end }}
+    <p class="post-meta"><span class="post-date">{{ .Date.Format "January 2, 2006" }}</span> <span class="post-reading-time">{{ .Params.Time }}</span></p>{{ end }}
 {{ if .Params.tags }}
     <p class="post-tags">{{ range .Params.tags }}
     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> 
