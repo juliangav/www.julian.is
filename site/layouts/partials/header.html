@@ -4,11 +4,7 @@
   <header class="site-header" role="banner">
     <div class="sh-sticky-wrap">
       <div class="inner-wrap">
-        <span class="sh-icons">
-              
-              
-              <a href="#menu" class="sh-ico-info menu-link"><span>+</span></a>
-        </span>
+        
         <a href="/" class="site-logo">
           <figure><img src="/img/julian-signature.svg" alt="Site Logo"></figure>
           <!-- <figcaption>
@@ -16,11 +12,16 @@
               <span>polyskilled designer</span>
             </figcaption> -->
         </a>
+        <span class="sh-icons">
+              
+              
+              <a href="#menu" class="sh-ico-info menu-link"><span>+</span></a>
+        </span>
         <!--Site Nav-->
         <div class="site-nav-container">
           <div class="snc-header">
-            <a href="#menu" class="sh-ico-info menu-link active"><span>+</span></a>
-            
+          <a href="#menu" class="sh-ico-info menu-link active"><span>+</span></a>
+        </div>
           <nav class="site-nav" role="navigation">
             <ul class="sn-level-1">
               <li class="sn-li-l1">
@@ -37,7 +38,9 @@
               </li>
             </ul>
           </nav>
-          <div class="sh-utility-nav">
+          <div class="snc-header">
+            
+            <div class="sh-utility-nav">
               <div class="social-wrap">
                 <a href="https://dribbble.com/juliangav" target="_blank" rel="noopener">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.914px" height="17.914px" viewBox="0 0 17.914 17.914" enable-background="new 0 0 17.914 17.914" xml:space="preserve">
@@ -96,6 +99,7 @@
               </div>
             </div>
           </div>
+          
         </div>
         <!-- site-nav-container END-->
         <a href="" class="site-nav-container-screen menu-link">&nbsp;</a>
@@ -130,7 +134,10 @@
     <p class="post-tags">{{ range .Params.tags }}
     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> 
   {{ end }}</p>{{ end }}
+{{ if isset .Params "sub_title" }}
 
+<p class="emph text-aligncenter">{{ .Params.sub_title }}</p>
+{{ end }}
 
   </div>
   {{ end }}
