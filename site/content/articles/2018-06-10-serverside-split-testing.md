@@ -19,12 +19,35 @@ There's nothing more intimidating to a front-end developer than when you mention
 
 The reason most of us include static websites in our workflow is because we don't have to deal with anything server-side related. And that's pretty efficient since it's not what we're good at.
 
-However, when we speak about server-side split or a/b testing, we're referring to the location of where the change of your test takes place. In most cases, when we setup a test, the changes take place on the front-end, after the user's browser has downloaded all assets from the server. 
+However, when it comes to split or A/B testing (I'll be using both names interchangeably), being able to deliver a specific variation of a test directly from the server has huge advantages.
 
-If you're testing small front-end changes (e.g. button colors), it's usually a change that happens without the user doesn't noticing. But if your testing goes any deeper than a few lines of CSS & JS, it begins to take a noticeable toll on the load time of a website. You'll notice a slow split test one of two ways:
+<h2>Difference between client-side and server-side split testing</h2>
+
+<h3>Good Ol' Client-Side Split Testing</h3>
+
+The way that traditional A/B testing works is by including a snippet of JS at the head of your website. This snippet is supposed to load before anything else on the page does in order to carry out the correct DOM changes of the test at hand. You could expect some load time delays with all of the JS wizardry that's happening before the page decides it's time to render. 
+
+Depending on the test, most delays are minor and not noticeable by the end users. But if you're trying to test a completely different layout with a completely different set of assets, chances are that the experience of the user will take a toll.
+
+You'll notice a slow split test one of two ways: 
 
 1. A page flickers and shifts objects around on the initial load. This happens because the JS of the split code is loading asynchronously with the rest of the website's DOM elements. 
 2. A page displays a blank page for about 3-4 seconds, depending on the size of the test, before showing a fully loaded page. This happens when a test is setup to avoid showing jumping page — this has a big negative impact on conversions and you should avoid at all costs.
+
+<h3>Hello Server-Side Split Testing</h3>
+
+The main difference between server-side split testing and client side split-testing is where the changes take place. Instead of downloading all assets and changing the layout on page load, a server-side test makes the changes at the server level before the assets get downloaded by the user. 
+
+This means that two or more versions of that page exist at the server level and the user will only get served one depending on the variation they're being served. This has a huge improvement in performance since the user downloads only the assets she needs for the given page. 
+
+There will be no way for the user to notice that a different variation is being served since all of this is happening on the same URL.
+
+
+<!-- However, when we speak about server-side split or a/b testing, we're referring to the location of where the change of your test takes place. In most cases, when we setup a test, the changes take place on the front-end, after the user's browser has downloaded all assets from the server. 
+
+If you're testing small front-end changes (e.g. button colors), it's usually a change that happens without the user doesn't noticing. But if your testing goes any deeper than a few lines of CSS & JS, it begins to take a noticeable toll on the load time of a website.  -->
+
+
 
 
 
