@@ -1,5 +1,5 @@
 ---
-title: "Server-Side A/B Testing for Static Websites"
+title: "Server-Side Split Testing for Static Websites"
 description:  When to use it, when to avoid it, and setting up your testing stack.
 tags: [abtesting, staticwebsites, jamstack]
 lastmod: 2018-03-01
@@ -21,7 +21,7 @@ The reason most of us include static websites in our workflow is because we don'
 
 However, when it comes to split or A/B testing (I'll be using both names interchangeably), being able to deliver a specific variation of a test directly from the server has huge advantages.
 
-<h2>Difference between client-side and server-side split testing</h2>
+<h2>Difference between client-side &amp; server-side split&nbsp;testing</h2>
 
 <h3>Good Ol' Client-Side Split Testing</h3>
 
@@ -36,12 +36,15 @@ You'll notice a slow split test one of two ways:
 
 <h3>Hello Server-Side Split Testing</h3>
 
-The main difference between server-side split testing and client side split-testing is where the changes take place. Instead of downloading all assets and changing the layout on page load, a server-side test makes the changes at the server level before the assets get downloaded by the user. 
+The difference between server-side split testing and client side split-testing is where the changes take place and the performance effect it has on the end user. Instead of downloading all assets and changing the layout on page load, a server-side test makes the changes at the server level before the assets get downloaded by the user. 
 
 This means that two or more versions of that page exist at the server level and the user will only get served one depending on the variation they're being served. This has a huge improvement in performance since the user downloads only the assets she needs for the given page. 
 
 There will be no way for the user to notice that a different variation is being served since all of this is happening on the same URL.
 
+<h3>So which approach do you choose?</h3>
+
+Both. Client-side split testing is too convenient and easy to setup to ever be replaced by server-side testing. Any marketer or non-technical person can start up Optimizely, Google Optimize, or VWO (all three kick butt) and setup a quick client-side test using a WYSIWYG. 
 
 <!-- However, when we speak about server-side split or a/b testing, we're referring to the location of where the change of your test takes place. In most cases, when we setup a test, the changes take place on the front-end, after the user's browser has downloaded all assets from the server. 
 
