@@ -18,7 +18,7 @@ date: "2017-03-05"
 
 As users, we hate popups. We never click on them. They’re annoying. They get in the way. But as conversion rate optimizers, they just work. They produce results by making themselves very difficult to ignore, and believe it or not, people do convert on these. Good news, though — somewhere, somehow, someone was able to find a middle ground to this. It’s what we call “exit intent modals” or, if you prefer to sound Google smart, “exit intent interstitials."
 
-(You’re more than welcome to <a href="#code" class="smooth-scroll">skip my ramble and go straight to the code</a>.)
+(You’re more than welcome to <a href="#code-for-exit-intent-popup" class="smooth-scroll">skip my ramble and go straight to the code</a>.)
 
 
 
@@ -43,7 +43,7 @@ All of these considerations and the careful planning is more than worth it — e
 
  Okay, enough with the theory. Let’s get into practicality and implementation. Over the past few months, we at [RPM](https://rpm.thomasnet.com) have been doing some heavy testing on exit intent to see what yields the best results — take a look at some of our findings below:
 
-<h2>A/B Test: Delayed Popup vs. Exit Intent Popup</h2>
+## A/B Test: Delayed Popup vs. Exit Intent Popup
 
 We started off by testing a traditional delayed popup vs an exit intent popup. (Spoiler: The results threw us off a bit, but nonetheless, what we learned from this was pretty valuable.)
 
@@ -67,7 +67,7 @@ At a first glance, this seems like somewhat of a disappointment since the result
 
 This was enough evidence for us to conclude that there was an overall improvement in the UX of the website to give exit intent method more attention.
 
-<h2>Multivariate Test: Strong Messaging + Multiple Offers</h2>
+## Multivariate Test: Strong Messaging + Multiple Offers
 
 Armed with the knowledge of our initial test, we created a multivariate test of the exit intent with a strong focus on the messaging and offer.
 
@@ -114,7 +114,7 @@ We then tested multiple variations, and we’ve consistently improved conversion
 
 Pretty cool, right? Time to try it for yourself...
 
-<h2 id="code">Code for Exit Intent Popup</h2>
+## Code for Exit Intent Popup
 
 <p>This section is a geared a bit more towards developers, so if you're a marketer, simply share this section with your developer (or anyone who knows how to add JavaScript to a website). If you're still having trouble, <a href="mailto:me@julian.is">reach out to me</a> and I will gladly help out.</p>
 

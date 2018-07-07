@@ -13,3 +13,11 @@
 	display:block;
 	margin:0  auto;
 }
+
+
+//CSS Grid
+@mixin display-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 0 1.5em;   
+}

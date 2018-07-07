@@ -62,24 +62,29 @@ Although you probably won’t be using any hardcore app-like features for your w
 
 There’s even more to it:
 
-### Offline Accessibility with Service Workers
+<h3>Offline Accessibility with Service Workers</h3>
+
 Using service workers, we’re able to “download” your website for offline use. Even with our tech-savvy way of life, there are plenty of use cases for this — subway riders with no internet access reading your blog, plant managers with spotty wifi looking up specs, those driving into more rural areas, etc. 
 
 (Keep reading — I get a bit more detailed on this later on.)
 
-### Native Browser Notifications
+<h3>Native Browser Notifications</h3>
+
 If the website validates as a PWA, certain browsers take the initiative of displaying notifications such as offering to add the website to the home screen of the user — the PWA equivalent of installing an app. 
 
-### Enabling Push Notifications
+<h3>Enabling Push Notifications</h3>
+
 Push notifications are every developer and marketer's favorite native app feature. When leveraging the Push API, you have the ability to re-engage your audience even when your website’s not being accessed. 
 
-### Performance
+<h3>Performance</h3>
+
 With service workers, we have granular control over caching static assets, which reduces network requests and results in improved performance.
 
-### Google Likes it
+<h3>Google Likes it</h3>
+
 If Google supports something, pay close attention. It won’t be long until Google starts favoring PWAs in certain search results. (You heard it here first!) Right now, there isn’t any evidence showing an increase in traffic; however, early adopters are usually the ones to reap the benefits.
 
-### Still not convinced? Here’s some relevant proof:
+<h3>Still not convinced? Here’s some relevant proof:</h3>
 
 * [Housing.com increases conversions and lowers bounce rate by 40% with new PWA](https://developers.google.com/web/showcase/2016/housing)
 * [United eXtra Electronics grows eCommerce sales by 100% with Web Push Notifications](https://developers.google.com/web/showcase/2016/extra)
@@ -91,32 +96,40 @@ If Google supports something, pay close attention. It won’t be long until Goog
 
 Your website has to meet a baseline of standards in order to benefit from the PWA perks, but these are best practices you should already be considering and implementing on your website. If not, listen up.
 
-### Site is served over HTTPS
+<h3>Site is served over HTTPS</h3>
+
 This is the secure version of your website. Sending information over HTTPS ensure any data that’s being passed through your website gets encrypted. Yes, even if your website is a simple content-based website with no complicated features, you want and need HTTPS (lots of bad hombres out there). 
 
 You can test for this with Lighthouse or just look at the address bar of your website and if the URL starts with https:// and not http://, you’re good to go. I use [CloudFlare CDN](https://www.cloudflare.com/cdn/), which makes it relatively simple to enable HTTPS.
  
-### Pages are responsive on tablets & mobile devices
+<h3>Pages are responsive on tablets & mobile devices</h3>
+
 By now, everyone should be building on a responsive foundation. Do I even need to elaborate here? Thinking no, but [let me know](https://www.twitter.com/juliangav) otherwise.
 
-### The start URL (at least) loads while offline
+<h3>The start URL (at least) loads while offline</h3>
+
 Your home page URL needs to be able to load if you don’t have access to the internet — use service workers (not as difficult as it sounds) to help. (I’ll show you how to do this shortly.)
 
-### Metadata provided for add to home screen
+<h3>Metadata provided for add to home screen</h3>
+
 Mobile browsers need basic information about your website such as an icon to represent your website on the home screen of a device, a short name (what gets displayed below your icon) and a browser theme color to match certain parts of the browser to the colors of your website (among many other options).
 
 This gets accomplished through the [web app manifest file](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/), which is a simple JSON file that contains all of the specifics. (Again, I run you through setting one of these up toward the end of this post.)
 
-### First load is fast even on 3G
+<h3>First load is fast even on 3G</h3>
+
 Your website needs to render fast. It should load within the first 4 seconds and get a 85+ [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) score as a minimum. I recently wrote an article on [website speed performance](/article/baseline-for-fast-loading-websites/), which goes over a few basic steps you can take to make sure your website loads pretty darn quick.
 
-### Site works cross-browser
+<h3>Site works cross-browser</h3>
+
 Every single feature doesn’t have to work on every browser but being able to progressively enhance and using fallbacks where necessary should be the foundation of your website or app. Don’t target a specific browser or OS for your website/app to work on — it’s a big negative that goes against the progressive principle.
 
-### Page transitions don't feel like they block on the network
+<h3>Page transitions don't feel like they block on the network</h3>
+
 Going from page to page should be a seamless experience — any type of render blocking delay deters you from achieving that. There are many ways to address this from making sure your website’s fast (two steps above) and using [perceived performance techniques such as Critical CSS](/article/baseline-for-fast-loading-websites/#perceived-performance).
 
-### Each page has a URL
+<h3>Each page has a URL</h3>
+
 If you click on a page, make sure the website URL reflects that. Single Page Applications sometimes forget this and make it pretty difficult to share content across the web.
 
 Seems like a handful of steps, but if your website is already built on a foundation of best practices, it won’t be much work to have it validate. 
@@ -134,7 +147,7 @@ I had to address:
 
 And off to optimization land I went.
 
-### First Step: Enable Service Workers
+<h3>First Step: Enable Service Workers</h3>
 
 To reach the baseline of a PWA, we’re looking to provide a rich offline experience with the caching capabilities of service workers. On top of regular file caching, Service workers goes the extra mile to cache network responses and pretend to still have internet access (even if you’re in the middle of an internet deadzone). 
 
@@ -230,7 +243,7 @@ This took care of the “App can load on offline/flaky connections” error and 
 We’re getting there!
 
 
-### Second Step: Add The Web App Manifest
+<h3>Second Step: Add The Web App Manifest</h3>
 
 The web app manifest is a JSON file that allows you to control the look and feel of your theme in areas that you would otherwise not be able to modify. You have options such as: changing the color of the browser chrome; not displaying any chrome at all in order to give your website/app the standalone app look and feel; providing additional metadata to devices for when a user “installs” it to their home screen.
 
@@ -289,13 +302,13 @@ Mission accomplished! Told you it wasn't rocket science.
 
 ## Additional Information and Things to be Wary of
 
-### Browser Support: Who’s Backing This?
+<h3>Browser Support: Who’s Backing This?</h3>
 
 Google and Mozilla are the main players here with strong support from Microsoft and Samsung. Apple’s being a bit stubborn and throwing their mobile weight around since this [presents a threat to their iOS ecosystem](https://medium.com/@isaac.scerri/why-apple-is-blocking-the-future-of-apps-4dfe634a1d27#.vkhlsar8r). (My original theory was that they’re upset they didn’t come up with the idea first… and I’m tempted to stick with it.)
 
 Since the strategy behind progressive enhancement is to start with an emphasis on the core content of a website and add features to enhance the experience, PWAs will just work on iOS devices. However, as of late, it seems like Apple is beginning to have a change of heart by considering [service workers as part of their 5 year plan](https://trac.webkit.org/wiki/FiveYearPlanFall2015); better than nothing, but the web will move forward without them. 
 
-### Difference between PWA and Google’s Advanced Mobile Pages
+<h3>Difference between PWA and Google’s Advanced Mobile Pages</h3>
 
 These are two different types of approaches solving two different types of problems: 
 
@@ -305,17 +318,17 @@ PWA is focused on providing rich and engaging experiences along with reliable pe
 
 Nothing’s stopping you from using both — actually, [PWAs and AMPs work really well together](https://developers.google.com/web/shows/google-io/2016/amp-progressive-web-apps-start-fast-stay-engaged-google-io-2016).
 
-### Disproving a Few Myths
+<h3>Disproving a Few Myths</h3>
 
 I came across a few interesting statements while doing some research on the topic that I don’t agree with and don’t think you should either.
 
-#### Myth #1: 
+<h4>Myth #1: </h4>
 
 <blockquote><p>Benefits don't outweigh the time it takes to implement the functionality at the moment</p></blockquote>
 
 It took me about two hours to go from a 50/100 score to a 100/100 score. (Check the timestamp on the Lighthouse screenshots.) It’ll take you even less time to copy and paste code samples I provided onto your website. (Big thanks to me for doing your legwork — you’re welcome.) It’s safe to say that two hours seems like a worthy investment for reaping the engagement benefits.
 
-#### Myth #2:
+<h4>Myth #2:</h4>
 
 <blockquote><p>It's pretty much required that you're going to be using some form of JS framework or view library, like Angular or React.</p></blockquote>
 
@@ -323,13 +336,13 @@ My site runs on a [static site generator](/article/static-websites-and-jamstack/
 
 If you skipped the beginning of this article, I’ve outlined exactly what the PWA criteria is (and it’s not React or Angular). Scroll back up!
 
-#### Myth #3:
+<h4>Myth #3:</h4>
 
 <blockquote><p>You'll need to be pre-rendering pages on the server then picking up with your application when it's loaded.</p></blockquote>
 
 I don’t even know what this means, but it didn’t seem like the author of that article did either.
 
-#### Myth #4:
+<h4>Myth #4:</h4>
 
 <blockquote>
   <p>You're in the world of clever JS front-end technologies to make sure you do things the PWA way.</p>
@@ -347,7 +360,7 @@ This is just the tip of the iceberg. I want to see what the possibilities are wi
 
 I believe these are the next steps in our journey for a unified and accessible web that started with responsive web design in 2011. I’m excited and by the looks of it, and you’re probably very excited as well. If not, I have no idea how or why you made it to the end of this very long article.
 
-### Further Reading & Resources
+## PWA Resources
 
 I put together a separate page for articles, videos, podcasts and tutorials that I came across. I hope this helps you out. Enjoy!
 

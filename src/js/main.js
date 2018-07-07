@@ -224,6 +224,12 @@ $('.smooth-scroll').click(function(e) {
   var headerHeight = $('.site-header').height();
   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination - headerHeight }, 1000);
 });
-
+$('#TableOfContents a').click(function(e) {
+  e.preventDefault();
+  var elementClicked = $(this).attr("href");
+  var destination = $(elementClicked).offset().top;
+  var headerHeight = $('.site-header').height();
+  $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination - headerHeight }, 1000);
+});
 
 

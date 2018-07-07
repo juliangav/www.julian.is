@@ -36,7 +36,7 @@ Regardless of our opinions of Apple’s approach, the fact is that at the time o
 No need for a complete overhaul of your existing code base, though. You can embrace the notch with two simple code changes.
 
 
-<h2>Remove default margins with viewport-fit=cover</h2>
+## Remove default margins with viewport-fit=cover
 
 Based on the [CSS Round Display Spec](https://drafts.csswg.org/css-round-display/), we’re able to get websites to take up the entire screen by adding <code>viewport-fit=cover</code> to the viewport meta tag in the &lt;head&gt;. Here's what mine looks like:
 
@@ -54,7 +54,7 @@ Getting back on track here... Now our website covers (get it?) the screen in its
 	<figcaption>Website Formatting on iPhone X w/ viewport-fit=cover </figcaption>
 </figure>
 
-<h2>Avoiding Safe Areas with constant()</h2>
+## Avoiding Safe Areas with constant()
 
 Apple introduced <code>constant(safe-area-inset-*)</code>, which resolves to the dimensions needed by the user agent or browser to avoid the notch and other safe areas of the phone.
 
@@ -86,7 +86,7 @@ Browsers that don’t support constant() will display a value of 0 (that’s pre
   padding:2.5em constant(safe-area-inset-right) 2.5em constant(safe-area-inset-left);
 }</code></pre>
 
-<h2>Dimensions in Pixels</h2>
+## Dimensions in Pixels
 
 I was able to get a list of dimensions from the iPhone X Simulator in Xcode, and now, I’m sharing it with you.
 
@@ -149,13 +149,13 @@ I was able to get a list of dimensions from the iPhone X Simulator in Xcode, and
 </table>
 
 
-<h2>Closing Thoughts</h2>
+## Closing Thoughts
 
 Were the design decisions made by Apple the correct ones? Maybe. Will this change the way we build websites? Yes, but so did responsive web design back in 2011 and [Progressive Web Apps](/article/progressive-web-apps/) within the last year at a much larger scale. The reality of it is that we're part of an unpredictable industry; learning and adopting are the two habits that keep us afloat.
 
 Let’s take this change with a grain of salt and prep for what the future of mobile devices may have in store. 
 
-<h2>Resources</h2>
+## Resources
 
 * [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) - The original article published by WebKit that drove everyone nuts
 * [Removing the White Bars in Safari on iPhone X](http://stephenradford.me/removing-the-white-bars-in-safari-on-iphone-x/) - Well put together article on removing the margins in the iPhone X

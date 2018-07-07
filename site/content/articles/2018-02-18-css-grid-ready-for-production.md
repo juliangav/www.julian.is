@@ -27,7 +27,7 @@ The fact that CSS Grid is ready to use in production isn't <i>really</i> a secre
 
 From team buy-in to fallbacks, here's the approach we took at Thomas with the implementation of CSS Grid.
 
-<h3>Table of Contents</h3>
+<!-- <h3>Table of Contents</h3>
 
 <ol>
 	<li><a href="#why-css-grid" class="smooth-scroll">A quick primer on CSS Grid</a></li>
@@ -39,9 +39,11 @@ From team buy-in to fallbacks, here's the approach we took at Thomas with the im
 
 	<li><a href="#conclusion" class="smooth-scroll">To conclude</a></li>
 
-</ol>
+</ol> -->
 
-<h2 id="why-css-grid">A quick primer on CSS Grid</h2>
+<!-- <h2 id="why-css-grid">A quick primer on CSS Grid</h2> -->
+
+## A quick primer on CSS Grid
 
 (For all you know-it-alls, <a href="#team-buy-in" class="smooth-scroll">feel free to skip</a> the baseline knowledge stuff.)
 
@@ -61,7 +63,9 @@ Deciding on CSS Grid was pretty simple: We wanted to build a future-proof site w
 
 I won't bore you with any additional details here, plenty has been written on the web explaining the [benefits of CSS Grid over existing solutions](https://hackernoon.com/how-css-grid-beats-bootstrap-85d5881cf163). 
 
-<h2 id="team-buy-in">Our CSS Grid “aha” moment</h2>
+<!-- <h2 id="team-buy-in">Our CSS Grid “aha” moment</h2> -->
+
+## Our CSS Grid “aha” moment
 
 
 Initially, it was a difficult to get buy-in knowing that the spec had been available in major browsers for only a handful of months. It also didn't help that we had already chosen Bootstrap as our foundational framework — one that already comes packaged with a widely adopted grid system based on Flexbox. 
@@ -86,7 +90,9 @@ It's not a groundbreaking design pattern, but keeping the markup consistent whil
 (P.S. I'm sure you would've been able to recreate the same alternating set of patterns without making changes to the markup using only floats in 1.5 lines of code while typing blindfolded — I get it; you're a ninja. But this happened to be the example that worked for us.)
 
 
-<h2 id="css-grid-flexbox">Resolving the CSS Grid vs. Flexbox argument</h2>
+<!-- <h2 id="css-grid-flexbox">Resolving the CSS Grid vs. Flexbox argument</h2> -->
+
+## Resolving the CSS Grid vs. Flexbox argument
 
 When we began looking into CSS Grid, the same question surfaced over and over again: 
 
@@ -107,8 +113,9 @@ Instead of choosing one over the other, we agreed to use CSS Grid at the layout 
 
 Now that the team was on board and different use cases were addressed, it was time to get to work and figure out how to we wanted to implement and scale CSS Grid. 
 
-<h2 id="css-grid-foundation">Laying the CSS Grid foundation</h2>
+<!-- <h2 id="css-grid-foundation">Laying the CSS Grid foundation</h2> -->
 
+## Laying the CSS Grid foundation
 
 
 With five developers working simultaneously on the front-end of the website and an aggressive three month deadline, our foundation had to be spot on in order maintain a fast-paced coordinated effort.
@@ -183,7 +190,9 @@ In efforts to maintain a DRY approach, we created column classes that allowed us
 
 This helped us out in about 75% of scenarios. For the rest we created custom CSS on a per layout basis. 
 
-<h2 id="css-grid-fallbacks">Fallbacks for browsers without support</h2>
+<!-- <h2 id="css-grid-fallbacks">Fallbacks for browsers without support</h2> -->
+
+## Fallbacks for browsers without support
 
 We decided not to make layouts identical in legacy browsers as this would only double our work. In some of the fancier layouts we put together, we defaulted to a standard two-column layout as a fallback. We've come to notice that as long as the website is usable and the experience isn't broken, users in legacy browsers don't really mind not being served the latest and greatest version of the layout.
 
@@ -253,7 +262,9 @@ There are some fallback methods that suggest adding floats within the same code 
 
 
 
-<h2 id="conclusion">To conclude</h2>
+<!-- <h2 id="conclusion">To conclude</h2> -->
+
+## To conclude
 
 Risk aversion is a big part of what holds decision-makers back from adopting any new technology or features at larger scale. We need to make sure that decisions made on technology are efficient and maintainable, and they won't put the organization at risk by tanking important metrics.
 
@@ -262,8 +273,9 @@ In the weeks since launching the website, maintenance has been smooth and key me
 CSS Grid provides a standardized approach to layouts on the web, and we should celebrate this.
 
 
-<h2>Resources</h2>
+<!-- <h2>Resources</h2> -->
 
+## Resources
 
 * [Learn CSS Grid](http://jensimmons.com/post/feb-27-2017/learn-css-grid) -  A good primer article by Jen Simmons with a ton of resources
 * [Grid By Example](https://gridbyexample.com/) - Examples, patterns, and resources - the hub for everything CSS Grid related
