@@ -23,7 +23,9 @@ JAMstack stands for JavaScript, APIs, & Markup; it’s an approach to building w
 
 To present this in context, I’ll run you through the problems with dynamic websites, how we’re solving them with a static approach, and how to start putting together your own JAMstack.
 
-<h2 id="dynamic">Problems Dynamic Websites Are Facing</h2>
+<!-- <h2 id="dynamic">Problems Dynamic Websites Are Facing</h2> -->
+
+## Problems Dynamic Websites Are Facing
 
 Let's start with web performance. Regardless of [how well we optimize everything](/article/baseline-for-fast-loading-websites/) or how good of a job we do with with perceived performance, dynamic websites are SLOW. This is due to the amount of steps that have to take place in order to display the requested content everytime someone visits a web page. 
 
@@ -33,7 +35,9 @@ This is in addition to security concerns, expensive hosting, and the ever-changi
 
 So let's rethink our approach to building dynamic websites and start from <s>scratch</s> static.
 
-<h2 id="static">What's a Static Website?</h2>
+<!-- <h2 id="static">What's a Static Website?</h2> -->
+
+## What's a Static Website?
 
 That Dreamweaver website you created back in college? That’s a static website — a website made up of HTML pages with pre-populated content. 
 
@@ -71,7 +75,9 @@ From the developer’s perspective, the JAMstack methodology doesn’t require u
 
 Yes, I know, static sites are awesome, and I promise that setting up your JAMstack isn't all that difficult. Let's get started!
 
-<h2 id="hosting">Step 1: Choose a Host &amp; CDN</h2>
+<!-- <h2 id="hosting">Step 1: Choose a Host &amp; CDN</h2> -->
+
+## Step 1: Choose a Host &amp; CDN
 
 The beauty of static websites is that you’re able to host them anywhere. ANYWHERE.
 
@@ -93,7 +99,9 @@ Built from the ground up to host modern static websites, [Netlify](https://www.n
 
 If you like your current host, you can use [CloudFlare CDN](https://www.cloudflare.com/cdn/) to delegate content delivery. This gives you the flexibility to keep what you have and enjoy the benefits of a fast CDN. Setup is straight forward and not too pricey.  
 
-<h2 id="ssgs">Step 2: Decide on a Static Site Generator</h2>
+<!-- <h2 id="ssgs">Step 2: Decide on a Static Site Generator</h2> -->
+
+## Step 2: Decide on a Static Site Generator
 
 In order to avoid creating static html pages manually, you’re going to need a sturdy static site generator (SSG). An SSG is a command line interface (CLI) application — don’t run away yet, it’s a simple setup — that does all of the dynamic page generation legwork for you. (Need a primer? Here's a good [intro article on SSGs](https://davidwalsh.name/introduction-static-site-generators).)
 
@@ -119,7 +127,9 @@ As awesome as SSGs are, there are a few problems rooted in the fact that it gets
 
 In order to make this appealing to the masses, we need a dynamic layer in our current stack that provides a friendly admin UI…
 
-<h2 id="headless-cms">Step 3: Select a headless CMS</h2>
+<!-- <h2 id="headless-cms">Step 3: Select a headless CMS</h2> -->
+
+## Step 3: Select a headless CMS
 
 CMS-based websites consist of:
 
@@ -144,11 +154,13 @@ With an API-driven CMS, you’re creating content that will be strictly delivere
 
 Head over to [headlesscms.org](https://headlesscms.org/) for a full list of what’s currently available. 
 
-<h2 id="resources">Now What?</h2>
+<!-- <h2 id="resources">Now What?</h2> -->
+
+## Now What?
 
 Congrats! You’re well on your way to adopting the JAMstack and reaping the benefits of static websites. This is just the beginning; developers along with stakeholders are just beginning to acknowledge the benefits and flexibility of going static; agencies are starting to break the mold by introducing the [JAMstack approach to client websites](https://snipcart.com/blog/jamstack-clients-static-site-cms); and a plethora of tools and resources are becoming available on a daily basis. Make good use of this approach and let's make the internet better.
 
-<h3>Speaking of Tools and Resources...</h3>
+## JAMstack Resources
 
 I've put together the entire list of articles, tools, videos, tutorials & other resources I came across when writing this article. Enjoy!
 

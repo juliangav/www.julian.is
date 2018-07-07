@@ -21,7 +21,7 @@ In hopes of saving you a few headaches, I've curated a list of some of the most 
 
 (Related: Here’s a [conversion rate optimization & GDD case study](/article/conversion-rate-optimization-case-study/) on one of the websites we tested on.)
 
-<h3>Table of Contents</h3>
+<!-- <h3>Table of Contents</h3>
 
 <ol>
 	<li><a href="#one-metric" class="smooth-scroll">Focus on One Metric</a></li>
@@ -36,8 +36,10 @@ In hopes of saving you a few headaches, I've curated a list of some of the most 
 	<li><a href="#resources" class="smooth-scroll">Tools &amp; Resources</a></li>
 </ol>
 
+ -->
+<!-- <h2 id="one-metric">Focus on One Metric</h2> -->
 
-<h2 id="one-metric">Focus on One Metric</h2>
+## Focus on One Metric
 
 In order to maintain a focused CRO strategy, you need to know what the most important metric is and make that your team’s priority. When we first started, there was a long list of metrics that we wanted to improve on; this resulted in an unchoreographed effort to test and improve everything. This approach didn't get us good results. 
 
@@ -48,7 +50,9 @@ In order to focus our efforts and run effective tests, we were able to shorten o
 	<figcaption>Google Data Studio Chart</figcaption>
 </figure>
 
-<h2 id="not-just-one-metric">Okay But Don't Just Focus on One Metric...</h2>
+<!-- <h2 id="not-just-one-metric">Okay But Don't Just Focus on One Metric...</h2> -->
+
+## Okay But Don't Just Focus on One Metric...
 
 Hear me out. Yes, you need one main metric to be your team's priority. But that primary metric has supporting metrics that determine how well it will perform. 
 
@@ -58,8 +62,9 @@ Early in my testing career, I ran a test where I was able to increase RFI submis
 
 Ever since that debacle, I’ve made sure to include the website’s vital metrics as goals for any test I setup. While you may think you're scoring big wins, you may be affecting other vital metrics in a not so awesome way. I suggest you keep an eye out for this, especially when running tests to leading metrics.
 
-<h2 id="friction-points">Let Friction Points &amp; Your Main Metric Determine What You’re Testing</h2>
+<!-- <h2 id="friction-points">Let Friction Points &amp; Your Main Metric Determine What You’re Testing</h2> -->
 
+## Let Friction Points &amp; Your Main Metric Determine What You’re Testing
 
 
 You need a game plan. Instead of choosing random things to test, start by identifying the friction points of the website you believe will have the biggest impact on your main metric.
@@ -79,13 +84,17 @@ You can also use a user recording tool like [FullStory](https://www.fullstory.co
 
 Whichever the method you may use, focusing on user frustration will help you address low hanging fruit first and give you a clear path of what you should be focusing on.
 
-<h2 id="mvv">Focus On a Minimum Viable Vision with Minimum Viable Tests</h2>
+<!-- <h2 id="mvv">Focus On a Minimum Viable Vision with Minimum Viable Tests</h2> -->
+
+## Focus On a Minimum Viable Vision with Minimum Viable Tests
 
 A test that takes a minimum amount of time to implement that produces a huge increase in conversions is the nirvana for any CRO team. This is usually not the case, but it should always be the mindset. This helps with testing velocity and quickly proving/disproving hypotheses without the expensive overhead. 
 
 Test the minimum version of your idea instead and build from there. Design isn’t magic and because an idea worked for one website doesn’t mean it’ll work for yours. Which brings me to my next point...
 
-<h2 id="reproduce-results">It’s Difficult to Reproduce Results</h2>
+<!-- <h2 id="reproduce-results">It’s Difficult to Reproduce Results</h2> -->
+
+## It’s Difficult to Reproduce Results
 
 Just because you achieved statistical significance on a certain test doesn’t mean that it’s a pattern that will work everywhere. My team ran a test that increased conversion rates on a landing page by 76% — only to have the same test decrease conversions for a different client and test inconclusive for another.
 
@@ -96,7 +105,9 @@ What most people don’t take into consideration is the relationship between the
 
 The folks over at GoodUI.org focus most of their energy on figuring out which are the [winning tests that you can easily reproduce](http://www.goodui.org/evidence/). 
 
-<h2 id="design-principles">Good Aesthetics &amp; Solid Design Principles Don’t Always Win</h2>
+<!-- <h2 id="design-principles">Good Aesthetics &amp; Solid Design Principles Don’t Always Win</h2> -->
+
+## Good Aesthetics &amp; Solid Design Principles Don’t Always Win
 
 We recently had a debate on a hero image test. The solution proposed by my team was one that I wasn’t in line with. Not only were they going against the basic graphic design principle of balance, they were also doing it in a distasteful way (in my opinion). 
 
@@ -104,7 +115,9 @@ We recently had a debate on a hero image test. The solution proposed by my team 
 
 I was 100% sure that my experience and background in design would prove my theory. The test had a 66% increase on leads generated just by switching that darn image. I swallowed my pride and learned to put my opinion aside. 
 
-<h2 id="failing-tests">Failing Tests Are Still Wins</h2>
+<!-- <h2 id="failing-tests">Failing Tests Are Still Wins</h2> -->
+
+## Failing Tests Are Still Wins
 
 Not all tests you run are going to be home runs, the reality is that a handful of your tests will fail. Don’t let this turn into time wasted, analyze the hell out of the test, understand why it failed, and store it for reference. You will be referencing this in the future. 
 
@@ -117,19 +130,25 @@ If none of your tests are failing, chances are only a few of them (if any) are h
 	<figcaption>Failed Test on Optimizely</figcaption>
 </figure>
 
-<h2 id="secret-sauce-hypothesis">The Secret Sauce is a Strong Hypothesis</h2>
+<!-- <h2 id="secret-sauce-hypothesis">The Secret Sauce is a Strong Hypothesis</h2> -->
+
+## The Secret Sauce is a Strong Hypothesis
 
 This helps to make sure there’s merit to what’s being tested. The hypothesis should dictate what you test and not the other way around — you shouldn’t find yourself struggling to come up with a hypothesis last minute before launching a test.
 
 Make it a habit to create a hypothesis when making any type of UX decisions on a website, regardless of whether you’re A/B testing or not. (Example: If we keep the load time below three seconds, users will have a higher probability of sticking around due to the load time tolerance of the average user.) 
 
-<h2 id="good-ux">A Good User Experience = Long Term Sustainability</h2>
+<!-- <h2 id="good-ux">A Good User Experience = Long Term Sustainability</h2> -->
+
+## A Good User Experience = Long Term Sustainability
 
 User experience is at the heart of everything we do, and it’s not something that should be sacrificed to generate more leads. I’ve come across websites that completely destroy their user experience in order to generate a handful of more leads. Although this may produce more leads in the short term, bad UX leaves a bad impression on the user, which ends up producing long term brand damage and sacrificing usage/visits on your website. Not what you want.
 
 A/B testing is a very strong tactic, but it should only be one of the many in your toolbelt of user research and testing. Make the experience for your users an invisible one. Figure out [user-friendly alternatives](/article/exit-intent-popups/) for some of those more aggressive tactics. 
 
-<h2 id="resources">Some Tools &amp; Resources</h2>
+<!-- <h2 id="resources">Some Tools &amp; Resources</h2> -->
+
+## Some Tools &amp; Resources
 
 * [Optimizely](https://www.optimizely.com/) - Preferred A/B testing platform (I’ve tried most)
 * [FullStory](https://www.fullstory.com) - Really awesome user recording tool
