@@ -15,6 +15,7 @@
 .article__info {
     grid-area: article-info;
     position: sticky;
+    position: -webkit-sticky;
     top: 6em;
 }
 
@@ -99,6 +100,7 @@
         padding: 0;
         margin: 0;
         position: sticky;
+        position: -webkit-sticky;
         top: 6em;
     }
 }
