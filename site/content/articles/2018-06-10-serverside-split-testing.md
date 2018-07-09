@@ -69,7 +69,7 @@ With the help of Google Tag Manager and Google Analytics, I went ahead and took 
 * [Google Tag Manager](http://www.googletagmanager.com/)
 * [Google Analytics](https://analytics.google.com)
 
-## Setting Up Server-Side Split Testing via Git & Netlify
+## Setting up Server-Side Split Testing via Git & Netlify
 
 Once you get [setup with an account at Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) and you're deploying via Git, navigate over to the split testing page from the admin's main nav. You'll get prompted to activate split testing, click 'activate'. Once activated, you'll be presented with the controls for your split test. 
 
@@ -84,19 +84,24 @@ Pick your branches that you want to test against, set the amount of traffic you 
 
 ## Track Experiment Results with Google Optimize
 
+Like anything else web development related, there are multiple ways to track how your experiment is performing — in this section I'll be focusing on Google Optimize.
+
 <h3>Step 1: Create A/B Test in Google Optimize</h3>
 
 <h4>Setup Goals &amp; Objectives</h4>
 
 <h4>Setup Targeting</h4>
 
-<h3>Create Data Layer Variables Google Tag Manager</h3>
+<h3>Step 2: Setup Variables &amp; Tags in Google Tag Manager</h3>
 
-<h3>Set fields in existing GA tag in GTM</h3>
+<h4>Create Data Layer Variables</h4>
 
-<h3>Set values for experiment id and variation id variables</h3>
+<h4>Link Google Analytics Tags to Data Layer Variables</h4>
 
-## Setting Up Custom Dimensions in Google Analytics for Further Analysis
+<h3>Step 3: Set Branch Specific Values for Variables in Source Code</h3>
+
+<h3>Bonus: Setting Up Custom Dimensions in Google Analytics for Further Analysis</h3>
+
 
 
 
@@ -153,7 +158,7 @@ Once this is set and deployed to the respective branches, you'll need to create 
 
 ## Alternatives to tracking experiment results
 
-## Calculating statistical significance of results
+<h3>Calculating statistical significance of results</h3>
 
 One of the awesome things about the A/B testing platforms available is that they provide this for you in their setup — since we're putting the dashboard together ourselves, this is something that we'll need to figure out on our own. 
 
@@ -163,7 +168,7 @@ Pick the metric that's going to determine the winner of the test and plug it int
 * [https://vwo.com/ab-split-test-significance-calculator/](https://vwo.com/ab-split-test-significance-calculator/)
 * [https://www.kissmetrics.com/growth-tools/ab-significance-test/](https://www.kissmetrics.com/growth-tools/ab-significance-test/)
 
-## To Conclude
+## Conclude
 
 ## Resources
 
