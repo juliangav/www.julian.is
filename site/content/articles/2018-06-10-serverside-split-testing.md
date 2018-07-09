@@ -21,7 +21,7 @@ The reason most of us include static websites in our workflow is because we don'
 
 However, when it comes to split or A/B testing (I'll be using both names interchangeably), being able to deliver a specific variation of a test directly from the server has huge advantages.
 
-<h2>Difference between client-side &amp; server-side split&nbsp;testing</h2>
+## Difference Between Client-Side &amp; Server-Side Split&nbsp;Testing
 
 <h3>Good Ol' Client-Side Split Testing</h3>
 
@@ -69,7 +69,7 @@ With the help of Google Tag Manager and Google Analytics, I went ahead and took 
 * [Google Tag Manager](http://www.googletagmanager.com/)
 * [Google Analytics](https://analytics.google.com)
 
-<h2>Setting up branch split testing via Netlify</h2>
+## Setting Up Server-Side Split Testing via Git & Netlify
 
 Once you get [setup with an account at Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) and you're deploying via Git, navigate over to the split testing page from the admin's main nav. You'll get prompted to activate split testing, click 'activate'. Once activated, you'll be presented with the controls for your split test. 
 
@@ -82,7 +82,23 @@ If you're not seeing any of your other branches here or you're getting the <i>Th
 
 Pick your branches that you want to test against, set the amount of traffic you want to send to each branch, and start your test. All traffic to your website is now being split into the branches you've chosen. The split is happening at the CDN level which means the front-end/client-side isn't taking a performance hit. 
 
-<h2>Setting up Your Analytics Dashboard</h2>
+## Track Experiment Results with Google Optimize
+
+<h3>Step 1: Create A/B Test in Google Optimize</h3>
+
+<h4>Setup Goals &amp; Objectives</h4>
+
+<h4>Setup Targeting</h4>
+
+<h3>Create Data Layer Variables Google Tag Manager</h3>
+
+<h3>Set fields in existing GA tag in GTM</h3>
+
+<h3>Set values for experiment id and variation id variables</h3>
+
+## Setting Up Custom Dimensions in Google Analytics for Further Analysis
+
+
 
 Now that we're all set with splitting traffic to the respective branches, we need to figure out a way to track how each variation is performing — I'll be using Google Analytics (GA) for this.
 
@@ -135,7 +151,9 @@ Triple check that this is placed before your GTM code and not after. If it's pla
 
 Once this is set and deployed to the respective branches, you'll need to create segments in GA for each custom dimension value of the respective branch/variation. You'll now have access to all of GA's insights for each variation.
 
-<h2>Calculating Statistical Significance of Results</h2>
+## Alternatives to tracking experiment results
+
+## Calculating statistical significance of results
 
 One of the awesome things about the A/B testing platforms available is that they provide this for you in their setup — since we're putting the dashboard together ourselves, this is something that we'll need to figure out on our own. 
 
@@ -145,7 +163,9 @@ Pick the metric that's going to determine the winner of the test and plug it int
 * [https://vwo.com/ab-split-test-significance-calculator/](https://vwo.com/ab-split-test-significance-calculator/)
 * [https://www.kissmetrics.com/growth-tools/ab-significance-test/](https://www.kissmetrics.com/growth-tools/ab-significance-test/)
 
-<h2>Final Thoughts</h2>
+## To Conclude
+
+## Resources
 
 That's pretty
 
