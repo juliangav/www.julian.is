@@ -3,6 +3,9 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  @include mq(medium) {
+    overflow:visible;
+  }
 }
 
 

@@ -14,8 +14,7 @@ date: "2016-09-19"
 
 Why not? I spend most of my days trying to figure out design; whether I'm working with a junior designer trying to teach him/her a certain web design concept or I'm figuring out a stubborn front-end development bug, documentation on what I come across on a daily basis could be of good use to other designers in my field of work.
 
-
-<h2>What to expect</h2>
+## What to expect
 
 There are three areas of web design in which I mostly focus on:
 
@@ -35,6 +34,6 @@ Over the past year, I've spearheaded a sub-division of my agency that's focused 
 
 I run a team of 4 designers and 4 developers for an agency in New York City; one which I've put together from scratch. The rollercoaster has been breath taking, but the experience has been priceless. I'll be touching on topics such as hiring, time management, process, &amp; creativity among many others.  
 
-<h2>Giving back</h2>
+## Giving back
 
 Since early college I remember coming across website's like <a href="http://www.smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a> &amp; <a href="http://alistapart.com">A List Apart</a> and to those blogs, among the dozens of others, I give thanks; thanks for my career and the career of thousands of other designers & developers. It's because of generous designers like <a href="http://www.zeldman.com/" target="_blank" rel="noopener">Jeffrey Zeldman</a> &amp; <a href="https://www.smashingmagazine.com/author/vitaly-friedman/" target="_blank" rel="noopener">Vitaly Friedman</a> that we are where we are today. I am now returning the favor to the design community.

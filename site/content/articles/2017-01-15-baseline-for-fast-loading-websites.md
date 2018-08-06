@@ -27,7 +27,7 @@ Saving images for the web isn’t cutting it anymore; we now have to take into c
 
 I’m not going to bore you with the philosophical approach of how you should be considering website performance as early as kindergarten graduation (don’t get me wrong, the design phase matters a ton, and starting the conversation of performance early on allows you and the client to make better decisions down the road), but instead what you’ll find below is solid baseline and actionable steps to immediately make your website faster & more accessible. 
 
-<h2>Gzip the hell out of everything</h2>
+## Gzip the hell out of everything
 
 Gzip is the wizard behind the curtain that makes the web as a whole much faster to navigate; it is data compression that takes place when a file gets requested from a server and delivered to the browser. When enabled, Gzip compresses file transfers by as much as 70-80%. 
 
@@ -47,7 +47,7 @@ Header append Vary User-Agent env=!dont-vary</code>
 
 There are different versions of Gzip depending on your host. Check that the above code works on your specific setup. 
 
-<h2 id="cdn">Use a CDN service to delegate content delivery</h2>
+## Use a CDN service to delegate content delivery
 
 A Content Delivery Network (CDN) serves 3 main purposes: lowering bandwidth costs, global availability of content, and faster loading times.
 
@@ -89,7 +89,7 @@ Seems pretty effective, but you probably need the knowledge of a senior back-end
 
 
 
-<h2>Image optimization beyond “save for web”</h2>
+## Image optimization beyond “save for web”
 
 Let’s start with the baseline: images should be saved at no higher than 60% quality when exporting from any image editing software (mostly Photoshop). This is the difference between a <a href="/img/kimbo-100-quality.jpg" class="lightbox" title="1000x650 JPG weighing 330kb when saved at 100%">1000x650 JPG</a> weighing 330kb when saved at 100% and the <a href="/img/kimbo-100-quality.jpg" class="lightbox" title="1000x650 JPG weighing 88kb when saved at 60%">1000x650 JPG</a> weighing 88kb at 60%. Yes, this matters when every other website nowadays includes 3+ hero images rotating on the homepage.  
 
@@ -123,7 +123,7 @@ Yes you can! But this should be limited to simple flat graphics such as my logo 
 
 There are many advantages SVGs but this deserves a blog post of it’s own (if not a book). A handful of developers such as [Sara Soueidan](https://twitter.com/SaraSoueidan) & [Chris Coyier](https://css-tricks.com/) dedicate a good chunk of their careers to the complexities of SVGs. 
 
-<h2 id="perceived-performance">Perceived Performance</h2>
+## Perceived Performance
 
 Sometimes it’s more about how fast a website seems and not so much about the actual loading time. Humans are impatient and need to get entertained while they wait, if not they complain or, even worse, leave. Take for example the situation at a Houston airport where passenger complaints were overwhelmingly high in regards to the long waits at baggage claim. Instead of reducing wait times, airport executives increased the walking distance between the arrival gates and baggage claim. Passengers were now spending most of their time walking to baggage claim and by the time they arrived the wait time, if any, was minimal. Complaints suddenly disappeared. 
 
@@ -147,7 +147,7 @@ This can get easily automated with the use of a Gulp/Grunt plugin. Smashing Maga
 
 
 
-<h2>Let’s not forget the basics</h2>
+## Let’s not forget the basics
 
 Some of the basics become second nature to us and become a blind spot when speaking about our process. With that in mind, here are a few rules of thumb to ensure a fast website: 
 

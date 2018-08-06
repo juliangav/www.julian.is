@@ -16,7 +16,7 @@ date: "2016-10-26"
 
 First day was a blast. Learned a ton of new stuff that I wasn't privy to before (and able to use in production). I'm surprised to say that the second day has been even better. Again, just a disclaimer that these notes weren't edited and they were added just as they were jotted down. Enjoy!
 
-<h2>John Allsopp - The Mystery Speaker (<a href="http://alistapart.com/article/dao" target="_blank" rel="noopener">Dao of Web Design</a>)</h2>
+## John Allsopp - The Mystery Speaker (<a href="http://alistapart.com/article/dao" target="_blank" rel="noopener">Dao of Web Design</a>)
 
 <a href="https://twitter.com/johnallsopp">@johnallsopp</a> / <a href="http://webdirections.org">webdirections.org</a>
 
@@ -42,7 +42,7 @@ First day was a blast. Learned a ton of new stuff that I wasn't privy to before 
 
 Predicting the future is what John’s good at. He predicted responsive design about 10 years before Ethan discovered/coined it. His take on predicting the future is interesting: don’t just predict, take action on those predictions. I jotted down a few of his future predictions which will be interesting to come back to in 10 years to see what he got right.
 
-<h2>Laura Elizabeth - Selling Design Systems</h2>
+## Laura Elizabeth - Selling Design Systems
 
 <a href="https://twitter.com/laurium" target="_blank" rel="noopener">@laurium</a> / <a href="http://lauraelizabeth.co" target="_blank" rel="noopener">lauraelizabeth.co</a>
 
@@ -75,7 +75,7 @@ Predicting the future is what John’s good at. He predicted responsive design a
 
 It's interesting to see how little data there is in regards to how pattern libraries affect the bottom line for companies. While this seems difficult, it's for sure possible. A/B testing a website with an inconsistant design vs a website with a consistant design should give you a good understanding of what the effect of pattern libraries are (while not directly testing pattern libraries, you're testing the outcome of a pattern library). I'll be playing around with some ideas when I get back home. 
 
-<h2>Jen Simmons - Revolutionize your page: Real Art Direction on the web</h2>
+## Jen Simmons - Revolutionize your page: Real Art Direction on the web
 
 <a href="https://twitter.com/jensimmons" target="_blank" rel="noopener">@jensimmons</a> / <a href="http://jensimmons.com/" target="_blank" rel="noopener">jensimmons.com</a>
 
@@ -113,11 +113,11 @@ It's interesting to see how little data there is in regards to how pattern libra
 
 A good amount of detail into how making your website look less generic through art direction and what’s currently possible through CSS.  It seems like CSS Grid Layouts have evolved since the last time I gave them ago; definitely worth giving them a second try. I had no idea that support queries were a thing. So what’s the point of using modernizr? This talk definitely disrupts my current process and one that I’m anxious to pick apart and implement once I get home. 
 
-<h3>Slide Deck</h3>
+<a href="https://speakerdeck.com/jensimmons/revolutionize-your-page-40min-fall-2016?utm_content=buffer4d7b8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer" target="_blank" rel="noopener">Slide Deck</a>
 
-<a href="https://speakerdeck.com/jensimmons/revolutionize-your-page-40min-fall-2016?utm_content=buffer4d7b8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer" target="_blank" rel="noopener">https://speakerdeck.com/jensimmons/revolutionize-your-page-40min-fall-2016?utm_content=buffer4d7b8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer</a>
 
-<h2>Adrian Zumbrunner - Designing Choice</h2>
+
+## Adrian Zumbrunner - Designing Choice
 
 <a href="https://twitter.com/azumbrunnen_">@azumbrunnen_</a> / <a href="http://azumbrunnen.me" target="_blank" rel="noopener">azumbrunnen.me</a>
 
@@ -150,7 +150,7 @@ This talk gave me some insight as to way Apple over simplifies their products to
 
 
 
-<h2>Christian Holst - Conversion Rate Optimization Techniques in Ecommerce</h2>
+## Christian Holst - Conversion Rate Optimization Techniques in Ecommerce
 
 <a href="https://twitter.com/KiehnHolst" target="_blank" rel="noopener">@KiehnHolst</a> / <a href="http://baymard.com" target="_blank" rel="noopener">baymard.com</a>
 
@@ -189,7 +189,7 @@ This talk gave me some insight as to way Apple over simplifies their products to
 
 This was pretty good insight in regards to user testing in ecommerce sites (the majority of my testing is for content marketing websites). THere are a few things that I could transfer over; e.g. form fields that convert less, infinit scrolling vs pagination vs load more button, etc.
 
-<h2>Maciej Ceglowski - The Website Obesity Crisis</h2>
+## Maciej Ceglowski - The Website Obesity Crisis
 
 <a href="https://twitter.com/baconmeteor" target="_blank" rel="noopener">@baconmeteor</a> / <a href="http://idlewords.com" target="_blank" rel="noopener">idlewords.com</a>
 

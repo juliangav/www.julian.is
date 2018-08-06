@@ -15,7 +15,7 @@ It’s difficult for some folks to see the value in a designer attending a marke
 
 Knowing how and why your marketing team does certain things and grasping concept of the marketing approach helps the designer make better decisions in her work that are inline with the goals of the entire team. 
 
-<h2>How to get the most out of INBOUND as a designer</h2>
+## How to get the most out of INBOUND as a designer
 
 I go to conferences for two reasons, one to see what the pros are currently doing (whether it’s design, development or marketing) and two, to see what the rest community/attendees are currently innovating on (the golden nuggets of information). 
 
@@ -24,7 +24,7 @@ The former is easy, just attend the talks of the most influential speakers that 
 The latter gets a bit more difficult since it requires you to leave your comfort zone and talk to people (this becomes extra challenging if you’re an introvert like myself). However, this is where I get the most out of INBOUND (3rd year attending); knowing how other teams interact, the tools they’re using, and the solutions and hacks to the same problems my team is facing, this is all useful information you normally wouldn’t get from scheduled talks. The same reason why Twitter is such a successful platform, you get access to the conversation of problems and their solutions happening in real time.
 
 
-<h2>Roundup of Tools</h2>
+## Roundup of Tools
 
 Below is a list of all the tools I came across during talks, side conversations, &amp; as well as coworkers while at INBOUND 2016. 
 
@@ -51,8 +51,8 @@ Videos of real users and their feedback on your website or app. Credit to <a hre
 <h3><a href="https://x.ai/" target="_blank" rel="noopener">x.ai</a></h3>
 
 An AI powered personal assistant with the ability to accurately schedule meetings for you. Credit to <a href="https://twitter.com/kyleplacy" target="_blank" rel="noopener">@kyleplacy</a>.
-
-<h2>Featured Talk</h2>
+ 
+## Featured Talk 
 
 <h3>Content Comeback: How to Transform Freelance Chaos into a Kickass In-House Content Team &ndash; <a href="https://twitter.com/mikaelatierney" target="_blank" rel="noopener">Mikaela Tierney</a></h3>
 

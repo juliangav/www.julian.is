@@ -16,7 +16,7 @@ I've made it all the way out to Barcelona for my second <a href="http://smashing
 Below are some of the notes I've taken during the first day of talks. Keep in mind that these notes weren't edited and they were added just as they were jotted down. Some information may be missing (I didn't jot everything down); if I've misquoted something or something needs fixing, please let me know and I'll address. Enjoy!
 
 
-<h2>Marcin Wichary - To Hell for Type</h2>
+## Marcin Wichary - To Hell for Type
 
 <a href="https://twitter.com/mwichary" target="_blank" rel="noopener">@mwichary</a>
 
@@ -53,7 +53,7 @@ Marcin fixed chrome and created patch that chrome has now implemented (awesome).
 
 Typography on the web is way more complicated than it's perceived. Just by the quotation example that Marcin presented, and this seems to be just the tip of the iceberg. There's a book that has been sitting on my bookshelf for quite some time now called <a href="https://abookapart.com/products/on-web-typography" target="_blank" rel="noopener">"On Web Typography"</a> by Jason Santamaria. Even though it's a couple of years old now, I'll be dusting it off when I get home and give it a go. 
 
-<h2>Val Head - Designing Meaningful Animation</h2>
+## Val Head - Designing Meaningful Animation
 
 <a href="https://twitter.com/vlh" target="_blank" rel="noopener">@vlh</a>
 
@@ -105,7 +105,7 @@ There's a science to animation and I'm going head first into the 12 principles o
 Cubic bezier has always been a bit of a mystery to me. But from Val's talk, it's simply the manual way of creating animations in comparison to the defaults that CSS comes with; you have more control over the specifics. Motivated to look into this a bit more since I've recently been doing A/B testing on animations and their impact on conversions. The tool reference, <a href="http://cubic-bezier.com" target="_blank" rel="noopener">cubic-bezier.com</a> seems like an awesome starting point. 
 
 
-<h2>Jessica Svendsen - Designing for Display</h2>
+## Jessica Svendsen - Designing for Display
 
 <a href="https://twitter.com/jessicasvendsen" target="_blank" rel="noopener">@jessicasvendsen</a> / <a href="http://jessicasvendsen.com" target="_blank" rel="noopener">jessicasvendsen.com</a>
 
@@ -145,7 +145,7 @@ Cubic bezier has always been a bit of a mystery to me. But from Val's talk, it's
 
 It's refreshing seeing a graphic designer within a cast of web folks. What I most respect about graphic designers is how they come up with their ideas; and this is exactly what her talk was on. A recurring theme that I've noticed throughout the talks is addressing the design problem we're seeing right now on the web: all of our designs look the same. This is something we're all struggling with regardless of the industries. A good amount of designers on the web don't have a formal design background; this is the main reason designs are being copied over and over again. Jessica did a good job of giving insight to her process and how she comes up with her ideas. Very inspiring and helped me reflect on my current process.
 
-<h2>Tammy Everts - How to Find What Design Factors Influence Conversion Rates</h2>
+## Tammy Everts - How to Find What Design Factors Influence Conversion Rates
 
 <a href="https://twitter.com/tameverts">@tameverts</a>
 
@@ -190,7 +190,7 @@ It's refreshing seeing a graphic designer within a cast of web folks. What I mos
 
 Testing is what my day to day job entails of nowadays. After many of the talks, I keep on asking myself the same question "But has it been tested to help conversions?". I was able to get a different and more insightful perspective on what I've been testing (and the way I've been testing) for the past year. Added two new resources to my arsenal, <a href="http://performancebeacon.com">performancebeacon.com</a> &amp; <a href="http://wpostats.com">wpostats.com</a>. What more can I ask for?  
 
-<h2>Stephen Hay - The Tail And Its Dog</h2>
+## Stephen Hay - The Tail And Its Dog
 
 <a href="https://twitter.com/stephenhay">@stephenhay</a>
 
@@ -243,7 +243,7 @@ Testing is what my day to day job entails of nowadays. After many of the talks, 
 
 We’re all struggling with sameness on the web. Story telling is the way to solve this crisis. Plain and simple.
 
-<h2>Ulrika Malmgren - How testers can be a liability</h2>
+## Ulrika Malmgren - How testers can be a liability
 
 <a href="https://twitter.com/ulrikama" target="_blank" rel="noopener">@ulrikama</a>
 
@@ -284,7 +284,7 @@ We’re all struggling with sameness on the web. Story telling is the way to sol
 
 Testing (QA) is highly underrated. What I've realized recently is that, as developers, we use QA as a safety net (it's cool if it doesn't really work the way it should, QA will let me know); this is something that Ulrika touched on and something that I'll make a conscious improvement on with my team as well as myself. Another interesting point is involving the QA team/person from the beginning will help you avoid bigger headaches down the road. 
 
-<h2>Sara Soueidan - SVG in Motion (A Case Study)</h2>
+## Sara Soueidan - SVG in Motion (A Case Study)
 
 <a href="https://twitter.com/SaraSoueidan" target="_blank" rel="noopener">@SaraSoueidan</a>
 
@@ -315,7 +315,7 @@ Testing (QA) is highly underrated. What I've realized recently is that, as devel
 
 Mind blown. The calc example for responsive typography was something I wasn't aware of before and will definitely be implmenting as soon as I get back to New York. I wasn't able to take as many notes because I was too busy being amazed (I did take plenty of screenshots though). Sara's the front-end developer behind the new Smashing Magazine being created. Hands down my favorite talk so far.
 
-<h2>Jeremy Keith - Resilience</h2>
+## Jeremy Keith - Resilience
 
 <ul>
 	<li>Pastels law</li>
