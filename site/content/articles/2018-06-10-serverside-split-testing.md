@@ -84,9 +84,20 @@ Pick your branches that you want to test against, set the amount of traffic you 
 
 ## Track Experiment Results with Google Optimize
 
-Like anything else web development related, there are multiple ways to track how your experiment is performing — in this section I'll be focusing on Google Optimize.
+Like anything else web development related, there are multiple ways to track how your experiment is performing — in this section I'll be focusing on Google Optimize. 
 
-<h3>Step 1: Create A/B Test in Google Optimize</h3>
+(I'll be going off of the assumption that you're already familiar with Google Optimize — for those that are not, here's an in [depth article with everything you need to know](https://conversionxl.com/blog/google-optimize/).)
+
+<!-- 
+<h3>Step 1: Create A/B Test in Google Optimize</h3> -->
+
+<h3>Begin by Creating an A/B Test in Google Optimize with the Following Settings</h3>
+
+* <b>Experiment Name</b> — Whatever your heart desires
+* <b>URL</b> — Any placholder URL works since we won't be using the editor page
+* <b>Type of Experiment</b> — A/B test
+
+On the next screen, you'll setup the following:
 
 <h4>Setup Goals &amp; Objectives</h4>
 
