@@ -22,15 +22,12 @@ date: "2017-03-20"
 
 Late last week, Smashing Magazine, one of the largest and most influential online publications for web design, posted on Facebook that their website was “now running as a Progressive Web App.” 
 
-<figure><img src="/assets/smashingmag-pwa-facebook.jpg" alt="Smashing Magazine Facebook Post on PWA Screenshot" class="img-border"></figure>
 
 Honestly, I didn’t think much of it. Progressive Web Apps are for the hardcore web application developers creating the next online cloud-based Photoshop (complicated stuff), right? I scrolled on and went about my day.
 
 (Related: [Static Websites + JAMstack = <3](/article/static-websites-and-jamstack/))
 
 Then, I saw CSS wizard, Harry Roberts, [tweet](https://twitter.com/csswizardry/status/839814781326483456) about making some setting changes in CloudFlare and achieving the same. It might have been a coincidence that I stumbled across two influencers discussing the same topic, but it still caught my eye. So out of curiosity, I installed [Lighthouse](https://developers.google.com/web/tools/lighthouse/), the Chrome plugin that both Smashing Magazine and Harry Roberts had used, and ran my website through it. 
-
-<figure><img src="/assets/pwa-lighthouse-initial-audit.jpg" alt="Initial Lighthouse Audit" class="img-border"></figure>
 
 I wasn’t too impressed with the results. I figured I’d look into this, write about it, and save any developers who stumble across my website a bit of time. But I was really surprised with what I found.
 
@@ -238,7 +235,6 @@ If you disconnect from the internet and refresh this page, the browser responds 
 
 This took care of the “App can load on offline/flaky connections” error and bumped my score up to 65/100. 
 
-<figure><img src="/assets/pwa-lighthouse-service-workers-audit.jpg" alt="After service workers - Lighthouse Audit" class="img-border"></figure>
 
 We’re getting there!
 
@@ -295,7 +291,6 @@ You can go ahead and copy the code above (obviously replacing my information wit
 
 This addressed issues two through four and improved my Lighthouse score to 100/100. 
 
-<figure><img src="/assets/pwa-lighthouse-manifest-audit.jpg" alt="After Web App Manifest - Lighthouse Audit" class="img-border"></figure>
 
 Mission accomplished! Told you it wasn't rocket science.
 
