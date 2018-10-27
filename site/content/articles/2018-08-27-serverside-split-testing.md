@@ -2,8 +2,8 @@
 title: "Getting Started With Server-Side Split Testing"
 description:  When to use it, when to avoid it, and setting up your testing stack.
 tags: [ABtest, StaticWebsites, JAMstack, CRO, WebPerf]
-lastmod: 2018-10-28
-date: "2018-10-28"
+lastmod: 2018-10-27
+date: "2018-10-27"
 time: 5 Minutes
 categories:
   - "Development"
@@ -69,6 +69,8 @@ So now that we know that server-side split testing kicks butt, I'm going to run 
 
 You’re going to need a way of splitting traffic at the server level. Personally, I have zero familiarity with configuring servers, and not really where I want to spend my time. I’ve been hosting my website on Netlify for about a year now and they take care of all the complicated server-side configurations, allowing me to split traffic to different versions of my website via Git branches. If you know how to use Git, this will be second nature to you. 
 
+(For those that do like to get into the weeds with AWS: [A/B testing on AWS CloudFront with Lambda@Edge](https://medium.com/buildit/a-b-testing-on-aws-cloudfront-with-lambda-edge-a22dd82e9d12)) 
+
 Once [you’re up and running with Netlify and you’re deploying via Git](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/), navigate over to the split testing page from the admin’s main nav. You’ll get prompted to activate split testing, click ‘activate’. After activation, you’ll be presented with the controls for your split test.
 
 <figure>
@@ -125,19 +127,6 @@ Fire up your code editor and, above your Google Tag Manager Script, add the valu
 
   Triple check that this is placed before your GTM script and not after — placing it after will disable your entire tracking GTM script for whatever no-so-obvious reason (not cool Google). 
 
-<!-- <h3>Splitting traffic via Netlify</h3>
-
-I have zero familiarity with back-end development and server setups — I would rather spend my on the front-end than figuring out an AWS setup. For those similar skill-sets and interests, Netlify makes it super simple to split traffic on the server-side via Git branches. (Nope, not a paid blog post, just a fan… but hey, if anyone wants to pay me for this, I won’t complain.)
-
-<h3>Track Experiment Results with Google Optimize</h3>
-
-I chose Google Optimize to track results and determine the statistical significance of tests due to the user-friendly interface and support for server-side testing. (Oh, and it’s free.) 
-
-If you’re not familiar with Google Optimize, [here’s an depth article with everything you need to know](https://conversionxl.com/blog/google-optimize/).
-
-<h3>Analyze traffic with Custom Dimensions in Google Analytics</h3>
-
-Although Google Optimize allows you to determine statistical significance on a test’s respective goals, Google Analytics gives you insight into the rest of the websites metrics. This helps understand why a test performed a certain way, giving you a well-rounded view in order to make informed critical decisions.  -->
 
 ## In Conclusion
 
@@ -158,5 +147,8 @@ Add server-side testing to your optimization tool belt, build some cool tests, a
 * [Server-Side Vs. Client-Side A/B Testing Tools: What’s The Difference?](https://conversionxl.com/blog/server-side-vs-client-side-ab-testing-tools-whats-the-difference/)
 * [Running a Server-side Experiment](https://developers.google.com/analytics/solutions/experiments-server-side)
 * [Split Testing on Netlify](https://www.netlify.com/docs/split-testing/)
+* [The Beginner’s Guide to Google Optimize](https://conversionxl.com/blog/google-optimize/)
+* [A Step-by-Step Guide: Deploying on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
+* [A/B testing on AWS CloudFront with Lambda@Edge](https://medium.com/buildit/a-b-testing-on-aws-cloudfront-with-lambda-edge-a22dd82e9d12)
 
 
