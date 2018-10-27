@@ -67,11 +67,11 @@ So now that we know that server-side split testing kicks butt, I'm going to run 
 
 ## Splitting Traffic at the Server Level
 
-You’re going to need a way of splitting traffic at the server level. Personally, I have zero familiarity with configuring servers, and not really where I want to spend my time. I’ve been hosting my website on Netlify for about a year now and they take care of all the complicated server-side configurations, allowing me to split traffic to different versions of my website via Git branches. If you know how to use Git, this will be second nature to you. 
+You’re going to need a way of splitting traffic at the server level. Personally, I have zero familiarity with configuring servers, and it’s not really where I want to spend my time. I’ve been hosting my website on Netlify for about a year now, and they take care of all the complicated server-side configurations, allowing me to split traffic to different versions of my website via Git branches. If you know how to use Git, this will be second nature to you. 
 
 (For those that do like to get into the weeds with AWS: [A/B testing on AWS CloudFront with Lambda@Edge](https://medium.com/buildit/a-b-testing-on-aws-cloudfront-with-lambda-edge-a22dd82e9d12)) 
 
-Once [you’re up and running with Netlify and you’re deploying via Git](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/), navigate over to the split testing page from the admin’s main nav. You’ll get prompted to activate split testing, click ‘activate’. After activation, you’ll be presented with the controls for your split test.
+Once [you’re up and running with Netlify and you’re deploying via Git](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/), navigate over to the split testing page from the admin’s main nav. You’ll get prompted to activate split testing. Click “activate.” Once activated, you’ll be presented with the controls for your split test.
 
 <figure>
 	<img src="/assets/netlify-server-side-split-test-controls.jpg" alt="Netlify's split test controls" class="img-border">
@@ -80,7 +80,7 @@ Once [you’re up and running with Netlify and you’re deploying via Git](https
 
 If you’re not seeing any of your other branches here or you’re getting the “This feature requires a repository with at least 2 branches” error, check your Build & Deploy settings and make sure that branch deploys are set to all.
 
-Pick your branches that you want to test against, set the amount of traffic you want to send to each branch, and start your test. All traffic to your website is now being split into the branches you’ve chosen. Boom you’re set. Now we need to figure out how to track how each variation performs.
+Pick your branches that you want to test against, set the amount of traffic you want to send to each branch, and start your test. All traffic to your website is now being split into the branches you’ve chosen. Boom — you’re set. Now we need to figure out how to track how each variation performs.
 
 ## Tracking Experiment Results
 
@@ -88,7 +88,7 @@ In order to track how each variation performs, we’ll need to choose a applicat
 
 <h3>Creating an A/B test in Google Optimize</h3>
 
-Once you have Google Optimize on your website or PWA, create an “A/B test” that mirrors that variations you have running on the server-side. The test can be created as a regular A/B test with the only discrepancy being under “Targeting”, where you’re going to create a rule of URL equals = SERVER_SIDE (this is what tells Google Optimize that this will be a server-side test).
+Once you have Google Optimize on your website or [PWA](https://julian.is/article/progressive-web-apps/), create an “A/B test” that mirrors that variations you have running on the server-side. The test can be created as a regular A/B test with the only discrepancy being under “Targeting,” where you’re going to create a rule of URL equals = SERVER_SIDE (what tells Google Optimize that this will be a server-side test).
 
 <figure>
 	<img src="/assets/google-optimize-targeting.jpg" alt="Google Optimize Targeting" class="img-border">
@@ -99,9 +99,9 @@ Cool, we now have an A/B test running on Google Optimize and traffic being split
 
 <h3>Connect Variations via Google Tag Manager's Data Layer</h3>
 
-In order to make a direct connection between the variations we setup in Google Optimize and the branch variations we’re splitting traffic to at the server level we’ll need to add the unique experiment ID and the respective variation ID provided by Google Optimize to each branch variation using Google Tag Manager’s Data Layer. 
+In order to make a direct connection between the variations we set up in Google Optimize and the branch variations we’re splitting traffic to at the server level, we’ll need to add the unique experiment ID and the respective variation ID provided by Google Optimize to each branch variation using Google Tag Manager’s Data Layer. 
 
-Inside of Google Tag Manager navigate over to your Google Analytics tag and under “More Settings > Fields to Set” add the following two fields:
+In Google Tag Manager, navigate over to your Google Analytics tag and under “More Settings > Fields to Set” add the following two fields:
 
 <figure>
 	<img src="/assets/google-tag-manager-experiment-variation-ids.jpg" alt="Google Tag Manager Data Layer Fields" class="img-border">
@@ -110,7 +110,7 @@ Inside of Google Tag Manager navigate over to your Google Analytics tag and unde
 
 You’ll be able to obtain the experiment ID from the info column in Google Optimize once you publish the experiment — it’ll look something along the lines of OX7o3nkrR-ChTxqNJMA1nw.
 
-You won’t be able to easily find the variation ID, but there’s a numeric value assigned to each variation created starting at ‘0’ for the original variation and increases by 1 for subsequent variations as illustrated below.
+You won’t be able to easily find the variation ID, but there’s a numeric value assigned to each variation created starting at 0 for the original variation and increases by 1 for subsequent variations as illustrated below.
 
 <figure>
 	<img src="/assets/google-optimize-variation-id.jpg" alt="Google Optimize Variation IDs" class="img-border">
