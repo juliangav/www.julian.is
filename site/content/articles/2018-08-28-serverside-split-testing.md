@@ -1,14 +1,14 @@
 ---
 title: "Getting Started With Server-Side Split Testing"
 description:  When to use it, when to avoid it, and setting up your testing stack.
-tags: [abtesting, staticwebsites, jamstack]
-lastmod: 2018-10-24
-date: "2018-10-27"
+tags: [ABtest, StaticWebsites, JAMstack, CRO, WebPerf]
+lastmod: 2018-10-28
+date: "2018-10-28"
 time: 5 Minutes
 categories:
   - "Development"
 slug: "server-side-split-testing" 
-images: ["assets/og-css-grid-at-scale.jpg"]
+images: ["assets/og-server-side-split-testing.jpg"]
 icon: /assets/aico-serverside-split-testing.svg
 comments: false
 
