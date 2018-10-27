@@ -1,13 +1,13 @@
 ---
-title: "Server-Side Split Testing for Static Websites"
+title: "Getting Started With Server-Side Split Testing"
 description:  When to use it, when to avoid it, and setting up your testing stack.
 tags: [abtesting, staticwebsites, jamstack]
-lastmod: 2018-03-01
-date: "2018-03-25"
+lastmod: 2018-10-24
+date: "2018-10-27"
 time: 5 Minutes
 categories:
   - "Development"
-slug: "server-side-split-testing-for-static-websites" 
+slug: "server-side-split-testing" 
 images: ["assets/og-css-grid-at-scale.jpg"]
 icon: /assets/aico-serverside-split-testing.svg
 comments: false
@@ -15,173 +15,148 @@ comments: false
 
 ---
 
-There's nothing more intimidating to a front-end developer than when you mention the term <i>server-side</i> — couple this with split testing and you have yourself a recipe for a tasty "not-ganna-bother" soup.
+If you’ve read any of my other articles, it's pretty obvious that I’m obsessed with design, performance, and iterative A/B testing.  
 
-The reason most of us include static websites in our workflow is because we don't have to deal with anything server-side related. And that's pretty efficient since it's not what we're good at.
+For the past year, I’ve taken a deep dive into server-side split testing, and I’ll be honest, the obsession is real. A server-side split test is an A/B testing technique where the changes and traffic allocations of any given test take place at the server level before the web page is delivered to the browser. 
 
-However, when it comes to split or A/B testing (I'll be using both names interchangeably), being able to deliver a specific variation of a test directly from the server has huge advantages.
+What makes this technique attractive are the huge performance gains and the user experience improvements when implemented correctly. Below I’ll run you through some of my findings backed by data as well as how to go about setting up your own testing stack.  
+ 
 
-## Difference Between Client-Side &amp; Server-Side Split&nbsp;Testing
+## The Problem with Client-Side Split Testing 
 
-<h3>Good Ol' Client-Side Split Testing</h3>
+Traditional client-side A/B testing works by including a snippet of JS at the head of your website. This snippet is supposed to load before anything else on the page does in order to carry out the correct DOM changes of the test at hand.
 
-The way that traditional A/B testing works is by including a snippet of JS at the head of your website. This snippet is supposed to load before anything else on the page does in order to carry out the correct DOM changes of the test at hand. You could expect some load time delays with all of the JS wizardry that's happening before the page decides it's time to render. 
+I have two major issues with this:
 
-Depending on the test, most delays are minor and not noticeable by the end users. But if you're trying to test a completely different layout with a completely different set of assets, chances are that the experience of the user will take a toll.
-
-You'll notice a slow split test one of two ways: 
-
-1. A page flickers and shifts objects around on the initial load. This happens because the JS of the split code is loading asynchronously with the rest of the website's DOM elements. 
-2. A page displays a blank page for about 3-4 seconds, depending on the size of the test, before showing a fully loaded page. This happens when a test is setup to avoid showing jumping page — this has a big negative impact on conversions and you should avoid at all costs.
-
-<h3>Hello Server-Side Split Testing</h3>
-
-The difference between server-side split testing and client side split-testing is where the changes take place and the performance effect it has on the end user. Instead of downloading all assets and changing the layout on page load, a server-side test makes the changes at the server level before the assets get downloaded by the user. 
-
-This means that two or more versions of that page exist at the server level and the user will only get served one depending on the variation they're being served. This has a huge improvement in performance since the user downloads only the assets she needs for the given page. 
-
-There will be no way for the user to notice that a different variation is being served since all of this is happening on the same URL.
-
-<h3>So which approach do you choose?</h3>
-
-Both. Client-side split testing is too convenient and easy to setup to ever be replaced by server-side testing. Any marketer or non-technical person can start up Optimizely, Google Optimize, or VWO (all three kick butt) and setup a quick client-side test using a WYSIWYG. 
-
-<!-- However, when we speak about server-side split or a/b testing, we're referring to the location of where the change of your test takes place. In most cases, when we setup a test, the changes take place on the front-end, after the user's browser has downloaded all assets from the server. 
-
-If you're testing small front-end changes (e.g. button colors), it's usually a change that happens without the user doesn't noticing. But if your testing goes any deeper than a few lines of CSS & JS, it begins to take a noticeable toll on the load time of a website.  -->
+1. The entire library of third-party JS is supposed to load before the changes of your test take place, which causes page elements to “blink” and jump around while the rest of the test loads. You can always block the page from displaying before the respective client-side JS snippet is loaded to avoid the blink, but this adds 2 to 3 seconds of load time to your page. I’ve seen cases where website traffic has tanked due to the misuse of this — so don’t do it.
+2. The original version of the page will always load. That’s right, if you’re testing removing images from a blog post, these images will always load on the variation where you’ve removed them (given the scenario that you’re removing and not adding them).
 
 
+Here’s what happens when I set up a client-side test to remove all images from one of my articles:
+
+<figure style="max-width:30em;"><video width="100%" height="auto" controls>
+  <source src="/assets/client-side-split-testing.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<figcaption class="text-aligncenter"><a href="https://www.webpagetest.org/result/180811_RB_8cd743453a4b4fd83c44ba91431f26e2/" target="_blank">Client-side performance results from Webpagetest.org </a></figcaption></figure>
+
+As you can see, for a brief moment, before the test’s JS loads, the images are visible to the user. This doesn’t bother me due to my OCD regarding aesthetics — this bothers me because it directly affects the results of tests (but the OCD part plays a big role). In this situation, the user’s focus will now be on “Where did the image go?” and most likely dismissing the page as broken once they’re unable to locate it.
+
+## How Server-Side Split Testing Solves This
+
+The difference between server-side and client side split-testing is where the changes take place and the performance effect it has on the end user. Instead of downloading all assets and changing the layout on page load, a server-side test makes the changes at the server level before the assets get downloaded by the user. This means that two or more versions of that page exist at the server level but the user will only get served one without the overhead of the rest — huge performance gains. 
+
+Here’s the same A/B test but now taking the server-side approach:
+
+<figure style="max-width:30em;" class="text-aligncenter"><video width="100%" height="auto" controls>
+  <source src="/assets/server-side-split-testing.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<figcaption><a href="https://www.webpagetest.org/result/180811_R0_e721c60abb1bec31c7527685d29b5eec/" target="_blank">Server-side performance results from Webpagetest.org  </a></figcaption></figure>
+
+See how the content stayed in place without notifying the end user that they’re participating in a split test? The images are removed seamlessly (no dance party) and are not loaded by the imageless variation, which speeds up the complete load time of the page — a 30% decrease in load time on average.
 
 
 
-<!-- 
-However, I've been playing around with idea of shifting my A/B testing approach from the client-side to the server-side for the sake of performance. Don't run away though, with the right setup, you 
 
-Having my website hosted at [Netlify](https://www.netlify.com), I realized that they make it pretty easy to setup server-side testing through branch deployment via [Git](https://git-scm.com/). 
+<!-- For those looking to get their feet wet with server-side testing, I’ve outlined the stack used on this site. -->
 
-With the help of Google Tag Manager and Google Analytics, I went ahead and took it for a test drive. -->
+So now that we know that server-side split testing kicks butt, I'm going to run you through how I setup the low cost testing stack for this site by splitting traffic through Netlify and tracking test results in Google Optimize with the help of the Google Tag Manager Data Layer.
 
-<h3>What I used for this setup:</h3>
+## Splitting Traffic at the Server Level
 
-* [Hosting at Netlify](https://www.netlify.com) (free personal accounts) 
-* [Hugo Static Site Generator](https://gohugo.io/)
-* [Version Control via Git](https://git-scm.com/)
-* [Google Tag Manager](http://www.googletagmanager.com/)
-* [Google Analytics](https://analytics.google.com)
+You’re going to need a way of splitting traffic at the server level. Personally, I have zero familiarity with configuring servers, and not really where I want to spend my time. I’ve been hosting my website on Netlify for about a year now and they take care of all the complicated server-side configurations, allowing me to split traffic to different versions of my website via Git branches. If you know how to use Git, this will be second nature to you. 
 
-## Setting up Server-Side Split Testing via Git & Netlify
-
-Once you get [setup with an account at Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) and you're deploying via Git, navigate over to the split testing page from the admin's main nav. You'll get prompted to activate split testing, click 'activate'. Once activated, you'll be presented with the controls for your split test. 
+Once [you’re up and running with Netlify and you’re deploying via Git](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/), navigate over to the split testing page from the admin’s main nav. You’ll get prompted to activate split testing, click ‘activate’. After activation, you’ll be presented with the controls for your split test.
 
 <figure>
-	<img src="/assets/netlify-split-test-controls.jpg" alt="Netlify's split test controls">
+	<img src="/assets/netlify-server-side-split-test-controls.jpg" alt="Netlify's split test controls" class="img-border">
 	<figcaption>Netlify's split test controls</figcaption>
 </figure>
 
-If you're not seeing any of your other branches here or you're getting the <i>This feature requires a repository with at least 2 branches</i> error, check your Build &amp; Deploy settings and make sure that branch deploys are set to <i>all</i>. 
+If you’re not seeing any of your other branches here or you’re getting the “This feature requires a repository with at least 2 branches” error, check your Build & Deploy settings and make sure that branch deploys are set to all.
 
-Pick your branches that you want to test against, set the amount of traffic you want to send to each branch, and start your test. All traffic to your website is now being split into the branches you've chosen. The split is happening at the CDN level which means the front-end/client-side isn't taking a performance hit. 
+Pick your branches that you want to test against, set the amount of traffic you want to send to each branch, and start your test. All traffic to your website is now being split into the branches you’ve chosen. Boom you’re set. Now we need to figure out how to track how each variation performs.
 
-## Track Experiment Results with Google Optimize
+## Tracking Experiment Results
 
-Like anything else web development related, there are multiple ways to track how your experiment is performing — in this section I'll be focusing on Google Optimize. 
+In order to track how each variation performs, we’ll need to choose a application that provides an intuitive dashboard with the ability to determine statistically significant winners. Most client-side A/B testing vendors provide the functionality to track server-side tests, but for this example we’ll be focusing on Google Optimize. If you’re not familiar with Google Optimize, [this is an in-depth article with everything you need to know](https://conversionxl.com/blog/google-optimize/). 
 
-(I'll be going off of the assumption that you're already familiar with Google Optimize — for those that are not, here's an in [depth article with everything you need to know](https://conversionxl.com/blog/google-optimize/).)
+<h3>Creating an A/B test in Google Optimize</h3>
 
-<!-- 
-<h3>Step 1: Create A/B Test in Google Optimize</h3> -->
-
-<h3>Begin by Creating an A/B Test in Google Optimize with the Following Settings</h3>
-
-* <b>Experiment Name</b> — Whatever your heart desires
-* <b>URL</b> — Any placholder URL works since we won't be using the editor page
-* <b>Type of Experiment</b> — A/B test
-
-On the next screen, you'll setup the following:
-
-<h4>Setup Goals &amp; Objectives</h4>
-
-<h4>Setup Targeting</h4>
-
-<h3>Step 2: Setup Variables &amp; Tags in Google Tag Manager</h3>
-
-<h4>Create Data Layer Variables</h4>
-
-<h4>Link Google Analytics Tags to Data Layer Variables</h4>
-
-<h3>Step 3: Set Branch Specific Values for Variables in Source Code</h3>
-
-<h3>Bonus: Setting Up Custom Dimensions in Google Analytics for Further Analysis</h3>
-
-
-
-
-Now that we're all set with splitting traffic to the respective branches, we need to figure out a way to track how each variation is performing — I'll be using Google Analytics (GA) for this.
-
-<h3>Step 1: Create a custom dimension in Google Analytics to segment traffic</h3>
-
-In GA you're going to create a custom dimension that will allow for you to segment traffic to both variations. Do this by going to settings > Custom Defintions > Custom Dimensions. 
+Once you have Google Optimize on your website or PWA, create an “A/B test” that mirrors that variations you have running on the server-side. The test can be created as a regular A/B test with the only discrepancy being under “Targeting”, where you’re going to create a rule of URL equals = SERVER_SIDE (this is what tells Google Optimize that this will be a server-side test).
 
 <figure>
-	<img src="/assets/ga-custom-dimension.jpg" alt="Google Analytics Custom Dimension"  class="img-border">
-	<figcaption>Google Analytics Custom Dimension</figcaption>
+	<img src="/assets/google-optimize-targeting.jpg" alt="Google Optimize Targeting" class="img-border">
+	<figcaption>Google Optimize Targeting</figcaption>
 </figure>
 
+Cool, we now have an A/B test running on Google Optimize and traffic being split at the server level — the next step is the connect the two. 
+
+<h3>Connect Variations via Google Tag Manager's Data Layer</h3>
+
+In order to make a direct connection between the variations we setup in Google Optimize and the branch variations we’re splitting traffic to at the server level we’ll need to add the unique experiment ID and the respective variation ID provided by Google Optimize to each branch variation using Google Tag Manager’s Data Layer. 
+
+Inside of Google Tag Manager navigate over to your Google Analytics tag and under “More Settings > Fields to Set” add the following two fields:
+
+<figure>
+	<img src="/assets/google-tag-manager-experiment-variation-ids.jpg" alt="Google Tag Manager Data Layer Fields" class="img-border">
+	<figcaption>Google Tag Manager Data Layer Fields</figcaption>
+</figure>
+
+You’ll be able to obtain the experiment ID from the info column in Google Optimize once you publish the experiment — it’ll look something along the lines of OX7o3nkrR-ChTxqNJMA1nw.
+
+You won’t be able to easily find the variation ID, but there’s a numeric value assigned to each variation created starting at ‘0’ for the original variation and increases by 1 for subsequent variations as illustrated below.
+
+<figure>
+	<img src="/assets/google-optimize-variation-id.jpg" alt="Google Optimize Variation IDs" class="img-border">
+	<figcaption>Google Optimize Variation IDs</figcaption>
+</figure>
+
+Fire up your code editor and, above your Google Tag Manager Script, add the values to the respective branches:
 
 
+<pre class="language-markup"><code>dataLayer = [{
+     'experimentId': 'experimentidgoeshere',
+     'variationId': 'variationidgoeshere'
+  }];</code></pre>
+
+  Triple check that this is placed before your GTM script and not after — placing it after will disable your entire tracking GTM script for whatever no-so-obvious reason (not cool Google). 
+
+<!-- <h3>Splitting traffic via Netlify</h3>
+
+I have zero familiarity with back-end development and server setups — I would rather spend my on the front-end than figuring out an AWS setup. For those similar skill-sets and interests, Netlify makes it super simple to split traffic on the server-side via Git branches. (Nope, not a paid blog post, just a fan… but hey, if anyone wants to pay me for this, I won’t complain.)
+
+<h3>Track Experiment Results with Google Optimize</h3>
+
+I chose Google Optimize to track results and determine the statistical significance of tests due to the user-friendly interface and support for server-side testing. (Oh, and it’s free.) 
+
+If you’re not familiar with Google Optimize, [here’s an depth article with everything you need to know](https://conversionxl.com/blog/google-optimize/).
+
+<h3>Analyze traffic with Custom Dimensions in Google Analytics</h3>
+
+Although Google Optimize allows you to determine statistical significance on a test’s respective goals, Google Analytics gives you insight into the rest of the websites metrics. This helps understand why a test performed a certain way, giving you a well-rounded view in order to make informed critical decisions.  -->
+
+## In Conclusion
 
 
+Between server-side and client-side, which approach should you stick with? 
 
-<h3>Step 2: Create Data Layer Variables in Google Tag Manager</h3>
+Both, really. With server-side testing being the clear winner on the performance side, client-side testing still is and will continue to be the preferred approach due to the ease of setup. It only takes me a few minutes to open up Optimizely and create a test changing the home page h1 of [Thomasnet.com](https://www.thomasnet.com). Not only am I able to efficiently do this but so can anyone else in the organization without taking up engineering hours.   
 
-
-(If you're using GA without GTM, [you can follow these instructions instead](https://developers.google.com/analytics/devguides/collection/gtagjs/custom-dims-mets) and skip to step 3.)
-
-<!-- Since I'm using GTM, we need to perform an extra step that allows us to connect the custom dimension to our branches. 
-
-Now that we have our dimensions created through Google Analytics we need to figure out a way to to assign the branch name as a dimension value. If you're using GA without GTM, the initial setup of assigning a dimension value on a page is quite simple and [thoroughly explained here](https://developers.google.com/analytics/devguides/collection/gtagjs/custom-dims-mets).  -->
-
-Since I'm using GTM, we need to perform an extra step that allows us to connect the custom dimension to our branches. You're going to <a href="/assets/google-tag-manager-create-data-layer-variable.jpg" class="lightbox">create a User Defined Data Layer Variable</a> and <a href="/assets/google-tag-manager-add-custom-dimension.jpg" class="lightbox">assign it to your GA Tags as a custom dimension</a>.
+Let’s face it, the reality is that engineers are a limited resource, and being able to empower non-engineers with tools to automate some processes and save on engineering time will still be the preferred approach. (In an ideal world, everyone could code as well as they can write — but we’re not there yet.) This means most surface-level UI and messaging experiments should still be created on the client-side while leaving server-side testing for deeper experiments such as product features, search algorithms, etc. 
 
 
-Google provides a [detailed step by step approach](https://support.google.com/analytics/answer/6164990?hl=en) for this (skip to the  <i>Using the Data Layer</i> section on the second-half of the page).
+Add server-side testing to your optimization tool belt, build some cool tests, and [let me know about it](https://twitter.com/juliangav). 
 
-
-<h3>Step 3: Assign branch name as dimension value</h3>
-
-You'll need to assign a dimension value to each individual branch in order to segment the traffic through GA. To avoid doing this manually, I'm going to use a variable that Netlify provides which outputs the branch name upon deployment:
-
-<pre class="language-markup"><code>{{ getenv "BRANCH" }}</code></pre>
-
-Combining this with the Data Layer variable you created in GTM, you'll get the follow snippet which needs to be placed before your GTM tracking code:
-
-
-<pre class="language-markup"><code>&lt;script&gt;
-  dataLayer = [{
-     'branchName': '{{ getenv "BRANCH" }}'
-  }];
-&lt;/script&gt;</code></pre>
-
-Triple check that this is placed before your GTM code and not after. If it's placed after, it will disabled your entire tracking (not cool, Google).
-
-
-Once this is set and deployed to the respective branches, you'll need to create segments in GA for each custom dimension value of the respective branch/variation. You'll now have access to all of GA's insights for each variation.
-
-## Alternatives to tracking experiment results
-
-<h3>Calculating statistical significance of results</h3>
-
-One of the awesome things about the A/B testing platforms available is that they provide this for you in their setup — since we're putting the dashboard together ourselves, this is something that we'll need to figure out on our own. 
-
-Pick the metric that's going to determine the winner of the test and plug it into any of the following calculators:
-
-* [https://abtestguide.com/calc/](https://abtestguide.com/calc/)
-* [https://vwo.com/ab-split-test-significance-calculator/](https://vwo.com/ab-split-test-significance-calculator/)
-* [https://www.kissmetrics.com/growth-tools/ab-significance-test/](https://www.kissmetrics.com/growth-tools/ab-significance-test/)
-
-## Conclude
 
 ## Resources
 
-That's pretty
+* [Should you run experimentation client-side or server-side?](https://www.optimizely.com/resources/client-vs-server-side-testing-infographic/)
+* [Server-Side Vs. Client-Side A/B Testing Tools: What’s The Difference?](https://conversionxl.com/blog/server-side-vs-client-side-ab-testing-tools-whats-the-difference/)
+* [Running a Server-side Experiment](https://developers.google.com/analytics/solutions/experiments-server-side)
+* [Split Testing on Netlify](https://www.netlify.com/docs/split-testing/)
+
 
