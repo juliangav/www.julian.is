@@ -1,7 +1,7 @@
 ---
 title: "Getting Started With Server-Side Split Testing"
 description:  When to use it, when to avoid it, and setting up your testing stack.
-tags: [ABtest, JAMstack, CRO, WebPerf, StaticWebsites]
+tags: [ABtest, JAMstack, WebPerf, StaticWebsites, CRO]
 lastmod: 2018-10-28
 date: "2018-10-28"
 time: 5 Minutes
@@ -146,5 +146,3 @@ Add server-side testing to your optimization tool belt, build some cool tests, a
 * [The Beginner’s Guide to Google Optimize](https://conversionxl.com/blog/google-optimize/)
 * [A Step-by-Step Guide: Deploying on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
 * [A/B testing on AWS CloudFront with Lambda@Edge](https://medium.com/buildit/a-b-testing-on-aws-cloudfront-with-lambda-edge-a22dd82e9d12)
-
-
