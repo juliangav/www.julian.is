@@ -1,9 +1,9 @@
 ---
 title: "Getting Started With Server-Side Split Testing"
 description:  When to use it, when to avoid it, and setting up your testing stack.
-tags: [ABtest, StaticWebsites, JAMstack, CRO, WebPerf]
-lastmod: 2018-10-27
-date: "2018-10-27"
+tags: [ABtest, JAMstack, CRO, WebPerf, StaticWebsites]
+lastmod: 2018-10-28
+date: "2018-10-28"
 time: 5 Minutes
 categories:
   - "Development"
@@ -19,7 +19,7 @@ If you’ve read any of my other articles, it's pretty obvious that I’m obsess
 
 For the past year, I’ve taken a deep dive into server-side split testing, and I’ll be honest, the obsession is real. A server-side split test is an A/B testing technique where the changes and traffic allocations of any given test take place at the server level before the web page is delivered to the browser. 
 
-What makes this technique attractive are the huge performance gains and the user experience improvements when implemented correctly. Below I’ll run you through some of my findings backed by data as well as how to go about setting up your own testing stack.  
+What makes this approach attractive are the huge performance gains and the user experience improvements when implemented correctly. Below I’ll run you through some of my findings as well as how to go about setting up your own testing stack.  
  
 
 ## The Problem with Client-Side Split Testing 
@@ -29,7 +29,7 @@ Traditional client-side A/B testing works by including a snippet of JS at the he
 I have two major issues with this:
 
 1. The entire library of third-party JS is supposed to load before the changes of your test take place, which causes page elements to “blink” and jump around while the rest of the test loads. You can always block the page from displaying before the respective client-side JS snippet is loaded to avoid the blink, but this adds 2 to 3 seconds of load time to your page. I’ve seen cases where website traffic has tanked due to the misuse of this — so don’t do it.
-2. The original version of the page will always load. That’s right, if you’re testing removing images from a blog post, these images will always load on the variation where you’ve removed them (given the scenario that you’re removing and not adding them).
+2. The original version of the page and its respective assets will always load. That’s right, if you’re testing removing images from a blog post, these images will always load on the variation where you’ve removed them (given the scenario that you’re removing and not adding them).
 
 
 Here’s what happens when I set up a client-side test to remove all images from one of my articles:
@@ -56,12 +56,8 @@ Here’s the same A/B test but now taking the server-side approach:
 
 <figcaption><a href="https://www.webpagetest.org/result/180811_R0_e721c60abb1bec31c7527685d29b5eec/" target="_blank">Server-side performance results from Webpagetest.org  </a></figcaption></figure>
 
-See how the content stayed in place without notifying the end user that they’re participating in a split test? The images are removed seamlessly (no dance party) and are not loaded by the imageless variation, which speeds up the complete load time of the page — a 30% decrease in load time on average.
+The content stayed in place without any notice to the end user of their participation in a split test. Not only is the content not having a dance party, the images being removed are not being loaded by the browser — this decreased load time, on average, by 30%.
 
-
-
-
-<!-- For those looking to get their feet wet with server-side testing, I’ve outlined the stack used on this site. -->
 
 So now that we know that server-side split testing kicks butt, I'm going to run you through how I setup the low cost testing stack for this site by splitting traffic through Netlify and tracking test results in Google Optimize with the help of the Google Tag Manager Data Layer.
 

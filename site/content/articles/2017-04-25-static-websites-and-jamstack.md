@@ -1,7 +1,7 @@
 ---
 title: "Static Websites + JAMstack = <3"
 description:  Let's rethink the way we build websites with a more fast, secure, and flexible approach.
-tags: [JAMstack, HeadlessCMS, StaticSiteGenerators, WebPerf]
+tags: [JAMstack, HeadlessCMS, StaticSiteGenerators, StaticWebsites, WebPerf]
 lastmod: 2017-04-25
 date: "2017-04-25"
 time: 7.5 Minutes
