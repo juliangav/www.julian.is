@@ -19,7 +19,7 @@ Over the past two years I’ve dedicated part of my career to building a convers
 
 In hopes of saving you a few headaches, I've curated a list of some of the most important lessons learned. Enjoy!
 
-(Related: Here’s a [conversion rate optimization & GDD case study](/article/conversion-rate-optimization-case-study/) on one of the websites we tested on.)
+(Related: Here’s a [conversion rate optimization case study](/article/conversion-rate-optimization-case-study/) on one of the websites we tested on.)
 
 <!-- <h3>Table of Contents</h3>
 

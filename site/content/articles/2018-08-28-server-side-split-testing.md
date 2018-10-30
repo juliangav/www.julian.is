@@ -1,6 +1,6 @@
 ---
-title: "Getting Started With Server-Side Split Testing"
-description:  When to use it, when to avoid it, and setting up your testing stack.
+title: "Server-Side Split Testing for Static Websites"
+description:  When to use, when to avoid, and setting up your A/B testing stack.
 tags: [ABtest, JAMstack, WebPerf, StaticWebsites, CRO]
 lastmod: 2018-10-28
 date: "2018-10-28"
@@ -20,6 +20,8 @@ If you’ve read any of my other articles, it's pretty obvious that I’m obsess
 For the past year, I’ve taken a deep dive into server-side split testing, and I’ll be honest, the obsession is real. A server-side split test is an A/B testing technique where the changes and traffic allocations of any given test take place at the server level before the web page is delivered to the browser. 
 
 What makes this approach attractive are the huge performance gains and the user experience improvements when implemented correctly. Below I’ll run you through some of my findings as well as how to go about setting up your own testing stack.  
+
+(Looking for more on A/B testing? Here's an article I wrote recently on [what I've learned throughout my years of A/B testing](/article/ab-testing-lessons-learned/).)
  
 
 ## The Problem with Client-Side Split Testing 
@@ -104,7 +106,7 @@ In Google Tag Manager, navigate over to your Google Analytics tag and under “M
 	<figcaption>Google Tag Manager Data Layer Fields</figcaption>
 </figure>
 
-You’ll be able to obtain the experiment ID from the info column in Google Optimize once you publish the experiment — it’ll look something along the lines of OX7o3nkrR-ChTxqNJMA1nw.
+You’ll be able to obtain the experiment ID from the info column in Google Optimize once you publish the experiment — it’ll look something along the lines of <i>OX7o3nkrR-ChTxqNJMA1nw</i>.
 
 You won’t be able to easily find the variation ID, but there’s a numeric value assigned to each variation created starting at 0 for the original variation and increases by 1 for subsequent variations as illustrated below.
 
@@ -146,3 +148,4 @@ Add server-side testing to your optimization tool belt, build some cool tests, a
 * [The Beginner’s Guide to Google Optimize](https://conversionxl.com/blog/google-optimize/)
 * [A Step-by-Step Guide: Deploying on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
 * [A/B testing on AWS CloudFront with Lambda@Edge](https://medium.com/buildit/a-b-testing-on-aws-cloudfront-with-lambda-edge-a22dd82e9d12)
+* [GoodIU.org](https://goodui.org/) — Well curated list of A/B testing patterns for both client and server-side.
