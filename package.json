@@ -1,54 +1,37 @@
 {
-  "name": "victor-hugo",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "main": "index.js",
-  "scripts": {
-    "hugo": "gulp hugo",
-    "webpack": "gulp webpack",
-    "build": "gulp build",
-    "build-preview": "gulp build-preview",
-    "start": "gulp server",
-    "lint": "eslint src"
-  },
-  "author": "",
-  "license": "MIT",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "autoprefixer": "^6.3.7",
-    "babel-eslint": "^6.1.2",
-    "babel-loader": "^6.2.4",
-    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
-    "babel-plugin-transform-class-properties": "^6.10.2",
-    "babel-plugin-transform-object-assign": "^6.8.0",
-    "babel-plugin-transform-object-rest-spread": "^6.8.0",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-register": "^6.11.6",
-    "browser-sync": "^2.13.0",
-    "css-loader": "^0.23.1",
-    "eslint": "^3.1.1",
-    "eslint-plugin-import": "^1.11.1",
-    "exports-loader": "^0.6.3",
-    "file-loader": "^0.9.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-postcss": "^6.1.1",
-    "gulp-util": "^3.0.7",
-    "imports-loader": "^0.6.5",
-    "postcss-at2x": "^2.0.0",
-    "postcss-colour-functions": "^1.5.1",
-    "postcss-cssnext": "^2.7.0",
-    "postcss-import": "^8.1.2",
-    "postcss-loader": "^0.9.1",
-    "postcss-neat": "^2.5.2",
-    "postcss-nested": "^1.0.0",
-    "postcss-simple-extend": "^1.0.0",
-    "postcss-simple-vars-async": "^1.2.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.1",
-    "whatwg-fetch": "^1.0.0",
-    "yamljs": "^0.2.8",
-    "gulp-sass": "^3.1.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-uglify": "^2.1.2"
+    "gatsby": "^2.0.19",
+    "gatsby-image": "^2.0.15",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.11",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-transformer-sharp": "^2.1.4",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
