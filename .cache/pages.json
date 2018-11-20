@@ -20,6 +20,71 @@
         "path": "/about/"
     },
     {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-ab-testing-lessons-learned-e09",
+        "path": "/article/ab-testing-lessons-learned/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-baseline-for-fast-loading-websites-1b2",
+        "path": "/article/baseline-for-fast-loading-websites/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-conversion-rate-optimization-case-study-310",
+        "path": "/article/conversion-rate-optimization-case-study/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-css-grid-at-scale-64d",
+        "path": "/article/css-grid-at-scale/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-exit-intent-popups-1b6",
+        "path": "/article/exit-intent-popups/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-hubspot-inbound-2016-designers-perspective-fe3",
+        "path": "/article/hubspot-inbound-2016-designers-perspective/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-iphone-x-notch-1ef",
+        "path": "/article/iphone-x-notch/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-progressive-web-apps-969",
+        "path": "/article/progressive-web-apps/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-server-side-split-testing-f1f",
+        "path": "/article/server-side-split-testing/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-smashingconf-barcelona-2016-day-1-c75",
+        "path": "/article/smashingconf-barcelona-2016-day-1/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-smashingconf-barcelona-2016-day-2-e68",
+        "path": "/article/smashingconf-barcelona-2016-day-2/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-static-websites-and-jamstack-850",
+        "path": "/article/static-websites-and-jamstack/"
+    },
+    {
+        "componentChunkName": "component---src-templates-article-template-js",
+        "jsonName": "article-why-ive-started-writing-4a9",
+        "path": "/article/why-ive-started-writing/"
+    },
+    {
         "componentChunkName": "component---src-pages-articles-js",
         "jsonName": "articles-18f",
         "path": "/articles/"

@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import loader, { setApiRunnerForLoader } from "./loader"
+import loader from "./loader"
 import redirects from "./redirects.json"
 import { apiRunner } from "./api-runner-browser"
 import emitter from "./emitter"
@@ -127,7 +127,6 @@ function init() {
   // Temp hack while awaiting https://github.com/reach/router/issues/119
   window.__navigatingToLink = false
 
-  setApiRunnerForLoader(apiRunner)
   window.___loader = loader
   window.___push = to => navigate(to, { replace: false })
   window.___replace = to => navigate(to, { replace: true })

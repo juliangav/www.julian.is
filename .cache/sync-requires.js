@@ -3,6 +3,7 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
+  "component---src-templates-article-template-js": preferDefault(require("/Users/jgaviria/Documents/Development/www.julian.is/src/templates/articleTemplate.js")),
   "component---cache-dev-404-page-js": preferDefault(require("/Users/jgaviria/Documents/Development/www.julian.is/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/jgaviria/Documents/Development/www.julian.is/src/pages/404.js")),
   "component---src-pages-about-js": preferDefault(require("/Users/jgaviria/Documents/Development/www.julian.is/src/pages/about.js")),

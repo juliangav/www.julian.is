@@ -2,6 +2,7 @@
 const preferDefault = m => m && m.default || m
 
 exports.components = {
+  "component---src-templates-article-template-js": () => import("/Users/jgaviria/Documents/Development/www.julian.is/src/templates/articleTemplate.js" /* webpackChunkName: "component---src-templates-article-template-js" */),
   "component---cache-dev-404-page-js": () => import("/Users/jgaviria/Documents/Development/www.julian.is/.cache/dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
   "component---src-pages-404-js": () => import("/Users/jgaviria/Documents/Development/www.julian.is/src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-js": () => import("/Users/jgaviria/Documents/Development/www.julian.is/src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
