@@ -1,0 +1,1 @@
+{"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"Server-Side Split Testing for Static Websites","path":"/article/server-side-split-testing/"}}},{"node":{"frontmatter":{"title":"Lessons Learned After Running 300 A/B Tests on 20 Different Websites","path":"/article/ab-testing-lessons-learned/"}}}]}},"pageContext":{"tag":"ABtest"}}

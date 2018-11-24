@@ -1,0 +1,1 @@
+{"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"Server-Side Split Testing for Static Websites","path":"/article/server-side-split-testing/"}}},{"node":{"frontmatter":{"title":"Static Websites + JAMstack = <3","path":"/article/static-websites-and-jamstack/"}}}]}},"pageContext":{"tag":"StaticWebsites"}}

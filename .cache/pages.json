@@ -98,5 +98,115 @@
         "componentChunkName": "component---src-pages-page-2-js",
         "jsonName": "page-2-fbc",
         "path": "/page-2/"
+    },
+    {
+        "componentChunkName": "component---src-pages-tags-js",
+        "jsonName": "tags-275",
+        "path": "/tags/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-a-btest-7f5",
+        "path": "/tags/a-btest/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-ab-test-703",
+        "path": "/tags/ab-test/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-case-study-d77",
+        "path": "/tags/case-study/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-code-32f",
+        "path": "/tags/code/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-cro-b1c",
+        "path": "/tags/cro/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-css-grid-ed7",
+        "path": "/tags/css-grid/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-css-51e",
+        "path": "/tags/css/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-exit-intent-304",
+        "path": "/tags/exit-intent/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-gdd-311",
+        "path": "/tags/gdd/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-headless-cms-f03",
+        "path": "/tags/headless-cms/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-ja-mstack-4e6",
+        "path": "/tags/ja-mstack/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-mobile-111",
+        "path": "/tags/mobile/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-modals-2d2",
+        "path": "/tags/modals/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-optimization-097",
+        "path": "/tags/optimization/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-perceived-performance-c6f",
+        "path": "/tags/perceived-performance/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-pwa-c99",
+        "path": "/tags/pwa/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-service-workers-72e",
+        "path": "/tags/service-workers/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-static-site-generators-c46",
+        "path": "/tags/static-site-generators/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-static-websites-8f0",
+        "path": "/tags/static-websites/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-web-app-manifest-79d",
+        "path": "/tags/web-app-manifest/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-web-perf-56d",
+        "path": "/tags/web-perf/"
     }
 ]

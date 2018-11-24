@@ -1,7 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
+import PageIntro from '../components/sections/PageIntro'
+import ArticleContent from '../components/sections/ArticleContent'
+import kebabCase from 'lodash/kebabCase'
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
@@ -14,12 +17,18 @@ export default function Template({ data }) {
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
-      <h1>{post.frontmatter.title}</h1>
-      <main
-        id="main"
-        className="article__main"
-        dangerouslySetInnerHTML={{ __html: post.html }}
+      <PageIntro
+        PageTitle={post.frontmatter.title}
+        ArticleDate={post.frontmatter.date}
+        ArticleTime={post.frontmatter.time}
+        ArticleTags={post.frontmatter.tags.map((tag, index) => {
+          return <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
+        })}
       />
+
+      <ArticleContent>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </ArticleContent>
     </Layout>
   )
 }
@@ -32,6 +41,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        time
+        tags
       }
     }
   }

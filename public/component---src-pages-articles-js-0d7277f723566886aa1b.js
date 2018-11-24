@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{137:function(e,t,n){"use strict";n.r(t);var a=n(0),l=n.n(a),o=n(33),c=n(142);t.default=function(){return l.a.createElement(c.a,null,l.a.createElement("h1",null,"Hi from the Articles Page"),l.a.createElement("p",null,"Welcome to page 22222"),l.a.createElement(o.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-articles-js-0d7277f723566886aa1b.js.map

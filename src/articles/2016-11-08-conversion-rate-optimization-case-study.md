@@ -6,7 +6,7 @@ excerpt: I'll run you through a case study where we were able to increase conver
 categories:
   - 'UX'
 tags: [CRO, GDD, CaseStudy]
-time: 5 Minutes
+time: '5 Minutes'
 comments: false
 icon: /assets/aico-conversion-rate-optimization.svg
 slug: 'conversion-rate-optimization-case-study'
