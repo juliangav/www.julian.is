@@ -1,5 +1,5 @@
 import React from 'react'
-import ArticleAside from '../modules/ArticleAside'
+import ArticleAside from './ArticleAside'
 
 const ArticleContent = props => (
   <section class="site-content article-content" role="main">

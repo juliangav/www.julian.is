@@ -1,0 +1,260 @@
+@import "../neat/neat-helpers"; // or "../neat/neat-helpers" when not in Rails
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 30px;
+// $grid-columns: 12;
+	$max-width: em(1100);
+
+// Neat Breakpoints
+$medium-screen:40em;
+$large-screen:60em;
+$xlarge-screen:80em;
+
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 8);
+
+$small-screen-vertical:40em;
+$medium-screen-vertical:46em;
+
+//Media Queries
+@mixin mq($mq) {
+  @if $mq == smallv  { @media (max-height: $small-screen-vertical) and (min-width: $large-screen) { @content; } }
+  @if $mq == mediumv  { @media (max-height: $medium-screen-vertical) and (min-width: $large-screen) { @content; } }
+  @if $mq == small  { @media (max-width: $medium-screen) { @content; } }
+  @if $mq == medium  { @media (min-width: $medium-screen) { @content; } }
+  @if $mq == large { @media (min-width: $large-screen) { @content; } }
+  @if $mq == xlarge { @media (min-width: $xlarge-screen) { @content; } }
+  @if $mq == retina  { @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; } }
+}
+
+// Rows with IE8 Support
+/*
+This class is supposed to be assigned to the parent of items you need organized. Example below:
+<div class="rows-of-2">
+  <div>Item</div>
+  <div>Item</div>
+  <div>Item</div>
+  <div>Item</div>
+</div>
+This would give you 2 rows with 2 columns.
+*/
+
+.rows-of-2 {
+  @include row();
+  > * {
+    margin-bottom: $baseline*3;
+    display: block;
+    position: relative;
+    > * {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    @include mq(medium) {
+      @include span-columns(6 of 12);
+      @include omega(2n);
+      &:nth-last-child(2) {
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      &:nth-last-child(1) {
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.lt-ie9 {
+  .rows-of-2 {
+    @include row();
+    > * {
+      margin-bottom: $baseline*3;
+      display: block;
+      position: relative;
+      > * {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      @include mq(medium) {
+        float: left;
+        width: 50% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: $baseline*2;
+        padding-right: $baseline*2;
+        display: inline-block !important;
+        clear: none !important
+      }
+    }
+  }
+}
+
+.rows-of-3 {
+  @include row();
+  > * {
+    margin-bottom: $baseline*3;
+    display: block;
+    position: relative;
+    > * {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    @include mq(medium) {
+      @include span-columns(4 of 12);
+      @include omega(3n);
+    }
+  }
+}
+
+.lt-ie9 {
+  .rows-of-3 {
+    @include row();
+    > * {
+      margin-bottom: $baseline*3;
+      display: block;
+      position: relative;
+      > * {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      @include mq(medium) {
+        float: left;
+        width: 33.3% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: $baseline*2;
+        padding-right: $baseline*2
+      }
+    }
+  }
+}
+
+.rows-of-4 {
+  @include row();
+  > * {
+    margin-bottom: $baseline*3;
+    display: block;
+    position: relative;
+    > * {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    @include mq(medium) {
+      @include span-columns(3 of 12);
+      @include omega(4n);
+    }
+  }
+}
+
+.lt-ie9 {
+  .rows-of-4 {
+    @include row();
+    > * {
+      margin-bottom: $baseline*3;
+      display: block;
+      position: relative;
+      > * {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      @include mq(medium) {
+        float: left;
+        width: 25% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: $baseline*2;
+        padding-right: $baseline*2;
+      }
+    }
+  }
+}
+
+.mobile-rows-of-2 {
+  @include mq(small) {
+    @include row();
+    > * {
+      margin-bottom: $baseline*3;
+      display: block;
+      position: relative;
+      > * {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      &:nth-last-child(1) {
+        background-color: red;
+        margin-bottom: 0;
+      }
+      &:nth-last-child(2) {
+        background-color: green;
+        margin-bottom: 0;
+      }
+      @include span-columns(2 of 4);
+      @include omega(2n);
+    }
+  }
+}
+
+.row {
+  @include row();
+  clear: both;
+}
+
+@include mq(medium) {
+  .col-1 {
+    @include span-columns(1 of 12);
+  }
+  .col-2 {
+    @include span-columns(2 of 12);
+  }
+  .col-3 {
+    @include span-columns(3 of 12);
+  }
+  .col-4 {
+    @include span-columns(4 of 12);
+  }
+  .col-5 {
+    @include span-columns(5 of 12);
+  }
+  .col-6 {
+    @include span-columns(6 of 12);
+  }
+  .col-7 {
+    @include span-columns(7 of 12);
+  }
+  .col-8 {
+    @include span-columns(8 of 12);
+  }
+  .col-9 {
+    @include span-columns(9 of 12);
+  }
+  .col-10 {
+    @include span-columns(10 of 12);
+  }
+  .col-11 {
+    @include span-columns(11 of 12);
+  }
+  .col-12 {
+    @include span-columns(12 of 12);
+  }
+  .col-last {
+    @include omega;
+    margin-right: 0 !important;
+  }
+}
+
+//Omega Reset @include omega-reset($nth)
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none; }
+}

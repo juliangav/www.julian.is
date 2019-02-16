@@ -1,0 +1,70 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.alignright {
+  display: block;
+  padding-bottom: $baseline*3;
+}
+
+.alignleft {
+  display: block;
+  padding-bottom: $baseline*3;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+@include mq(medium) {
+  .alignright {
+    display: block;
+    float: right;
+    padding-bottom: $baseline*3;
+    padding-left: $baseline*3;
+  }
+  .alignleft {
+    display: block;
+    float: left;
+    padding-bottom: $baseline*3;
+    padding-right: $baseline*3;
+  }
+  .aligncenter {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.text-alignright {
+  text-align: right;
+}
+
+.text-alignleft {
+  text-align: left;
+}
+
+.text-aligncenter {
+  text-align: center;
+}
+
+.clearboth {
+  clear: both;
+  display: block;
+}
+.spacing-bottom {
+  margin-bottom:$baseline*4;
+}
+.spacing-top {
+  margin-top:$baseline*4;
+}

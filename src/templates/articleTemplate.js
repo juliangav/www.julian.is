@@ -2,8 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import PageIntro from '../components/sections/PageIntro'
-import ArticleContent from '../components/sections/ArticleContent'
+import PageIntro from '../components/PageIntro'
+import ArticleContent from '../components/ArticleContent'
 import kebabCase from 'lodash/kebabCase'
 
 export default function Template({ data }) {

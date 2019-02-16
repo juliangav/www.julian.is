@@ -1,6 +1,6 @@
 import React from 'react'
-import GlobalNav from './modules/GlobalNav'
-import GlobalLogo from './modules/GlobalLogo'
+import GlobalNav from './GlobalNav'
+import GlobalLogo from './GlobalLogo'
 
 const Header = ({ siteTitle }) => (
   <header

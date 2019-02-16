@@ -1,0 +1,104 @@
+// Typography
+$base-font-family: "ProximaNova",sans-serif;
+$header-font-family:  $base-font-family;
+$alt-font-family:  Georgia, Times, "Times New Roman", serif;
+
+// Font Sizes
+$small-font-size: em(18);
+$base-font-size: em(21); 
+$medium-font-size: em(24);
+$large-font-size: em(32);
+$xlarge-font-size: em(40);
+$display-font-size: em(50);
+
+
+
+// Line height
+$baseline:em(8); //Old habits die hard
+$base-line:em(8);
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+
+// Other Sizes
+$base-border-radius: 0;
+$base-spacing: $base-line-height * 1em;
+$base-z-index: 0;
+
+// Colors
+$white:#ffffff;
+$black:#000000;
+$blue: #23507a;
+$light-blue: #5e7289;
+$green:#00ad49;
+$gray:#999;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #eeeeee;
+$yellow:#dca000;
+
+
+// Base Colors
+$base-color:$blue;
+$base-accent-color:$light-blue;
+$base-font-color: $dark-gray;
+$base-background-color: $base-color;
+
+
+// Link Colors
+$base-link-color: $base-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Border color
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+
+// Navigation
+$nav-font-size-mobile:em(21);
+$nav-font-size-medium:em(16);
+$nav-font-size:em(16);
+$nav-height:em(81);
+$nav-background:transparent;
+$nav-background-mobile:$white;
+$nav-text-color:$base-color;
+$nav-text-color-hover:$base-color;
+$nav-hover:$light-gray;
+$nav-active-background:darken($nav-background, 10%);
+$nav-border:1px solid lighten($nav-background,5%);
+$nav-border-mobile:1px solid $light-gray;
+
+
+$nav-spacing-mobile:$baseline*2;
+$nav-spacing-medium:$baseline*0;
+$nav-spacing-large:$baseline*0;
+$nav-spacing-xlarge:$baseline*0;
+
+$nav-subnav-font-size:em(16);
+$nav-subnav-height:em(50);
+$nav-subnav-background:$nav-hover;
+$nav-subnav-background-mobile:lighten($nav-subnav-background,10%);
+$nav-subnav-border:1px solid lighten($nav-hover,10%);
+$nav-subnav-hover:darken($nav-subnav-background, 10%);
+
+$nav-mobile-width:17em;
+
+// Nav Mobile
+$nav-text-align-mobile:center;
+
+// Nav Medium
+$nav-text-align-medium:center;
+
+
+
+
+
