@@ -10,18 +10,6 @@ const PageIntro = props => (
         <span class="post-reading-time">{props.ArticleTime}</span>
       </p>
       <p class="post-tags">{props.ArticleTags}</p>
-
-      {/* <p class="post-tags">
-        <a href="/tags/abtest">#ABtest</a>
-
-        <a href="/tags/jamstack">#JAMstack</a>
-
-        <a href="/tags/webperf">#WebPerf</a>
-
-        <a href="/tags/staticwebsites">#StaticWebsites</a>
-
-        <a href="/tags/cro">#CRO</a>
-      </p> */}
     </div>
   </div>
 )
