@@ -1,15 +1,16 @@
 import React from 'react'
 
-const PageIntro = props => (
+const PageIntro = ({ PageTitle, ArticleDate, ArticleTime, ArticleTags }) => (
   <div className="page-intro">
     <div class="inner-wrap">
-      <h1>{props.PageTitle}</h1>
-
-      <p class="post-meta">
-        <span class="post-date">{props.ArticleDate}</span>
-        <span class="post-reading-time">{props.ArticleTime}</span>
-      </p>
-      <p class="post-tags">{props.ArticleTags}</p>
+      <h1>{PageTitle}</h1>
+      {ArticleDate && (
+        <p class="post-meta">
+          <span class="post-date">{ArticleDate}</span>
+          <span class="post-reading-time">{ArticleTime}</span>
+        </p>
+      )}
+      {ArticleTags && <p class="post-tags">{ArticleTags}</p>}
     </div>
   </div>
 )

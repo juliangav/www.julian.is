@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
@@ -8,7 +9,14 @@ import ArticlePreview from '../components/ArticlePreview'
 
 export default ({ data }) => (
   <Layout>
-    <PageIntro />
+    <Helmet
+      title={`Articles | Julian Gaviria — Web Designer`}
+      meta={[
+        { name: 'description', content: 'Sample' },
+        { name: 'keywords', content: 'sample, something' },
+      ]}
+    />
+    <PageIntro PageTitle="Articles" />
     <ArticleFeed>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <ArticlePreview
