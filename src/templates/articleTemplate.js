@@ -1,10 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
+
 import Layout from '../components/layout'
 import PageIntro from '../components/PageIntro'
 import ArticleContent from '../components/ArticleContent'
-import kebabCase from 'lodash/kebabCase'
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
@@ -21,9 +20,6 @@ export default function Template({ data }) {
         PageTitle={post.frontmatter.title}
         ArticleDate={post.frontmatter.date}
         ArticleTime={post.frontmatter.time}
-        ArticleTags={post.frontmatter.tags.map((tag, index) => {
-          return <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
-        })}
       />
 
       <ArticleContent>

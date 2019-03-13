@@ -43,7 +43,11 @@ const About = () => (
             Yup, I code all of my designs myself. My websites are as beautiful
             in the inside as they are on the outside. Want to see what’s under
             the hood? Go ahead and{' '}
-            <a href="https://www.webpagetest.org/video/" target="_blank">
+            <a
+              href="https://www.webpagetest.org/video/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               test my website
             </a>{' '}
             vs any other and see for yourself.{' '}
@@ -65,11 +69,19 @@ const About = () => (
           <p>
             At the moment I spend my days running a design and development team
             for{' '}
-            <a href="http://rpm.thomasnet.com" target="_blank">
+            <a
+              href="http://rpm.thomasnet.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               RPM
             </a>{' '}
             in New York City. Say{' '}
-            <a href="https://twitter.com/juliangav" target="_blank">
+            <a
+              href="https://twitter.com/juliangav"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               hello
             </a>{' '}
             to me when you get a sec. :){' '}
