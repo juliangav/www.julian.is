@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>
+			{{ if eq .Kind "home" }} {{ .Site.Title }} {{ else }}
+			{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+			{{ end }}
+		</title>
+		<meta name="description" content="{{ .Params.Description }}" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, viewport-fit=cover"
+		/>
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="stylesheet" type="text/css" href="/style.css?v=1" />
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="theme-color" content="#23507a" />
+		<!-- Google Tag Manager -->
+		<script>
+			dataLayer = [
+				{
+					branchName: '{{ getenv "BRANCH" }}',
+					experimentId: "lj34QP2ERo-yokgitEhPOaVCQ",
+					variationId: "1"
+				}
+			];
+		</script>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{{ if eq .Kind "home" }} {{ .Site.Title }} {{ else }} {{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }} {{ end }}</title>
-  <meta name="description" content="{{ .Params.Description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link rel="stylesheet" type="text/css" href="/style.css?v=1">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#23507a"> 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TXM4M8V');</script>
-  <!-- End Google Tag Manager -->
-  {{ partial "seo-social-tags" . }}
-</head>
+		<script>
+			(function(w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js"
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-TXM4M8V");
+		</script>
+		<!-- End Google Tag Manager -->
+		{{ partial "seo-social-tags" . }}
+	</head>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXM4M8V"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!--[if lt IE 9]>
-      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-  <![endif]-->
-  <div class="site-wrap">
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-TXM4M8V"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<!--[if lt IE 9]>
+			<p class="chromeframe">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="http://browsehappy.com/">upgrade your browser</a> or
+				<a href="http://www.google.com/chromeframe/?redirect=true"
+					>activate Google Chrome Frame</a
+				>
+				to improve your experience.
+			</p>
+		<![endif]-->
+		<div class="site-wrap"></div>
+	</body>
+</html>
