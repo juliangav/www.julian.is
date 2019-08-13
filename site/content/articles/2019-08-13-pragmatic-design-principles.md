@@ -1,9 +1,9 @@
 ---
 title: "A Pragmatic Approach to Design Principles"
 description:  When to use, when to avoid, and setting up your A/B testing stack.
-tags: [ABtest, JAMstack, WebPerf, StaticWebsites, CRO]
-lastmod: 2018-10-28
-date: "2018-10-28"
+tags: [managingdesign, uidesign, uxdesign]
+lastmod: 2019-08-13
+date: "2019-08-13"
 time: 5 Minutes
 categories:
   - "Development"
@@ -17,9 +17,7 @@ comments: false
 
 When I joined the product team at Thomasnet.com as the Head of Design, one of the major challenges I faced was working with an executive-centric design culture — one where design decisions were finalized based on the anecdotal experience of the highest paid person in the room (HiPPO). Design conversations went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” After witnessing this within my first week, I had a clear goal in mind: instill a user-centric design culture where design decisions are based off of user needs, data, & best practices.  
 
-We created the baseline for our design system in order to automate the smaller design decisions and to keep our output consistent; we created a dashboard of the KPIs which would help measure our success as a UX team; and setup an inclusive design process that allowed us to effectively get things done. 
-
-Things seemed to be going well, until I was punched in the face by reality — we were no longer making design decisions to the taste of upper management, the team was now making design decisions to my taste. I was the new HiPPO. 
+We created the baseline for our design system to automate design decisions, a dashboard of KPIs to track success, and setup an inclusive design process that allowed us to effectively get things done. Things seemed to be going well, until I was punched in the face by reality — we were no longer making design decisions to the taste of upper management, the team was now making design decisions to my taste. I was the new HiPPO. 
 
 Although we made good progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric design principles that gave the team guidance in making design decisions without worrying whether I’ll like it or not.
 
@@ -44,17 +42,17 @@ We first went through an exercise where we documented the reasoning behind our i
 
 We debated and combined our individual design principles, sprinkled some user-centric best practices, and after a few iterations came up with the following list:
 
-<b>1&#46; User-First</b> <br>It is key that we understand our users and their needs first. Business goals and objectives should assist in reducing ambiguity. We never trick the user, we never manipulate the user.
+<b>1&#46; User-First</b> — It is key that we understand our users and their needs first. Business goals and objectives should assist in reducing ambiguity. We never trick the user, we never manipulate the user.
 
-<b>2&#46; Inclusive & Accessible</b> <br>Everything we build should be accessible, inclusive and responsive by default. The design should perform well in different contexts and on different platforms and be appropriate to the target user groups.
+<b>2&#46; Inclusive & Accessible</b> — Everything we build should be accessible, inclusive and responsive by default. The design should perform well in different contexts and on different platforms and be appropriate to the target user groups.
 
-<b>3&#46; Design Consistency</b> <br>Blueprint (our design system) is the single source of truth for design consistency. If there's any doubt of what the default attributes of a pattern are, go with what's in Blueprint. 
+<b>3&#46; Design Consistency</b> — Blueprint (our design system) is the single source of truth for design consistency. If there's any doubt of what the default attributes of a pattern are, go with what's in Blueprint. 
 
-<b>4&#46; Challenge design patterns which don't make sense</b> <br>Contextually, if a design pattern doesn't make sense, challenge the use case and consciously modify or suggest a new pattern for the situation. Avoid falling into the trap of blindly following rules without taking context into consideration. 
+<b>4&#46; Challenge design patterns which don't make sense</b> — Contextually, if a design pattern doesn't make sense, challenge the use case and consciously modify or suggest a new pattern for the situation. Avoid falling into the trap of blindly following rules without taking context into consideration. 
 
-<b>5&#46; Each project starts with the research phase</b> <br>Let’s thoroughly research what we’re trying to solve for. Chances are other companies have already solved this and we can learn from their successes and mistakes.
+<b>5&#46; Each project starts with the research phase</b> — Let’s thoroughly research what we’re trying to solve for. Chances are other companies have already solved this and we can learn from their successes and mistakes.
 
-<b>6&#46; Use data to guide our decisions</b> <br>Every project we work on needs to have a set of metrics that will help us define success.
+<b>6&#46; Use data to guide our decisions</b> — Every project we work on needs to have a set of metrics that will help us define success.
 
 The fact that these principles would only work for the UX team a Thomas and no other company was a good sign — these are custom tailored principles to the issues we were facing at that point in time.
 
@@ -69,26 +67,19 @@ We decided to use the same approach that helped us think cohesively as a design 
 
 After detailed feedback from engineering, product, and marketing (and a few iterations) we came up with the following principles:
 
-<b>1&#46; User-Centric</b>
-<br>Let's figure out what the user needs are first and design for that. We are not the user.
+<b>1&#46; User-Centric</b> — Let's figure out what the user needs are first and design for that. We are not the user.
 
-<b>2&#46; Accessible</b> 
-<br>Every design should be fast, responsive, & of low cognitive/physical effort for the user. Accessible products create a larger audience. 
+<b>2&#46; Accessible</b> — Every design should be fast, responsive, & of low cognitive/physical effort for the user. Accessible products create a larger audience. 
 
-<b>3&#46; Data-Informed</b> 
-<br>Design decisions are better made when guided by data. Opinions come last.
+<b>3&#46; Data-Informed</b> — Design decisions are better made when guided by data. Opinions come last.
 
-<b>4&#46; Transparent</b> 
-<br>Transparent design decisions build trust in our products resulting in higher user engagement. No tricking or manipulating the user.
+<b>4&#46; Transparent</b> — Transparent design decisions build trust in our products resulting in higher user engagement. No tricking or manipulating the user.
 
-<b>5&#46; Unified</b> 
-<br>Each piece is part of a greater whole and should contribute positively to the system at scale. There should be no isolated features or outliers.
+<b>5&#46; Unified</b> — Each piece is part of a greater whole and should contribute positively to the system at scale. There should be no isolated features or outliers.
 
-<b>6&#46; 80&#47;20</b> 
-<br>80% of results come from 20% of the effort. Instead of solving everything, let's aim for the bigger impact.
+<b>6&#46; 80&#47;20</b> — 80% of results come from 20% of the effort. Instead of solving everything, let's aim for the bigger impact.
 
-<b>7&#46; Early Delivery</b> 
-<br>The earlier we get designs in front of the user, the earlier we know what works and what doesn't. 
+<b>7&#46; Early Delivery</b> — The earlier we get designs in front of the user, the earlier we know what works and what doesn't. 
 
 We now had a set of company-wide design principles that not only provided us with the guidance necessary on making day-to-day design decisions, but also worked as a tool that drastically improved our collaboration with other departments. From engineering to product and marketing, we were all speaking the same language.
 
@@ -97,12 +88,25 @@ We now had a set of company-wide design principles that not only provided us wit
 The following set of guidelines helped us successfully put together our set of design principles:
 
 
-**Specific to our organization** — each of our design principles addresses a specific friction point of our organization. If I were to take these design principles to another company, chances are they wouldn’t work. One of the most effective ways of getting other teams to adopt an idea or process is by making their lives easier.
+### Specific to our organization
 
-**Include a why** — each definition of a design principle was coupled with a strong why. This takes a design principle from being theoretical and most likely to get ignored (E.g. All design decisions should be transparent without tricking or manipulating the user) to one that is informative and pragmatic (E.g. Transparent design decisions promote the trust of our products. No tricking or manipulating the user).
+Each of our design principles addresses a specific friction point of our organization. If I were to take these design principles to another company, chances are they wouldn’t work. One of the most effective ways of getting other teams to adopt an idea or process is by making their lives easier.
 
-**Inclusive of other teams** — nobody wants to follow a set of “rules” that are being dictated by one team. Our design principles were designed to help us collaborate better as a user-centric organization. This meant speaking with other teams and thoroughly understanding the friction points from their perspective. This helped us design a set of principles that addressed issues at a company-wide level.
+### Include a why 
+
+Each definition of a design principle was coupled with a strong why. This takes a design principle from being theoretical and most likely to get ignored (E.g. All design decisions should be transparent without tricking or manipulating the user) to one that is informative and pragmatic (E.g. Transparent design decisions promote the trust of our products. No tricking or manipulating the user).
+
+### Inclusive of other teams 
+
+Nobody wants to follow a set of “rules” that are being dictated by one team. Our design principles were designed to help us collaborate better as a user-centric organization. This meant speaking with other teams and thoroughly understanding the friction points from their perspective. This helped us design a set of principles that addressed issues at a company-wide level.
 
 ## To Conclude
 
 Design principles aren’t meant to end all debates nor to get everyone thinking the same — different perspectives and stress testing designs are still crucial and necessary parts of the design process. But like a good design system, design principles are meant for us to automate the smaller decisions in order to make room for debate of the larger concepts and ideas.
+
+## Resources
+
+* [Design Principles Behind Great Products](https://medium.muz.li/design-principles-behind-great-products-6ef13cd74ccf)
+* [Developing Design Principles](https://www.lukew.com/ff/entry.asp?854)
+* [Design Principles FTW](https://www.designprinciplesftw.com/)
+* [Design Life Podcast Episode 153: Creating Design Principles](https://www.designlife.fm/episode/153)
