@@ -1,7 +1,7 @@
 ---
 title: "A Pragmatic Approach to Design Principles"
 description:  When to use, when to avoid, and setting up your A/B testing stack.
-tags: [managingdesign, uidesign, uxdesign]
+tags: [ManagingDesign, UIDesign, UXDesign, Culture]
 lastmod: 2019-08-13
 date: "2019-08-13"
 time: 5 Minutes
@@ -88,15 +88,15 @@ We now had a set of company-wide design principles that not only provided us wit
 The following set of guidelines helped us successfully put together our set of design principles:
 
 
-### Specific to our organization
+<h3>Specific to our organization</h3>
 
 Each of our design principles addresses a specific friction point of our organization. If I were to take these design principles to another company, chances are they wouldn’t work. One of the most effective ways of getting other teams to adopt an idea or process is by making their lives easier.
 
-### Include a why 
+<h3>Include a why</h3>
 
 Each definition of a design principle was coupled with a strong why. This takes a design principle from being theoretical and most likely to get ignored (E.g. All design decisions should be transparent without tricking or manipulating the user) to one that is informative and pragmatic (E.g. Transparent design decisions promote the trust of our products. No tricking or manipulating the user).
 
-### Inclusive of other teams 
+<h3>Inclusive of other teams</h3>
 
 Nobody wants to follow a set of “rules” that are being dictated by one team. Our design principles were designed to help us collaborate better as a user-centric organization. This meant speaking with other teams and thoroughly understanding the friction points from their perspective. This helped us design a set of principles that addressed issues at a company-wide level.
 
