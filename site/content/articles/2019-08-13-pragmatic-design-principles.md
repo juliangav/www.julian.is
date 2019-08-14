@@ -15,28 +15,44 @@ comments: false
 
 ---
 
-When I joined the product team at Thomasnet.com as the Head of Design, one of the major challenges I faced was working with an executive-centric design culture — one where design decisions were finalized based on the anecdotal experience of the highest paid person in the room (HiPPO). Design conversations went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” After witnessing this within my first week, I had a clear goal in mind: instill a user-centric design culture where design decisions are based off of user needs, data, & best practices.  
+Two years ago when I joined the product team at Thomas as the Head of UX, one of the major challenges I faced was a design culture where decisions were based on the anecdotal experience of the highest paid person in the room (HiPPO). Design conversations went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” 
 
-We created the baseline for our design system to automate design decisions, a dashboard of KPIs to track success, and setup an inclusive design process that allowed us to effectively get things done. Things seemed to be going well, until I was punched in the face by reality — we were no longer making design decisions to the taste of upper management, the team was now making design decisions to my taste. I was the new HiPPO. 
+My goal was clear: instill a user-centric design culture where decisions are based off of user needs, data, & best practices.
 
-Although we made good progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric design principles that gave the team guidance in making design decisions without worrying whether I’ll like it or not.
+Within the first month, we created the baseline for our design system to automate UI decisions, we setup a dashboard of KPIs to track our success, and we established an inclusive design process that allowed us to effectively get designs out the door. 
+
+Things seemed to be going well, until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions based on my taste. I was the new HiPPO.
+
+## Hello Design Principles
+
+Although we made progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric & practical design principles that gave the team guidance & autonomy in making the optimal design decisions.
 
 Before we get into the juicy details of how our design principles initially came to be and how they evolved at a company-wide level, let’s get on the same page regarding the basics...
 
  
 
-## What are Design Principles?
+<h3>What are Design Principles?</h3>
 
-Design principles (not to be confused with the [traditional principles of design](https://99designs.com/blog/tips/principles-of-design/)) are a set of guidelines for what your team or company believes to be good design. Here’s how Charli Marie, co-host of Design Life Podcast, defines it:
+Design principles (not to be confused with the [traditional principles of design](https://99designs.com/blog/tips/principles-of-design/)) are a set of guidelines for what your team or company believes to be good design. 
+
+Here’s how Charli Marie, co-host of Design Life Podcast, defines it:
 <blockquote>
   <p>Design principles are the shared criteria for what good design means for our product and marketing materials. Think of them as a set of guiding ideas to help make design decisions, help keep all of our visuals aligned, and to help decide what features are most important to focus on.
 </p>
   <cite>[Charli Marie](https://charlimarie.com/), co-host of [Design Life Podcast](https://www.designlife.fm/)</cite>
 </blockquote>
 
-When done right, they make your design process effective, efficient, & scalable. But when done wrong, they end up as a set of theoretical cliches that state the obvious and don’t assist in any of the day-to-day design decisions that need to be made — something we’re making sure to steer clear of.
 
-## How Our Design Principles Initially Formed
+
+When done right, they make your design process effective, efficient, & scalable. 
+
+
+But when done wrong, they end up as a list of theoretical cliches that state the obvious and don’t assist in the day-to-day design decisions (e.g. make it simple — yup, thanks captain obvious). 
+
+Remember those company values you were asked to live by but struggled to put into practice because, well, they weren't practical? That's exactly what we're trying to avoid.
+
+## Our First Stab at Design Principles
+
 
 We first went through an exercise where we documented the reasoning behind our individual decisions we made as designers. It happens to be that every designer in the team had their own set of design principles which they used to guide their decisions. This was extremely useful in helping us build a shared mental model of how we made decisions as a team.
 
