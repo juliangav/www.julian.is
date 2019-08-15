@@ -15,27 +15,26 @@ comments: false
 
 ---
 
-Two years ago when I joined the product team at Thomas as the Head of UX, one of the major challenges I faced was a design culture where decisions were based on the anecdotal experience of the highest paid person in the room (HiPPO). Design conversations went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” 
 
-My goal was clear: instill a user-centric design culture where decisions are based off of user needs, data, & best practices.
+
+Two years ago when I joined the product team at Thomas as the Head of UX, I faced a design culture where decisions were based on the anecdotal experience of the highest paid person in the room (HiPPO). Conversations within the design team went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” 
+
+
+My goal was clear: upend the existing executive-centric design culture and instill a user-centric approach where decisions are based off of user needs, data, & best practices.
 
 Within the first month, we created the baseline for our design system to automate UI decisions, we setup a dashboard of KPIs to track our success, and we established an inclusive design process that allowed us to effectively get designs out the door. 
 
-Things seemed to be going well, until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions based on my taste. I was the new HiPPO.
+Things seemed to be going well... until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions based on my taste. I was the new HiPPO.
 
 ## Hello Design Principles
 
-Although we made progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric & practical design principles that gave the team guidance & autonomy in making the optimal design decisions.
+Although we made progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric & practical design principles that gave the team guidance & autonomy in making optimal design decisions.
 
-Before we get into the juicy details of how our design principles initially came to be and how they evolved at a company-wide level, let’s get on the same page regarding the basics...
 
- 
-
-<h3>What are Design Principles?</h3>
 
 Design principles (not to be confused with the [traditional principles of design](https://99designs.com/blog/tips/principles-of-design/)) are a set of guidelines for what your team or company believes to be good design. 
 
-Here’s how Charli Marie, co-host of Design Life Podcast, defines it:
+Here's a definition that's spot on:
 <blockquote>
   <p>Design principles are the shared criteria for what good design means for our product and marketing materials. Think of them as a set of guiding ideas to help make design decisions, help keep all of our visuals aligned, and to help decide what features are most important to focus on.
 </p>
@@ -47,41 +46,49 @@ Here’s how Charli Marie, co-host of Design Life Podcast, defines it:
 When done right, they make your design process effective, efficient, & scalable. 
 
 
-But when done wrong, they end up as a list of theoretical cliches that state the obvious and don’t assist in the day-to-day design decisions (e.g. make it simple — yup, thanks captain obvious). 
+But when done wrong, they end up as a list of theoretical cliches that state the obvious and don’t assist in the day-to-day design decisions. 
 
 Remember those company values you were asked to live by but struggled to put into practice because, well, they weren't practical? That's exactly what we're trying to avoid.
 
 ## Our First Stab at Design Principles
 
+Our goal was to get as pragmatic as possible in order to avoid spending time and resources on a set of principles that weren't going to serve a purpose.
 
-We first went through an exercise where we documented the reasoning behind our individual decisions we made as designers. It happens to be that every designer in the team had their own set of design principles which they used to guide their decisions. This was extremely useful in helping us build a shared mental model of how we made decisions as a team.
+With this in mind, we went through an initial exercise where we documented the reasoning behind the decisions we made as individual designers. It happens to be that every designer on the team had their own internal set of design principles which they used to guide their decisions. 
 
-We debated and combined our individual design principles, sprinkled some user-centric best practices, and after a few iterations came up with the following list:
+Surfacing these principles was extremely useful in helping us build a shared mental model of how we made decisions as a team.
 
-<b>1&#46; User-First</b> — It is key that we understand our users and their needs first. Business goals and objectives should assist in reducing ambiguity. We never trick the user, we never manipulate the user.
+We used a combination of our individual design principles as a baseline. After a few debates, thorough research, and a sprinkle of user-centric best practices we came up with the following list:
 
-<b>2&#46; Inclusive & Accessible</b> — Everything we build should be accessible, inclusive and responsive by default. The design should perform well in different contexts and on different platforms and be appropriate to the target user groups.
 
-<b>3&#46; Design Consistency</b> — Blueprint (our design system) is the single source of truth for design consistency. If there's any doubt of what the default attributes of a pattern are, go with what's in Blueprint. 
+<b>1&#46; User-First</b> — It is key that we understand our users and their needs first. We never trick the user, we never manipulate the user.
 
-<b>4&#46; Challenge design patterns which don't make sense</b> — Contextually, if a design pattern doesn't make sense, challenge the use case and consciously modify or suggest a new pattern for the situation. Avoid falling into the trap of blindly following rules without taking context into consideration. 
+<b>2&#46; Inclusive & Accessible</b> — Everything we build should be accessible, inclusive and responsive by default. Designs should perform well in different contexts & platforms.
 
-<b>5&#46; Each project starts with the research phase</b> — Let’s thoroughly research what we’re trying to solve for. Chances are other companies have already solved this and we can learn from their successes and mistakes.
+<b>3&#46; Design Consistency</b> — Blueprint (our design system) is the single source of truth for design consistency. 
 
-<b>6&#46; Use data to guide our decisions</b> — Every project we work on needs to have a set of metrics that will help us define success.
+<b>4&#46; Challenge Design Patterns which Don't Make Sense</b> — Contextually, if a design pattern doesn't make sense, challenge the use case and consciously modify or suggest a new pattern for the situation. 
 
-The fact that these principles would only work for the UX team a Thomas and no other company was a good sign — these are custom tailored principles to the issues we were facing at that point in time.
+<b>5&#46; Each Project Starts with the Research Phase</b> — Let’s thoroughly research what we’re trying to solve for. Chances are other companies have already solved this.
+
+<b>6&#46; Use Data to Guide Our Decisions</b> — Use existing data and KPIs to guide our design decisions.
+
+Looking at these principles two years later they seem obvious, but that's because at the time we were in a place where they weren't. These were custom tailored principles to the issues we were struggling with as a team.
+
+<!-- The fact that these principles would only work for the UX team a Thomas and no other company was a good sign — these are custom tailored principles to the issues we were facing at that point in time. -->
 
 For the next year, these principles helped the UX team stay focused on designing for the user and not the HiPPO.
 
 
-## Company-Wide Design Principles
+## Design Principles Applied at a Company-Wide Level
  
-Time and time again we found ourselves debating and explaining the same user-centric concepts with other teams in the organization. E.g. Why tricking the user isn’t an option, why this new product needed to be accessible, what accessibility meant, why our opinions should come last, etc.
+Time and time again we found ourselves debating and explaining the same user-centric concepts with other teams. E.g. Why tricking the user isn’t an option, why this new product needed to be accessible, what accessibility meant, why our opinions should come last, etc.
 
-We decided to use the same approach that helped us think cohesively as a design team and apply it at a level that would help us work more effectively with other teams. The goal was to rewrite our design principles in a way that would be understood and effectively utilized by the rest of the organization while still guiding us as a UX team.
+We decided to use the same approach that helped us think cohesively as a design team — the goal was to modify our design principles in a way that would be understood and effectively utilized by the rest of the organization.
 
-After detailed feedback from engineering, product, and marketing (and a few iterations) we came up with the following principles:
+<!-- We decided to use the same approach that helped us think cohesively as a design team and apply it at a level that would help us work more effectively with other teams. The goal was to rewrite our design principles in a way that would be understood and effectively utilized by the rest of the organization while still guiding us as a UX team. -->
+
+After detailed feedback (and plenty of debates) from engineering, product, and marketing we came up with the following principles:
 
 <b>1&#46; User-Centric</b> — Let's figure out what the user needs are first and design for that. We are not the user.
 
