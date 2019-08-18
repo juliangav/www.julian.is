@@ -1,6 +1,6 @@
 ---
 title: "A Pragmatic Approach to Design Principles"
-description:  How we setup our design principles at Thomas and how they evolved beyond the UX team.
+description:  Setting up practical design principles — the best thing since sliced bread.
 tags: [DesignPrinciples, ManagingDesign, UXDesign, Culture]
 lastmod: 2019-08-18
 date: "2019-08-18"
