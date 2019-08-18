@@ -8,8 +8,8 @@ time: 5 Minutes
 categories:
   - "Development"
 slug: "pragmatic-design-principles" 
-images: ["assets/og-server-side-split-testing.jpg"]
-icon: /assets/aico-design-principles.svg
+images: ["assets/og-pragmatic-design-principles.jpg"]
+icon: /assets/aico-pragmatic-design-principles.svg
 comments: false
 
 
