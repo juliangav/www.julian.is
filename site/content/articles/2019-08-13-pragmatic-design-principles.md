@@ -9,7 +9,7 @@ categories:
   - "Development"
 slug: "pragmatic-design-principles" 
 images: ["assets/og-server-side-split-testing.jpg"]
-icon: /assets/aico-serverside-split-testing.svg
+icon: /assets/aico-design-principles.svg
 comments: false
 
 
@@ -17,18 +17,18 @@ comments: false
 
 Two years ago when I joined the product team at Thomas as the Head of UX, I faced a design culture where decisions were based on the anecdotal experience of the highest-paid person in the room (HiPPO). Conversations within the design team went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” 
 
-My goal was clear: upend the existing executive-centric design culture and instill a user-centric approach where decisions are based on user needs, data, & best practices.
+My goal was clear: abandon the executive-centric design culture and instill a user-centric approach where decisions are based on user needs, data, & best practices.
 
 Within the first month, we created the baseline for our design system to automate UI decisions, set up a dashboard of KPIs to track our success, and established an inclusive design process that allowed us to effectively get designs out the door. 
 
 Things seemed to be going well... until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions based on my taste. I was the new HiPPO.
 
-(Related: [A/B Testing Design — Lessons Learned](/article/server-side-split-testing/))
-
 <blockquote>
   <p>...until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions based on my taste. I was the new HiPPO.
 </p>
 </blockquote>
+
+(Related: [A/B Testing Design — Lessons Learned](/article/ab-testing-lessons-learned/))
 
 ## Hello Design Principles
 

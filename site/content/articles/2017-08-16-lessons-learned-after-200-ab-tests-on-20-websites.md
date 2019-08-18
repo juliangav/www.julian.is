@@ -1,7 +1,7 @@
 ---
 title: "Lessons Learned After Running 300 A/B Tests on 20 Different Websites"
 description:  Over the past 2 years I’ve dedicated part of my career to building a conversion rate optimization (CRO) team from the ground up. Here's what I've learned.
-tags: [ABtest, CRO,]
+tags: [ABtest, CRO, UXDesign]
 lastmod: 2017-08-16
 date: "2017-08-16"
 time: 5 Minutes
