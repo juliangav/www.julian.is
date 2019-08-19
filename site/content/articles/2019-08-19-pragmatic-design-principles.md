@@ -17,8 +17,6 @@ comments: false
 
 Two years ago when I joined the product team at Thomas, I faced a design culture where decisions were based on the highest paid person's opinion (HiPPO). Conversations went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” 
 
-<!-- My goal was clear: abandon the executive-centric design culture and instill a user-centric approach where decisions are based on user needs, data, & best practices. -->
-
 My goal was clear: instill a user-centric culture where design decisions are based on user needs, data, & best practices. 
 
 Within the first month, we created the baseline for our design system to automate UI decisions, set up a dashboard of KPIs to track our success, and established an inclusive design process that allowed us to effectively get designs out the door. 
