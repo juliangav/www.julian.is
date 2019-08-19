@@ -1,12 +1,12 @@
 ---
 title: "A Pragmatic Approach to Design Principles"
-description:  Setting up practical design principles — the best thing since sliced bread.
+description:  How we took our design culture from executive-centric to user-centric at Thomas.
 tags: [DesignPrinciples, ManagingDesign, UXDesign, Culture]
 lastmod: 2019-08-18
 date: "2019-08-18"
 time: 5 Minutes
 categories:
-  - "Development"
+  - "Design"
 slug: "pragmatic-design-principles" 
 images: ["assets/og-pragmatic-design-principles.jpg"]
 icon: /assets/aico-pragmatic-design-principles.svg
@@ -15,26 +15,26 @@ comments: false
 
 ---
 
-Two years ago when I joined the product team at Thomas as the Head of UX, I faced a design culture where decisions were based on the anecdotal experience of the highest-paid person in the room (HiPPO). Conversations within the design team went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” 
+Two years ago when I joined the product team at Thomas, I faced a design culture where decisions were based on the highest paid person's opinion (HiPPO). Conversations went somewhere along the lines of “I don’t think XYZ will like this” or “that’s not their taste in design.” 
 
-My goal was clear: abandon the executive-centric design culture and instill a user-centric approach where decisions are based on user needs, data, & best practices.
+<!-- My goal was clear: abandon the executive-centric design culture and instill a user-centric approach where decisions are based on user needs, data, & best practices. -->
+
+My goal was clear: instill a user-centric culture where design decisions are based on user needs, data, & best practices. 
 
 Within the first month, we created the baseline for our design system to automate UI decisions, set up a dashboard of KPIs to track our success, and established an inclusive design process that allowed us to effectively get designs out the door. 
 
-Things seemed to be going well... until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions based on my taste. I was the new HiPPO.
+Things seemed to be going well... until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions to my taste. I was the new HiPPO. (Cue the horror face meme.)
 
 <blockquote>
-  <p>...until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions based on my taste. I was the new HiPPO.
+  <p>...until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions to my taste. I was the new HiPPO.
 </p>
 </blockquote>
+
+Although we made progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric & practical design principles that gave the team guidance & autonomy in making optimal design decisions.
 
 (Related: [A/B Testing Design — Lessons Learned](/article/ab-testing-lessons-learned/))
 
 ## Hello Design Principles
-
-Although we made progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric & practical design principles that gave the team guidance & autonomy in making optimal design decisions.
-
-
 
 Design principles (not to be confused with the [traditional principles of design](https://99designs.com/blog/tips/principles-of-design/)) are a set of guidelines for what your team or company believes to be good design. 
 
