@@ -1,6 +1,6 @@
 ---
 title: "A Pragmatic Approach to Design Principles"
-description:  How we took our design culture from executive-centric to user-centric at Thomas.
+description: How we took our design culture from executive-centric to user-centric with the help of pragmatic design principles.
 tags: [DesignPrinciples, ManagingDesign, UXDesign, Culture]
 lastmod: 2019-08-18
 date: "2019-08-18"
@@ -19,16 +19,16 @@ Two years ago when I joined the product team at Thomas, I faced a design culture
 
 My goal was clear: instill a user-centric culture where design decisions are based on user needs, data, & best practices. 
 
-Within the first month, we created the baseline for our design system to automate UI decisions, set up a dashboard of KPIs to track our success, and established an inclusive design process that allowed us to effectively get designs out the door. 
-
-Things seemed to be going well... until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions to my taste. I was the new HiPPO. (Cue the horror face meme.)
-
 <blockquote>
   <p>...until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions to my taste. I was the new HiPPO.
 </p>
 </blockquote>
 
-Although we made progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric & practical design principles that gave the team guidance & autonomy in making optimal design decisions.
+Within the first month at the helm of design, we created the baseline for our design system to automate UI decisions, set up a dashboard of KPIs to track our success, and established an inclusive design process that allowed us to effectively get designs out the door. 
+
+Things seemed to be going well... until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions to my taste. I was the new HiPPO. (Cue the horror face meme.)
+
+Although we made progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric & pragmatic design principles that gave the team guidance & autonomy in making optimal design decisions.
 
 (Related: [A/B Testing Design — Lessons Learned](/article/ab-testing-lessons-learned/))
 
@@ -122,9 +122,17 @@ The earlier we get designs in front of the user, the earlier we know what works 
 
 We now had a set of company-wide design principles that not only provided us with the guidance necessary for making day-to-day design decisions but also worked as a tool that drastically improved our collaboration with other departments. From engineering to product and marketing, we were all speaking the same language.
 
-## Secret Sauce to Adoption
+## The Pragmatic Part
 
-What good is it if we have design principles that don't get used? The following set of guidelines helped us gain traction and create awareness of our principles throughout our company.
+<blockquote>
+  <p>
+  We design things which we think are semantically correct and syntactically consistent but if, at the point of fruition, no one understands the result, or the meaning of all that effort, the entire work is useless.
+  </p>
+  <cite>Massimo Vignelli, <a href="http://www.manifestoproject.it/vignelli-associates/" target="_blank">The Vignelli Canon</a></cite>
+</blockquote>
+
+
+Yeah, not what we're looking for. The following set of guidelines helped us gain traction and create awareness of our principles along with their purpose throughout our company.
 
 
 <h3>Specific to our organization</h3>
@@ -156,3 +164,4 @@ Additional thoughts on design principles? [Reach out & let me know](https://twit
 * [Design Principles FTW](https://www.designprinciplesftw.com/)
 * [Design Life Podcast Episode 153: Creating Design Principles](https://www.designlife.fm/episode/153)
 * [The Way We Build — How rethinking the Airbnb app changed the way we approach design](https://airbnb.design/the-way-we-build/)
+* [Manifesto Project — The Vignelli Canon](http://www.manifestoproject.it/vignelli-associates/)
