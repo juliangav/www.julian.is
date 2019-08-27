@@ -30,7 +30,7 @@ Things seemed to be going well... until I was punched in the face by reality —
 
 Although we made progress throughout the first few months, we were still missing an important piece to our design process: a set of user-centric & pragmatic design principles that gave the team guidance & autonomy in making optimal design decisions.
 
-(Related: [A/B Testing Design — Lessons Learned](/article/ab-testing-lessons-learned/))
+(Related: [How We Adopted CSS Grid at Scale](/article/css-grid-at-scale/))
 
 ## Hello Design Principles
 
