@@ -1,0 +1,190 @@
+  .site-header {
+	//border-bottom: 1px solid $base-border-color;
+	//@include transition (border .5s ease-in-out);
+	height: $nav-height;
+	z-index:10000;
+	position:sticky;
+	top:0;
+	background-color: rgba(255, 255, 255, .75);
+	.inner-wrap {
+	  padding-top: 0;
+	  padding-bottom: 0;
+	}
+  }
+  // .site-header__icon {
+  //   max-width:.75em;
+  //   margin-right:.2em;
+  // }
+  .site-logo {}
+  
+  .site-header-home {
+	//border-bottom: 1px solid white;
+	.site-nav {
+	  @include mq(medium) {
+		//opacity:0;
+		@include transition (opacity .5s ease-in-out);
+	  }
+	}
+	.site-logo {
+	  figure {
+		&:after {
+		  content: '';
+		  background-image: url(img/julian-headshot.jpg);
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  background-position: center center;
+		  display: block;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  border-radius: 100%;
+		  @include transition (all .5s ease-in-out);
+		}
+	  }
+	  figcaption {
+		opacity: 0;
+		@include transition (all .5s ease-in-out);
+	  }
+	}
+  }
+  
+  
+  
+  .site-logo {
+	// background-color:red;
+	overflow: hidden;
+	display: block;
+	text-decoration: none;
+	font-size: 1em; // background-color:green;
+	//width: 16.25em;
+	float: left;
+	height: $nav-height;
+	padding-top: .3em;
+	padding-bottom: .3em;
+	figure {
+	  position: relative;
+	  overflow: hidden;
+	  background-color: $base-color;
+	  display: block;
+	  height: 4.5em;
+	  width: 4.5em;
+	  line-height: 4.5em;
+	  border-radius: 100%;
+	  text-align: center;
+	  margin: 0;
+	  box-shadow: none; //font-size: .75em;
+	  float: left;
+	  img {
+		vertical-align: middle;
+		width: 90%;
+	  }
+	}
+	figcaption {
+	  @extend h2;
+	  line-height: 1;
+	  float: left;
+	  margin-left: .35em;
+	  font-size: 2.2em;
+	  margin-top: .20em;
+	  margin-bottom: 0;
+	}
+  }
+  
+  // .sh-sticky-wrap {
+  //   @include mq(large) {
+  //     height: $nav-height;
+  //   }
+  // }
+  .sh-utility-nav {
+	overflow: hidden;
+	height: $nav-height/1.5; //float:right; 
+	clear: both;
+	margin-top: 2em;
+	.social-wrap {
+	  width: 12em; //display: none;
+	  a {
+		height: $nav-height/1.5; //background-color:green;
+		line-height: $nav-height/1.5;
+	  }
+	}
+	@include mq(medium) {
+	  height: $nav-height;
+	  clear: none;
+	  margin-top: 0;
+	  .social-wrap {
+		width: 12em;
+	  }
+	  text-align: right; //float: right;
+	  width:12em;
+	  float:right; //background-color:red;
+	  .social-wrap {
+		display: inline-block;
+		a {
+		  height: $nav-height;
+		  line-height: $nav-height;
+		}
+	  }
+	}
+	@include mq(large) {
+	  .social-wrap {
+		width: 12em;
+	  }
+	  width: 12em;
+	}
+  }
+  
+  .site-search {}
+  
+  //Site Header Icons
+  .sh-icons {
+	float: right;
+	z-index: 2;
+	position: relative;
+	padding-top: .3em;
+	@include mq(medium) {}
+  }
+  
+  %sh-ico {
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: inline-block;
+	padding-top: 1.2em;
+	width: 2em;
+	margin-left: 1em;
+	text-align: center; //background-color:red;
+	text-decoration: none;
+	span {
+	  font-size: .75em;
+	}
+	@include mq(medium) {
+	  //float:right;
+	}
+  }
+  
+  .sh-ph {
+	margin: 0;
+	i {
+	  font-style: normal; //display:none;
+	}
+	@include mq(medium) {
+	  font-size: $medium-font-size;
+	  i {
+		//display:inline;
+	  }
+	}
+  }
+  
+  .sh-ico-search {
+	background-image: url(img/ico-search.svg);
+	@extend %sh-ico;
+  }
+  
+  .sh-ico-menu {
+	background-image: url(img/ico-nav.svg);
+	@extend %sh-ico;
+	@include mq(medium) {
+	  display: none;
+	}
+  }
