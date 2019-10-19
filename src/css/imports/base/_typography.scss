@@ -49,6 +49,7 @@
 
 body {
   //@include font-feature-settings("kern","liga","frac", "pnum");
+  height:100%;
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;

@@ -1,0 +1,25 @@
+
+  {{ if eq .Kind "home" }}
+  <section class="page-header--home">
+    <div class="inner-wrap">
+      <img src="/img/julian-signature-blue.svg" alt="Site Logo" class="page-header--home__signature">
+      <h1 class="page-header--home__h1">Hey there, I'm Julian, a designer/developer who enjoys testing everything.</h1>
+      <p class="page-header--home__subtext">
+
+      </p>
+    </div>
+  </section>
+  {{ else }}
+  <section class="page-header">
+  <div class="inner-wrap">
+    <h1>{{ if eq .Kind "taxonomy" }}#{{ end }}{{ .Title }}</h1>
+    
+    {{ if isset .Params "date" }}
+    {{ if eq .Section "articles" }}<p class="post-meta"><span class="post-date">{{ .Date.Format "January 2, 2006" }}</span> <span class="post-reading-time">{{ .Params.Time }}</span></p>{{ end }}{{ end }}
+{{ if .Params.tags }}
+    <p class="post-tags">{{ range .Params.tags }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> 
+  {{ end }}</p>{{ end }}
+  </div>
+</section>
+  {{ end }}

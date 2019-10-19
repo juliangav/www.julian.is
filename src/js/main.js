@@ -1,14 +1,3 @@
-// $(window).load(function(){
-//   $(window).scroll(function() {
-//     var wintop = $(window).scrollTop(), docheight = $('article').height(), winheight = $(window).height();
-//     console.log(wintop);
-//     var totalScroll = (wintop/(docheight-winheight))*100;
-//     console.log("total scroll" + totalScroll);
-//     $(".KW_progressBar").css("width",totalScroll+"%");
-//   });
-
-// });
-
 $(document).on('ready', function() {  
   var winHeight = $(window).height(), 
       docHeight = $(document).height(),
@@ -174,41 +163,6 @@ addEvent(document, 'mouseout', function(evt) {
 // });
 
 
-
-//Sticky Nav
-$(function() {
-  //Set the height of the sticky container to the height of the nav
-  //var navheight = $('.site-nav-container').height();
-  // grab the initial top offset of the navigation 
-  var sticky_navigation_offset_top = $('.sh-sticky-wrap').offset().top;
-
-  // our function that decides weather the navigation bar should have "fixed" css position or not.
-  var sticky_navigation = function() {
-    var scroll_top = $(window).scrollTop(); // our current vertical position from the top
-
-    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-    // otherwise change it back to relative
-    if (scroll_top > sticky_navigation_offset_top) {
-      $('.sh-sticky-wrap').addClass('stuck');
-      //$('.sh-sticky-wrap').addClass('stuck').css('height',navheight);
-    } else {
-      $('.sh-sticky-wrap').removeClass('stuck');
-    }
-  };
-
-  // run our function on load
-  sticky_navigation();
-
-  // and run it again every time you scroll
-  $(window).scroll(function() {
-    sticky_navigation();
-  });
-
-});
-
-
-
-
 // include span tags around all navigation elements
 $("#hs_menu_wrapper_primary_nav ul li a").each(function(index) {
   var navText = $(this).html();
@@ -231,5 +185,3 @@ $('#TableOfContents a').click(function(e) {
   var headerHeight = $('.site-header').height();
   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination - headerHeight }, 1000);
 });
-
-

@@ -1,8 +1,7 @@
 <!--Site Header-->
-{{ if eq .Kind "home" }}<div class="site-header-wrap site-header-wrap__home" id="particles-js">{{ else }}<div class="site-header-wrap" id="particles-js">{{ end }}
+
 
   <header class="site-header" role="banner">
-    <div class="sh-sticky-wrap">
       <div class="inner-wrap">
         <span class="sh-icons">
               
@@ -96,38 +95,5 @@
         <!-- site-nav-container END-->
         <a href="" class="site-nav-container-screen menu-link">&nbsp;</a>
       </div>
-      <!--  <div class="sh-sticky-wrap">
-          
-        </div> -->
       <!--inner-wrap END-->
-    </div>
   </header>
-  
-  
-  
-  
-  {{ if eq .Kind "home" }}
-  <section class="site-intro">
-    <div class="inner-wrap">
-      <img src="/img/julian-signature-blue.svg" alt="Site Logo" class="si-signature">
-      <h1 class="si-h1">Hey there, I'm Julian, a designer/developer who enjoys testing everything.</h1>
-      <p class="si-subtext">
-
-      </p>
-    </div>
-  </section>
-  {{ else }}
-  <div class="inner-wrap">
-    <h1>{{ if eq .Kind "taxonomy" }}#{{ end }}{{ .Title }}</h1>
-    
-    {{ if isset .Params "date" }}
-    {{ if eq .Section "articles" }}<p class="post-meta"><span class="post-date">{{ .Date.Format "January 2, 2006" }}</span> <span class="post-reading-time">{{ .Params.Time }}</span></p>{{ end }}{{ end }}
-{{ if .Params.tags }}
-    <p class="post-tags">{{ range .Params.tags }}
-    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> 
-  {{ end }}</p>{{ end }}
-
-
-  </div>
-  {{ end }}
-</div>
