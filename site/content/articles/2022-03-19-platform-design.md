@@ -19,7 +19,7 @@ Take, for example, the platform I dedicate most of my energy towards, Thomasnet.
 
 As we begin to get back to normal, I've decided to share what I've learned at the intersection of product design & multi-sided platforms while spearheading product & design for Thomas. I plan the keep the individual sections of this article brief since the topics I cover can quickly expand into a series of books.
 
-## A Crash Course on Platform Economics
+## An Introduction to Multi-Sided Platforms
 
 A multi-sided platform (MSP) is a digital, and sometimes physical, a place that enables the exchange of information, goods, or services between sellers/givers and buyers/takers. Uber, for example, is a platform that enables the connection between a person without a car needing a ride and a person with a vehicle able to provide this ride.
 
