@@ -1,69 +1,69 @@
-  .page-header {
+.page-header {
 	border-bottom: $base-border;
 	@include mq(medium) {
-	  position: relative;
+		position: relative;
 	}
 	&.site-header-wrap__home {
-	  border-bottom: 0;
+		border-bottom: 0;
 	}
-  }
-  
-  .particles-js-canvas-el {
+}
+
+.particles-js-canvas-el {
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	top: 0;
-	opacity: .5;
+	opacity: 0.25;
 	z-index: -1;
 	@include mq(medium) {
-	  z-index: 0;
+		z-index: 0;
 	}
-  }
+}
 
-  /*=============== Site Intro ===============*/
+/*=============== Site Intro ===============*/
 
 .page-header--home {
 	text-align: center;
 	.inner-wrap {
-	  padding-top: $baseline*4;
-	  padding-bottom: $baseline*4;
+		padding-top: $baseline * 4;
+		padding-bottom: $baseline * 4;
 	}
 	@include mq(medium) {
-	  .inner-wrap {
-		padding-top: $baseline*15;
-		padding-bottom: $baseline*15;
-	  }
+		.inner-wrap {
+			padding-top: $baseline * 15;
+			padding-bottom: $baseline * 15;
+		}
 	}
-  }
-  
-  .page-header--home__signature {
+}
+
+.page-header--home__signature {
 	max-width: 20em; //margin-bottom:-.875em;
-  }
-  
-  .page-header--home__signature-inline {
+}
+
+.page-header--home__signature-inline {
 	max-width: 6em;
-	margin-bottom: -.875em;
-  }
-  
-  .page-header--home__h1 {
+	margin-bottom: -0.875em;
+}
+
+.page-header--home__h1 {
 	@include xlarge-font-size;
 	font-family: $base-font-family;
 	font-weight: normal;
-	margin-top: $baseline*3;
-	margin-bottom: $baseline*3;
+	margin-top: $baseline * 3;
+	margin-bottom: $baseline * 3;
 	position: relative;
 	z-index: 2;
 	font-style: normal; //text-transform: normal !important;
-  }
-  
-  .page-header--home__subtext {
+}
+
+.page-header--home__subtext {
 	position: relative; //margin-top:$baseline*5;
 	font-weight: bold;
 	z-index: 2;
-  }
-  
-  .sh-ico-info {
+}
+
+.sh-ico-info {
 	// font-size:1.5em;
 	// text-decoration:none;
 	color: green;
@@ -76,76 +76,72 @@
 	display: inline-block; // vertical-align: middle;
 	position: relative;
 	float: right; //margin-top:.3em;
-	@include transition (all .2s ease-in-out);
+	@include transition(all 0.2s ease-in-out);
 	span {
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  bottom: 0;
-	  left: 0; //background-color:red;
-	  display: block;
-	  text-indent: -99999em;
-	  overflow: hidden;
-	  text-align: left;
-	  background-image: url(img/ico-nav.svg);
-	  background-repeat: no-repeat;
-	  background-size: 1em;
-	  background-position: center center;
-	  @include transition (all .2s ease-in-out);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0; //background-color:red;
+		display: block;
+		text-indent: -99999em;
+		overflow: hidden;
+		text-align: left;
+		background-image: url(img/ico-nav.svg);
+		background-repeat: no-repeat;
+		background-size: 1em;
+		background-position: center center;
+		@include transition(all 0.2s ease-in-out);
 	}
 	&:hover {
-	  border: 1px solid $base-accent-color;
-	  span {
-		@include transform(rotate(-90deg));
-	  }
+		border: 1px solid $base-accent-color;
+		span {
+			@include transform(rotate(-90deg));
+		}
 	}
 	@include mq(medium) {
-	  display: none;
+		display: none;
 	}
-  }
-  
-  
-  
-  
-  .site-nav-container {
+}
+
+.site-nav-container {
 	.snc-header {
-	  overflow: hidden;
+		overflow: hidden;
 	}
 	.sh-ico-info {
-	  clear: both;
-	  span {
-		@include transform(rotate(-90deg));
-	  }
-	  &:hover {
+		clear: both;
 		span {
-		  @include transform(rotate(0deg));
+			@include transform(rotate(-90deg));
 		}
-	  }
+		&:hover {
+			span {
+				@include transform(rotate(0deg));
+			}
+		}
 	}
 	@include mq(medium) {
-	  width: auto;
-	  margin-right: 0;
-	  float: right;
-	  position: relative;
-	  .snc-header {
+		width: auto;
+		margin-right: 0;
 		float: right;
-	  }
-	  .site-nav {
-		float: right;
-		width: 20em;
-		margin-right: 1em;
-	  }
+		position: relative;
+		.snc-header {
+			float: right;
+		}
+		.site-nav {
+			float: right;
+			width: 20em;
+			margin-right: 1em;
+		}
 	}
 	@include mq(large) {
-	  .site-nav {
-		width: 20em;
-		margin-right: 1em;
-	  }
+		.site-nav {
+			width: 20em;
+			margin-right: 1em;
+		}
 	}
-  }
-  
-  .pi-h1 {
+}
+
+.pi-h1 {
 	position: relative;
 	z-index: 2;
-  }
-  
+}
