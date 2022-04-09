@@ -13,11 +13,11 @@ icon: /assets/aico-pragmatic-design-principles.svg
 comments: false
 ---
 
-Since I wrote my last article, things changed a bit. We went, and continue to go, through a pandemic that has permanently disrupted our daily lives — some for the better, most for the worst. However, with every pandemic comes innovation and collective self-reflection (or so I’ve heard). Over the past two years, we've realized how critical the ever-present digital platform is to our survival as a species.
+During the height of the pandemic at Thomasnet.com, we created an emergency response system that connected manufacturers providing products or materials related to the mass shortage of critical supplies with front-line organizations in need of these supplies. [It was a big deal.](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/)
 
-Take, for example, the platform I dedicate most of my energy towards, Thomasnet.com. During the height of the pandemic, we created an emergency response system that connected manufacturers providing products or materials related to the mass shortage of critical supplies with front-line organizations in need of these supplies.
+This wasn't a coincidence — Thomas is a multi-sided platform that matches industrial buyers with industrial suppliers. We were uniquely positioned to pivot and design a user experience that connected two groups of users critical to surviving the pandemic.
 
-As we begin to get back to normal, I've decided to share what I've learned at the intersection of product design & multi-sided platforms while spearheading product & design for Thomas. I plan the keep the individual sections of this article brief since the topics I cover can quickly expand into a series of books.
+Below is my culmination of knowledge on multi-sided platforms based on research and experience gained over the past five years as the head of product design at Thomasnet.com.
 
 ## An Introduction to Multi-Sided Platforms
 
