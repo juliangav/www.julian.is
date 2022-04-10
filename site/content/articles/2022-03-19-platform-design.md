@@ -4,7 +4,7 @@ description:
 tags: [MultiSidedPlatforms, ProductDesign, UXStrategy]
 lastmod: 2022-03-1
 date: "2022-03-19"
-time: 5 Minutes
+time: 19 Minutes
 categories:
   - "Design"
 slug: "platform-design"
@@ -13,37 +13,61 @@ icon: /assets/aico-pragmatic-design-principles.svg
 comments: false
 ---
 
-During the height of the pandemic at Thomasnet.com, we created an emergency response system that connected manufacturers providing products or materials related to the mass shortage of critical supplies with front-line organizations in need of these supplies. [It was a big deal.](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/)
+From ridesharing with Uber to [manufacturing on demand with Xometry](https://www.forbes.com/sites/marcoannunziata/2021/10/06/infrastructure-skills-and-on-demand-manufacturing-xometrys-perspective-on-the-future-of-us-growth/?sh=68a6871536bf), multi-sided, or matchmaking, platforms are disrupting every aspect of our personal lives and careers as designers, makers, and web workers.
 
-This wasn't a coincidence — Thomas is a multi-sided platform that matches industrial buyers with industrial suppliers. We were uniquely positioned to pivot and design a user experience that connected two groups of users critical to surviving the pandemic.
+In the beginning of the pandemic we created an [emergency response system on Thomasnet.com](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/) that connected manufacturers of PPE-related products with front-line organizations in need of these supplies. It was impactful enough to have [U.S. Congressmen Tom Reed and Tim Ryan recommend Thomasnet as critical resource to the Manufacturing Caucus](https://www.thomasnet.com/insights/u-s-manufacturing-caucus-shares-covid-19-industrial-sourcing-resources/) — second to FEMA.
 
-Below is my culmination of knowledge on multi-sided platforms based on research and experience gained over the past five years as the head of product design at Thomasnet.com.
+This wasn't a coincidence. Thomas is a multi-sided platform that matches industrial buyers with industrial suppliers. We were uniquely positioned to pivot and design a user experience that connected two groups of users critical to surviving the pandemic.
+
+This article is the culmination of my five years of experience as the head of product design of Thomasnet.com. I dedicated the majority of this time to learning, designing, and optimizing the unique experience that caters to multiple groups of users with the goal of finding each other.
+
+I start this article off with a [baseline understanding of multi-sided platforms](#an-introduction-to-multi-sided-platforms); I then take a deep dive on [designing the matchmaking experience](#designing-the-matchmaking-experience) with a focus on [retention and growth](#designing-for-repeat-usage--growth); and last, I end the with one of the most critical topics, [tracking success](#tracking-success-with-metrics-that-matter).
+
+I hope you find this useful — I know future me will.
 
 ## An Introduction to Multi-Sided Platforms
 
-A multi-sided platform (MSP) is a digital, and sometimes physical, a place that enables the exchange of information, goods, or services between sellers/givers and buyers/takers. Uber, for example, is a platform that enables the connection between a person without a car needing a ride and a person with a vehicle able to provide this ride.
+A multi-sided platform is a digital marketplace that enables the exchange of goods, services, and/or information between producers and consumers. It's the digital equivalent of a mall that connects buyers with sellers or a night club that facilitates matches between single folks.
 
-Contributing to the popularity of platforms is the decentralization of the service & product suppliers. Airbnb is the largest lodging provider in the world, yet they do not own a single property. The endless array of inventory makes it extremely difficult, but not impossible, for the traditional pipeline business to compete.
+Platforms have gained immense popularity over the last decade because of the real-time and on-demand service exchange enabled by the supercomputers we carry around in our pockets — which, technically, are also platforms. (Thanks, Uber.)
 
-Nevertheless, multi-sided platforms have been around for some time. Thomasnet.com, for example, has been around since 1898. Their focus a century ago is the same as today, connecting industrial buyers with industrial suppliers. However, they did this via heavy physical books distributed across the United States.
+The term multi-sided platform is typically used in the context of business models when differentiating from the traditional (single-sided) pipeline business model. Multi-sided platforms decentralize the service & product suppliers, whereas pipeline businesses are the service & product suppliers.
 
-Platforms have gained immense popularity over the last decade because of the real-time and on-demand service exchange enabled by the supercomputers we carry around in our pockets — which, technically, are also platforms.
+Take for example Marriot.com, a traditional pipeline business and one of the largest lodging providers in the world:
 
-Before we jump into the different types of platforms, let's first establish a shared understanding of the integral parts of a platform.
+{{< figure src="/img/marriot-home.png" title="Marriot.com — Traditional Pipeline Business" >}}
+
+Marriot owns thousands of hotel properties around the world. Their success is contingent on the number of nights booked (demand), at the hotels they own (supply). Their website's user experience and value proposition are focused on getting potential guests to book a stay.
+
+A traditional funnel experience works here, the more qualified users they attract to their website, the more bookings that are likely to take place. They work with a consistant level of supply which doesn't fluctuate beyond their control.
+
+Now let's take a look at Airbnb.com — a multi-sided platform and the largest lodging provider in the world:
+
+{{< figure src="/img/airbnb-home.png" title="Airbnb.com — Multi-Sided Platform" >}}
+
+Their success is contigent on the number of nights booked at the properties listed on their platform. Similar to Marriot.com, except that Airbnb does not own a single property. Airbnb plays the role of the matchmaker in the short term rental industry between guests and property owners.
+
+Not only is their website’s user experience is designed for users looking to book a stay AND users looking to become a host, it's primarily optimized for getting two complete strangers to trust each other and transact.
+
+The traditional funnel approach goes out the window for platforms when you realize that attracting the right consumers depends on attracting the right producers. And in order to attract the right producers, you'll have to attract the right consumers.
+
+Ladies and gents, this is what we've historically called the chicken and egg problem — known officially as the Network Effect.
 
 ### The Network Effect
 
 According to Geoffrey Parker and Marshall Van Alstyne in [Platform Revolution](https://www.amazon.com/gp/product/0393354350/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393354350&linkCode=as2&tag=juliangav-20&linkId=054bc6f525d36bd68429746f8cf4fb48), the network effect is the impact the number of users a platform has on the value created for each user. The more compatible users a network has, the more valuable a platform becomes for each of its users. This is the main differentiator between traditional pipeline businesses and multi-sided platforms.
 
-David Sacks, cofounder of Yammer, famously tweeted the following napkin sketch illustrating Uber’s network effect:
+David Sacks, cofounder of Yammer, [famously tweeted](https://twitter.com/DavidSacks/status/475073311383105536) the following napkin sketch illustrating Uber’s network effect:
 
-(napkin sketch)
+{{< figure src="/img/uber-napkin-sketch-david-sacks.jpg" title="Uber's Network Effect Sketch by David Sacks" >}}
 
 The value active suppliers on Thomasnet.com have is based on the number of active buyers on the platform. Growing our buyer base increases the value for our suppliers and vice versa. This is commonly referred to as a **cross-side network effect**. However, only growing suppliers means that each supplier gets a smaller piece of the pie. Only growing buyers means there is less supply available. This is known as a **same-side network effect**.
 
 Balanced growth between the two sides of a platform leads to a **positive network effect** where the value created leads to exponential growth. If unchecked growth takes place or if too many unwanted users join a platform (e.g., spammers), a platform may see the results of **negative network effects**.
 
-One of the bigger mistakes I’ve witnessed organizations make is designing and growing multi-sided platforms with a single-sided approach. And to be fair, that’s where the majority of our collective experience stems from. Every design decision made on a platform needs to take into consideration the respective network effects. If there’s any concept you should retain from this article, let it be this.
+One of the bigger mistakes I’ve witnessed organizations make is designing and growing multi-sided platforms with a single-sided approach. And to be fair, that’s where the majority of our collective experience stems from. Every design decision made on a platform needs to take into consideration the respective network effects.
+
+If there’s any concept you should retain from this article, let it be that of the network effect.
 
 ### Common Components of a Multi-Sided Platform
 
@@ -93,7 +117,7 @@ Most social networks depend on the size of their active user base to attract hig
 
 (gaming consoles, smartphones, etc)
 
-## Designing the Core Transaction
+## Designing the Matchmaking Experience
 
 Any core transaction that you’re trying to facilitate already exists in one way or another somewhere on the internet. You can find anything on Google and purchase anything on Amazon. However, because these platforms cater to a broad audience with many use cases, they need to provide a broad user experience. This is where smaller platforms gain the upper hand — narrowing down on a specific use case for an optimized user experience.
 

@@ -304,4 +304,12 @@ figure {
 	&.figure-fullwidth {
 		max-width: 100%;
 	}
+	figcaption,
+	figcaption h4 {
+		@include small-font-size;
+		font-weight: normal;
+		margin-top: 0;
+		color: $base-font-color;
+		margin-top: $baseline;
+	}
 }
