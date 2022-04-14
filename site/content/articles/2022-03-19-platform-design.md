@@ -15,7 +15,7 @@ comments: false
 
 From ridesharing with Uber to [manufacturing on demand with Xometry](https://www.forbes.com/sites/marcoannunziata/2021/10/06/infrastructure-skills-and-on-demand-manufacturing-xometrys-perspective-on-the-future-of-us-growth/?sh=68a6871536bf), multi-sided, or matchmaking, platforms are disrupting every aspect of our personal lives and careers as designers, makers, and web workers.
 
-In the beginning of the pandemic we created an [emergency response system on Thomasnet.com](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/) that connected manufacturers of PPE-related products with front-line organizations in need of these supplies. It was impactful enough to have [U.S. Congressmen Tom Reed and Tim Ryan recommend Thomasnet as critical resource to the Manufacturing Caucus](https://www.thomasnet.com/insights/u-s-manufacturing-caucus-shares-covid-19-industrial-sourcing-resources/) — second to FEMA.
+In the beginning of the pandemic we created an [emergency response system on Thomasnet.com](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/) that connected manufacturers of PPE-related products with front-line organizations in need of these supplies. It was impactful enough to have [U.S. Congressmen Tom Reed and Tim Ryan recommend Thomasnet.com as a critical resource to the Manufacturing Caucus](https://www.thomasnet.com/insights/u-s-manufacturing-caucus-shares-covid-19-industrial-sourcing-resources/) — second to FEMA.
 
 This wasn't a coincidence. Thomas is a multi-sided platform that matches industrial buyers with industrial suppliers. We were uniquely positioned to pivot and design a user experience that connected two groups of users critical to aiding pandemic relief efforts and saving lives.
 
@@ -29,9 +29,13 @@ I hope you find this useful — I know future me will.
 
 A multi-sided platform is a digital marketplace that enables the exchange of goods, services, and/or information between producers and consumers. It's the digital equivalent of a mall that connects buyers with sellers or a night club that facilitates matches between single folks.
 
-Platforms have gained immense popularity over the last decade because of the real-time and on-demand service exchange enabled by the supercomputers we carry around in our pockets — which, technically, are also platforms. (Thanks, Uber.)
+Platforms have gained immense popularity over the last decade because of the real-time and on-demand service exchange enabled by the supercomputers we carry around in our pockets — which, technically, are also platforms.
 
-The term multi-sided platform is typically used in the context of business models when differentiating from the traditional (single-sided) pipeline business model. Multi-sided platforms decentralize the service & product suppliers, whereas pipeline businesses are the service & product suppliers.
+Nevertheless, multi-sided platforms have been around for some time. Thomasnet.com, for example, has been around since 1898. Their focus a century ago is the same as today, connecting industrial buyers with industrial suppliers. However, they did this via heavy physical books distributed across the United States.
+
+### Multi-Sided Platforms vs Traditional Pipeline Businesses
+
+The term multi-sided platform is typically used in the context of business models when differentiating from the traditional (single-sided) pipeline business model. Multi-sided platforms decentralize the service & product suppliers, whereas pipeline businesses are the service or product suppliers.
 
 Take for example Marriot.com, a traditional pipeline business and one of the largest lodging providers in the world owning thousands of hotel properties.
 
@@ -75,17 +79,21 @@ If there’s any concept you should retain from this article, let it be that of 
 
 ### Types of Multi-Sided Platforms
 
-The industry has largely agreed on the four main types of platforms below. While the function remains consistent (enabling the exchange of value units between producers and consumers), the value unit & users vary considerably across different platform types. This variation largely influences how we design the critical matchmaking tools.
+The industry has largely agreed on four main types of platforms based on the value unit being exchanged. While the function of enabling the exchange of value units between users and the presence of the network effect remain consistent, the value unit & users vary considerably across different platform types. This variation largely influences how we design the critical matchmaking tools.
 
 #### Product Exchange Platforms
 
 The most common platform type enabling producers to sell products to consumers. Yup, the Amazons, Ebays, & Etsys of the world and digital counterparts to malls. Measuring the matchmaking success of these platforms is straightforward since there's a monetary transaction that takes place when a match is made.
+
+{{< figure src="/img/etsy-product-exchange-platform.png" title="Etsy.com — Product Exchange Platform Example" >}}
 
 #### Service Exchange Platforms
 
 Platforms focused on enabling the match between a consumer looking for a service and a producer with the ability to provide that service. Taskrabbit, for example, is a platform that matches users needing miscellaneous tasks done with local freelance labor looking to perform these tasks.
 
 Similar to product exchange platforms, a monetary transaction measures the matchmaking success of these platforms. However, because repeat transactions are more common, there's a larger dependency on user satisfaction post transaction — usually measured through ratings paired with user feedback.
+
+{{< figure src="/img/taskrabbit-service-exchange-platform.png" title="Taskrabbit.com — Service Exchange Platform Example" >}}
 
 #### Information Exchange Platforms
 
@@ -95,33 +103,11 @@ Because the core transaction in information platforms doesn't include a direct m
 
 Most social networks depend on the size of their active user base to attract high-paying advertisers (the "partners"). While relationship-building platforms depend on paid user subscriptions to be matched with other users.
 
+{{< figure src="/img/match-information-exchange-platform.png" title="Match.com — Information Exchange Platform Example" >}}
+
 #### Technology Platforms
 
 (gaming consoles, smartphones, etc)
-
-### Common Terminology
-
-Below are some of the common terms that you'll find throughout this article based on industry standards.
-
-#### Value Unit
-
-The information, goods, or services exchanged on the platform. The value unit of OpenTable is a reservation at a restaurant, a booking for Airbnb, a ride for Lyft, etc. Compared to the traditional pipeline business, platforms do not carry the responsibility of directly producing the value unit.
-
-#### Participants
-
-Participants in the exchange of information, goods, or services enabled by the platform. Users are mainly categorized as producers, users that create the value unit; consumers, users in need of the value unit; and partners, who join the platform to provide additional value to producers and consumers (usually for a premium).
-
-#### Matchmaking Tools
-
-Tools provided by the platform which facilitate the match between the right users and enable the respective transaction. These could be as simple as a search filter that lets you narrow down the results of what you're looking for or as intricate as a recommendation engine with a sophisticated algorithm that knows what you're looking for.
-
-#### Multihoming
-
-When producers and consumers participate in competing platforms simultaneously. It's common for a driver to be working both Uber and Lyft apps simultaneously, selecting the rides with the best rates — same with riders. For this reason, the user experience of a platform is more critical than ever.
-
-#### Core Transaction
-
-The successful exchange of the value unit between producers and consumers (interchangeably referred to as core interaction). From a business perspective, the sole purpose of a platform is to enable and monetize the core transaction.
 
 ## Designing the Matchmaking Experience
 
