@@ -22,3 +22,8 @@ blackfriday:
 social: 
   facebook_app_id: "275156446240779"
   twitter: "@juliangav"
+
+security:
+  funcs:
+    getenv:
+      - ^BRANCH
