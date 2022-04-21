@@ -3,7 +3,7 @@ title: "The Design of Multi-Sided Platforms"
 description:
 tags: [MultiSidedPlatforms, ProductDesign, UXStrategy]
 lastmod: 2022-03-1
-date: "2022-03-19"
+date: "2022-04-21"
 time: 19 Minutes
 categories:
   - "Design"
