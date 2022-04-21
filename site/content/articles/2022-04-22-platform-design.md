@@ -13,15 +13,18 @@ icon: /assets/aico-pragmatic-design-principles.svg
 comments: false
 ---
 
-From ridesharing with Uber to [manufacturing on demand with Xometry](https://www.forbes.com/sites/marcoannunziata/2021/10/06/infrastructure-skills-and-on-demand-manufacturing-xometrys-perspective-on-the-future-of-us-growth/?sh=68a6871536bf), multi-sided, or matchmaking, platforms are disrupting every aspect of our personal lives and careers as designers, makers, and web workers.
+From ridesharing with Uber to [manufacturing on demand with Xometry](https://www.forbes.com/sites/marcoannunziata/2021/10/06/infrastructure-skills-and-on-demand-manufacturing-xometrys-perspective-on-the-future-of-us-growth/?sh=68a6871536bf), multi-sided, or matchmaking, platforms are disrupting every aspect of our personal lives and careers as designers and makers of the web.
 
 In the beginning of the pandemic we created an [emergency response system on Thomasnet.com](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/) that connected manufacturers of PPE-related products with front-line organizations in need of these supplies. It was impactful enough to have [U.S. Congressmen Tom Reed and Tim Ryan recommend Thomasnet.com as a critical resource to the Manufacturing Caucus](https://www.thomasnet.com/insights/u-s-manufacturing-caucus-shares-covid-19-industrial-sourcing-resources/) — second to FEMA.
 
 This wasn't a coincidence. Thomas is a multi-sided platform that matches industrial buyers with industrial suppliers. We were uniquely positioned to pivot and design a user experience that connected two groups of users critical to aiding pandemic relief efforts and saving lives.
 
-This article is the culmination of my five years of experience as the head of product design of Thomasnet.com. I dedicated the majority of this time to learning, designing, and optimizing the unique experience that caters to multiple groups of users with the goal of finding each other.
 
-This article starts off with a [baseline understanding of multi-sided platforms](#an-introduction-to-multi-sided-platforms); I then take a deep dive on [designing the matchmaking experience](#designing-the-matchmaking-experience) with a focus on [retention and growth](#designing-for-repeat-usage--growth); and last, I end the with one of the most critical topics, [tracking success](#tracking-success-with-metrics-that-matter).
+
+
+This article is a comprehensive guide on designing multi-sided platforms based on the culmination of my five years as the head of product design of Thomasnet.com.
+
+I begin by setting a [baseline understanding of multi-sided platforms](#an-introduction-to-multi-sided-platforms); I then take a deep dive on [designing the matchmaking experience](#designing-the-matchmaking-experience); followed by a focus on [retention and growth](#designing-for-repeat-usage--growth); and last, I end the with one of the most critical yet often overlooked topics, [tracking success](#tracking-success-with-metrics-that-matter).
 
 I hope you find this useful — I know future me will.
 
@@ -29,13 +32,13 @@ I hope you find this useful — I know future me will.
 
 A multi-sided platform is a digital marketplace that enables the exchange of goods, services, and/or information between producers and consumers. It's the digital equivalent of a mall that connects buyers with sellers or a night club that facilitates matches between single folks.
 
-Platforms have gained immense popularity over the last decade because of the real-time and on-demand service exchange enabled by the supercomputers we carry around in our pockets — which, technically, are also platforms.
+Platforms have gained immense popularity over the last decade because of the introduction of real-time and on-demand capabilities enabled by the supercomputers we carry around in our pockets — which, technically, are also platforms.
 
 Nevertheless, multi-sided platforms have been around for some time. Thomasnet.com, for example, has been around since 1898. Their focus a century ago is the same as today, connecting industrial buyers with industrial suppliers. However, they did this via heavy physical books distributed across the United States.
 
 ### Multi-Sided Platforms vs Traditional Pipeline Businesses
 
-The term multi-sided platform is typically used in the context of business models when differentiating from the traditional (single-sided) pipeline business model. Multi-sided platforms decentralize the service & product suppliers, whereas pipeline businesses are the service or product suppliers.
+The term multi-sided platform is typically used in the context of [describing business models when differentiating from the traditional pipeline business](https://hbr.org/2016/04/pipelines-platforms-and-the-new-rules-of-strategy). Multi-sided platforms decentralize the service & product suppliers, whereas pipeline businesses are the service or product suppliers.
 
 Take for example Marriot.com, a traditional pipeline business and one of the largest lodging providers in the world owning thousands of hotel properties.
 
@@ -43,7 +46,7 @@ Take for example Marriot.com, a traditional pipeline business and one of the lar
 
 Their success is contingent on the number of nights booked (demand), at the hotels they own (supply). Their website's user experience and value proposition are focused on getting potential guests to book a stay.
 
-A traditional funnel experience works here, the more qualified users they attract to their website, the more bookings that are likely to take place. They work with a consistant level of supply which doesn't fluctuate beyond their control.
+A traditional funnel experience works here — the more qualified users they attract to their website, the more bookings that are likely to take place. They work with a consistant level of supply which doesn't fluctuate beyond their control.
 
 Now let's take a look at Airbnb.com — a multi-sided platform and the largest lodging provider in the world, yet they do not own a single property.
 
@@ -53,7 +56,7 @@ Their success is contigent on the number of nights booked at the properties list
 
 Not only is their website’s user experience designed for users looking to book a stay AND users looking to become a host, it's primarily optimized for getting two complete strangers to trust each other and transact.
 
-The traditional funnel approach goes out the window for platforms when you realize that attracting the right consumers depends on attracting the right producers. And in order to attract the right producers, you'll have to attract the right consumers.
+The traditional funnel approach goes out the window for platforms when you realize that attracting the right consumers depends on attracting the right producers. And in order to attract the right producers, you'll have to attract the right consumers. 
 
 Ladies and gents, this is what we've historically called the chicken and egg problem — known officially as the Network Effect.
 
@@ -65,7 +68,7 @@ David Sacks, cofounder of Yammer, [famously tweeted](https://twitter.com/DavidSa
 
 {{< figure src="/img/uber-napkin-sketch-david-sacks.jpg" title="Uber's Network Effect Sketch by David Sacks, Cofounder of Yammer" >}}
 
-In a nutshell, more demand will attract more drivers, more drivers will reduce pickup times and therefore increase demand.
+In a nutshell, more demand for rides will attract more drivers, having more drivers will create greater geographic coverage and therefore increase the demand for rides.
 
 For example, the value active suppliers on Thomasnet.com have is based on the number of active buyers on the platform. Growing our buyer base increases the value for our suppliers and vice versa. This is commonly referred to as a **cross-side network effect**.
 
@@ -73,19 +76,25 @@ However, only growing suppliers means that each supplier gets a smaller piece of
 
 Balanced growth between the two sides of a platform leads to a **positive network effect** where the value created leads to exponential growth. If unchecked growth takes place or if too many unwanted users join a platform (e.g., spammers), a platform may see the results of **negative network effects**.
 
-One of the bigger mistakes I’ve witnessed organizations make is designing and growing multi-sided platforms with a single-sided approach. And to be fair, that’s where the majority of our collective experience stems from. Every design decision made on a platform needs to take into consideration the respective network effects.
+One of the bigger mistakes I’ve witnessed organizations make is designing and growing multi-sided platforms with a single-sided approach. And to be fair, that’s where the majority of our collective experience stems from. Every design decision made on a platform needs to take into consideration the respective impact on all sides of the network.
 
-If there’s any concept you should retain from this article, let it be that of the network effect.
+
+
 
 ### Types of Multi-Sided Platforms
 
-The industry has largely agreed on four main types of platforms based on the value unit being exchanged. While the function of enabling the exchange of value units between users and the presence of the network effect remain consistent, the value unit & users vary considerably across different platform types. This variation largely influences how we design the critical matchmaking tools.
+While the function (enabling the exchange of value units between participants) and omnipresence of the network effect remain consistent, the value unit, objectives, and users vary considerably across different platform types. This variation largely influences how we design the critical matchmaking tools.
+
+_Note: there's more than one way to peel an orange — I will be focusing on the categorization of platforms based on the value unit being exchanged. Even with this approach, each platform type could be broken down into subcategories._
 
 #### Product Exchange Platforms
 
-The most common platform type enabling producers to sell products to consumers. Yup, the Amazons, Ebays, & Etsys of the world and digital counterparts to malls. Measuring the matchmaking success of these platforms is straightforward since there's a monetary transaction that takes place when a match is made.
+The most common platform type enabling producers to sell tangible products to consumers. Yup, the Amazons & Etsys of the world and digital counterparts to malls. Measuring the matchmaking success of these platforms is straightforward since there's a monetary transaction that takes place when a match is made.
 
 {{< figure src="/img/etsy-product-exchange-platform.png" title="Etsy.com — Product Exchange Platform Example" >}}
+
+_Popular product exchange platforms: Etsy, Amazon, eBay, Alibaba, Facebook Marketplace_
+
 
 #### Service Exchange Platforms
 
@@ -93,7 +102,16 @@ Platforms focused on enabling the match between a consumer looking for a service
 
 Similar to product exchange platforms, a monetary transaction measures the matchmaking success of these platforms. However, because repeat transactions are more common, there's a larger dependency on user satisfaction post transaction — usually measured through ratings paired with user feedback.
 
-{{< figure src="/img/taskrabbit-service-exchange-platform.png" title="Taskrabbit.com — Service Exchange Platform Example" >}}
+What makes service exchange platforms so popular is the real-time and on-demand capabilities provided by today's technology platforms. 
+
+For example, if I need a ride to the airport, instead of looking up a cab company's number and requesting a ride from an operator, I just open up my phone, enter the address where I want to go, and I instantly get matched with a reputable driver that's willing to take me there.
+
+
+
+{{< figure src="/img/taskrabbit-service-exchange-platform.png" title="Taskrabbit.com — Service Exchange Platform" >}}
+
+_Popular service exchange platforms: Uber, Lyft, TaskRabbit, OpenTable, Xometry_
+
 
 #### Information Exchange Platforms
 
@@ -103,11 +121,21 @@ Because the core transaction in information platforms doesn't include a direct m
 
 Most social networks depend on the size of their active user base to attract high-paying advertisers (the "partners"). While relationship-building platforms depend on paid user subscriptions to be matched with other users.
 
-{{< figure src="/img/match-information-exchange-platform.png" title="Match.com — Information Exchange Platform Example" >}}
+{{< figure src="/img/match-information-exchange-platform.png" title="Match.com — Information Exchange Platform" >}}
 
-#### Technology Platforms
+_Popular information exchange platforms: Match.com, Twitter, Facebook, Thomasnet.com_
 
-(gaming consoles, smartphones, etc)
+#### Software Exchange Platforms
+
+A software exchange platform — sometimes referred to as innovation, technology, or maker platforms — facilitates the creation and exchange of software between developers and users. The device and operating system you're currently reading this article on is a software exchange platform (so meta). 
+
+Part of the iPhone's success is attributed to the third party apps available in the App Store and their ability to do just about anything. The Xbox is successful because of the exclusive games the platform has to offer (let's face it, they got where they got because of Halo: CE). 
+
+{{< figure src="/img/xbox-software-exchange-platform.png" title="Xbox — Software Exchange Platform" >}}
+
+_Popular software exchange platforms: Xbox, Apple's iPhone & iOS, Android, Microsoft Windows_
+
+Note: although the majority of this article is relevant software exchange platforms, this only scratches the surface of the what's necessary to design successful ecosystems.
 
 ## Designing the Matchmaking Experience
 
