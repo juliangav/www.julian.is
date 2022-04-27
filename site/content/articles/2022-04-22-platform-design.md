@@ -22,7 +22,7 @@ This wasn't a coincidence. Thomas is a multi-sided platform that matches industr
 
 
 
-This article is a comprehensive guide on designing multi-sided platforms based on the culmination of my five years as the head of product design of Thomasnet.com.
+This article is a comprehensive guide on designing multi-sided platforms based on the culmination of my five years as the head of product design and experimentation of Thomasnet.com.
 
 I begin by setting a [baseline understanding of multi-sided platforms](#an-introduction-to-multi-sided-platforms); I then take a deep dive on [designing the matchmaking experience](#designing-the-matchmaking-experience); followed by a focus on [retention and growth](#designing-for-repeat-usage--growth); and last, I end the with one of the most critical yet often overlooked topics, [tracking success](#tracking-success-with-metrics-that-matter).
 
@@ -60,6 +60,8 @@ The traditional funnel approach goes out the window for platforms when you reali
 
 Ladies and gents, this is what we've historically called the chicken and egg problem — known officially as the Network Effect.
 
+
+
 ### The Network Effect
 
 According to Geoffrey Parker and Marshall Van Alstyne in [Platform Revolution: How Networked Markets Are Transforming the Economy](https://www.amazon.com/gp/product/0393354350/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393354350&linkCode=as2&tag=juliangav-20&linkId=054bc6f525d36bd68429746f8cf4fb48), the network effect is the impact the number of users a platform has on the value created for each user. The more compatible users a network has, the more valuable a platform becomes for each of its users. This is the main differentiator between traditional pipeline businesses and multi-sided platforms.
@@ -76,16 +78,38 @@ However, only growing suppliers means that each supplier gets a smaller piece of
 
 Balanced growth between the two sides of a platform leads to a **positive network effect** where the value created leads to exponential growth. If unchecked growth takes place or if too many unwanted users join a platform (e.g., spammers), a platform may see the results of **negative network effects**.
 
-One of the bigger mistakes I’ve witnessed organizations make is designing and growing multi-sided platforms with a single-sided approach. And to be fair, that’s where the majority of our collective experience stems from. Every design decision made on a platform needs to take into consideration the respective impact on all sides of the network.
 
+### The Baseline Structure of a Multi-Sided Platform
 
+Platforms vary drastically depending on the objective and what's being exchanged, however, all  platforms consist of the following four parts:c 
+
+#### Value Unit
+
+The information, goods, services, or software exchanged on a platform. The value unit of OpenTable is a reservation at a restaurant, a booking for Airbnb, a ride for Lyft, etc. Compared to the traditional pipeline business, platforms do not carry the responsibility of directly producing the value unit.  
+
+#### Participants
+
+Users participating in the exchange of information, goods, or services enabled by the platform. Users are mainly categorized as **producers**, users that create the value unit; **consumers**, users in need of the value unit; and **partners**, who join the platform to provide additional value to producers and consumers (usually for a premium).
+
+_Note: What producers and consumers are called vary across platforms. Common labels for producers: sellers, suppliers, drivers, makers, developers; common labels for consumers: buyers, customers, riders, shoppers, players, users._
+
+#### Core Transaction
+
+The successful exchange of the value unit between producers and consumers — interchangeably referred to as __core interaction__. From a business perspective, the sole purpose of a platform is to enable and monetize the core transaction. 
+
+#### Matchmaking Tools
+
+Tools provided by the platform which facilitate and optimize the match between producers and consumers. These could be as simple as a search filter that lets you narrow down the results of what you're looking for or as intricate as a recommendation engine with a sophisticated algorithm that knows what you're looking for. 
+
+For the most part, matchmaking tools are focused on searching for the value unit.
 
 
 ### Types of Multi-Sided Platforms
 
-While the function (enabling the exchange of value units between participants) and omnipresence of the network effect remain consistent, the value unit, objectives, and users vary considerably across different platform types. This variation largely influences how we design the critical matchmaking tools.
+While the structure and the omnipresent network effect of a platform remain consistent, the value unit, objectives, and users vary considerably across different platform types. This variation largely influences how we design the critical matchmaking experience.
 
-_Note: there's more than one way to peel an orange — I will be focusing on the categorization of platforms based on the value unit being exchanged. Even with this approach, each platform type could be broken down into subcategories._
+Keep in mind, there's more than one way to peel an orange — I will be focusing on the categorization of platforms based on the value unit being exchanged. Even with this approach, each platform type could be broken down into distinct subcategories.
+
 
 #### Product Exchange Platforms
 
@@ -131,79 +155,130 @@ A software exchange platform — sometimes referred to as innovation, technology
 
 Part of the iPhone's success is attributed to the third party apps available in the App Store and their ability to do just about anything. The Xbox is successful because of the exclusive games the platform has to offer (let's face it, they got where they got because of Halo: CE). 
 
+_Note: Although the majority of this article is relevant software exchange platforms, this only scratches the surface of the what's necessary to design successful ecosystems._
+
 {{< figure src="/img/xbox-software-exchange-platform.png" title="Xbox — Software Exchange Platform" >}}
 
 _Popular software exchange platforms: Xbox, Apple's iPhone & iOS, Android, Microsoft Windows_
 
-Note: although the majority of this article is relevant software exchange platforms, this only scratches the surface of the what's necessary to design successful ecosystems.
 
-## Designing the Matchmaking Experience
 
-Any core transaction that you’re trying to facilitate already exists in one way or another somewhere on the internet. You can find anything on Google and purchase anything on Amazon. However, because these platforms cater to a broad audience with many use cases, they need to provide a broad user experience. This is where smaller platforms gain the upper hand — narrowing down on a specific use case for an optimized user experience.
 
-For example, if I’m looking for a handmade dining room table, I go to Etsy. I’ll be able to find this through Amazon or Google, but I’ll have to dig through the fatty offerings to get to the meaty parts. Etsy reduces the time it takes for me to find what I’m looking for from a trusted seller and transact.
 
-There following three primary use cases of the core transaction are the core ingredients to a successful core transaction:
+ Hopefully that was enough of a baseline on multi-sided platforms to hit the ground running (if not, head over to the [dedicated resources page](resources) for a deeper dive). Now let's get our hands dirty with designing the end-to-end platform experience.
 
-### Users finding what they’re looking for
 
-The objective is to provide users with what they’re looking for with minimal effort. The utopian UX is to not interact with a platform at all. If you’re looking for a ride, you walk to the street and your rideshare is waiting. However, since we’re decades, if not centuries away from “intuition UX” (I might’ve just coined a term), our second-best option is a seamless search experience tailored to the platform’s purpose.
+## Designing the Core Transaction
 
-#### Match Value (TBD)
 
-#### Search UX
+An effectively designed platform does three things exceptionally well: 
+1. Matches the right consumers with the right producers.
+2. Establishes the trust needed between consumers and producers to transact.
+3. Provides the tools necessary to complete the transaction.
 
-These are the tools on the platform a user interacts with to find what they’re looking for. Traditionally, a search bar and filters are the tools used to help users find what they’re looking for. Although these are critical components to the matchmaking process, these tools should be a user’s last resort when interacting with a platform.
 
-We retrieve the information we need from Uber’s platform by telling the app where we want to go. Uber then returns a single result that solves the problem for us. Boom. A search bar with filters and a list of results could also solve this problem — but wow does that sound inefficiently painful (don’t forget, this was the experience just a decade ago).
+The reality is that you can find everything on Google and purchase (mostly) everything on Amazon. However, because these platforms cater to a broad audience with many use cases, they need to provide a broad user experience. This is where smaller platforms gain the upper hand — narrowing down on a specific use case for an optimized user experience.
+
+
+
+
+
+
+
+### Step 1: Matching the Right Consumers with the Right Producers
+
+Matchmaking sits at the crossroads of data science, software engineering, and product design. A seamless matchmaking experience between producers and consumers is an optimized balance between high match value and minimal user effort. 
+
+The utopian UX is to not interact with a platform at all. If you’re looking for a ride, you walk to the street and your rideshare is waiting. Since we’re decades, if not centuries, away from “intuition UX” (we might’ve just coined a term), our second-best option relies on a combination of what users tell us, what they allow us to know about them, and context. 
+
+
+_Note: Matchmaking is an experience that's heavily reliant on information retrieval and recommendation engines — two vast topics that won't be covered within the scope of this article._
+
+
+
+
+
+
+
+
+
+
+
+
+#### Search-Based Matchmaking
+
+
+
+We retrieve the information we need from Uber’s platform by telling the app where we want to go. Uber then returns a single result that solves the problem for us. 
+
+{{< figure src="/img/uber-search-experience.png" title="Uber Search Experience" >}}
+
+This one-to-one match experience, commonly seen in service exchange platforms, can be afforded by Uber due to the specificity of the value unit.
+
+Because product exchange platforms cover a large variety of use cases, these depend on a one-to-many search experience. Depending on the customization of a product (ready-made vs custom products), the search experience depends on filters to narrow down your search or include before searching.
+
+__(amazon search view)__
+
+#### Feed-Based Matchmaking
 
 Most information exchange platforms leverage a feed to present users with the information they’re looking for based on their profiles and preferences.
 
 Twitter provides you with a feed based on the topics and people you follow. But in case you are looking for either a specific topic or person, Twitter provides the ability to search manually — this topic or person of interest then makes its way into your feed algorithm.
 
+
+
+__(insert twitter feed visual)__
+
 Match.com uses a feed to present potential matches based on the information you provided about yourself and your preferred criteria of the person you’re looking to match with. Tinder revolutionized this by introducing the swipe experience to accept or decline matches. Manual searches are not provided as a fallback.
 
-Because product exchange platforms cover a large variety of use cases, these are the laggards depending primarily on the traditional search experience. Depending on the customization of a product (ready-made vs custom products), the search experience depends on filters to narrow down your search or include before searching.
+__(insert match.com & tinder visuals)__
 
-#### Search Algorithm
 
-Information retrieval is a deep topic to explore. However, regardless of the approach, context is key to presenting users with the correct set of results specific to your use case and user intent. For example, the search for pumps on Google vs. the search for pumps on Thomasnet.com — two completely different results for two different types of use cases based on the context of the search.
 
-#### Recommendation Engine
 
-Although users are searching for a specific value unit to solve their problem, they may not be aware that an alternative or better product exists — unless it’s recommended to them.
+#### Recommendation Engines & Algorithms
+
+
 
 A recommendation engine is the criteria used to provide suggestions to users, allowing them to discover related value units (content) at the right touchpoint in their user journey. This related content complements what they’re looking for or solves the problem more efficiently.
 
-A well-balanced recommendation engine is an effective tool that helps increase the platform's match value. Unfortunately, because this approach is focused on interacting with users in their most seducible moments, it can be (and is) easily misused.
+
 
 There's ever-present friction between growing revenue and designing with the user's best interest in mind in information exchange platforms with an advertising-focused revenue model (e.g., social networks that serve ads). The more time consumers spend scrolling, tapping or swiping through content generated by producers, the more revenue generated by advertisers; the fewer restrictions given to advertisers, the more they will spend.
 
-As platform designers, engineers, and managers, the onus is on us to design and build for this balance. Despite simply being a good human being (I believe there are still a few of us around), there’s business value in avoiding dark patterns and maintaining user trust…
 
-#### And visuals… (TBD)
+Because this approach is focused on interacting with users in their most seducible moments, it can be (and is) easily misused. Just be a good human, please.
 
-### Users trusting the exchange
+
+### Step 2: Establish the trust needed between consumers and producers to transact
 
 After users have found what they’re looking for, they need reassurance that if they proceed with a transaction or exchange of information, the user on the other side will follow through as promised.
 
 Offline, it’s easy, you go to a mall and you try on clothes — you trust that the shirt you just tried on will look the same once you purchase it and wear it outside of the mall. However, with online transactions, things get a bit more complicated because not only are you not able to see the value unit with your own eyes, you’re also dealing with a complete stranger. There’s good reason to be skeptical. So how do you build trust?
 
-#### Reputation Validation by Peers
+#### Reviews & Ratings — Reputation Validation by Peers
 
-There’s a reason why Uber emphasizes their rating system — it’s because users want to know from other users how their experience was with this user. A rating system builds trust. A well-designed rating system also gives platform managers the insights necessary to govern their platform and remove users that don’t have good intentions or are a potential liability to the platform brand.
+There’s a reason why Uber emphasizes their rating system — it’s because users want to know from other users how their experience was with this user. A rating system builds trust and sets expectations between participants. 
 
-#### Reputation Validation by the Numbers
+A well-designed rating system also gives platform managers the insights necessary to govern their platform and remove users that don’t have good intentions or are a potential liability to the platform brand.
+
+#### Past Transaction Metrics — Reputation Validation by Experience
 
 Users will trust a transaction by someone that has performed this transaction multiple times — in the offline world we call this experience. Depending on the type of platform and the respective business model, sometimes peer reviews and ratings cannot be provided. In cases like these, the platform has the option to let users know how much experience this user has with the respective transaction. Users react to metrics like total completed transactions, average response time, and time on the platform.
 
-#### Reputation Validation by Platform
+#### Paid Subscriptions — Reputation Validation by Platform
 
 Platforms can also decide that they will select specific consumers or producers (usually seen on the producer side) that they consider valuable and trustworthy. Although this is intended to promote trust, users have caught on to the fact that most of these approaches are the result of users paying a premium to achieve such status. Depending on the industry, this may promote the intended trust.
 
 In most cases, users also can provide company information, credentials, or certifications that allow them to make a case for themselves. How far the platform goes to validate these claims directly impacts the trust users will have in these claims and the trust of the platform in general.
 
-### Users completing the transaction
+#### High-Fidelity Photos & Videos
+
+High-fidelity photography or videos of the value unit is the deciding factor for users in most platforms.  As a matter of fact, it's something Airbnb takes so seriouesly, that they provide free photography services for their hosts. They discovered early on  that [properties with professional photography booked two and a half more listings](https://blog.atairbnb.com/airbnb-photography-celebrating-13000-verified/) than those without.
+
+
+
+### Step 3: Provides the tools necessary for users to transact.
 
 Once users are matched and a level of trust is established, it’s now up to the platform to make it as easy as possible for the transaction to take place.
 
@@ -211,7 +286,6 @@ Once users are matched and a level of trust is established, it’s now up to the
 
 In platforms where money is exchanged, transacting through the platform is preferred by users due to convenience and assurance. If the exchange goes wrong, platforms have safety measures in place that allow for refunds. However, this convenience comes at a price since most platforms take a percentage of the transaction. Unreasonable transaction fees will prompt users to either look for alternative payment methods or alternative platforms altogether.
 
-(Btw, if you’re designing without taking into account user return rates nor revenue generation — you’re probably just decorating.)
 
 #### Information Exchange
 
@@ -241,9 +315,10 @@ We’re living in a time where users are expecting instant satisfaction. If they
 
 If a user ordered a pizza, expecting a pie, and only received a slice — they probably won’t be trusting your service again regardless of the why.
 
-Platforms often make the mistake of depending on the exclusivity of their platform's audience and technology. If there’s enough demand, a competing platform will appear with a better end-to-end user experience.
+Platforms often make the mistake of depending on the exclusivity of their platform's audience and technology. If there’s enough demand, a competing platform will appear with a better end-to-end user experience. 
 
-_Relevant case study: Apple vs Blackberry_
+(Don't take my word for it though, [ask our friends at Blackberry](https://www.macworld.com/article/562752/blackberry-devices-software-obsolete-iphone.html).)
+
 
 ### Re-engaging with supporting services
 
