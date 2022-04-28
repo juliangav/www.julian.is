@@ -207,17 +207,23 @@ _Note: Matchmaking is an experience that's heavily reliant on information retrie
 
 #### Search-Based Matchmaking
 
+The most common and user validated ways of matchmaking is through a traditional search experience. The buyer let's the platform know what they're looking for and the platform returns a set of results. Filters allow the user to increase their match value by narrowing down using the criteria provided.
+
+{{< figure src="/img/alibaba-search-ux.jpg" title="Alibaba Search — One-to-many Matchmaking" >}}
+
+This approach has historically worked because it provides a level of options and discoverability to the buyer — the better the search algorithm, the higher the match value. However, there are use cases where the matchmaking experience is laser-focused on the ability to complete the task at hand and cost — discoverability and options take a back seat. 
+
+We retrieve the information we need from Uber’s platform by telling the app where we want to go. Uber then returns a single result that solves the problem for us.
+
+{{< figure src="/img/uber-search-ux.png" title="Uber Search — One-to-one Matchmaking" >}}
+
+This is a common matchmaking experience for service exchange platforms considering the broad use case is more focused on the ability to provide a reliable service based on the specifications provided. This use case gives the platform the ability to return a result with a high match value.
+
+As we make advances in machine learning and artificial intelligence, we'll rely more on high match-value search experiences allowing us to bypass the fatty offerings and get faster to the meaty parts of what we're searching for.
 
 
-We retrieve the information we need from Uber’s platform by telling the app where we want to go. Uber then returns a single result that solves the problem for us. 
 
-{{< figure src="/img/uber-search-experience.png" title="Uber Search Experience" >}}
 
-This one-to-one match experience, commonly seen in service exchange platforms, can be afforded by Uber due to the specificity of the value unit.
-
-Because product exchange platforms cover a large variety of use cases, these depend on a one-to-many search experience. Depending on the customization of a product (ready-made vs custom products), the search experience depends on filters to narrow down your search or include before searching.
-
-__(amazon search view)__
 
 #### Feed-Based Matchmaking
 
