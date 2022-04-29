@@ -209,13 +209,13 @@ _Note: Matchmaking is an experience that's heavily reliant on information retrie
 
 The most common and user validated ways of matchmaking is through a traditional search experience. The buyer let's the platform know what they're looking for and the platform returns a set of results. Filters allow the user to increase their match value by narrowing down using the criteria provided.
 
-{{< figure src="/img/alibaba-search-ux.jpg" title="Alibaba Search — One-to-many Matchmaking" >}}
+{{< figure src="/img/alibaba-search-ux.jpg" title="Traditional Search-Based Matchmaking — Alibaba.com" >}}
 
 This approach has historically worked because it provides a level of options and discoverability to the buyer — the better the search algorithm, the higher the match value. However, there are use cases where the matchmaking experience is laser-focused on the ability to complete the task at hand and cost — discoverability and options take a back seat. 
 
 We retrieve the information we need from Uber’s platform by telling the app where we want to go. Uber then returns a single result that solves the problem for us.
 
-{{< figure src="/img/uber-search-ux.png" title="Uber Search — One-to-one Matchmaking" >}}
+{{< figure src="/img/uber-search-ux.png" title="One-to-one Search-Based Matchmaking — Uber" >}}
 
 This is a common matchmaking experience for service exchange platforms considering the broad use case is more focused on the ability to provide a reliable service based on the specifications provided. This use case gives the platform the ability to return a result with a high match value.
 
@@ -229,15 +229,15 @@ As we make advances in machine learning and artificial intelligence, we'll rely 
 
 Most information exchange platforms leverage a feed to present users with the information they’re looking for based on their profiles and preferences.
 
-Twitter provides you with a feed based on the topics and people you follow. But in case you are looking for either a specific topic or person, Twitter provides the ability to search manually — this topic or person of interest then makes its way into your feed algorithm.
+Twitter provides you with a feed based on the topics and people you follow. But in case you are looking for either a specific topic or person, Twitter provides the ability to search manually — this topic or person of interest then makes its way into your feed's algorithm.
 
 
 
-__(insert twitter feed visual)__
+{{< figure src="/img/twitter-feed-ux.jpg" title="Feed-Based Matchmaking — Twitter.com" >}}
 
-Match.com uses a feed to present potential matches based on the information you provided about yourself and your preferred criteria of the person you’re looking to match with. Tinder revolutionized this by introducing the swipe experience to accept or decline matches. Manual searches are not provided as a fallback.
+Match.com uses a feed to present potential matches based on the information you provided about yourself and your preferred criteria of the person you’re looking to match with. Tinder revolutionized this by introducing the swipe experience to accept or decline matches. Keyword based searches are not part of the core experience.
 
-__(insert match.com & tinder visuals)__
+{{< figure src="/img/matchcom-one-to-one-match.jpg" title="One-to-One Feed-Based Matchmaking — Match.com" >}}
 
 
 
@@ -246,7 +246,7 @@ __(insert match.com & tinder visuals)__
 
 
 
-A recommendation engine is the criteria used to provide suggestions to users, allowing them to discover related value units (content) at the right touchpoint in their user journey. This related content complements what they’re looking for or solves the problem more efficiently.
+A recommendation engine is the criteria used to provide suggestions to users, allowing them to discover related value units at the right touchpoint in their user journey. The recommended value units either complement what they’re looking for or solves the problem more efficiently.
 
 
 
