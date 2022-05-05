@@ -30,7 +30,7 @@ I hope you find this useful — I know future me will.
 
 ## An Introduction to Multi-Sided Platforms
 
-A multi-sided platform is a digital marketplace that enables the exchange of goods, services, and/or information between producers and consumers. It's the digital equivalent of a mall that connects buyers with sellers or a night club that facilitates matches between single folks.
+A multi-sided platform is a digital marketplace that enables the exchange of goods, services, or information between producers and consumers. It's the digital equivalent of a mall that connects buyers with sellers or a nightclub that facilitates matches between single folks.
 
 Platforms have gained immense popularity over the last decade because of the introduction of real-time and on-demand capabilities enabled by the supercomputers we carry around in our pockets — which, technically, are also platforms.
 
@@ -40,7 +40,7 @@ Nevertheless, multi-sided platforms have been around for some time. Thomasnet.co
 
 The term multi-sided platform is typically used in the context of [describing business models when differentiating from the traditional pipeline business](https://hbr.org/2016/04/pipelines-platforms-and-the-new-rules-of-strategy). Multi-sided platforms decentralize the service & product suppliers, whereas pipeline businesses are the service or product suppliers.
 
-Take for example Marriot.com, a traditional pipeline business and one of the largest lodging providers in the world owning thousands of hotel properties.
+Take, for example, Marriot.com, a traditional pipeline business and one of the world's largest lodging providers, owning thousands of hotel properties.
 
 {{< figure src="/img/marriot-home.png" title="Marriot.com — Traditional Pipeline Business" >}}
 
@@ -52,7 +52,7 @@ Now let's take a look at Airbnb.com — a multi-sided platform and the largest l
 
 {{< figure src="/img/airbnb-home.png" title="Airbnb.com — Multi-Sided Platform" >}}
 
-Their success is contigent on the number of nights booked at the properties listed on their platform. Airbnb plays the role of the matchmaker in the short term rental industry between guests and property owners.
+Their success is contingent on the number of nights booked at the properties listed on their platform. Airbnb plays the role of the matchmaker in the short term rental industry between guests and property owners.
 
 Not only is their website’s user experience designed for users looking to book a stay AND users looking to become a host, it's primarily optimized for getting two complete strangers to trust each other and transact.
 
@@ -174,7 +174,7 @@ _Popular software exchange platforms: Xbox, Apple's iPhone & iOS, Android, Micro
 An effectively designed platform does three things exceptionally well: 
 1. Matches the right consumers with the right producers.
 2. Establishes the trust needed between consumers and producers to transact.
-3. Provides the tools necessary to complete the transaction.
+3. Provide the tools necessary to complete the transaction.
 
 
 The reality is that you can find everything on Google and purchase (mostly) everything on Amazon. However, because these platforms cater to a broad audience with many use cases, they need to provide a broad user experience. This is where smaller platforms gain the upper hand — narrowing down on a specific use case for an optimized user experience.
@@ -209,7 +209,7 @@ _Note: Matchmaking is an experience that's heavily reliant on information retrie
 
 The most common and user validated ways of matchmaking is through a traditional search experience. The buyer let's the platform know what they're looking for and the platform returns a set of results. Filters allow the user to increase their match value by narrowing down using the criteria provided.
 
-{{< figure src="/img/alibaba-search-ux.jpg" title="Traditional Search-Based Matchmaking — Alibaba.com" >}}
+<!-- {{< figure src="/img/alibaba-search-ux.jpg" title="Traditional Search-Based Matchmaking — Alibaba.com" >}} -->
 
 This approach has historically worked because it provides a level of options and discoverability to the buyer — the better the search algorithm, the higher the match value. However, there are use cases where the matchmaking experience is laser-focused on the ability to complete the task at hand and cost — discoverability and options take a back seat. 
 
@@ -236,8 +236,8 @@ Twitter provides you with a feed based on the topics and people you follow. But 
 {{< figure src="/img/twitter-feed-ux.jpg" title="Feed-Based Matchmaking — Twitter.com" >}}
 
 Match.com uses a feed to present potential matches based on the information you provided about yourself and your preferred criteria of the person you’re looking to match with. Tinder revolutionized this by introducing the swipe experience to accept or decline matches. Keyword based searches are not part of the core experience.
-
-{{< figure src="/img/matchcom-one-to-one-match.jpg" title="One-to-One Feed-Based Matchmaking — Match.com" >}}
+<!-- 
+{{< figure src="/img/matchcom-one-to-one-match.jpg" title="One-to-One Feed-Based Matchmaking — Match.com" >}} -->
 
 
 
@@ -262,6 +262,8 @@ After users have found what they’re looking for, they need reassurance that if
 
 Offline, it’s easy, you go to a mall and you try on clothes — you trust that the shirt you just tried on will look the same once you purchase it and wear it outside of the mall. However, with online transactions, things get a bit more complicated because not only are you not able to see the value unit with your own eyes, you’re also dealing with a complete stranger. There’s good reason to be skeptical. So how do you build trust?
 
+{{< figure src="/img/yelp-reviews-ratings.jpg" title="A user experience focused on building trust — Yelp.com" >}}
+
 #### Reviews & Ratings — Reputation Validation by Peers
 
 There’s a reason why Uber emphasizes their rating system — it’s because users want to know from other users how their experience was with this user. A rating system builds trust and sets expectations between participants. 
@@ -284,7 +286,7 @@ High-fidelity photography or videos of the value unit is the deciding factor for
 
 
 
-### Step 3: Provides the tools necessary for users to transact.
+### Step 3: Provide the tools necessary for users to transact
 
 Once users are matched and a level of trust is established, it’s now up to the platform to make it as easy as possible for the transaction to take place.
 
@@ -299,48 +301,57 @@ Platforms where information is the main exchange, the experience is primarily fo
 
 Relationship-building platforms, where information exchange is one-to-one, primarily rely on direct communication tools (e.g. messaging). Because of the intimate interaction, the ideal experience is designed around privacy and security.
 
-The goal here is to leverage the initial exchange as an entry to provide the tools and services to maintain that relationship.
+The goal is to leverage the initial exchange as an entry to provide the tools and services to maintain that relationship.
 
 ## Designing for Repeat Usage & Growth
 
-After an initial transaction, users are now familiar with your platform — they can make an informed decision on whether they’ll be coming back or go elsewhere. There are two main reasons why users will come back: 1) they want to repeat the core transaction; or 2) they want/need to use your value-added services.
+After an initial transaction, users can now make an informed decision on whether they’ll come or go elsewhere when looking for a similar value unit. There are two primary reasons why users will return: 1) they want/need to repeat the core transaction; or 2) they want/need to use your value-added services.
 
 ### Repeating the core transaction
 
-The biggest impact on whether users will continue to use a platform is how they felt about the initial transaction. Because users completed a transaction doesn’t mean they were happy with the experience.
+The biggest impact on whether users will continue to use a platform is the experience they had in the initial transaction. Because users completed a transaction doesn’t mean they were happy with the experience.
 
 #### Was the value unit delivered?
 
 No second chances here, if the consumer received radio silence after they’ve paid, they will not be using your service again. It’s now up to the platform to make sure a refund is provided to avoid further brand damage.
 
-#### Was the value unit delivered on time?
+#### Was it delivered on time?
 
 We’re living in a time where users are expecting instant satisfaction. If they order a product, they expect Amazon’s 2-day delivery. If they requested a service, they expect the real-time status provided by Uber.
 
-#### Did the value unit meet the expectations set through the platform?
+#### Did the value unit meet the expectations?
 
-If a user ordered a pizza, expecting a pie, and only received a slice — they probably won’t be trusting your service again regardless of the why.
+If a user ordered a pizza, expecting a pie, and only received a slice — they probably won’t be trusting your food delivery platform again regardless of the why.
+
+#### Was the transaction cost worth it?
+
+Sellers that aren't happy with what they're being charged at Amazon, can move their business to Alibaba where transaction fees for sellers don't exist. However, by moving to Alibaba, they are now competing with sellers with similar products at a lower cost — Amazon knows this. 
 
 Platforms often make the mistake of depending on the exclusivity of their platform's audience and technology. If there’s enough demand, a competing platform will appear with a better end-to-end user experience. 
 
-(Don't take my word for it though, [ask our friends at Blackberry](https://www.macworld.com/article/562752/blackberry-devices-software-obsolete-iphone.html).)
+(Don't take my word for it, [ask our friends at Blackberry](https://www.macworld.com/article/562752/blackberry-devices-software-obsolete-iphone.html).)
 
 
 ### Re-engaging with supporting services
 
-You now have a flawless core transaction experience that exceeds user expectations — however, users aren’t coming back to re-engage with your platform. If you’re in an industry where frequent usage is expected from users (e.g., ride-sharing within a busy city), I recommend you go back to the drawing board because your initial transaction is far from flawless.
+You might find yourself in an industry where the re-engagement cycle is either longer than most or not expected at all. In these industries, it is crucial to provide supporting services & tools that maintain users on your platform.
 
-However, you might find yourself in an industry where the re-engagement cycle is either longer or not expected at all. In these industries, it is crucial to provide supporting services & tools that maintain users on your platform.
+Take for example Thomasnet.com, a platform where industrial buyers find industrial suppliers that can be confidently integrated into their supply chain.
 
-[Linkedin’s largest revenue stream comes from recruiting services](https://digital.hbs.edu/platform-digit/submission/linkedin/) — matching organizations with potential employees. After a match is made, both the organization and the employee remain on LinkedIn because of the additional services, tools, and opportunities the platform provides. These opportunities include employees being exposed to related job openings and organizations being exposed to new talent. This organically creates motivation for organizations to work towards retaining talent and for talent to work towards being retained.
+Once a match between two organizations has been made, it could be years before a need to use a b2b matchmaking platform resurfaces. By the time this need arises again, they have either forgotten about where they found their original suppliers or came across another tool that to actively use to find their match.
 
-There are a unique set of b2b platforms that focus on building long-term relationships between organizations. Take for example Thomasnet.com, a platform where industrial buyers find industrial suppliers that can be confidently integrated into their supply chain. Some of the relationships built on this platform can last for years if not decades. But unlike matching humans, these relationships aren’t meant to be monogamous.
-
-Once a match between two organizations has been made, it could be years before a need to use a b2b matchmaking platform appears. By the time this need arises again, they have either forgotten about where they found their original suppliers or came across another tool that to actively use to find their match.
 
 Providing tools to maintain and facilitate the long-term b2b relationship is key for re-engagement. E.g. payments, order management, communication, etc. Adjacent markets can also be leveraged to keep users engaged. For example, these platforms may already have the audience necessary to provide talent acquisition-related features throughout their experience.
 
-Similar to LinkedIn, if both organizations remain on the b2b platform, they’ll be exposed to similar opportunities. For suppliers, you’ll continue to be exposed to buyers looking for what you offer, for buyers, you’ll continue to be exposed to suppliers that can provide what you need, possibly more efficiently.
+
+
+
+
+
+<!-- 
+[Linkedin’s largest revenue stream comes from recruiting services](https://digital.hbs.edu/platform-digit/submission/linkedin/) — matching organizations with potential employees. After a match is made, both the organization and the employee remain on LinkedIn because of the additional services, tools, and opportunities the platform provides.  -->
+
+
 
 ### When no-repeat use is intended
 
@@ -350,55 +361,96 @@ This isn’t unique to Hinge, this is something that all relationship-matchmakin
 
 There are ethical and moral issues at play if platforms like Hinge designed an experience optimized to repeat the core transaction after a successful match. Nonetheless, it is possible to design for re-engagement without selling your soul.
 
-Long-term relationships are inherently complicated — even the most successful ones. After a dating app like Hinge is deleted, there is an opportunity for these platforms to re-engage with the tools and services necessary to help maintain a healthy relationship. E.g. An app like Relish goes hand-in-hand with an app like Hinge.
+Long-term relationships are inherently complicated. After a dating app like Hinge is deleted, there is an opportunity for these platforms to re-engage with the tools and services necessary to help maintain a healthy relationship. E.g. An app like Relish goes hand-in-hand with an app like Hinge.
 
-(Note, it’s probably not a good idea to provide these services & tools within the same platform where users are a click away from finding a new relationship.)
 
-### Disintermediation TBD
 
 ## Tracking Success with Metrics that Matter
+<!-- 
+The true success metric of any platform is revenue. However, in order to scale a platform effectively, it is critical, if not more important, to identify the platform engagement metrics that could give us the “x to sales” conversion rate.
 
-Historically at Thomas, we measured platform success by the number of times a buyer contacted a supplier. On paper, RFIs sent made sense — after all, our job is to match buyers with suppliers. We laser-focused on this metric and more than doubled our monthly RFI submissions over the course of two years. However, this did not have a direct impact on revenue. We were focusing on the wrong metric.
+Historically at Thomas, we measured platform success by the number of times a buyer contacted a supplier. On paper, RFIs (request for information) sent made sense — after all, our job is to match buyers with suppliers. We laser-focused on this metric and more than doubled our monthly RFI submissions over the course of two years. 
 
-We were tracking the success of a multi-sided platform in the same way that a single-sided business would track success using a single-sided traditional funnel approach. Even worse, we didn’t have the communication tools necessary on the platform to track and understand whether these RFIs were being answered by the suppliers. Tracking RFIs sent was the equivalent of a waterpark measuring success by the number of visitors it sends down a water slide. Whether they made it down safe or not, we weren’t sure.
+However, the increase in RFIs sent did not have a direct impact on revenue. We realized that we were focusing on the wrong metric while using a traditional single-sided funnel approach to track success for a multi-sided platform. 
+
+Tracking RFIs sent was the equivalent of a waterpark measuring success by the number of visitors it sends down a water slide. Whether they made it down safe or not, we weren’t sure. -->
 
 The true success metric of any platform is revenue. However, in order to scale a platform effectively, it is critical, if not more important, to identify the platform engagement metrics that could give us the “x to sales” conversion rate.
 
-### Successful Matches
+Historically at Thomas, we measured platform success by the number of times a buyer contacted a supplier. On paper, RFIs (request for information) sent made sense — after all, our job is to match buyers with suppliers. We laser-focused on this metric and more than doubled our monthly RFI submissions over the course of two years. 
 
-A multi-sided platform delivers value to its users when a successful match is made between producers and consumers (buyers and sellers). To build on my previous analogy, a water park delivers value when a visitor goes down a water slide and arrives safely in the wading pool.
+However, the increase in RFIs sent did not have a direct impact on revenue. We realized that we were focusing on the wrong metric while using a traditional single-sided funnel approach to track success for a multi-sided platform. The was the equivalent of a waterpark measuring success by the number of visitors it sends down a water slide. Whether they made it down safe or not, we weren’t sure.
 
-The successful match metric plays two important roles:
 
-1. It’s the leading indicator of revenue generated by a platform — it’s the metric that gives us the elusive conversion rate to sales (successful matches to sales conversion rate).
-2. It’s the single most important metric of how a platform is performing — traffic and active users do not hold any value if users are not successfully matching.
+
+Tracking RFIs sent was the equivalent of a waterpark measuring success by the number of visitors it sends down a water slide. Whether they made it down safe or not, we weren’t sure.
+
+Below are the four areas that represent the vitals of a multi-sided platform. Note these are focused on the metric category, the specifics and how they're tracked will vary depending on the platform and revenue model.
+
+
+### Metric #1: Successful Matches
+
+
+
+
+A multi-sided platform delivers value when a successful match is made between a consumer and a producer. Succcessful matches is the leading indicator of revenue generated by a platform — it's the single most important metric of how a platform is performing. To build on my previous analogy, a water park delivers value when a visitor goes down a water slide and arrives safely in the wading pool.
+
+
+
+
+<!-- A multi-sided platform delivers value to its users when a successful match is made between producers and consumers. To build on my previous analogy, a water park delivers value when a visitor goes down a water slide and arrives safely in the wading pool.  -->
+
+
+<!-- The successful match metric plays two important roles:
+
+1. It’s the __leading indicator of revenue generated by a platform__ — it’s the metric that gives us the elusive conversion rate to sales (successful matches to sales conversion rate).
+2. It’s the single __most important metric of how a platform is performing__ — traffic and active users do not hold any value if users are not successfully matching. -->
+
+#### For Product & Service Exchange Platforms
 
 For product and service exchange platforms, defining a successful match is straightforward — a successful match occurs when money is exchanged for a product or service. The match quality can be gauged by the rating users give; assume a successful match unless a low rating is given by either user in the exchange.
 
+#### For Information Exchange Platforms
+
 Because of the nature of Information exchange platforms, determining a successful match tends to be more subjective and specific to the platform. For example, dating platforms could decide that a successful match is when two users connect with each other and delete the app. But would they still consider that a successful match if one or both of the users resubscribe to the platform a few months after? What about 5 years later?
 
-On the other hand, social networks and other one-to-many platforms depend on a culmination of micro-interactions throughout their experience. Because the revenue model of these platforms is primarily based on advertising, the go-to metric of success tends to be active users. However, this broad metric fails to provide any insight that will lead to the sustainable growth of a platform. This metric becomes even more dangerous when it’s used to incentivize product managers and marketers. It’s simply an easy metric to manipulate.
+On the other hand, social networks and other one-to-many platforms depend on a culmination of micro-interactions throughout their experience. Because the revenue model of these platforms is primarily based on advertising, the go-to metric of success tends to be active users. However, this broad metric fails to provide any insight that will lead to the sustainable growth of a platform. 
 
-Pinterest’s growth team realized the issue with using active users as their success metric early on:
 
-> “I remember at Pinterest, at one point our growth team decided that the metric that they were going to base their success on, their OKR, was monthly active users … It’s a shame when you’re focused on the wrong things. When the growth team realized this and ended up changing their OKR to be what we called weekly active pinners—actually making someone who signs up for Pinterest not just come to the site once in a month—but pin something once in a week, their entire roadmap changed and we were able to make the people that we were signing up far more successful and happier and better long term engaged users.“  
-> — Sarah Tavel, Founding PM at Pinterest, The Knowledge Project Ep. #113
+
+A lesson Pinterest’s growth team learned early on.
+
+
+
+> I remember at Pinterest, at one point our growth team decided that the metric that they were going to base their success on, their OKR, was monthly active users … It’s a shame when you’re focused on the wrong things. When the growth team realized this and ended up changing their OKR to be what we called weekly active pinners—actually making someone who signs up for Pinterest not just come to the site once in a month—but pin something once in a week, their entire roadmap changed and we were able to make the people that we were signing up far more successful and happier and better long term engaged users.  
+>
+> _Sarah Tavel, Founding PM at Pinterest, [The Knowledge Project Ep. #113](https://podcasts.apple.com/us/podcast/113-sarah-tavel-the-value-of-intellectual-rigor/id990149481?i=1000525574557)_
+
+
 
 A true successful match metric is determined by the balance of user & business value delivered contingent on the purpose of the platform with a direct correlation to revenue.
 
-### Audience Interactions
+
+
+
+
+
+### Metric #2: Audience Interactions
 
 Similar to how successful matches give us the conversation rate to revenue, audience interactions give us the conversion rate to successful matches. An audience interaction is when users from either side of a platform interact either directly or indirectly with users from the other side with the intent to match.
 
 For example, buyers on Thomasnet.com are able to view videos of the products and services offered by suppliers listed on the platform. Although a video view cannot be considered a successful match, it is an indirect interaction between a buyer and the content of a supplier that can give us the probability of a buyer taking the next steps in contacting the supplier.
 
-On product exchange platforms, an audience interaction is when a buyer views, saves, or adds a product of a seller to their shopping cart. On-demand service exchange platforms (e.g. Uber, Airbnb, TaskRabbit), tend to limit the interactions until the match has been made. However, these are still strong indicators of whether a match will end with a completed transaction.
+On product exchange platforms, an audience interaction is when a buyer views, saves, or adds a product of a seller to their shopping cart. On-demand service exchange platforms (e.g. Uber, Airbnb, TaskRabbit), tend to limit the interactions until the match has been made. However, post-match interactions are also strong indicators of whether a match will end with a completed transaction.
 
 Not all audience interactions hold the same weight when determining the conversion rate to a successful match. These metrics should be broken out to a set of metrics specific to the purpose of the platform.
 
-### Active Users
+### Metric #3: Active Users
 
-In the traditional sense, active users represent the number of visitors a website or app received during a given period of time (e.g., monthly active users). It’s a critical metric that serves as the leading indicator of audience interactions and, depending on the business model of a platform, revenue. However, using a single-sided metric to measure the activity of a multi-sided platform neglects the complexities introduced by the network effect.
+In the traditional sense, active users represent the number of visitors a website or app received during a given period of time (e.g., monthly active users). It’s a critical metric that serves as the leading indicator of audience interactions and, if the platform has an advertising revenue model, revenue. 
+
+With a [network effect](#the-network-effect) at play, more active users  do not always lead to more successful matches  for multi-sided platforms. The types of active users and the ratio between the different sides play a critical role in the conversion rate to audience interactions and ultimately to successful matches.
+
 
 #### Active Buyer to Seller Ratio
 
@@ -406,22 +458,25 @@ For example, let’s say we have 1,000 active buyers on a platform during the sp
 
 Let’s introduce the seller into the equation. During the same time period, we have 100 active sellers on a platform. Distributed evenly (for the sake of simplicity), each supplier ends up with $500 of the $50k produced by the buyers. This tells us that for every 10 buyers, 1 supplier generates $500 of revenue.
 
-If the platform charges a 3% transaction fee, we now know that 1,100 monthly active users with a 10:1 buyer to seller ratio generates $50k in transactions resulting in $1,500 of revenue generated by the platform. If the ratio of 1,100 monthly active users changes to 9:2, these numbers change to $45k in transactions and $1,350 in revenue.
+If the platform charges a 3% transaction fee, we now know that 1,100 monthly active users with a 10:1 buyer to seller ratio generates $50k in transactions resulting in $1,500 of revenue generated by the platform. 
 
-#### The Reality of Growing Active Users
+If the ratio of 1,100 monthly active users changes from 10:1 to 9:2, transactions drop to $45k and revenue drops to $1,350. This gives a scenario where monthly active users remained the same, and revenue has dropped. Still with me?
 
-Because of the network effect of a platform, growing the number of quality sellers will attract more qualified buyers (and vice versa). However, unchecked growth on either side results in a negative network effect.
+#### Unchecked Growth
+
+Because of the network effect of a platform, growing the number of quality sellers will attract more qualified buyers (and vice versa). However, unchecked growth on either side results in a [negative network effect](#the-network-effect) .
 
 If we grow the number of active sellers, each seller will now receive a smaller piece of the pie. By increasing the number of active sellers by 100, we’re looking at 1,200 monthly active users with a 5:1 buyer to seller ratio. Although transactions and revenue stay the same, each seller now generates $250 a week instead of the original $500. If sellers are seeing little value, they will take their business elsewhere.
 
 Only growing the number of active buyers, a platform will reach a point of infliction where sellers won’t be able to meet demand effectively. This will result in either a drop in quality of the delivered product/service or a base of suppliers that cannot fulfill. Buyers will be left with no other choice but to buy through a competing platform.
 
-The reality is that a platform will never hit the brakes on a growing user base — nor should they. The best that can be done is to keep track of the active user ratio and increase the user acquisition budget of one side if the other side is experiencing exponential growth. However, the trick to getting the correct balance is measuring user trust and happiness.
+The reality is that a platform will never hit the brakes on a growing user base — nor should they. The best that can be done is to keep track of the active user ratio and redirect the user acquisition efforts. However, the trick to getting the correct balance is measuring user trust and happiness.
 
-### User Trust
-
+### Metric #4: User Trust
+<!-- 
 > Trust refers to the degree to which users of a platform feel comfortable with the level of risk associated with engaging in interactions on the platform.  
-> — Platform Revolution: How Networked Markets Are Transforming the Economy - G. Parker, M. Van Alstyne, S. Choudary
+>
+> _[Platform Revolution: How Networked Markets Are Transforming the Economy](https://www.amazon.com/gp/product/0393354350/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393354350&linkCode=as2&tag=juliangav-20&linkId=054bc6f525d36bd68429746f8cf4fb48) - G.&nbsp;Parker, M. Van Alstyne, S. Choudary_ -->
 
 The more that users trust your platform, the more likely they will continue to engage and recommend to others. Well-defined and collected user trust metrics give the additional context necessary behind the conversion rates across all touchpoints of a platform.
 
@@ -431,7 +486,7 @@ If along with a 20% conversion rate, we also know that user trust in the company
 
 ## To conclude
 
-I set out to share the knowledge of platform design that I’ve accumulated over the past few years as the head of design of one of the oldest multi-sided platforms in the world. Little did I know that a run-of-the-mill article would turn into a 5,000-word monster.
+I set out to share the knowledge of platform design that I’ve accumulated over the past few years as the head of design of one of the oldest multi-sided platforms in the world. Little did I know that a run-of-the-mill article would turn into a 5,000-word monster. And this is just the tip of the iceberg.
 
 ## Resources
 

@@ -1015,6 +1015,14 @@ blockquote {
     }
     margin-bottom:0 !important;
   }
+  em {
+    color: lighten($base-font-color, 25);
+    font-style: italic;
+    font-size: $small-font-size;
+    &:before {
+      content: "\2014 \00A0";
+    }
+  }
 }
 
 
