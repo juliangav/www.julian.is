@@ -122,10 +122,12 @@ Keep in mind that there's more than one way to peel an orange — I will be focu
 #### Product Exchange Platforms
 
 The most common platform type enabling producers to sell tangible products to consumers. Yup, the Amazons & Etsys of the world and digital counterparts to malls. Measuring the matchmaking success of these platforms is straightforward since there's a monetary transaction that takes place when a match is made.
+<!-- 
+{{< figure src="/img/etsy-product-exchange-platform.png" title="Etsy.com — Product Exchange Platform Example" >}} -->
 
-{{< figure src="/img/etsy-product-exchange-platform.png" title="Etsy.com — Product Exchange Platform Example" >}}
-
-_Popular product exchange platforms: Etsy, Amazon, eBay, Alibaba, Facebook Marketplace_
+{{< figure src="/assets/product-exchange-platform-logos.jpg" title="Examples of Product Exchange Platforms" >}}
+<!-- 
+_Popular product exchange platforms: Etsy, Amazon, eBay, Alibaba, Facebook Marketplace_ -->
 
 
 #### Service Exchange Platforms
@@ -139,11 +141,12 @@ What makes service exchange platforms so popular is the real-time and on-demand 
 For example, if I need a ride to the airport, instead of looking up a cab company's number and requesting a ride from an operator, I just open up my phone, enter the address where I want to go, and I instantly get matched with a reputable driver that's willing to take me there.
 
 
-
+<!-- 
 {{< figure src="/img/taskrabbit-service-exchange-platform.png" title="Taskrabbit.com — Service Exchange Platform" >}}
 
-_Popular service exchange platforms: Uber, Lyft, TaskRabbit, OpenTable, Xometry_
+_Popular service exchange platforms: Uber, Lyft, TaskRabbit, OpenTable, Xometry_ -->
 
+{{< figure src="/assets/service-exchange-platform-logos.jpg" title="Examples of Service Exchange Platforms" >}}
 
 #### Information Exchange Platforms
 
@@ -152,10 +155,12 @@ These are platforms that enable the exchange of information between an interchan
 Because the core transaction in information platforms doesn't include a direct monetary exchange between users, matchmaking success becomes a bit more complicated, but not impossible, to track.
 
 Most social networks depend on the size of their active user base to attract high-paying advertisers (the “partners”). In comparison, relationship-building platforms depend on paid user subscriptions, increasing the likelihood of users being matched.
-
+<!-- 
 {{< figure src="/img/match-information-exchange-platform.png" title="Match.com — Information Exchange Platform" >}}
 
-_Popular information exchange platforms: Match.com, Twitter, Facebook, Thomasnet.com_
+_Popular information exchange platforms: Match.com, Twitter, Facebook, Thomasnet.com_ -->
+
+{{< figure src="/assets/information-exchange-platform-logos.jpg" title="Examples of Information Exchange Platforms" >}}
 
 #### Software Exchange Platforms
 
@@ -164,13 +169,13 @@ A software exchange platform — sometimes referred to as innovation, technology
 Part of the iPhone's success is attributed to the third-party apps available in the App Store and their ability to do just about anything. The Xbox is successful because of the exclusive games the platform offers (let's face it, they got where they got because of Halo: CE).
 
 (Although most of this article is relevant to software exchange platforms, this only scratches the surface of what's necessary to design successful ecosystems.)
-
+<!-- 
 {{< figure src="/img/xbox-software-exchange-platform.png" title="Xbox — Software Exchange Platform" >}}
 
-_Popular software exchange platforms: Xbox, Apple's iPhone & iOS, Android, Microsoft Windows_
+_Popular software exchange platforms: Xbox, Apple's iPhone & iOS, Android, Microsoft Windows_ -->
 
 
-
+{{< figure src="/assets/software-exchange-platform-logos.jpg" title="Examples of Software Exchange Platforms" >}}
 
 
  Hopefully, that was enough of a baseline on multi-sided platforms to hit the ground running (if not, I included resources at the end of this article for a deeper dive). Now let's get our hands dirty with designing the end-to-end platform experience.
