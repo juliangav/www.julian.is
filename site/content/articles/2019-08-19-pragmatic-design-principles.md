@@ -19,10 +19,7 @@ Two years ago when I joined the product team at Thomas, I faced a design culture
 
 My goal was clear: instill a user-centric culture where design decisions are based on user needs, data, & best practices. 
 
-<blockquote>
-  <p>...until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions to my taste. I was the new HiPPO.
-</p>
-</blockquote>
+> ...until I was punched in the face by reality — the team was no longer making design decisions to the taste of upper management, they were now making decisions to my taste. I was the new HiPPO.
 
 Within the first month at the helm of design, we created the baseline for our design system to automate UI decisions, set up a dashboard of KPIs to track our success, and established an inclusive design process that allowed us to effectively get designs out the door. 
 
@@ -37,11 +34,11 @@ Although we made progress throughout the first few months, we were still missing
 Design principles (not to be confused with the [traditional principles of design](https://99designs.com/blog/tips/principles-of-design/)) are a set of guidelines for what your team or company believes to be good design. 
 
 Here's a definition that's spot on:
-<blockquote>
-  <p>Design principles are the shared criteria for what good design means for our product and marketing materials. Think of them as a set of guiding ideas to help make design decisions, help keep all of our visuals aligned, and to help decide what features are most important to focus on.
-</p>
-  <cite>[Charli Marie](https://charlimarie.com/), co-host of [Design Life Podcast](https://www.designlife.fm/)</cite>
-</blockquote>
+
+
+> Design principles are the shared criteria for what good design means for our product and marketing materials. Think of them as a set of guiding ideas to help make design decisions, help keep all of our visuals aligned, and to help decide what features are most important to focus on.
+>
+>_[Charli Marie](https://charlimarie.com/), co-host of [Design Life Podcast](https://www.designlife.fm/)_
 
 
 
@@ -61,22 +58,23 @@ With this in mind, we went through an initial exercise where we documented the r
 We used a combination of our individual design principles as a baseline. After a few debates, thorough research, and a sprinkle of user-centric best practices we came up with the following list:
 
 
-<b>1&#46; User-First</b><br>
+
+#### 1. User-First {class="mb-0"}
 It is key that we understand our users and their needs first. We never trick the user, we never manipulate the user.
 
-<b>2&#46; Inclusive & Accessible</b><br>
+#### 2&#46; Inclusive & Accessible {class="mb-0"}
 Everything we build should be accessible, inclusive and responsive by default. Designs should perform well in different contexts & platforms.
 
-<b>3&#46; Design Consistency</b><br>
+#### 3&#46; Design Consistency {class="mb-0"}
 Blueprint (our design system) is the single source of truth for design consistency. 
 
-<b>4&#46; Challenge Design Patterns which Don't Make Sense</b><br>
+####  4&#46; Challenge Design Patterns which Don't Make Sense {class="mb-0"}
 Contextually, if a design pattern doesn't make sense, challenge the use case and consciously modify or suggest a new pattern for the situation. 
 
-<b>5&#46; Each Project Starts with the Research Phase</b><br>
+#### 5&#46; Each Project Starts with the Research Phase {class="mb-0"} 
 Let’s thoroughly research what we’re trying to solve for. Chances are other companies have already solved this.
 
-<b>6&#46; Data-Driven</b><br>
+####  6&#46; Data-Driven {class="mb-0"} 
 Use existing data and KPIs to guide our design decisions.
 
 Looking at these principles two years later, they seem obvious (and maybe a little clunky). And that's because at the time we were in a place where they weren't — these were custom-tailored principles to the issues we were struggling with as a team.
@@ -97,57 +95,57 @@ After detailed feedback (and plenty of debates) from engineering, product, and m
 
 ## Thomas Design Principles
 
-<b>1&#46; User-Centric</b><br>
+
+
+#### 1&#46; User-Centric {class="mb-0"}
 Let's figure out what the user needs are first and design for that. We are not the user.
 
-<b>2&#46; Accessible</b><br>
+#### 2&#46; Accessible {class="mb-0"}
 Every design should be fast, responsive, & of low cognitive/physical effort for the user. Accessible products create a larger audience. 
 
-<b>3&#46; Data-Informed</b><br>
+#### 3&#46; Data-Informed {class="mb-0"}
 Design decisions are better made when guided by data. Opinions come last.
 
-<b>4&#46; Transparent</b><br>
+#### 4&#46; Transparent {class="mb-0"}
 Transparent design decisions build trust in our products resulting in higher user engagement. No tricking or manipulating the user.
 
-<b>5&#46; Unified</b>*<br>
+#### 5&#46; Unified {class="mb-0"}
 Each piece is part of a greater whole and should contribute positively to the system at scale. There should be no isolated features or outliers.
 
-<b>6&#46; 80&#47;20</b><br>
+#### 6&#46; 80&#47;20 {class="mb-0"}
 80% of results come from 20% of the effort. Instead of solving everything, let's aim for the bigger impact.
 
-<b>7&#46; Early Delivery</b><br>
+#### 7&#46; Early Delivery {class="mb-0"}
 The earlier we get designs in front of the user, the earlier we know what works and what doesn't. 
 
-<small><i>* Principle #5 was borrowed from [Airbnb's design principles](https://airbnb.design/the-way-we-build/) — I couldn't have worded this better myself.</i></small>
+_*Principle #5 was borrowed from [Airbnb's design principles](https://airbnb.design/the-way-we-build/) — I couldn't have worded this better myself._
 
 We now had a set of company-wide design principles that not only provided us with the guidance necessary for making day-to-day design decisions but also worked as a tool that drastically improved our collaboration with other departments. From engineering to product and marketing, we were all speaking the same language.
 
 ## The Pragmatic Part
 
-<blockquote>
-  <p>
-  We design things which we think are semantically correct and syntactically consistent but if, at the point of fruition, no one understands the result, or the meaning of all that effort, the entire work is useless.
-  </p>
-  <cite>Massimo Vignelli, <a href="http://www.manifestoproject.it/vignelli-associates/" target="_blank">The Vignelli Canon</a></cite>
-</blockquote>
+> We design things which we think are semantically correct and syntactically consistent but if, at the point of fruition, no one understands the result, or the meaning of all that effort, the entire work is useless.
+>
+> _Massimo Vignelli, [The Vignelli Canon](http://www.manifestoproject.it/vignelli-associates/)_
+
 
 
 Yeah, not what we're looking for. The following set of guidelines helped us gain traction and create awareness of our principles along with their purpose throughout our company.
 
 
-<h3>Specific to our organization</h3>
+### Specific to our organization 
 
 Each of our design principles addresses a specific friction point of our organization. If I were to take these design principles to another company, chances are they wouldn’t work. One of the most effective ways of getting other teams to adopt an idea or process is by making their lives easier.
 
-<h3>Include why</h3>
+### Include why 
 
 Each definition of a design principle was coupled with a strong why. This takes a design principle from being theoretical and most likely to get ignored (e.g. all design decisions should be transparent without tricking or manipulating the user) to one that is informative and pragmatic (e.g. transparent design decisions promote the trust of our products. No tricking or manipulating the user).
 
-<h3>Inclusive of other teams</h3>
+### Inclusive of other teams 
 
 Nobody wants to follow a set of “rules” that are being dictated by one team. Our design principles were designed to help us collaborate better as a user-centric organization. This meant speaking with other teams and thoroughly understanding the friction points from their perspective. This helped us design a set of principles that addressed issues at every level of our company.
 
-<h3>Make Them Obvious</h3>
+### Make Them Obvious 
 
 Once you have a set of well-defined principles, make them visible in places where your team and coworkers will be sure to come across them. An option is to design a poster and add it to every single conference room. If you don't make an effort to increase visibility, no one else will.
 
