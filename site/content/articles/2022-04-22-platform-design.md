@@ -1,6 +1,6 @@
 ---
 title: "The Design of Multi-Sided Platforms"
-description:
+description: A comprehensive guide on designing multi-sided platforms based on hands-on experience and a decent amount of research.
 tags: [MultiSidedPlatforms, ProductDesign, UXStrategy]
 lastmod: 2022-03-1
 date: "2022-04-21"
@@ -8,8 +8,8 @@ time: 19 Minutes
 categories:
   - "Design"
 slug: "platform-design"
-images: ["assets/og-pragmatic-design-principles.jpg"]
-icon: /assets/aico-pragmatic-design-principles.svg
+images: ["assets/og-multi-sided-platform-design.jpg"]
+icon: /assets/aico-multi-sided-platform-design.svg
 comments: false
 ---
 
