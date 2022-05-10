@@ -44,7 +44,7 @@ However, what may seem like a business model subtlety has profound implications 
 
 Take, for example, Marriot.com, a traditional pipeline business and one of the world's largest lodging providers, owning thousands of hotel properties.
 
-{{< figure src="/img/marriot-home.png" title="Marriot.com — Traditional Pipeline Business" >}}
+{{< figure src="/assets/marriot-home.jpg" srcset="/assets/marriot-home.jpg, /assets/marriot-home@2x.jpg 2x, marriot-home@05x.jpg 0.5x" title="Marriot.com — Traditional Pipeline Business" >}}
 
 Their success is contingent on the number of nights booked (demand) at the hotels they own (supply). Their website's user experience and value proposition focus on getting potential guests to book a stay.
 
@@ -52,7 +52,7 @@ A traditional funnel experience works here — the more qualified users they att
 
 Now let's take a look at Airbnb.com — a multi-sided platform and the largest lodging provider in the world, yet they do not own a single property.
 
-{{< figure src="/img/airbnb-home.png" title="Airbnb.com — Multi-Sided Platform" >}}
+{{< figure src="/assets/airbnb-home.jpg" title="Airbnb.com — Multi-Sided Platform" >}}
 
 Their success is contingent on the number of nights booked at the properties listed on their platform. Airbnb plays the role of the matchmaker in the short-term rental industry between guests and property owners.
 
@@ -70,7 +70,7 @@ According to Geoffrey Parker and Marshall Van Alstyne in [Platform Revolution: H
 
 David Sacks, a cofounder of Yammer, [famously tweeted](https://twitter.com/DavidSacks/status/475073311383105536) the following napkin sketch illustrating Uber’s network effect:
 
-{{< figure src="/img/uber-napkin-sketch-david-sacks.jpg" title="Uber's Network Effect Sketch by David Sacks, Cofounder of Yammer" >}}
+{{< figure src="/assets/uber-napkin-sketch-david-sacks.jpg" title="Uber's Network Effect Sketch by David Sacks, Cofounder of Yammer" >}}
 
 More demand for rides will attract more drivers; having more drivers will create greater geographic coverage and therefore increase the demand for rides.
 
@@ -228,7 +228,7 @@ This approach has historically worked because it provides a level of options and
 
 We retrieve the information we need from Uber's platform by telling the app where we want to go. Uber then returns a single result that solves the problem for us.
 
-{{< figure src="/img/uber-search-ux.png" title="One-to-one Search-Based Matchmaking — Uber" >}}
+{{< figure src="/assets/uber-search-ux.png" title="One-to-one Search-Based Matchmaking — Uber" >}}
 
 This is a common matchmaking experience for service exchange platforms considering the broad use case is more focused on the ability to provide a reliable service based on the specifications provided. This use case gives the platform the ability to return a result with a high match value.
 
@@ -246,7 +246,7 @@ Twitter provides you with a feed based on the topics and people you follow. But 
 
 
 
-{{< figure src="/img/twitter-feed-ux.jpg" title="Feed-Based Matchmaking — Twitter.com" >}}
+{{< figure src="/assets/twitter-feed-ux.jpg" title="Feed-Based Matchmaking — Twitter.com" >}}
 
 Match.com uses a feed to present potential matches based on the information you provided about yourself and your preferred criteria of the person you’re looking to match with. Tinder revolutionized this by introducing the swipe experience to accept or decline matches. Keyword-based searches are not part of the core experience.
 <!-- 
@@ -275,7 +275,7 @@ After users have found what they’re looking for, they need reassurance that if
 
 Offline, it’s easy, you go to a mall and you try on clothes — you trust that the shirt you just tried on will look the same once you purchase it and wear it outside of the mall. However, with online transactions, things get a bit more complicated because not only are you not able to see the value unit with your own eyes, but you’re also dealing with a complete stranger. There’s good reason to be skeptical. So how do you build trust?
 
-{{< figure src="/img/yelp-reviews-ratings.jpg" title="A user experience focused on building trust — Yelp.com" >}}
+{{< figure src="/assets/yelp-reviews-ratings.jpg" title="A user experience focused on building trust — Yelp.com" >}}
 
 #### Reviews & Ratings — Reputation Validation by Peers
 
