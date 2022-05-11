@@ -115,6 +115,19 @@ $(document).ready(function() {
 });
 
 
+
+  function addAnchor(element) {
+    element.innerHTML = `${element.innerText} <a href="#${element.id}" class="article__header-target">#</a>`
+  }
+  
+   document.addEventListener('DOMContentLoaded', function () {
+    var headers = document.querySelectorAll('.article__main h2, .article__main h3, .article__main h4')
+    if (headers) {
+      headers.forEach(addAnchor)
+    }
+  })
+
+  
 // Exit intent
 // function addEvent(obj, evt, fn) {
 //   if (obj.addEventListener) {

@@ -24,6 +24,20 @@
 .article__main {
 	grid-area: article-main;
 	min-width: 0;
+	h2:target, h3:target, h4:target {
+		// background-color: $light-gray;
+		background: lighten($light-gray, 3%);
+    	box-shadow: -10px 0 0 12px lighten($light-gray, 3%);
+		.article__header-target {
+			opacity:1;
+		}
+	}
+	h2:hover, h3:hover, h4:hover {
+		.article__header-target {
+			opacity:1;
+		}
+		
+	}
 }
 
 // .article__table-of-contents {
@@ -129,4 +143,19 @@
 
 .article__additional-info {
 	grid-area: article-additional-info;
+}
+.article__header-target {
+	font-size:.75em;
+	color:$gray;
+	border-bottom:0 !important;
+	opacity:0;
+	// h2 & {
+	// 	opacity:1;
+	// }
+}
+
+
+
+.article__main {
+	
 }
