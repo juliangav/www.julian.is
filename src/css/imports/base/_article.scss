@@ -148,14 +148,13 @@
 	font-size:.75em;
 	color:$gray;
 	border-bottom:0 !important;
-	opacity:0;
+	opacity:1;
 	// h2 & {
 	// 	opacity:1;
 	// }
+	@include mq(medium) {
+		opacity:0;
+	}
 }
 
 
-
-.article__main {
-	
-}

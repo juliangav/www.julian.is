@@ -1,7 +1,7 @@
 ---
 title: "The Design of Multi-Sided Platforms"
 description: A comprehensive guide on designing multi-sided platforms based on hands-on experience and a decent amount of research.
-tags: [MultiSidedPlatforms, ProductDesign, UXStrategy]
+tags: [multisidedplatforms, twosidedmarkets, uxstrategy, productdesign]
 lastmod: 2022-03-11
 date: "2022-05-11"
 time: 20 Minutes
@@ -13,22 +13,15 @@ icon: /assets/aico-multi-sided-platform-design.svg
 comments: false
 ---
 
-<!-- From ridesharing with Uber to [manufacturing on-demand with Xometry](https://www.forbes.com/sites/marcoannunziata/2021/10/06/infrastructure-skills-and-on-demand-manufacturing-xometrys-perspective-on-the-future-of-us-growth/?sh=68a6871536bf), multi-sided, or matchmaking, platforms have disrupted every aspect of our personal lives and careers as designers, engineers, and makers of the web. -->
 
-<!-- In the beginning of the pandemic, we created an [emergency response system on Thomasnet.com](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/) that connected manufacturers of PPE-related products with front-line organizations in need of these supplies. It was impactful enough to have [U.S. Congressmen Tom Reed and Tim Ryan recommend Thomasnet.com as a critical resource to the Manufacturing Caucus](https://www.thomasnet.com/insights/u-s-manufacturing-caucus-shares-covid-19-industrial-sourcing-resources/) — second to FEMA. -->
 
 In the beginning of the pandemic, we created an [emergency response system on Thomasnet.com](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/) that connected manufacturers of PPE-related products with front-line organizations. A system impactful enough to have Congress recommend Thomasnet.com as a critical resource to the Manufacturing Caucus — second to FEMA.
 
-
-
 These efforts weren't a coincidence. Thomas is a multi-sided platform that matches industrial buyers with industrial suppliers. We were uniquely positioned to pivot and design a user experience that connected two groups of users critical to aiding pandemic relief efforts and ultimately saving lives.
-
-
-
 
 This article is a comprehensive guide on designing multi-sided platforms based on the culmination of my five years as the head of product design and experimentation of Thomasnet.com.
 
-I begin by setting a [baseline understanding of multi-sided platforms](#an-introduction-to-multi-sided-platforms); I then take a deep dive on [designing the matchmaking experience](#designing-the-core-transaction); followed by a focus on [retention and growth](#designing-for-repeat-usage--growth); and last, I end the with one of the most critical yet often overlooked topics, [tracking success](#tracking-success-with-metrics-that-matter).
+I begin by setting a [baseline understanding of multi-sided platforms](#an-introduction-to-multi-sided-platforms); I then take a deep dive on [designing the matchmaking experience](#designing-the-core-transaction); followed by a focus on [retention and growth](#designing-for-repeat-usage--growth); and last, I end the with one of the most critical yet often overlooked topics, [measuring success](#measuring-success).
 
 I hope you find this useful — I know future me will.
 
@@ -382,7 +375,7 @@ Long-term relationships are inherently complicated. After a dating app like Hing
 
 
 
-## Tracking Success with Metrics that Matter
+## Measuring Success
 <!-- 
 The true success metric of any platform is revenue. However, in order to scale a platform effectively, it is critical, if not more important, to identify the platform engagement metrics that could give us the “x to sales” conversion rate.
 
@@ -505,11 +498,16 @@ If along with a 20% conversion rate, we also know that user trust in the company
 
 ## To conclude
 
-I set out to share the knowledge of platform design that I’ve accumulated over the past few years as the head of design of one of the oldest multi-sided platforms in the world. Little did I know that a run-of-the-mill article would turn into a 5,000-word monster. And this is just the tip of the iceberg.
+I set out to share the knowledge of platform design that I’ve accumulated over the past few years as the head of design of one of the oldest two-sided platforms in the world. But as you can tell, multi-sided platforms are a vast topic. 
 
-### Resources
+I'll be following up with a deep dive into topics I didn't cover such as platform governance & disintermediation. Probably more of a reason for you to <a href="#" class="newsletter-form">subscribe to my articles</a>. In the meantime...
 
-I put together a separate page for books, articless, and other resources I've come across in the journey to designing two-sided market platforms. I hope this helps. Enjoy!
+
+
+
+## Resources
+
+I put together a separate page for books, articles, and case studies I've found useful on my journey to designing multi-sided platforms. Enjoy!
 
 [View Multi-Sided Platform Resources &raquo;](/article/platform-design/resources)
 

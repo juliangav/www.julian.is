@@ -117,7 +117,7 @@ $(document).ready(function() {
 
 
   function addAnchor(element) {
-    element.innerHTML = `${element.innerText} <a href="#${element.id}" class="article__header-target">#</a>`
+    element.innerHTML = `${element.innerText}&nbsp;<a href="#${element.id}" class="article__header-target">#</a>`
   }
   
    document.addEventListener('DOMContentLoaded', function () {
@@ -127,7 +127,7 @@ $(document).ready(function() {
     }
   })
 
-  
+
 // Exit intent
 // function addEvent(obj, evt, fn) {
 //   if (obj.addEventListener) {
