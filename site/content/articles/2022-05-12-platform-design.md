@@ -365,7 +365,7 @@ Providing tools to maintain and facilitate the long-term b2b relationship is key
 
 ### When no-repeat use is intended
 
-Hinge’s current tagline is “The dating app designed to be deleted.” If Hinge is successful at matching two users, they will not re-engagement. If users re-engage, this is a sign that Hinge failed at an initial successful match.
+Hinge’s current tagline is “The dating app designed to be deleted.” If Hinge is successful at matching two users, they will not re-engage. If users re-engage, this is a sign that Hinge failed at an initial successful match.
 
 A situation not unique to Hinge, this is something that all relationship-matchmaking platforms are aware of. But because the number of adults entering the long-term relationship phase in their lives is indefinite, these platforms can survive on a business model where success leads to no re-engagement.
 
