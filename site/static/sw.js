@@ -1,4 +1,4 @@
-var CACHE_NAME = 'site-cache-a152';
+var CACHE_NAME = '{{ getenv "BUILD_ID" }}';
 var urlsToCache = [
   '/',
   '/style.css',
@@ -58,7 +58,7 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', function(event) {
 
-  var cacheWhitelist = ['site-cache-a152'];
+  var cacheWhitelist = ['{{ getenv "BUILD_ID" }}'];
 
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
