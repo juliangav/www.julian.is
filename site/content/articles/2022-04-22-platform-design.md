@@ -2,9 +2,9 @@
 title: "The Design of Multi-Sided Platforms"
 description: A comprehensive guide on designing multi-sided platforms based on hands-on experience and a decent amount of research.
 tags: [MultiSidedPlatforms, ProductDesign, UXStrategy]
-lastmod: 2022-03-1
-date: "2022-04-21"
-time: 19 Minutes
+lastmod: 2022-03-11
+date: "2022-05-11"
+time: 20 Minutes
 categories:
   - "Design"
 slug: "platform-design"
@@ -507,22 +507,12 @@ If along with a 20% conversion rate, we also know that user trust in the company
 
 I set out to share the knowledge of platform design that I’ve accumulated over the past few years as the head of design of one of the oldest multi-sided platforms in the world. Little did I know that a run-of-the-mill article would turn into a 5,000-word monster. And this is just the tip of the iceberg.
 
-## Resources
+### Resources
 
-### Books
+I put together a separate page for books, articless, and other resources I've come across in the journey to designing two-sided market platforms. I hope this helps. Enjoy!
 
-- [Platform Revolution: How Networked Markets Are Transforming the Economy―and How to Make Them Work for You](https://www.amazon.com/gp/product/0393354350/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393354350&linkCode=as2&tag=juliangav-20&linkId=054bc6f525d36bd68429746f8cf4fb48)
-- [The Business of Platforms: Strategy in the Age of Digital Competition, Innovation, and Power](https://www.amazon.com/gp/product/0062896326/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0062896326&linkCode=as2&tag=juliangav-20&linkId=faca37b87903b6ecf13e4659a7685191)
-- [Matchmakers: The New Economics of Multisided Platforms](https://www.amazon.com/gp/product/1633691721/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1633691721&linkCode=as2&tag=juliangav-20&linkId=295fc24e906d88e72ec99f6f623a351d)
-- [Modern Monopolies: What It Takes to Dominate the 21st Century Economy](https://www.amazon.com/gp/product/1250091896/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1250091896&linkCode=as2&tag=juliangav-20&linkId=55c5f260fdc608108f45f0934dfc256f)
+[View Multi-Sided Platform Resources &raquo;](/article/platform-design/resources)
 
-### Articles
 
-- https://hbr.org/2018/09/alibaba-and-the-future-of-business
-- https://community.growthhackers.com/posts/airbnb-the-growth-story-you-didnt-know
-- https://online.hbs.edu/blog/post/what-are-network-effects
-- https://www.forbes.com/sites/quora/2016/07/26/where-and-when-did-yahoo-go-wrong/
 
-### Other
 
-- https://twitter.com/davidsacks/status/1126901492235948032
