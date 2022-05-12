@@ -28,7 +28,7 @@ These efforts weren't a coincidence. Thomas is a multi-sided platform that match
 
 This article is a comprehensive guide on designing multi-sided platforms based on the culmination of my five years as the head of product design and experimentation of Thomasnet.com.
 
-I begin by setting a [baseline understanding of multi-sided platforms](#an-introduction-to-multi-sided-platforms); I then take a deep dive on [designing the matchmaking experience](#designing-the-matchmaking-experience); followed by a focus on [retention and growth](#designing-for-repeat-usage--growth); and last, I end the with one of the most critical yet often overlooked topics, [tracking success](#tracking-success-with-metrics-that-matter).
+I begin by setting a [baseline understanding of multi-sided platforms](#an-introduction-to-multi-sided-platforms); I then take a deep dive on [designing the matchmaking experience](#designing-the-core-transaction); followed by a focus on [retention and growth](#designing-for-repeat-usage--growth); and last, I end the with one of the most critical yet often overlooked topics, [tracking success](#tracking-success-with-metrics-that-matter).
 
 I hope you find this useful — I know future me will.
 
