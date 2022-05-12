@@ -107,7 +107,6 @@ Here’s where [ImageAlpha](https://pngmini.com/) comes into play; similar to Im
 	<figure><img src="/img/png-photoshop.png" alt="PNG Photoshop Export">
 	<figcaption>PNG Photoshop Export - 69kb</figcaption>
 	</figure>
-
 	<figure><img src="/img/png-imagealpha.png" alt="PNG Photoshop Export">
 	<figcaption>PNG ImageAlpha - 25kb</figcaption>
 	</figure>

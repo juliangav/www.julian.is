@@ -65,7 +65,7 @@ I won't bore you with any additional details here, plenty has been written on th
 
 <!-- <h2 id="team-buy-in">Our CSS Grid “aha” moment</h2> -->
 
-## Our CSS Grid “aha” moment
+## Our CSS Grid “aha” moment {#team-buy-in}
 
 
 Initially, it was a difficult to get buy-in knowing that the spec had been available in major browsers for only a handful of months. It also didn't help that we had already chosen Bootstrap as our foundational framework — one that already comes packaged with a widely adopted grid system based on Flexbox. 

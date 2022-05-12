@@ -22,7 +22,7 @@
         <div class="article__additional-info">
             <div class="share-btns-v2">
                 <p>Hey! You should motivate me to write more by sharing this on
-                    <a href="https://twitter.com/intent/tweet?original_referer={{ .Site.BaseURL }}{{ .URL }}&text={{ .Title }}&url={{ .Site.BaseURL }}{{ .URL }}&via=juliangav&hashtags={{ range .Params.tags }}{{ . }}, {{ end }}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>. :)
+                    <a href="https://twitter.com/intent/tweet?original_referer={{ .Permalink | absURL }}&text={{ .Title }}&url={{ .Permalink | absURL }}&via=juliangav&hashtags={{ range .Params.tags }}{{ . }},{{ end }}" target="_blank" rel="noopener" class="ico-twitter g-social-share">Twitter</a>. :)
                 </p>
             </div>
             <hr>

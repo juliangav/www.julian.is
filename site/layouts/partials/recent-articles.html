@@ -5,7 +5,7 @@
     </header>
 
 <div class="blog-feed__wrap">
-{{ range first 6 (where .Site.Pages "Section" "articles") }}
+ {{ range first 9 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
   <!--  <article class="bf-item">
     
     <time class="bf-date"><span>{{ .Date.Format "Jan 2" }} <br> <b>{{ .Date.Format "2006" }}</b></span></time>

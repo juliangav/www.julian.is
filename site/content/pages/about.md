@@ -6,7 +6,7 @@ layout: default
 
 
 
-	<p>Hello! I’m a designer/developer based out of Jersey City, New Jersey. I have a huge passion for web design, front-end web development, and how it all comes together with good&nbsp;ol’&nbsp;UX. </p>
+<p>Hello! I’m a designer/developer based out of Jersey City, New Jersey. I have a huge passion for web design, front-end web development, and how it all comes together with good&nbsp;ol’&nbsp;UX. </p>
 
 <h2 class="text-aligncenter">What I’m capable of doing</h2>
 

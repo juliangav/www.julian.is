@@ -125,12 +125,11 @@ I was able to get a list of dimensions from the iPhone X Simulator in Xcode, and
 		<th width="25%">Landscape</th>
 		<th width="25%">Portrait</th>
 	</tr>
-	
 	<tr>
 		<td><b>constant(safe-area-inset-top)</b></td>
 		<td>0</td>
 		<td>0</td>
-	</tr>
+	</tr>	
 	<tr>
 		<td><b>constant(safe-area-inset-right)</b></td>
 		<td>44px</td>

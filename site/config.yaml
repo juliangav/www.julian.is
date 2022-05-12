@@ -11,14 +11,28 @@ params:
   AuthorName: "Julian Gaviria"
   GitHubUser: "juliangav"
   images: ["/img/julian-signature-blue.jpg"]
+  
 
 taxonomies:
   tag: "tags"
   category: "categories"
 
-blackfriday:
- hrefTargetBlank: true
+markup:
+  
+  blackfriday:
+    hrefTargetBlank: true
+  goldmark:
+    renderer:
+      hardWraps: true
+      unsafe: true
+      xhtml: false
 
 social: 
   facebook_app_id: "275156446240779"
   twitter: "@juliangav"
+
+security:
+  funcs:
+    getenv:
+      - ^BRANCH
+
