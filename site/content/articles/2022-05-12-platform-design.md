@@ -2,8 +2,8 @@
 title: "The Design of Multi-Sided Platforms"
 description: A comprehensive guide on designing multi-sided platforms based on hands-on experience and a decent amount of research.
 tags: [multisidedplatforms, twosidedmarkets, uxstrategy, productdesign]
-lastmod: 2022-03-11
-date: "2022-05-11"
+lastmod: 2022-05-12
+date: "2022-05-12"
 time: 20 Minutes
 categories:
   - "Design"
