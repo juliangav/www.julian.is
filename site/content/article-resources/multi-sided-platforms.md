@@ -6,7 +6,7 @@ layout: default
 
 
 
-This resource page is a companion to the [The Design of Multi-Sided Platforms](/article/platform-design/) article.
+This resource page is a companion to the [The Intrinsic Design of Multi-Sided Platforms](/article/platform-design/) article.
 
 ## Books
 
