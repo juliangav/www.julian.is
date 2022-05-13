@@ -36,4 +36,5 @@ security:
     getenv:
       - ^BRANCH
       - ^BUILD_ID
+      - ^CONTEXT
 
