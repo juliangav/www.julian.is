@@ -15,9 +15,9 @@ comments: false
 
 
 
-In the beginning of the pandemic, we created an [emergency response system on Thomasnet.com](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/) that connected manufacturers of PPE-related products with front-line organizations. A system impactful enough to have Congress recommend Thomasnet.com as a critical resource to the Manufacturing Caucus — second to FEMA.
+In the beginning of the pandemic, we created an [emergency response system on Thomasnet.com](https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/) that connected manufacturers of PPE-related products with front-line organizations. A system impactful enough to have Congress recommend Thomasnet.com as a critical resource to the Manufacturing Caucus — [second to FEMA](https://www.thomasnet.com/insights/u-s-manufacturing-caucus-shares-covid-19-industrial-sourcing-resources/).
 
-These efforts weren't a coincidence. Thomas is a multi-sided platform that matches industrial buyers with industrial suppliers. We were uniquely positioned to pivot and design a user experience that connected two groups of users critical to aiding pandemic relief efforts and ultimately saving lives.
+These efforts weren't a coincidence. Thomasnet.com is a multi-sided platform that matches industrial buyers with industrial suppliers. We were uniquely positioned to pivot and design a user experience that connected two groups of users critical to aiding pandemic relief efforts and ultimately saving lives.
 
 This article is a comprehensive guide on designing multi-sided platforms based on the culmination of my five years as the head of product design and experimentation of Thomasnet.com.
 
