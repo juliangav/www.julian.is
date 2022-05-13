@@ -1,3 +1,7 @@
+.resume-header, .resume-contact, .resume-summary, .resume-experience, .resume-competencies, .resume-highlights, .resume-education {
+  background-color:white !important;
+}
+
 .resume-wrap {
   background-color:$light-gray;  
   z-index:2;
@@ -12,9 +16,105 @@
   // max-width:50rem;
   margin:0 auto;
   width: 11.05in;
-  height: 14.3in;
+  //height: 14.3in;
   // width: 8.5in;
   // height: 11in;
-  padding:1rem;
+  padding: .5rem;
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: .5rem;
 }
 
+.resume-header {
+  grid-column: 1;
+  grid-row: 1;
+  background-color:rgb(232, 232, 232);
+  h1 {
+    text-align: left;;
+    margin:0;
+  }
+  h2 {
+    margin-top:0;
+    font-size:$large-font-size;
+  }
+}
+.resume-logo {
+  float: none !important;
+  figure {
+    float:none;
+  }
+}
+.resume-section {
+  p {
+    font-size: $small-font-size;
+  }
+}
+.resume-section__title {
+  font-size:$base-font-size;
+  font-weight:600;
+  margin-top:0;
+  //text-transform: uppercase;
+}
+
+
+.resume-contact {
+  grid-column: 1;
+  grid-row: 2;
+  background-color:rgb(218, 218, 218);
+}
+
+.resume-summary {
+  grid-column: 1;
+  //grid-row: 2;
+  background-color:rgb(209, 209, 209);
+  
+}
+.resume-competencies {
+  grid-column: 1;
+  //grid-row: 2;
+  background-color:rgb(200, 200, 200);
+}
+
+.resume-highlights {
+  grid-column: 1;
+  //grid-row: 2;
+  background-color:rgb(188, 188, 188);
+}
+
+.resume-education {
+  grid-column: 1;
+  //grid-row: 2;
+  background-color:rgb(180, 180, 180);
+}
+
+
+.resume-experience {
+  grid-column: 2;
+  grid-row:1/-1;
+  background-color:rgb(203, 203, 203); 
+  .resume-section__title {
+    margin-bottom:.25rem;
+  }
+}
+.resume-experience__item {
+  ul li {
+    font-size:$small-font-size !important;
+    line-height:1.4 !important;
+    margin-bottom: .25rem;
+  }
+  .resume-experience__item__summary {
+    
+  }
+  .resume-experience__item__summary--list {
+    
+  }
+}
+.resume-experience__item__title {
+  margin:1rem 0 0 0;
+  font-size:$base-font-size;
+}
+.resume-experience__item__company {
+  margin-top:0;
+  font-size:$small-font-size;
+}

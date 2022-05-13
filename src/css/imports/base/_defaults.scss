@@ -162,7 +162,7 @@ ol:not([class]) {
 	}
 }
 
-ul:not([class]) {
+ul:not([class]), .list {
 	clear: left;
 	list-style-type: none;
 	margin-bottom: $base-spacing / 2;
