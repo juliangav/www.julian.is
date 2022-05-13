@@ -33,6 +33,7 @@ gulp.task("build-preview", ["sass", "js", "fonts", "images", "hugo-preview"]);
 gulp.task("sass", function () {
   return gulp.src('./src/css/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(browserSync.stream())
     .pipe(gulp.dest('./dist'));
 });
 

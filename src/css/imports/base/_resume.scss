@@ -1,0 +1,20 @@
+.resume-wrap {
+  background-color:$light-gray;  
+  z-index:2;
+  position:relative;
+  padding:2rem 0;
+}
+
+.resume-container {
+  background-color:white;
+  z-index:2;
+  position:relative;
+  // max-width:50rem;
+  margin:0 auto;
+  width: 11.05in;
+  height: 14.3in;
+  // width: 8.5in;
+  // height: 11in;
+  padding:1rem;
+}
+
