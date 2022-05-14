@@ -113,6 +113,8 @@
   font-weight:600;
   margin:0 0 .3em 0;
   //text-transform: uppercase;
+  
+  // box-shadow: -3px 0 0 12px #f6f6f6;
 }
 
 
@@ -164,7 +166,13 @@
   background-color:rgb(203, 203, 203);
   background-color:white; 
   .resume-section__title {
-    margin-bottom:.25rem;
+    //margin:.5rem 0;
+    margin-bottom:.5rem;
+    background:#f6f6f6;
+    padding:.25rem;
+    display:inline-block;
+    font-size:$xsmall-font-size;
+    text-transform: uppercase;
   }
 }
 .resume-experience__item {
@@ -181,7 +189,8 @@
   }
 }
 .resume-experience__item__title {
-  margin:1rem 0 0 0;
+  //margin:1rem 0 0 0;
+  margin:0 0 0 0;
   font-size:$base-font-size;
 }
 .resume-experience__item__company {
