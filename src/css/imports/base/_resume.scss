@@ -86,8 +86,8 @@
     font-size: $small-font-size;
   }
   ul li {
-    font-size:$small-font-size !important;
-    line-height:1.4 !important;
+    font-size:$small-font-size;
+    line-height:1.4;
     margin-bottom: .25rem;
   }
 }
@@ -124,6 +124,7 @@
   background-color:rgb(218, 218, 218);
   @extend %resume-section-inverted;
 }
+.resume-contact__item {}
 
 .resume-summary {
   grid-column: 1;
@@ -194,6 +195,6 @@
   font-size:$base-font-size;
 }
 .resume-experience__item__company {
-  margin-top:0;
+  margin:0 0 .5rem 0;
   font-size:$small-font-size;
 }
