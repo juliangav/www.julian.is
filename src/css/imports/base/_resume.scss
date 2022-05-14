@@ -81,14 +81,24 @@
   
 }
 .resume-section {
-  padding:1rem;
+  padding:.5rem 1.0rem;
   p {
     font-size: $small-font-size;
+    line-height:1.35;
+    margin-bottom: .5rem;
   }
-  ul li {
-    font-size:$small-font-size;
-    line-height:1.4;
-    margin-bottom: .25rem;
+  // ul {
+  //   padding-left:1.1rem;
+  //   @extend .list;
+  // }
+  .list {
+    padding-left:1.1rem;
+    li {
+      font-size:$small-font-size;
+      line-height:1.35;
+      margin-bottom: .5rem;
+    }
+    
   }
 }
 .resume-header {
@@ -139,7 +149,7 @@
   background-color:rgb(200, 200, 200);
   @extend %resume-section-inverted;
   ul {
-    @extend .list;
+    //@extend .list;
   }
 }
 
@@ -149,7 +159,7 @@
   background-color:rgb(188, 188, 188);
   @extend %resume-section-inverted;
   ul {
-    @extend .list--inverted;
+    //@extend .list--inverted;
   }
 }
 
@@ -176,18 +186,24 @@
     text-transform: uppercase;
   }
 }
+.resume-experience__list {
+  padding-left:0 !important;
+  // > li:after {
+  //   display:none !important;
+  // }
+}
 .resume-experience__item {
-  ul li {
-    font-size:$small-font-size !important;
-    line-height:1.4 !important;
-    margin-bottom: .25rem;
-  }
-  .resume-experience__item__summary {
-    
-  }
-  .resume-experience__item__summary--list {
-    @extend .list;
-  }
+  // ul li {
+  //   font-size:$small-font-size !important;
+  //   line-height:1.4 !important;
+  //   margin-bottom: .25rem;
+  // }
+}
+.resume-experience__item__summary {
+  
+}
+.resume-experience__item__summary--list {
+  //@extend .list;
 }
 .resume-experience__item__title {
   //margin:1rem 0 0 0;
