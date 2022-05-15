@@ -27,8 +27,9 @@
 }
 
 .resume-container {
-  background-color:$blue;
-  @include blue-gradient;
+  // background-color:$blue;
+  // @include blue-gradient;
+  background-color:lighten($light-gray, 4%);
   z-index:2;
   position:relative;
   // max-width:50rem;
@@ -38,8 +39,8 @@
   // width: 8.5in;
   // height: 11in;
   padding: 0;
-  
   box-shadow: 0 0 9px #ccc;
+  -webkit-print-color-adjust: exact !important;
   @include mq(large) {
     display: grid;
     grid-template-columns: 4fr 8fr;
@@ -47,6 +48,33 @@
     grid-gap: 0rem;
   }
 }
+
+.resume-container--dark-mode {
+  @extend %resume-section-inverted;
+  @include blue-gradient;
+  .resume-section {
+    background:transparent;
+  }
+  .resume-experience {
+  
+    .resume-section__title {
+
+      background:$blue;
+
+    }
+  }
+}
+
+.resume-container--half-mode {
+  @include blue-gradient;
+  .resume-section {
+    
+  }
+  .resume-header, .resume-contact, .resume-summary, .resume-competencies, .resume-highlights, .resume-education {
+    @extend %resume-section-inverted;
+  }
+}
+
 .resume-logo {
   float: none !important;
   // @extend .site-logo;
@@ -101,7 +129,7 @@
   grid-column: 1;
   grid-row: auto;
   background-color:rgb(232, 232, 232);
-  @extend %resume-section-inverted;
+  //@extend %resume-section-inverted;
   h1 {
     text-align: left;;
     margin:0;
@@ -118,9 +146,6 @@
   font-size:$base-font-size;
   font-weight:600;
   margin:0 0 .3em 0;
-  //text-transform: uppercase;
-  
-  // box-shadow: -3px 0 0 12px #f6f6f6;
 }
 
 
@@ -128,7 +153,7 @@
   grid-column: 1;
   grid-row: auto;
   background-color:rgb(218, 218, 218);
-  @extend %resume-section-inverted;
+  //@extend %resume-section-inverted;
 }
 .resume-contact__item {}
 
@@ -136,14 +161,14 @@
   grid-column: 1;
   //grid-row: 2;
   background-color:rgb(209, 209, 209);
-  @extend %resume-section-inverted;
+  //@extend %resume-section-inverted;
   
 }
 .resume-competencies {
   grid-column: 1;
   //grid-row: 2;
   background-color:rgb(200, 200, 200);
-  @extend %resume-section-inverted;
+  //@extend %resume-section-inverted;
   ul {
     //@extend .list;
   }
@@ -162,7 +187,7 @@
   grid-column: 1;
   //grid-row: 2;
   background-color:rgb(188, 188, 188);
-  @extend %resume-section-inverted;
+  //@extend %resume-section-inverted;
   ul {
     //@extend .list--inverted;
   }
@@ -172,7 +197,7 @@
   grid-column: 1;
   //grid-row: 2;
   background-color:rgb(180, 180, 180);
-  @extend %resume-section-inverted;
+  //@extend %resume-section-inverted;
 }
 
 
@@ -219,4 +244,26 @@
 .resume-experience__item__company {
   margin:0 0 .5rem 0;
   font-size:$small-font-size;
+}
+
+
+// @media print {
+//   .resume-container {
+//     @extend .resume-container--dark-mode;
+//   }
+// }
+
+@media print {
+  @page { size: auto;  margin: 0mm; }
+  html {
+    font-size:11px;
+  }
+  body {margin-top:0 !important;}
+  .resume-container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-gap: 0rem;
+    box-shadow: 0;
+  }
 }
