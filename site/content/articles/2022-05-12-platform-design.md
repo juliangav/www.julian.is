@@ -1,5 +1,5 @@
 ---
-title: "The Intrinsic Design of Multi-Sided Platforms"
+title: "The Growth-Focused Design of Multi-Sided Platforms"
 description: A comprehensive guide on designing multi-sided platforms based on hands-on experience and a decent amount of research.
 tags: [multisidedplatforms, twosidedmarkets, uxstrategy, productdesign]
 lastmod: 2022-05-12
