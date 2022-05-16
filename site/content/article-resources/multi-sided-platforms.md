@@ -6,7 +6,7 @@ layout: default
 
 
 
-This resource page is a companion to the [The Growth-Focused Design of Multi-Sided Platforms](/article/platform-design/) article.
+This resource page is a companion to [A Growth-Focused Intro to Multi-Sided Platform Design](/article/platform-design/) article.
 
 ## Books
 
