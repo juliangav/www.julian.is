@@ -6,6 +6,7 @@
 	property="og:description"
 	content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
 />
+{{ if .Params.noindex }}<meta name="robots" content="noindex, nofollow" /> {{ end }}
 <meta property="og:url" content="{{ .Permalink }}" />{{ if .IsPage }}{{ with
 .Site.Params.title }} <meta property="og:site_name" content="{{ . }}" /> {{ end
 }} {{ with .Params.images }} {{ range first 6 . }}

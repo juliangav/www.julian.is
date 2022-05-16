@@ -17,7 +17,7 @@
   // background-color:$white;
 }
 .resume-wrap {
-  //background-color:$light-gray;  
+  background-color:lighten($light-gray,4%);  
   z-index:2;
   position:relative;
   padding:0;
@@ -43,7 +43,7 @@
   -webkit-print-color-adjust: exact !important;
   @include mq(large) {
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 4fr 9fr;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-gap: 0rem;
   }
@@ -261,9 +261,12 @@
   body {margin-top:0 !important;}
   .resume-container {
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 4fr 9fr;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-gap: 0rem;
     box-shadow: 0;
+  }
+  .resume-experience__item {
+   // break-inside: avoid;
   }
 }
