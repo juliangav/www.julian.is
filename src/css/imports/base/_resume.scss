@@ -1,0 +1,272 @@
+// .resume-header, .resume-contact, .resume-summary, .resume-experience, .resume-competencies, .resume-highlights, .resume-education {
+//   background-color:white !important;
+// }
+
+.resume-header, .resume-contact, .resume-summary,  .resume-competencies, .resume-highlights, .resume-education {
+  background-color:transparent !important;
+}
+%resume-section-inverted {
+  color:$white;
+  a {
+    @extend .link-style-inverted;
+    color: $white;
+  }
+  h1, h2, h3, h4, p {
+    color:$white;
+  }
+  // background-color:$white;
+}
+.resume-wrap {
+  background-color:lighten($light-gray,4%);  
+  z-index:2;
+  position:relative;
+  padding:0;
+  @include mq(large) {
+    padding:2rem 0;
+  }
+}
+
+.resume-container {
+  // background-color:$blue;
+  // @include blue-gradient;
+  background-color:lighten($light-gray, 4%);
+  z-index:2;
+  position:relative;
+  // max-width:50rem;
+  margin:0 auto;
+  max-width: 11.05in;
+  //height: 14.3in;
+  // width: 8.5in;
+  // height: 11in;
+  padding: 0;
+  box-shadow: 0 0 9px #ccc;
+  -webkit-print-color-adjust: exact !important;
+  @include mq(large) {
+    display: grid;
+    grid-template-columns: 4fr 9fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-gap: 0rem;
+  }
+}
+
+.resume-container--dark-mode {
+  @extend %resume-section-inverted;
+  @include blue-gradient;
+  .resume-section {
+    background:transparent;
+  }
+  .resume-experience {
+  
+    .resume-section__title {
+
+      background:$blue;
+
+    }
+  }
+}
+
+.resume-container--half-mode {
+  @include blue-gradient;
+  .resume-section {
+    
+  }
+  .resume-header, .resume-contact, .resume-summary, .resume-competencies, .resume-highlights, .resume-education {
+    @extend %resume-section-inverted;
+  }
+}
+
+.resume-logo {
+  float: none !important;
+  // @extend .site-logo;
+
+  
+  //background-color:red;
+  
+  a {
+    border-bottom:0;
+  }
+  figure {
+    position: relative;
+    overflow: hidden;
+    background-color: lighten($blue, 3%) ;
+    display: block;
+    height: 5em;
+    width: 5em;
+    line-height: 5em;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0;
+    box-shadow: none;
+    float: none;
+    margin-bottom:0;
+    img {
+      vertical-align: middle;
+      width: 85%;
+    }
+  }
+  margin-bottom:.5em;
+
+  
+}
+.resume-section {
+  padding:.5rem 1.5rem;
+  p {
+    font-size: $small-font-size;
+    line-height:1.35;
+    margin-bottom: .5rem;
+  }
+  .list {
+    padding-left:1.1rem;
+    li {
+      font-size:$small-font-size;
+      line-height:1.35;
+      margin-bottom: .5rem;
+    }
+    
+  }
+}
+.resume-header {
+  grid-column: 1;
+  grid-row: auto;
+  background-color:rgb(232, 232, 232);
+  //@extend %resume-section-inverted;
+  h1 {
+    text-align: left;;
+    margin:0;
+    font-size:$xlarge-font-size;
+  }
+  h2 {
+    margin-top:0;
+    margin-bottom:0;
+    font-size:$medium-font-size;
+  }
+}
+
+.resume-section__title {
+  font-size:$base-font-size;
+  font-weight:600;
+  margin:0 0 .3em 0;
+}
+
+
+.resume-contact {
+  grid-column: 1;
+  grid-row: auto;
+  background-color:rgb(218, 218, 218);
+  //@extend %resume-section-inverted;
+}
+.resume-contact__item {}
+
+.resume-summary {
+  grid-column: 1;
+  //grid-row: 2;
+  background-color:rgb(209, 209, 209);
+  //@extend %resume-section-inverted;
+  
+}
+.resume-competencies {
+  grid-column: 1;
+  //grid-row: 2;
+  background-color:rgb(200, 200, 200);
+  //@extend %resume-section-inverted;
+  ul {
+    //@extend .list;
+  }
+}
+.resume-competencies__list {
+  li {
+    display:inline-block;
+    background-color:rgba(255,255,255,.15);
+    border-radius: 3px;
+    padding:.1rem .4rem;
+    margin:0 .15rem .4rem 0;
+  }
+}
+
+.resume-highlights {
+  grid-column: 1;
+  //grid-row: 2;
+  background-color:rgb(188, 188, 188);
+  //@extend %resume-section-inverted;
+  ul {
+    //@extend .list--inverted;
+  }
+}
+
+.resume-education {
+  grid-column: 1;
+  //grid-row: 2;
+  background-color:rgb(180, 180, 180);
+  //@extend %resume-section-inverted;
+}
+
+
+.resume-experience {
+  padding:1.5rem;
+  grid-column: 2;
+  grid-row:1/-1;
+  background-color:rgb(203, 203, 203);
+  background-color:white; 
+  .resume-section__title {
+    //margin:.5rem 0;
+    margin-bottom:.5rem;
+    background:#f6f6f6;
+    padding:.25rem;
+    display:inline-block;
+    font-size:$xsmall-font-size;
+    text-transform: uppercase;
+  }
+}
+.resume-experience__list {
+  padding-left:0 !important;
+  // > li:after {
+  //   display:none !important;
+  // }
+}
+.resume-experience__item {
+  // ul li {
+  //   font-size:$small-font-size !important;
+  //   line-height:1.4 !important;
+  //   margin-bottom: .25rem;
+  // }
+}
+.resume-experience__item__summary {
+  
+}
+.resume-experience__item__summary--list {
+  //@extend .list;
+}
+.resume-experience__item__title {
+  //margin:1rem 0 0 0;
+  margin:0 0 0 0;
+  font-size:$base-font-size;
+}
+.resume-experience__item__company {
+  margin:0 0 .5rem 0;
+  font-size:$small-font-size;
+}
+
+
+// @media print {
+//   .resume-container {
+//     @extend .resume-container--dark-mode;
+//   }
+// }
+
+@media print {
+  @page { size: auto;  margin: 0mm; }
+  html {
+    font-size:11px;
+  }
+  body {margin-top:0 !important;}
+  .resume-container {
+    display: grid;
+    grid-template-columns: 4fr 9fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-gap: 0rem;
+    box-shadow: 0;
+  }
+  .resume-experience__item {
+   // break-inside: avoid;
+  }
+}

@@ -21,3 +21,8 @@
     grid-template-rows: auto;
     grid-gap: 0 1.5em;   
 }
+
+@mixin blue-gradient {
+	background-image: linear-gradient(to bottom,#2a6398 0,#183754 100%);
+    background-repeat: repeat-x;
+}

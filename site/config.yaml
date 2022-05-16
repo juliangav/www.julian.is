@@ -1,7 +1,7 @@
 
 
 baseURL: "https://julian.is"
-title: "Julian Gaviria — Web Designer"
+title: "Julian Gaviria — Product Design"
 footnoteReturnLinkContents: "↩"
 permalinks:
   articles: /article/:slug/
