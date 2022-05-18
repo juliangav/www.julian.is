@@ -1,6 +1,6 @@
 ---
 title: "A Growth-Focused Intro to Multi-Sided Platform Design"
-description: A comprehensive guide on designing multi-sided platforms based on hands-on experience and a decent amount of research.
+description: A comprehensive guide on designing the experience and growing the engagement of networked markets.
 tags: [multisidedplatforms, twosidedmarkets, uxstrategy, productdesign]
 lastmod: 2022-05-12
 date: "2022-05-12"
