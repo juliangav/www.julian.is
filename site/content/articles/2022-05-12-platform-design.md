@@ -63,7 +63,7 @@ Ladies and gents, this is what we've historically called the chicken and egg pro
 
 ### The Network Effect
 
-According to Geoffrey Parker and Marshall Van Alstyne in [Platform Revolution: How Networked Markets Are Transforming the Economy](https://www.amazon.com/gp/product/0393354350/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393354350&linkCode=as2&tag=juliangav-20&linkId=054bc6f525d36bd68429746f8cf4fb48), the network effect is the impact the number of users a platform has on the value created for each user. The more compatible users a network has, the more valuable a platform becomes for its users. This is the main differentiator between traditional pipeline businesses and multi-sided platforms.
+According to Geoffrey Parker and Marshall Van Alstyne in [Platform Revolution: How Networked Markets Are Transforming the Economy](https://amzn.to/3G5vrmo), the network effect is the impact the number of users a platform has on the value created for each user. The more compatible users a network has, the more valuable a platform becomes for its users. This is the main differentiator between traditional pipeline businesses and multi-sided platforms.
 
 David Sacks, a cofounder of Yammer, [famously tweeted](https://twitter.com/DavidSacks/status/475073311383105536) the following napkin sketch illustrating Uber’s network effect:
 
