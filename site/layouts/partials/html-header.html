@@ -38,7 +38,7 @@
   <![endif]-->
   <div class="site-wrap">
    
-<!-- {{ getenv "CONTEXT" }} -->
+{{ getenv "CONTEXT" }} 
 {{ $branch := getenv "CONTEXT" }}
 {{ if ne $branch "deploy-preview" }}
   <div class="banner-beta py-2">
