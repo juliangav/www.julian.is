@@ -2,28 +2,27 @@
 title: About
 url: '/about/'
 layout: default
+images: ["assets/og-about.jpg"]
 ---
 
+So you wanna know more? Sure. I’m a product designer & UX engineer — designer/developer in the simple days — who enjoys creating functional and aesthetically beautiful experiences. I also enjoy writing about what I do.
 
+### How I got into design and code
 
-<p>Hello! I’m a designer/developer based out of Jersey City, New Jersey. I have a huge passion for web design, front-end web development, and how it all comes together with good&nbsp;ol’&nbsp;UX. </p>
+I've been building for the web since my amazing mother bought me my first computer at the age of 12. I became fascinated by typing code and seeing things change on a screen. Borderline magical.
 
-<h2 class="text-aligncenter">What I’m capable of doing</h2>
+I ended up going to college on a soccer scholarship. Since I already knew the coding part of building websites, I decided to pursue a degree in graphic design instead of computer science. One of the most rewarding decisions I've made in my life. 
 
-<h3 class="text-aligncenter">Web design that works</h3>
+### Professional career
 
-<p>Not only can I paint a pretty picture, but I can make that pretty picture generate business. Whether It’s lead generation or ecommerce sales, I create designs tailored specifically for the business goals at hand.</p>
+I graduated college in May 2011 and started my professional career in June as an entry-level web designer for a company called Thomasnet.com. I didn’t know it at the time, but here’s where I would build the foundation for my career.
 
-<h3 class="text-aligncenter">Front-end web development that's pretty fast</h3>
+<!-- I graduated college in May 2011 and started my professional career in June as an entry-level web designer for a company called [Thomasnet.com](https://www.thomasnet.com). I didn't know it at the time, but here's where I was going to build the foundation to my career. -->
 
-<p>Yup, I code all of my designs myself. My websites are as beautiful in the inside as they are on the outside. Want to see what’s under the hood? Go ahead and <a href="https://www.webpagetest.org/video/" target="_blank">test my website</a> vs any other and see for yourself. </p>
+A decade later, I'm now the VP of Product & Design for the organization's main product, the Thomasnet.com platform. The [journey between those two titles](/resume?src=about) has been an amazing and rewarding one.
 
-<h3 class="text-aligncenter">Agile Process</h3>
+### What I really enjoy doing
 
-<p>I work to get something out the door for you within the first 2 months of our friendship. But the buck doesn’t stop there, I then begin to test and iterate. Just because it worked for one client doesn’t mean it’ll work for you. That’s the beauty about the scientific approach to web design, test everything and leave subjectivity aside.</p>
+I enjoy designing and building things that solve problems that matter — I find it even more rewarding to lead teams that do the same. Measuring the effectiveness of what I’ve designed and built is also high up on the list. 
 
-
-
-<h2 class="text-aligncenter">What I’m currently doing</h2>
-
-<p>At the moment I spend my days running a design and development team for <a href="http://rpm.thomasnet.com" target="_blank">RPM</a> in New York City. Say <a href="https://twitter.com/juliangav" target="_blank">hello</a> to me when you get a sec. :) </p>
+I’m one of the lucky few people that have found a career doing what they love.
