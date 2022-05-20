@@ -35,4 +35,5 @@ security:
   funcs:
     getenv:
       - ^BRANCH
+      - ^CONTEXT
 
