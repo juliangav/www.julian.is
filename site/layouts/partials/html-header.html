@@ -40,7 +40,7 @@
    
 {{ getenv "CONTEXT" }} 
 {{ $branch := getenv "CONTEXT" }}
-{{ if ne $branch "deploy-preview" }}
+{{ if ne $branch "branch-deploy" }}
   <div class="banner-beta py-2">
     You are currently checking the beta version of the documentatio
   </div>
