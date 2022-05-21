@@ -1,10 +1,10 @@
-<article class="cf-item">
-    <figure class="cf-ico"><img src="{{ .Params.featured_image }}" alt="{{ .Title }}"></figure>
+<article class="project-preview">
+    <figure class="project-preview__featured-img"><img src="{{ .Params.featured_image }}" alt="{{ .Title }}"></figure>
     <!-- <time class="cf-date"><span><b>{{ .Date.Format "Jan 2" }}</b> <br> {{ .Date.Format "2006" }}</span></time> -->
   
-    <div class="cf-content">
-      <h2 class="cf-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <div class="project-preview__body">
+      <h2 class="project-preview__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
       
-      <p class="cf-excerpt"> {{ .Description }}</p>
+      <p class="project-preview__description"> {{ .Description }}</p>
     </div>
    </article>

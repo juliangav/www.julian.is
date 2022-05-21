@@ -1,5 +1,6 @@
 ---
 title: Supplier Search Results
+description:  An incremental improvement approach to the search results of Thomasnet.com.
 slug: "supplier-search-results"
 layout: default
 featured_image: /assets/project-supplier-search-results.png

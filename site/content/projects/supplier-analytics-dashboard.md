@@ -1,5 +1,6 @@
 ---
 title: Supplier Analytics Dashboard
+description:  A reporting dashboard for our monetized user base with the objective of demonstrating ROI and upselling to paid subscriptions.
 slug: "supplier-analytics-dashboard"
 layout: default
 featured_image: /assets/project-supplier-analytics-dashboard.png

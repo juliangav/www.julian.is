@@ -1,5 +1,6 @@
 ---
 title: Claim Your Company
+description:  The end-to-end experience of claiming and listing companies on Thomasnet.com. 
 slug: "claim-your-company"
 layout: default
 images: ["assets/project-claim-your-company.png"]

@@ -1,5 +1,6 @@
 ---
 title: COVID-19 Response System
+description:  An emergency response system, recommended by Congress, connecting manufacturers of PPE with front-line organizations.
 slug: "covid-19-response"
 layout: default
 images: ["assets/project-covid-19-response.png"]
