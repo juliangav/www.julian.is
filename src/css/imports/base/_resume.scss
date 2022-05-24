@@ -24,6 +24,9 @@
   z-index:2;
   position:relative;
   padding:0;
+  a {
+    // border-bottom:2px solid #5e7289 !important;
+  }
   @include mq(large) {
     padding:2rem 0;
   }
@@ -285,14 +288,23 @@
     font-size:11px;
   }
   body {margin-top:0 !important;}
+  a {
+    border-bottom:2px solid #5e7289 !important;
+  }
   .resume-container {
     display: grid;
     grid-template-columns: 4fr 9fr;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-gap: 0rem;
     box-shadow: 0;
+    width: 100vw;
+    height: 100vh;
   }
   .resume-experience__item {
-   // break-inside: avoid;
+   break-inside: avoid;
   }
+  .resume-experience__item__summary--list li {
+    margin-bottom:.4rem !important;
+  }
+
 }
