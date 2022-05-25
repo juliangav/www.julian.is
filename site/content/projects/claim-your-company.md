@@ -1,10 +1,13 @@
 ---
 title: Claim Your Company
 description:  The end-to-end experience of claiming and listing companies on Thomasnet.com. 
+tags: [Product Strategy, Interaction Design, User Flows, Visual Design, User Testing, Information Architecture, Growth]
 slug: "claim-your-company"
 layout: default
 images: ["assets/project-claim-your-company.png"]
 featured_image: /assets/project-claim-your-company.png
+date: "2020-03-31"
+weight: 4
 ---
 
 In the beginning of the pandemic, we created an emergency response system on Thomasnet.com that connected manufacturers of PPE-related products with front-line organizations. A system impactful enough to have Congress recommend Thomasnet.com as a critical resource to the Manufacturing Caucus — second to FEMA.

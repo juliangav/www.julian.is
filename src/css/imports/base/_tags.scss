@@ -1,0 +1,32 @@
+
+.post-tags {
+	color: $blue;
+	//text-transform:uppercase;
+	text-align: center;
+	@extend .link-style;
+	@include small-font-size;
+	position: relative;
+	z-index: 2;
+	a {
+		margin: 0 0.15em;
+	}
+}
+
+.tags-list {
+	li {
+		display:inline-block;
+	}
+}
+
+.tag, a.tag {
+	display: inline-block;
+    background-color: $light-gray;
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    margin: 0 0.15rem 0.4rem 0;
+	border-bottom:0;
+	&:hover {
+		border-bottom:0;
+		background-color: lighten($light-gray,3%);
+	}
+}

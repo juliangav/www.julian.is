@@ -2,13 +2,13 @@
 {{ partial "site-header" . }}
 {{ partial "page-header" . }}
 <section class="site-content" role="main">
-  <!-- <div class="inner-wrap"> -->
+  <div class="inner-wrap">
     <main id="main">
       <div class="projects-list__wrap">
-        {{ range .Data.Pages }} {{ .Render "li"}} {{ end }}
+        {{ range .Pages.ByWeight }} {{ .Render "li"}} {{ end }}
       </div>
     </main>
-  <!-- </div> -->
+  </div>
 </section>
 {{ partial "footer" . }} 
 {{ partial "html-footer" . }}

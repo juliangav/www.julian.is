@@ -1,10 +1,13 @@
 ---
 title: COVID-19 Response System
 description:  An emergency response system, recommended by Congress, connecting manufacturers of PPE with front-line organizations.
+tags: [Product Strategy, Multi-Sided Platform Design, UX Writing, User Testing, A/B Testing, Visual Design, Front-End Development]
 slug: "covid-19-response"
 layout: default
 images: ["assets/project-covid-19-response.png"]
 featured_image: /assets/project-covid-19-response.png
+date: "2020-03-31"
+weight: 2
 ---
 
 In the beginning of the pandemic, we created an emergency response system on Thomasnet.com that connected manufacturers of PPE-related products with front-line organizations. A system impactful enough to have Congress recommend Thomasnet.com as a critical resource to the Manufacturing Caucus — second to FEMA.

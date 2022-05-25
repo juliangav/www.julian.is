@@ -1,9 +1,12 @@
 ---
 title: Supplier Analytics Dashboard
 description:  A reporting dashboard for our monetized user base with the objective of demonstrating ROI and upselling to paid subscriptions.
+tags: [Product Strategy, Interaction Design, Visual Design, User Testing, UX Writing, Growth, Stakeholder Management]
 slug: "supplier-analytics-dashboard"
 layout: default
 featured_image: /assets/project-supplier-analytics-dashboard.png
+date: "2022-01-15"
+weight: 1
 ---
 
 In the beginning of the pandemic, we created an emergency response system on Thomasnet.com that connected manufacturers of PPE-related products with front-line organizations. A system impactful enough to have Congress recommend Thomasnet.com as a critical resource to the Manufacturing Caucus — second to FEMA.
