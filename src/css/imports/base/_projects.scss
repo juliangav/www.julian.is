@@ -1,15 +1,36 @@
 .project-preview {
+    @include mq(medium) {
+        display: grid;
+        grid-template-columns: 4fr 9fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 1rem;
+        margin-bottom:2rem;
+      }
 
 }
 .project-preview__featured-img {
-    //margin:0;
+    grid-column: 1;
+    grid-row:1/-1;
+    margin:0;
+    padding:0 2rem;
 }
 .project-preview__body {
-
+    grid-column: 2;
+  grid-row: auto;
 }
 .project-preview__title {
+    grid-column: 2;
+  grid-row: auto;
+  margin:0;
     
 }
 .project-preview__description {
-
+    grid-column: 2;
+    grid-row: auto;
+    margin-bottom:0;
+}
+.project-preview__tags {
+    grid-column: 2;
+    grid-row: auto;
+    
 }

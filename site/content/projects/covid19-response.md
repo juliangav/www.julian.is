@@ -1,11 +1,11 @@
 ---
-title: COVID-19 Response System
+title: Designing for a Crisis
 description:  An emergency response system, recommended by Congress, connecting manufacturers of PPE with front-line organizations.
 tags: [Product Strategy, Multi-Sided Platform Design, UX Writing, User Testing, A/B Testing, Visual Design, Front-End Development]
 slug: "covid-19-response"
 layout: default
 images: ["assets/project-covid-19-response.png"]
-featured_image: /assets/project-covid-19-response.png
+featured_image: /assets/aico-pragmatic-design-principles.svg
 date: "2020-03-31"
 weight: 2
 ---

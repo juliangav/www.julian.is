@@ -1,10 +1,10 @@
 ---
-title: Supplier Analytics Dashboard
+title: Designing an An ROI Dashboard
 description:  A reporting dashboard for our monetized user base with the objective of demonstrating ROI and upselling to paid subscriptions.
 tags: [Product Strategy, Interaction Design, Visual Design, User Testing, UX Writing, Growth, Stakeholder Management]
 slug: "supplier-analytics-dashboard"
 layout: default
-featured_image: /assets/project-supplier-analytics-dashboard.png
+featured_image: /assets/aico-analytics-dashboard.svg
 date: "2022-01-15"
 weight: 1
 ---

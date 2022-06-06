@@ -1,5 +1,5 @@
 ---
-title: Claim Your Company
+title: Designing a Company Claiming Experience
 description:  The end-to-end experience of claiming and listing companies on Thomasnet.com. 
 tags: [Product Strategy, Interaction Design, User Flows, Visual Design, User Testing, Information Architecture, Growth]
 slug: "claim-your-company"

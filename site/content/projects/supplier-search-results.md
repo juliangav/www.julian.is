@@ -1,5 +1,5 @@
 ---
-title: Supplier Search Results
+title: Iteratively Improving Search Results UI with Data & Experimentation
 description:  An incremental improvement approach to the search results of Thomasnet.com.
 tags: [A/B Testing, Design Process, Interaction Design, Visual Design, UX Writing, User Testing, Front-End Development]
 slug: "supplier-search-results"
