@@ -11,7 +11,7 @@ weight: 3
 
 Led the redesign of Thomasnet.com over the course of three months and incrementally transformed the core experience with 300+ A/B tests over the span of four years.
 
-{{< figure src="/assets/thumb-thomas-redesign.jpg" title="Supplier Analytics Dashboard" >}}
+{{< figure src="/assets/project-thomas-redesign.jpg" title="Thomasnet.com Redesign" >}}
 
 
 Hang tight though, I'm in the process of putting together a thorough case study.

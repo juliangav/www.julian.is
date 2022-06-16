@@ -12,7 +12,7 @@ weight: 2
 
 Proposed & designed a COVID-19 Response System that connected manufacturers of PPE with front-line organizations; a system which Congress recommended as a critical resource to the Manufacturing Caucus (second to FEMA).
 
-{{< figure src="/assets/thumb-covid-19-response.jpg" title="Supplier Analytics Dashboard" >}}
+{{< figure src="/assets/project-covid-19-response.jpg" title="COVID-19 Response System" >}}
 
 
 Hang tight though, I'm in the process of putting together a thorough case study. In the mean time, take a look at this write up that my friends over at FullStory put together.  

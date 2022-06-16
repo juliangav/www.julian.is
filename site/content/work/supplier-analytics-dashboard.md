@@ -15,7 +15,7 @@ Designed and product managed the creation of an ROI reporting dashboard unique t
 
 
 
-{{< figure src="/assets/thumb-supplier-analytics-dashboard.jpg" srcset="/assets/thumb-supplier-analytics-dashboard.jpg, /assets/thumb-supplier-analytics-dashboard.jpg 2x, /assets/thumb-supplier-analytics-dashboard.jpg 0.5x" title="Supplier Analytics Dashboard" >}}
+{{< figure src="/assets/project-supplier-analytics-dashboard.jpg"  title="Supplier Analytics Dashboard" >}}
 
 
 Hang tight though, I'm in the process of putting together a thorough case study.
