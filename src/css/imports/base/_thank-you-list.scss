@@ -1,0 +1,19 @@
+.thank-you-list {
+	text-align:center;
+	// display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-rows: auto;
+    // grid-gap: 1rem;
+}
+.thank-you-list__item {
+	display:inline-block;
+	margin:.5rem;
+	a {
+
+	}
+	img {
+		// max-width:100%;
+		max-width:5rem;
+		border-radius:3px;
+	}
+}

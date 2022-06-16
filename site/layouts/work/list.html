@@ -1,0 +1,16 @@
+{{ partial "html-header" . }} 
+{{ partial "site-header" . }}
+{{ partial "page-header" . }}
+<section class="site-content" role="main">
+  <!-- <div class="inner-wrap-narrow"> -->
+    <main id="main">
+      
+      <div class="inner-wrap-narrow"><p>These are some examples of my recent work as the Head of Design at Thomasnet.com — I'm in the process of putting together case studies.</p>
+      </div><div class="projects-list__wrap">
+        {{ range .Pages.ByWeight }} {{ .Render "li"}} {{ end }}
+      </div>
+    </main>
+  <!-- </div> -->
+</section>
+{{ partial "footer" . }} 
+{{ partial "html-footer" . }}
