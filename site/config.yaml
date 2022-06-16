@@ -6,6 +6,7 @@ footnoteReturnLinkContents: "↩"
 permalinks:
   articles: /article/:slug/
   article-resources: /article/:slug/resources/
+  work: /work/:slug/
 params:
   Description: "Hey there, I'm Julian, a product designer and developer with a habit of experimenting."
   AuthorName: "Julian Gaviria"

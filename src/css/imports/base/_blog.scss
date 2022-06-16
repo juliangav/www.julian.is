@@ -76,18 +76,7 @@
 .share-btns-v2 {
 	margin-top: $baseline * 4;
 }
-.post-tags {
-	color: $blue;
-	//text-transform:uppercase;
-	text-align: center;
-	@extend .link-style;
-	@include small-font-size;
-	position: relative;
-	z-index: 2;
-	a {
-		margin: 0 0.15em;
-	}
-}
+
 
 .blog-feed {
 	//background-color:lighten($light-gray,4%);
@@ -103,7 +92,7 @@
 		grid-template-columns: 1fr 1fr;
 	}
 	@include mq(large) {
-		grid-template-columns: 1fr 1fr 1fr;
+		// grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 .cf-item {

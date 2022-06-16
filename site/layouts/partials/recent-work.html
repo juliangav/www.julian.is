@@ -1,0 +1,19 @@
+<div class="blog-feed">
+    <div class="inner-wrap-narrow">
+     <header class="section-header">
+      <h2>Recent Work</h2>
+    </header>
+  
+
+    {{ range first 3 (where .Site.Pages "Section" "work") }}
+
+
+
+ {{ .Render "li"}}
+
+{{ end }}
+
+<!-- 
+<h3 class="view-all-link"><a href="/articles">View All Articles</a></h3> -->
+</div>
+  </div>
