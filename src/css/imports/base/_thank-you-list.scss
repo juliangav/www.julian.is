@@ -1,19 +1,27 @@
 .thank-you-list {
 	text-align:center;
-	// display: grid;
-    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    // grid-template-rows: auto;
-    // grid-gap: 1rem;
+	display: grid;
+	grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+	@include mq(medium) {
+		grid-template-columns: repeat(6, 1fr);
+    	grid-gap: 3rem;
+	}
+	@include mq(large) {
+		grid-template-columns: repeat(6, 1fr);
+    	grid-gap: 3rem;
+	}
 }
 .thank-you-list__item {
 	display:inline-block;
-	margin:.5rem;
+	//margin:.5rem;
 	a {
 
 	}
 	img {
-		// max-width:100%;
-		max-width:5rem;
+		max-width:100%;
+		//max-width:5rem;
 		border-radius:3px;
 	}
 }

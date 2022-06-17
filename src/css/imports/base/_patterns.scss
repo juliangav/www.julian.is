@@ -85,6 +85,10 @@ body {
     padding: $baseline*3 $baseline*3 $baseline*3 $baseline*3;
     padding:$baseline*5 constant(safe-area-inset-right) $baseline*5 constant(safe-area-inset-left);
   }
+  @include mq(large) {
+    padding: $baseline*4 $baseline*3 $baseline*4 $baseline*3;
+    padding:$baseline*5 constant(safe-area-inset-right) $baseline*5 constant(safe-area-inset-left);
+  }
 }
 
 

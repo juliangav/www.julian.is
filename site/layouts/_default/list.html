@@ -2,7 +2,7 @@
 {{ partial "site-header" . }}
 {{ partial "page-header" . }}
 <section class="site-content" role="main">
-  <div class="inner-wrap">
+  <div class="inner-wrap-narrow">
     <main id="main">
       <div class="blog-feed__wrap">
         {{ range .Data.Pages }} {{ .Render "li"}} {{ end }}

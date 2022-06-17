@@ -1,0 +1,41 @@
+.site-intro {
+    //background-color:white;
+    
+    .inner-wrap-narrow, .inner-wrap {
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    @include mq(medium) {
+        .inner-wrap-narrow, .inner-wrap {
+            padding-top:2rem;
+            padding-bottom:2rem;
+        }
+    }
+    @include mq(large) {
+        .inner-wrap-narrow, .inner-wrap {
+            padding-top:3rem;
+            padding-bottom:3rem;
+        }
+    }
+}
+
+.site-intro__h1 {
+    @include xlarge-font-size;
+    text-align:left;
+    color:$blue;
+    position:relative;
+    z-index:2;
+    @include mq(medium) {
+    }
+}
+
+.site-intro__subheader {
+
+}
+
+.site-intro__signature {
+    max-width:10rem;
+    margin-bottom:2rem;
+    @include mq(medium) {
+    }
+}
