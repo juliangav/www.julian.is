@@ -67,6 +67,8 @@
 	  position: relative;
 	  overflow: hidden;
 	  background-color: $base-color;
+	  background-image: linear-gradient(to bottom, #2a6398 0, #183754 100%);
+    background-repeat: repeat-x;
 	  display: block;
 	  height: 4.5em;
 	  width: 4.5em;

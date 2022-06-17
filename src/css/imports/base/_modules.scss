@@ -32,46 +32,6 @@
 
 
 
-/*=============== Site Footer ===============*/
-
-.site-footer {
-  background-color: $base-background-color;
-  text-align: center;
-  color: $white;
-  a {
-    @extend .link-style-inverted;
-    color: $white;
-  }
-  p {
-    @include small-font-size;
-  }
-  .social-wrap {
-    overflow: hidden;
-    width: 15em;
-    margin: 0 auto;
-    a {
-      &:hover {
-        background-color: transparent !important;
-      }
-    }
-  }
-}
-
-.sf-small {
-  background-color: $medium-gray;
-  text-align: center;
-  .inner-wrap {
-    padding-top: $baseline*2;
-    padding-bottom: $baseline*2;
-  }
-}
-
-//This removes the blank space Webtrax adds to the footer
-img[name=pphLoggerImage] {
-  display: none;
-}
-
-
 
 /*=============== Search ===============*/
 
@@ -220,8 +180,8 @@ img[name=pphLoggerImage] {
 
 .subscribe-module {
   //background-color:lighten($light-gray,4%);
-  background-color: $blue;
-  border-top: $base-border;
+  //background-color: $blue;
+  //border-top: $base-border;
 
   h2,
   h3,

@@ -1,0 +1,39 @@
+.site-footer-wrap {
+	background-color: $base-background-color;
+	background-image: linear-gradient(to bottom, #2a6398 0, #183754 100%);
+	  background-repeat: repeat-x;
+}
+.site-footer {
+	// background-color: $base-background-color;
+	// background-image: linear-gradient(to bottom, #2a6398 0, #183754 100%);
+	//   background-repeat: repeat-x;
+	text-align: center;
+	color: $white;
+	a {
+	  @extend .link-style-inverted;
+	  color: $white;
+	}
+	p {
+	  @include small-font-size;
+	}
+	.social-wrap {
+	  overflow: hidden;
+	  width: 15em;
+	  margin: 0 auto;
+	  a {
+		&:hover {
+		  background-color: transparent !important;
+		}
+	  }
+	}
+  }
+  
+  .sf-small {
+	background-color: $medium-gray;
+	text-align: center;
+	.inner-wrap {
+	  padding-top: $baseline*2;
+	  padding-bottom: $baseline*2;
+	}
+  }
+  
