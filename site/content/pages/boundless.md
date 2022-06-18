@@ -3,6 +3,7 @@ title: Head of Design at Boundless
 url: '/boundless/'
 layout: cover-letter
 images: ["assets/og-boundless.jpg"]
+noindex: true
 ---
 
 
