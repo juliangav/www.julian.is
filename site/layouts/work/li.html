@@ -4,10 +4,10 @@
   
   <h2 class="project-preview__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   
-  <figure class="project-preview__featured-img"><a href="{{ .RelPermalink }}"><img src="{{ .Params.featured_image }}" alt="{{ .Title }}"></a></figure>
+  <figure class="project-preview__featured-img"><a href="{{ .RelPermalink }}"><img src="{{ .Params.thumbnail }}" alt="{{ .Title }}"></a></figure>
   <!-- <time class="cf-date"><span><b>{{ .Date.Format "Jan 2" }}</b> <br> {{ .Date.Format "2006" }}</span></time> -->
   <div class="project-preview__body">
-    <p class="project-preview__description"> {{ .Description }}</p>
+    <p class="project-preview__description"> {{ .Params.preview_text }}</p>
     {{ if .Params.tags }}
     <ul class="project-preview__tags tags-list">
       {{ range .Params.tags }}

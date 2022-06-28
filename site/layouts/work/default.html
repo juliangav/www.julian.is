@@ -1,5 +1,33 @@
 {{ partial "html-header" . }} {{ partial "site-header" . }}
-{{ partial "page-header" . }}
+<section class="project-intro">
+  <div class="inner-wrap-narrow">
+    <h1 class="project__h1">{{ if eq .Kind "taxonomy" }}#{{ end }}{{ .Title }}</h1>
+    <p class="project__subheader">{{ .Description }}</p>
+    <!-- <figure class="project__featured-img"><img src="{{ .Params.featured_image }}" alt="{{ .Title }}"></figure> -->
+    
+    <div class="project__featured-asset-wrap">
+      
+      <img src="/assets/browser-chrome.png" alt="">
+      {{ if .Params.featured_video }} 
+      <video poster="/assets/supplier-analytics-featured-image.jpg" autoplay class="project__featured-video" muted loop >
+          <source src="{{ .Params.featured_video }}.webm" type="video/webm">  
+      </video>
+      {{ else }}
+      <img src="{{ .Params.featured_image }}" alt="" class="project__featured-image">
+      {{ end }}
+    </div>
+<!--     
+    <div class="inner-wrap">
+      <figure class="project__featured-img"><a href="{{ .RelPermalink }}"><img src="{{ .Params.featured_image }}" alt="{{ .Title }}"></a></figure>
+    </div>  -->
+
+    
+    
+  </div>
+  <!-- <div class="inner-wrap">
+    <figure class="project__featured-img"><a href="{{ .RelPermalink }}"><img src="{{ .Params.featured_image }}" alt="{{ .Title }}"></a></figure>
+  </div> -->
+</section>
 <section class="site-content" role="main">
   <div class="inner-wrap-narrow">
     <main id="main">
@@ -7,4 +35,4 @@
     </main>
   </div>
 </section>
-{{ partial "footer" . }} {{ partial "html-footer" . }}
+{{ partial "footer-cl" . }} {{ partial "html-footer" . }}
