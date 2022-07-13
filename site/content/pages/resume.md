@@ -1,5 +1,5 @@
 ---
-title: Julian Gaviria Resume
+title: Resume
 url: '/resume/'
 layout: resume
 noindex: true
