@@ -194,3 +194,29 @@
 	  display: none;
 	}
   }
+
+  
+	.site-header--inverted {
+		// //@include blue-gradient;
+		// background-color:$blue;
+		// position:absolute;
+		// top:0;
+		// right:0;
+		// bottom:0;
+		// left:0;
+		background-color:transparent;
+		@include mq(medium) {
+		.sn-li-l1 {
+			background-color: transparent;
+		}
+		.sn-li-l1 a {
+			color:$white;
+			&:hover {
+				background-color: rgba(255, 255, 255, .1);
+			}
+		}
+		.social-wrap a path {
+			fill:$white !important;
+		}
+		}
+	}

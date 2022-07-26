@@ -1,4 +1,6 @@
-{{ partial "html-header" . }} {{ partial "site-header" . }}
+{{ partial "html-header" . }} 
+<div class="page-intro-wrap--inverted">
+{{ partial "site-header-inverted" . }}
 <section class="project-intro">
   <div class="inner-wrap-narrow">
     <h1 class="project__h1">{{ if eq .Kind "taxonomy" }}#{{ end }}{{ .Title }}</h1>
@@ -28,11 +30,10 @@
     <figure class="project__featured-img"><a href="{{ .RelPermalink }}"><img src="{{ .Params.featured_image }}" alt="{{ .Title }}"></a></figure>
   </div> -->
 </section>
+</div>
 <section class="site-content" role="main">
-  <div class="inner-wrap-narrow">
-    <main id="main">
+  <main id="main">
       {{ .Content }}
     </main>
-  </div>
 </section>
 {{ partial "footer-cl" . }} {{ partial "html-footer" . }}
