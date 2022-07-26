@@ -35,21 +35,18 @@ Through a combination of Google Ads and SEO, most suppliers saw more referral tr
 
 
 However, the quality of traffic from Thomas was significantly higher, with visit-to-contact conversion rates of around 4% vs. 0.95% from Google. And unlike Google, we could provide buyer-intent information at a company level — the number one reason suppliers renewed.
-<!-- 
- Regardless, Google left some folks in the organization asking the the existential question of "is Thomasnet.com worth it?" (spoiler: it is) bringing major challenges with the level of transparency and autonomy we aimed to provide.  -->
+
 
  ### The Objective
 
- The primary objective was to streamline ROI reporting by creating a unified and scaleable experience within the newly established Thomas Account and sunsetting the suite of disparate legacy reporting tools and processes. 
+ The primary objective was to streamline ROI reporting by creating a unified and scalable experience within the newly established Thomas Account and sunsetting the suite of disparate legacy reporting tools and processes. 
 
 
 
 For the business, the ROI dashboard needed to focus on the qualitative value that Thomasnet.com brings to suppliers and increase revenue through higher retention and upsell rates.
 
 For users, the objective was to create a seamless user experience that transparently and in real-time communicates to suppliers where they can improve, where they're overcompensating, and what the current and potential ROI is of their investment in Thomasnet.com.
-<!-- 
 
-At the time, only premium suppliers had access to legacy reporting and company management tools. The new Thomas Account was designed with a focus on demonstrating value and upselling to Free Suppliers — a focus we needed to include in the new ROI dashboard. -->
 
 
 ### Use cases to solve for
