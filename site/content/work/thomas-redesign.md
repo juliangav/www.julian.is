@@ -12,6 +12,8 @@ weight: 3
 ---
 
 
+<div class="container--sm">
 
+Hang tight though, I'm in the process of putting together a thorough case study. In the meantime, checkout some of my related work on [dribbble](https://dribbble.com/juliangav).
 
-Hang tight though, I'm in the process of putting together a thorough case study.
+</div>

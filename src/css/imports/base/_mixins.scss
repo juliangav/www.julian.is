@@ -26,3 +26,8 @@
 	background-image: linear-gradient(to bottom,#2a6398 0,#183754 100%);
     background-repeat: repeat-x;
 }
+@mixin inverted-section {
+	h1, h2, h3, p {
+		color:white;
+	}
+}
