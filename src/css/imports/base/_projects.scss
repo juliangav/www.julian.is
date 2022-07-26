@@ -4,7 +4,7 @@
     margin-bottom:2rem;
     @include mq(medium) {
         display: grid;
-        grid-template-columns: 5fr 9fr;
+        grid-template-columns: 5fr 8fr;
         grid-template-rows: auto auto auto;
         grid-gap: 1rem;
         margin-bottom:2rem;
