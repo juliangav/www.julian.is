@@ -1,5 +1,5 @@
 ---
-title: Re-Inventing ROI Reporting for Thomasnet.com
+title: Reinventing ROI Reporting for Thomasnet.com
 description:  Transformed how Thomasnet.com reports ROI to premium suppliers by designing and leading product efforts of their Supplier Analytics Dashboard.
 preview_text:  Overhauled how Thomasnet.com reported ROI to premium subscribers with the design of an ROI reporting dashboard unique to the industrial matchmaking process.
 tags: [Product Design Lead, Data Visualization, Stakeholder Management]
