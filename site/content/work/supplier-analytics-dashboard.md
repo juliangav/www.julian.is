@@ -1,7 +1,7 @@
 ---
 title: Reinventing ROI Reporting for Thomasnet.com
-description:  Transformed how Thomasnet.com reports ROI to premium suppliers by designing and leading product efforts of their Supplier Analytics Dashboard.
-preview_text:  Overhauled how Thomasnet.com reported ROI to premium subscribers with the design of an ROI reporting dashboard unique to the industrial matchmaking process.
+description: Increased new customer acquisition by 108% for Thomasnet.com by transforming how the organization reports ROI to suppliers. 
+preview_text:  Increased new customer acquisition by 108% for Thomasnet.com by transforming how the organization reports ROI to suppliers. 
 tags: [Product Design Lead, Data Visualization, Stakeholder Management]
 slug: "supplier-analytics-dashboard"
 layout: default
@@ -14,6 +14,15 @@ weight: 1
 
 <div class="container--sm pb-0">
     
+
+
+
+
+
+
+
+
+
 
 Thomasnet.com is the leading industrial sourcing platform with a monthly active user base of over 1.7 million buyers and suppliers. The company primarily relies on a premium subscription revenue model for suppliers while allowing buyers to use the platform free of charge.
 
@@ -38,6 +47,8 @@ However, the quality of traffic from Thomas was significantly higher, with visit
 
 
  ### The Objective
+
+<!-- ### Aligning Business & User Objectives -->
 
  The primary objective was to streamline ROI reporting by creating a unified and scalable experience within the newly established Thomas Account and sunsetting the suite of disparate legacy reporting tools and processes. 
 
@@ -192,7 +203,7 @@ We decided on a modal approach since this would make it easier for the user to b
  
  <!-- Each tool tip concisely communicated what the component was followed by a link to the help center section for a deeper explanation and information on how to improve the respective metric. These were to play a critical role on the intuitiveness of the dashboard and upsell experience.   -->
 
- ## User Testing & Iterations 
+ ## User Testing + Iterations + More User Testing
 
  <!-- It was now time to put this in front of real users to understand whether users interpreted the design as we intended and if we were in a place to move on to building the UI. according to the objectives and use cases. -->
 
@@ -260,28 +271,71 @@ We tested again:
         <h4>Second Round Sample of User Testing</h4>
     </figcaption>
 </div>
- <div class="container--sm">
+ <div class="container--sm pb-0">
 
 After the second round of tests, users consistently understood the graphs and found the intended value. Seems like we hit the mark.
 
-Users now had more focused feedback on wanting to know how to improve these metrics. A recommendation engine would be the ideal solution, but considering our current resources and timeline, it simply wasn’t the time for this type of feature.
+## Designing for Upsell
+
+
+
+After the last round of user tests, we were now receiving more focused feedback by users on wanting to know how to improve these metrics. A recommendation engine would be the ideal solution, but considering our current resources and timeline, this wasn't viable.
+
+### Tooltips & Empty States
 
 Instead, we layered on the current experience paths for deeper information and ways to increase the respective metric. We worked with marketing to create help center content that included information with a path to upsell.
 
 
-{{< figure src="/assets/sa-tooltip-improvement.png" title="Including upsell paths within tooltips" class="">}}
+{{< figure src="/assets/sa-tooltip-improvement.png" title="Included upsell paths within tooltips" class="">}}
 
-Another consistent focus of the feedback was the need for more than 30 days to understand ROI better. We noted this but decided it wasn’t enough to hold us back from moving forward.
+
+But we didn't stop there, we used this insight to inform the approach we took towards empty states. Every component was now equiped with an upsell-focused empty state.
+
+ </div>
+ <div class="container pb-0">
+{{< figure src="/assets/sa-empty-states.png" title="Created upsell-focused empty states" class="project__visual">}}
+</div>
+ <div class="container--sm pb-0">
+
+ ### Non-Premium Supplier Experience
+
+Before we went all in with building the front-end, we needed to figure out what the experience would be for non-premium suppliers. 
+
+It was critical for us to create a shared understanding of the minimum viable vision to build the front-end with this in mind and save the team weeks of feature development in the near future.
+
+The minimum viable vision was key because the concept of having non-premium suppliers wouldn't be a reality until the fast follow feature of automating the company claiming and upsell process by Q2 of 2022.
+
+With the constraints in mind, we put together the following:
+
+
+ </div>
+ <div class="container pb-0">
+{{< figure src="/assets/sa-free-subscriber-upsell.png" title="Designed a limited experience for free subscribers " class="project__visual">}}
+</div>
+ <div class="container--sm">
+
+We limited the use of filters and date picker, giving non-premium suppliers the default state of the dashboard. We also provided a limited view of the companies that engaged with their content — only providing full information for companies that had contacted them. And last, we blurred the company name of their top competitors. 
+
+All interactions with disabled or blurred components prompted a popover with a custom upsell message letting the user know how to enable. 
+
+
+ <!-- Another consistent focus of the feedback was the need for more than 30 days to understand ROI better. We noted this but decided it wasn’t enough to hold us back from moving forward. -->
 
 We were now ready to begin building the front end. At the same time, software engineering and data science teams were progressing on normalizing data and designing + building the platform’s backend.
+
+
 
 ## The Reality of Building the Dashboard
 
 Up to this point, most of the work was done via Figma. Not only were we facing the reality of coding what we designed, but every aspect of the dashboard depended on the reality of the data we were working with. 
 
-Although we used real data from early on to lower the surprise, our involvement was still necessary throughout each step of the development process to maintain the integrity of every aspect of the experience. This is where the magic happens.
+Although we used real data since the initial wireframes, we were still going into the next stage ready for what VSCode decided to throw at us. 
 
-I'm in the process of putting together this part of the case study. Stay tuned!
+We also wanted to improve the dashboard's resiliency by testing every step of the way with real users, real code, and real-time data in uncontrolled environments using a multitude of browsers and devices.
+
+
+
+_I'm in the process of putting together this part of the case study. Stay tuned!_
 
 
 </div>
