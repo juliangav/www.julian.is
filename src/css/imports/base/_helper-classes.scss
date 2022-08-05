@@ -71,6 +71,18 @@
 .mb-0 {
   margin-bottom:0 !important;
 }
+.mb-1 {
+  margin-bottom:$baseline;
+}
+.mb-2 {
+  margin-bottom:$baseline*2;
+}
+.mb-3 {
+  margin-bottom:$baseline*3;
+}
+.mb-4 {
+  margin-bottom:$baseline*4;
+}
 .pb-0 {
   padding-bottom:0;
 }
