@@ -20,7 +20,7 @@ At the beginning of the pandemic, I proposed and created a COVID-19 Response Sys
 
 In December 2021, Thomasnet.com was acquired by Xometry, who wanted a single product design team for both platforms. As a result, I transitioned to an individual contributor role as Senior Director of Product Design. However, my passion is scaling, leading, and mentoring design teams. I finished my responsibilities in June and voluntarily parted ways in excellent standing to focus on myself and my next career move. 
 
-Over the past month and a half, I have carefully considered my options and resolved to only applying to multi-sided platforms where I can have an immediate impact by their scaling product design, team, and processes. Nomad Health is one of the few that fit the bill, and I would relish the new challenge. 
+Over the past month and a half, I have carefully considered my options and resolved to only applying to multi-sided platforms where I can have an immediate impact by scaling their product design, team, and processes. Nomad Health is one of the few that fit the bill, and I would relish the new challenge. 
 
 Although my time off has helped me recharge my batteries, I am eager to get back into Figma, Slack, and Zoom and use my design leadership skills once again. 
 
