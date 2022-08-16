@@ -10,7 +10,7 @@ noindex: true
 
 Hello there,
 
-As a product design leader with 11 years of experience, I am excited to apply for the Senior Director of User Experience Design role and would formally like to express my interest in joining Nomad Health. 
+As a product design leader with 11 years of experience and a UX engineering background, I am excited to apply for the Senior Director of User Experience Design role and would formally like to express my interest in joining Nomad Health. 
 
 I was most recently leading design for Thomasnet.com, North America's largest industrial sourcing platform. Since joining the product team as the Head of Design in July 2017, I have led the organization through a platform redesign and transformed the approach to product design by establishing an experimentation and research-focused design culture based on user-centric design principles and quantitative results. 
 
@@ -21,8 +21,6 @@ At the beginning of the pandemic, I proposed and created a COVID-19 Response Sys
 In December 2021, Thomasnet.com was acquired by Xometry, who wanted a single product design team for both platforms. As a result, I transitioned to an individual contributor role as Senior Director of Product Design. However, my passion is scaling, leading, and mentoring design teams. I finished my responsibilities in June and voluntarily parted ways in excellent standing to focus on myself and my next career move. 
 
 Over the past month and a half, I have carefully considered my options and resolved to only applying to multi-sided platforms where I can have an immediate impact by scaling their product design, team, and processes. Nomad Health is one of the few that fit the bill, and I would relish the new challenge. 
-
-Although my time off has helped me recharge my batteries, I am eager to get back into Figma, Slack, and Zoom and use my design leadership skills once again. 
 
 Thank you for your time and I look forward to hearing from you! 
 

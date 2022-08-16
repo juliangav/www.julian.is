@@ -1,18 +1,18 @@
 ---
-title: Cover Letter for Director of Product Design & UX at Mindbody + ClassPass
-url: '/cover-letter/mindbody-classpass'
+title: Cover Letter for Director of Product Design at Klaviyo
+url: '/cover-letter/klaviyo'
 layout: cover-letter
-company_logo: /assets/logo-mindbody-classpass.png
-images: ["assets/og-mindbody.jpg"]
+company_logo: /assets/logo-klaviyo.svg
+images: ["assets/og-klaviyo.jpg"]
 noindex: true
 ---
 
 
 Hello there,
 
-As a product design leader with 11 years of experience and a UX engineering background, I am excited to apply for the Director of Product Design & UX role and would formally like to express my interest in joining Mindbody & ClassPass. 
+As a product design leader with 11 years of experience and a UX engineering background, I am excited to apply for the Director of Product Design role and would formally like to express my interest in joining Klaviyo. 
 
-I was most recently leading design for Thomasnet.com, North America's largest industrial sourcing platform. Since joining the product team as the Head of Design in July 2017, I have led the organization through a mobile-first platform redesign and transformed the approach to product design by establishing an experimentation and research-focused design culture based on user-centric design principles and quantitative results. 
+Most recently, I was leading product design for Thomasnet.com, North America's largest industrial sourcing platform. Since joining the product team in 2017, I have led the organization through a platform redesign and transformed the approach to product design by establishing an experimentation and research-focused design culture based on user-centric design principles backed by quantitative results. 
 
 As part of my design leadership efforts, I established a design-led experimentation program where we ran 300+ experiments to optimize the platform's experience resulting in the growth of our monthly active users from 760k to 1.7 million. 
 
@@ -20,10 +20,9 @@ At the beginning of the pandemic, I proposed and created a COVID-19 Response Sys
 
 In December 2021, Thomasnet.com was acquired by Xometry, who wanted a single product design team for both platforms. As a result, I transitioned to an individual contributor role as Senior Director of Product Design. However, my passion is scaling, leading, and mentoring design teams. I finished my responsibilities in June and voluntarily parted ways in excellent standing to focus on myself and my next career move. 
 
-Over the past month and a half, I have carefully considered my options and resolved to only work as a design leader for a high-profile multi-sided platform. Mindbody & ClassPass are one of the few that fit the bill, and I would relish the new challenge. 
+Over the past month and a half, I have carefully considered my options and resolved only to pursue opportunities with multi-sided platforms in line with my background and experience. Klaviyo is one of the few that fit the bill, and I would relish the new challenge. 
 
-
-Thank you for your time and I look forward to hearing from you! 
+Thank you for your time, and I look forward to hearing from you! 
 
 Best,
 Julian Gaviria
