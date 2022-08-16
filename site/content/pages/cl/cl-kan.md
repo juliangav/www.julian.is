@@ -18,13 +18,13 @@ As part of my design leadership efforts, I established a design-led experimentat
 
 At the beginning of the pandemic, I proposed and created a COVID-19 Response System that helped connect manufacturers of PPE with front-line organizations. U.S. Congress then recommended this system to the Manufacturing Caucus as one of the top resources for PPE — second to FEMA.
 
-In December 2021, Thomasnet.com was acquired by Xometry, who wanted a single product design for both platforms. As a result, I transitioned to an individual contributor role as Senior Director of Product Design. However, my passion is scaling, leading, and mentoring design teams. I finished my responsibilities in June and voluntarily parted ways in excellent standing to focus on myself and my next career move. 
+In December 2021, Thomasnet.com was acquired by Xometry, who wanted a single product design team for both platforms. As a result, I transitioned to an individual contributor role as Senior Director of Product Design. However, my passion is scaling, leading, and mentoring design teams. I finished my responsibilities in June and voluntarily parted ways in excellent standing to focus on myself and my next career move. 
 
 Over the past month and a half, I have carefully considered my options and resolved to only considering Series C startups where I can have an immediate impact by scaling product design and growing their design team. Kandji is one of the few that fit the bill, and I would relish the new challenge. 
 
 Although my time off has helped me recharge my batteries, I am eager to get back into Figma, Slack, and Zoom and use my design leadership skills once again. 
 
-Thank you for your time. I look forward to talking to hearing from you! 
+Thank you for your time and I look forward to hearing from you! 
 
 Best,
 Julian Gaviria
