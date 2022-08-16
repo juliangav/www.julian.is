@@ -4,6 +4,7 @@ url: '/cover-letter/algolia'
 layout: cover-letter
 company_logo: /assets/logo-algolia.png
 images: ["assets/og-algolia.jpg"]
+noindex: true
 ---
 
 
@@ -15,9 +16,9 @@ I joined the platform team at Thomasnet.com, the largest industrial sourcing pla
 
 At the beginning of the pandemic, I proposed and created a COVID-19 Response System that helped connect manufacturers of PPE with front-line organizations. U.S. Congress then recommended this system to the Manufacturing Caucus as one of the top resources for PPE — second to FEMA.
 
-In December of 2021, Thomasnet.com was acquired by Xometry, and I was transitioned to Senior Director of Product Design under the Xometry Product Design team. However, my passion is scaling, leading, and mentoring design teams. I finished my responsibilities in June and voluntarily parted ways in excellent standing to focus on myself and my next career move. Since then, I've dedicated my time to telling my story through case studies on my site and honing my presentation skills.
+In December 2021, Thomasnet.com was acquired by Xometry who wanted a single product design for both platforms. As a result, I transitioned to an individual contributor role as Senior Director of Product Design. However, my passion is scaling, leading, and mentoring design teams. I finished my responsibilities in June and voluntarily parted ways in excellent standing to focus on myself and my next career move. 
 
-I'm confident that my passion and proven success as a product design leader will enable me to transform and scale design at Algolia as the Director of Product Design & Research. 
+Over the past month, I have carefully considered my options and resolved to only work as a design leader for a similarly high-profile platform. Algolia is one of the few that fit the bill, and I would relish the new challenge. Although the past month has helped me recharge my batteries, I am eager to get back into Figma & Slack and use my design leadership skills once again. 
 
 Thank you for your time. I look forward to talking to you more! 
 
