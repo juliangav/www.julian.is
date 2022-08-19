@@ -1,0 +1,12 @@
+{{ partial "html-header" . }} {{ partial "site-header" . }}
+{{ partial "page-header-cl" . }}
+<section class="site-content" role="main">
+  <div class="inner-wrap-narrow">
+    <main id="main">
+      {{ .Content }}
+    </main>
+    
+  </div>
+
+</section>
+{{ partial "footer-cl" . }} {{ partial "html-footer" . }}
