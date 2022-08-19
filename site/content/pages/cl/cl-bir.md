@@ -1,16 +1,16 @@
 ---
-title: Cover Letter for Product Design Director at Amplify
-url: '/cover-letter/amplify'
+title: Cover Letter for Lead Designer at Birdeye
+url: '/cover-letter/birdeye'
 layout: cover-letter
-company_logo: /assets/logo-amplify.png
-images: ["assets/og-amplify.jpg"]
+company_logo: /assets/logo-birdeye.svg
+images: ["assets/og-birdeye.jpg"]
 noindex: true
 ---
 
 
 Hello there,
 
-As a product design leader with 11 years of experience and a UX engineering background, I am excited to apply for the Product Design Director role and would formally like to express my interest in joining Amplify. 
+As a product design leader with 11 years of experience and a UX engineering background, I am excited to apply for the Lead Designer role and would formally like to express my interest in joining Birdeye. 
 
 I was most recently leading design for Thomasnet.com, North America's largest industrial sourcing platform. Since joining the product team as the Head of Design in July 2017, I have led the organization through a mobile-first platform redesign and transformed the approach to product design by establishing an experimentation and research-focused design culture based on user-centric design principles and quantitative results. 
 
@@ -20,7 +20,7 @@ At the beginning of the pandemic, I proposed and created a COVID-19 Response Sys
 
 In December 2021, Thomasnet.com was acquired by Xometry, who wanted a single product design team for both platforms. As a result, I transitioned to an individual contributor role as Senior Director of Product Design. However, my passion is scaling, leading, and mentoring design teams. I finished my responsibilities in June and voluntarily parted ways in excellent standing to focus on myself and my next career move. 
 
-Over the past month and a half, I have carefully considered my options and resolved to only work as a design leader for a multi-sided platform with an ethical purpose. Amplify is one of the few that fit the bill, and I would relish the new challenge. 
+Over the past month and a half, I have carefully considered my options and resolved to only work as a design leader for a high-profile platform. Birdeye is one of the few that fit the bill, and I would relish the new challenge. 
 
 
 Thank you for your time and I look forward to hearing from you! 
