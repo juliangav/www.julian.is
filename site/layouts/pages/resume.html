@@ -1,11 +1,10 @@
-{{ partial "html-header" . }} 
+{{ partial "html-header" . }}
 <div class="resume-wrap">
   <section class="resume-container resume-container--half-mode" role="main">
-    
     <header class="resume-header resume-section">
       <div class="resume-logo">
         <figure>
-          <img src="/img/julian-signature.svg" alt="Site Logo">
+          <img src="/img/julian-signature.svg" alt="Site Logo" />
         </figure>
       </div>
       <h1>Julian Gaviria</h1>
@@ -14,17 +13,96 @@
     <section class="resume-contact resume-section">
       <ul class="resume-contact__list">
         <li class="resume-contact__item">
-          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="icon"><title>Contact</title><g fill="currentColor" fill-rule="evenodd"><path d="M2.5 19.79v-8.457l6.207 4.228zM29.668 22.165v.833a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1v-.833l7.287-5.042 5.724 4a1 1 0 0 0 1.146 0l5.724-4 7.287 5.042z"/><path d="M2.5 9.133V8.3a1 1 0 0 1 1-1h25.168a1 1 0 0 1 1 1v.833l-13.005 9.231a1 1 0 0 1-1.158 0L2.5 9.134zM29.668 11.333v8.457L23.46 15.56z"/></g></svg> <a href="mailto:me@julian.is">me@julian.is</a>
-        </li>
-        <li class="resume-contact__item">        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="icon"><title>Phone #</title><path d="M9.507 4.236l3.105 3.229c.87.745.87 2.235 0 2.98l-2.484 2.484c1.74 3.726 5.34 7.328 8.943 8.943l2.484-2.484c.869-.87 2.235-.87 3.105 0l3.104 3.105c.87.869.87 2.235 0 3.104l-3.104 3.105C19.195 34.167-2.043 12.805 3.298 7.465l3.105-3.23c.869-.745 2.235-.745 3.104 0zm8.446-.497c-.994-.249-.621-1.863.497-1.615 5.589 1.49 9.935 5.962 11.426 11.55.248.994-1.366 1.367-1.615.373C26.895 9.08 23.045 5.105 17.953 3.74zm-.994 3.85c-.993-.249-.62-1.863.373-1.615a12.299 12.299 0 0 1 8.694 8.694c.248.994-1.242 1.49-1.615.373a10.728 10.728 0 0 0-7.452-7.452z" fill="currentColor" fill-rule="evenodd"/></svg>    <a href="tel:2012909589">201-290-9589</a>
+          <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+          >
+            <title>Contact</title>
+            <g fill="currentColor" fill-rule="evenodd">
+              <path
+                d="M2.5 19.79v-8.457l6.207 4.228zM29.668 22.165v.833a1 1 0 0 1-1 1H3.5a1 1 0 0 1-1-1v-.833l7.287-5.042 5.724 4a1 1 0 0 0 1.146 0l5.724-4 7.287 5.042z"
+              />
+              <path
+                d="M2.5 9.133V8.3a1 1 0 0 1 1-1h25.168a1 1 0 0 1 1 1v.833l-13.005 9.231a1 1 0 0 1-1.158 0L2.5 9.134zM29.668 11.333v8.457L23.46 15.56z"
+              />
+            </g>
+          </svg>
+          <a href="mailto:me@julian.is">me@julian.is</a>
         </li>
         <li class="resume-contact__item">
-          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="icon"><title>Address</title><defs><linearGradient x1="0%" y1="18.018%" x2="100.528%" y2="69.882%" id="a"><stop stop-color="currentColor" offset="0%"/><stop stop-color="currentColor" offset="100%"/></linearGradient></defs><path d="M15.956 2a9.799 9.799 0 0 0-9.8 9.8c0 2.116.684 4.542 1.835 6.16L15.956 30l7.964-12.04c1.151-1.618 1.836-4.013 1.836-6.16 0-5.413-4.387-9.8-9.8-9.8zm0 13.533a3.744 3.744 0 0 1-3.734-3.733 3.744 3.744 0 0 1 3.734-3.733 3.744 3.744 0 0 1 3.733 3.733 3.744 3.744 0 0 1-3.733 3.733z" fill="currentColor" fill-rule="nonzero"/></svg> Hoboken, NJ</li>
-        <li class="resume-contact__item">
-          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="icon"><title>Website</title><path d="M29.801 16.85h-4.617c-.087 2.23-.56 4.218-1.44 6.298a17.022 17.022 0 0 1 2.86 1.684c1.837-2.155 2.963-4.97 3.197-7.982zm-4.484 9.343a16.49 16.49 0 0 0-2.387-1.34c-.908 1.646-2.121 3.157-3.608 4.52 2.276-.58 4.352-1.675 5.995-3.18zm-18.553-.058a13.404 13.404 0 0 0 5.99 3.196 17.475 17.475 0 0 1-3.605-4.53c-.962.486-1.69.889-2.385 1.334zm-1.292-1.242a17.035 17.035 0 0 1 2.862-1.683c-.897-2.171-1.357-4.09-1.444-6.296H2.272c.237 2.955 1.363 5.769 3.2 7.98zm-3.2-9.804h4.685c.103-2.01.63-4.424 1.435-6.3-1-.464-1.953-1.025-2.858-1.683-1.848 2.165-3.022 5.038-3.261 7.983zm4.554-9.34c.736.5 1.553.958 2.385 1.337.958-1.694 2.15-3.212 3.54-4.474a13.869 13.869 0 0 0-5.925 3.137zm18.433.01c-1.728-1.545-3.796-2.632-5.989-3.115 1.459 1.327 2.677 2.843 3.59 4.494 1.181-.594 1.802-.942 2.399-1.38zm-1.969 9.33c-.1-1.846-.588-3.973-1.33-5.652-1.704.548-3.344.867-5.01.947v4.705h6.34zm-1.325 7.403c.853-1.883 1.248-3.468 1.329-5.578h-6.345v4.583c1.885.143 3.55.463 5.016.995zM16.95 28.92c1.759-1.42 3.217-3.038 4.248-4.785-1.38-.489-2.68-.745-4.248-.819v5.604zm-6.068-4.787c1.056 1.743 2.543 3.406 4.243 4.786v-5.603c-1.566.074-2.865.33-4.243.817zm4.243-7.218H8.723c.134 2.199.52 3.8 1.323 5.58a17.754 17.754 0 0 1 5.078-1.005v-4.575zm-5.012-7.47c-.74 1.677-1.228 3.801-1.328 5.645h6.34v-4.705c-1.793-.081-3.442-.387-5.012-.94zm5.012-6.375c-1.691 1.324-3.172 2.981-4.18 4.724 1.445.46 2.677.694 4.18.765V3.069zm1.825 5.49c1.629-.073 2.877-.298 4.186-.756-.98-1.695-2.429-3.303-4.186-4.721v5.476zM26.6 7.107a17.021 17.021 0 0 1-2.858 1.683c.778 1.879 1.334 4.363 1.44 6.298H29.8c-.236-2.922-1.395-5.799-3.2-7.981z" fill="currentColor" fill-rule="nonzero"/></svg>    <a href="https://julian.is">julian.is</a>
+          <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+          >
+            <title>Phone #</title>
+            <path
+              d="M9.507 4.236l3.105 3.229c.87.745.87 2.235 0 2.98l-2.484 2.484c1.74 3.726 5.34 7.328 8.943 8.943l2.484-2.484c.869-.87 2.235-.87 3.105 0l3.104 3.105c.87.869.87 2.235 0 3.104l-3.104 3.105C19.195 34.167-2.043 12.805 3.298 7.465l3.105-3.23c.869-.745 2.235-.745 3.104 0zm8.446-.497c-.994-.249-.621-1.863.497-1.615 5.589 1.49 9.935 5.962 11.426 11.55.248.994-1.366 1.367-1.615.373C26.895 9.08 23.045 5.105 17.953 3.74zm-.994 3.85c-.993-.249-.62-1.863.373-1.615a12.299 12.299 0 0 1 8.694 8.694c.248.994-1.242 1.49-1.615.373a10.728 10.728 0 0 0-7.452-7.452z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <a href="tel:2012909589">201-290-9589</a>
         </li>
         <li class="resume-contact__item">
-          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" class="icon"><title>LinkedIn</title><g fill="currentColor" fill-rule="evenodd"><path d="M18.178 12.008v1.376l.002.677c1.623-1.591 3.296-2.794 5.97-2.794 3.155 0 6.206 1.321 6.206 5.628v11.903a1 1 0 0 1-.985 1l-3.565.053a1 1 0 0 1-1.015-1v-8.83c0-2.171-.544-3.57-3.136-3.57-2.284 0-3.24.409-3.24 3.414v8.93a1 1 0 0 1-.988 1l-4.73.057v-17.8a1 1 0 0 1 .987-1l3.482-.044a1 1 0 0 1 1.012 1zM8.28 5.202a3.14 3.14 0 1 1-6.28 0 3.14 3.14 0 0 1 6.281 0zM2.211 12.115v16.787a1 1 0 0 0 1.013 1l3.737-.047a1 1 0 0 0 .987-1V12.069a1 1 0 0 0-1.012-1l-3.737.046a1 1 0 0 0-.988 1z"/></g></svg>    <a href="https://www.linkedin.com/in/juliangaviria/">linkedin.com/in/juliangaviria/</a>
+          <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+          >
+            <title>Address</title>
+            <defs>
+              <linearGradient
+                x1="0%"
+                y1="18.018%"
+                x2="100.528%"
+                y2="69.882%"
+                id="a"
+              >
+                <stop stop-color="currentColor" offset="0%" />
+                <stop stop-color="currentColor" offset="100%" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M15.956 2a9.799 9.799 0 0 0-9.8 9.8c0 2.116.684 4.542 1.835 6.16L15.956 30l7.964-12.04c1.151-1.618 1.836-4.013 1.836-6.16 0-5.413-4.387-9.8-9.8-9.8zm0 13.533a3.744 3.744 0 0 1-3.734-3.733 3.744 3.744 0 0 1 3.734-3.733 3.744 3.744 0 0 1 3.733 3.733 3.744 3.744 0 0 1-3.733 3.733z"
+              fill="currentColor"
+              fill-rule="nonzero"
+            />
+          </svg>
+          Hoboken, NJ
+        </li>
+        <li class="resume-contact__item">
+          <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+          >
+            <title>Website</title>
+            <path
+              d="M29.801 16.85h-4.617c-.087 2.23-.56 4.218-1.44 6.298a17.022 17.022 0 0 1 2.86 1.684c1.837-2.155 2.963-4.97 3.197-7.982zm-4.484 9.343a16.49 16.49 0 0 0-2.387-1.34c-.908 1.646-2.121 3.157-3.608 4.52 2.276-.58 4.352-1.675 5.995-3.18zm-18.553-.058a13.404 13.404 0 0 0 5.99 3.196 17.475 17.475 0 0 1-3.605-4.53c-.962.486-1.69.889-2.385 1.334zm-1.292-1.242a17.035 17.035 0 0 1 2.862-1.683c-.897-2.171-1.357-4.09-1.444-6.296H2.272c.237 2.955 1.363 5.769 3.2 7.98zm-3.2-9.804h4.685c.103-2.01.63-4.424 1.435-6.3-1-.464-1.953-1.025-2.858-1.683-1.848 2.165-3.022 5.038-3.261 7.983zm4.554-9.34c.736.5 1.553.958 2.385 1.337.958-1.694 2.15-3.212 3.54-4.474a13.869 13.869 0 0 0-5.925 3.137zm18.433.01c-1.728-1.545-3.796-2.632-5.989-3.115 1.459 1.327 2.677 2.843 3.59 4.494 1.181-.594 1.802-.942 2.399-1.38zm-1.969 9.33c-.1-1.846-.588-3.973-1.33-5.652-1.704.548-3.344.867-5.01.947v4.705h6.34zm-1.325 7.403c.853-1.883 1.248-3.468 1.329-5.578h-6.345v4.583c1.885.143 3.55.463 5.016.995zM16.95 28.92c1.759-1.42 3.217-3.038 4.248-4.785-1.38-.489-2.68-.745-4.248-.819v5.604zm-6.068-4.787c1.056 1.743 2.543 3.406 4.243 4.786v-5.603c-1.566.074-2.865.33-4.243.817zm4.243-7.218H8.723c.134 2.199.52 3.8 1.323 5.58a17.754 17.754 0 0 1 5.078-1.005v-4.575zm-5.012-7.47c-.74 1.677-1.228 3.801-1.328 5.645h6.34v-4.705c-1.793-.081-3.442-.387-5.012-.94zm5.012-6.375c-1.691 1.324-3.172 2.981-4.18 4.724 1.445.46 2.677.694 4.18.765V3.069zm1.825 5.49c1.629-.073 2.877-.298 4.186-.756-.98-1.695-2.429-3.303-4.186-4.721v5.476zM26.6 7.107a17.021 17.021 0 0 1-2.858 1.683c.778 1.879 1.334 4.363 1.44 6.298H29.8c-.236-2.922-1.395-5.799-3.2-7.981z"
+              fill="currentColor"
+              fill-rule="nonzero"
+            />
+          </svg>
+          <a href="https://julian.is">julian.is</a>
+        </li>
+        <li class="resume-contact__item">
+          <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+          >
+            <title>LinkedIn</title>
+            <g fill="currentColor" fill-rule="evenodd">
+              <path
+                d="M18.178 12.008v1.376l.002.677c1.623-1.591 3.296-2.794 5.97-2.794 3.155 0 6.206 1.321 6.206 5.628v11.903a1 1 0 0 1-.985 1l-3.565.053a1 1 0 0 1-1.015-1v-8.83c0-2.171-.544-3.57-3.136-3.57-2.284 0-3.24.409-3.24 3.414v8.93a1 1 0 0 1-.988 1l-4.73.057v-17.8a1 1 0 0 1 .987-1l3.482-.044a1 1 0 0 1 1.012 1zM8.28 5.202a3.14 3.14 0 1 1-6.28 0 3.14 3.14 0 0 1 6.281 0zM2.211 12.115v16.787a1 1 0 0 0 1.013 1l3.737-.047a1 1 0 0 0 .987-1V12.069a1 1 0 0 0-1.012-1l-3.737.046a1 1 0 0 0-.988 1z"
+              />
+            </g>
+          </svg>
+          <a href="https://www.linkedin.com/in/juliangaviria/"
+            >linkedin.com/in/juliangaviria/</a
+          >
         </li>
         <!-- <li class="resume-contact__item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="icon">
@@ -34,103 +112,203 @@
         </li> -->
         <!-- <li class="resume-contact__item"><b>Dribbble:</b> <a href="https://dribbble.com/juliangav">dribbble.com/juliangav</a></li>
         <li class="resume-contact__item"><b>Github:</b> <a href="https://github.com/juliangav">github.com/juliangav</a></li> -->
-        
       </ul>
     </section>
     <section class="resume-summary resume-section">
-        <h2 class="resume-section__title">Summary</h2>
-        <p class="">As a product design leader with over 11 years of experience and a UX engineering background, I solve intricate product problems with mobile-first user experiences backed by original user research and experimentation. I build, mentor, and lead autonomous teams with outcome-focused frameworks and user-centric design principles. My superpower is bridging the gap between design, development, and business.  </p>
-        <!-- <p class="mb-0">Voluntarily left my last stint at Xometry post-acquisition in excellent standing with solid recommendations.</p> -->
-
+      <h2 class="resume-section__title">Summary</h2>
+      <p class="">
+        As a product design leader with over 11 years of experience and a UX
+        engineering background, I solve intricate product problems with
+        mobile-first user experiences backed by original user research and
+        experimentation. I build, mentor, and lead autonomous teams with
+        outcome-focused frameworks and user-centric design principles. My
+        superpower is bridging the gap between design, development, and
+        business.
+      </p>
+      <!-- <p class="mb-0">Voluntarily left my last stint at Xometry post-acquisition in excellent standing with solid recommendations.</p> -->
     </section>
     <section class="resume-experience resume-section">
-      <h2 class="resume-section__title">Experience</h2>        
-     
+      <h2 class="resume-section__title">Experience</h2>
 
-        <h2 class="resume-section__title resume-section__title--alternative">Thomasnet.com, New York, NY (Acquired by Xometry on December 2021)</h2>
-        
-        <ul class="resume-experience__list">
-          <li class="resume-experience__item">
-           
-            <h2 class="resume-experience__item__title">Senior Director, Product Design / <i>January 2022 - June 2022</i> <br> VP, Product & Design / <i>December 2020 - January 2022</i></h2>
-            <ul class="resume-experience__item__summary--list list">
-              <li>Led and scaled product and design for Thomasnet.com, the leading industrial sourcing platform with a monthly active user base of over 1.7 million buyers and suppliers; managed and mentored a cross-functional product and design team&nbsp;of six.</li>
-             
-          
-              <li>Introduced a multi-sided platform strategy focused on growing core transactions and increasing match value between buyers and suppliers; architected, generated consensus, and executed on a feature roadmap that brought this strategy to fruition.</li>
+      <h2 class="resume-section__title resume-section__title--alternative">
+        Thomasnet.com, New York, NY (Acquired by Xometry on December 2021)
+      </h2>
 
+      <ul class="resume-experience__list">
+        <li class="resume-experience__item">
+          <h2 class="resume-experience__item__title">
+            Senior Director, Product Design / <i>January 2022 - June 2022</i>
+            <br />
+            VP, Product & Design / <i>December 2020 - January 2022</i>
+          </h2>
+          <ul class="resume-experience__item__summary--list list">
+            <li>
+              Led and scaled product and design for Thomasnet.com, the leading
+              industrial sourcing platform with a monthly active user base of
+              over 1.7 million buyers and suppliers; managed and mentored a
+              cross-functional product and design team&nbsp;of six.
+            </li>
 
-              
-             <li>Partnered with data science to build a reporting dashboard for our monetized user base with the objective of demonstrating ROI and upselling to paid subscriptions; currently the leading upsell feature.</li>
-              <li>Automated the company claiming process of the platform by designing and partnering with engineering to build a self-service user experience for suppliers to claim their company and upgrade to a paid subscription; led to the claiming of 4,938 company profiles in the first two months of release.</li>
-              <li>Proposed, defined, and led design efforts to bring communications between buyers and suppliers onto the platform through real-time messaging and project creation with the purpose of quoting; in the process of being released. </li>
+            <li>
+              Introduced a multi-sided platform strategy focused on growing core
+              transactions and increasing match value between buyers and
+              suppliers; architected, generated consensus, and executed on a
+              feature roadmap that brought this strategy to fruition.
+            </li>
 
-              
-            </ul>
-          </li>
-          <li class="resume-experience__item">
-           
-          <h2 class="resume-experience__item__title">Director, UX & Experimentation / <i>July 2017 - December 2020</i></h2>
-            <ul class="resume-experience__item__summary--list list">
-              <li>Standardized and scaled design for Thomasnet.com and its family of products; led, mentored, and hired a cross-functional team of product designers and UX engineers.</li>
-              <li>Led the mobile-first redesign and brand unification of Thomasnet.com and its family of products.</li>
-              <li>Established an experimentation framework and growth process that led to the launch of 300+ A/B tests; a process that brought monthly active users from an average of 760k to 1.7 million — an increase of 123.7% over the course of the program.  </li>
-              <li>Set the foundational design process for Thomasnet.com, including the architecture and implementation of a scalable design system, Thomas Blueprint, actively serving as the foundation for all Thomasnet.com and its family of products.</li>
-              <li>Proposed, designed, and worked with engineering to create a COVID-19 Response System connecting manufacturers of PPE with front-line organizations; a system which Congress recommended as a critical resource to the Manufacturing Caucus (second to FEMA). 
-              </li>
-</ul>
-          </li>
+            <li>
+              Partnered with data science to build a reporting dashboard for our
+              monetized user base with the objective of demonstrating ROI and
+              upselling to paid subscriptions; currently the leading upsell
+              feature.
+            </li>
+            <li>
+              Automated the company claiming process of the platform by
+              designing and partnering with engineering to build a self-service
+              user experience for suppliers to claim their company and upgrade
+              to a paid subscription; led to the claiming of 4,938 company
+              profiles in the first two months of release.
+            </li>
+            <li>
+              Proposed, defined, and led design efforts to bring communications
+              between buyers and suppliers onto the platform through real-time
+              messaging and project creation with the purpose of quoting; in the
+              process of being released.
+            </li>
           </ul>
-          
-          <h2 class="resume-section__title resume-section__title--alternative">Thomas Marketing Services, New York, NY</h2>
-         
-          <h2 class="resume-experience__item__title">Director, Design & Development / <i>June 2015 - July 2017</i></h2>
-          <h2 class="resume-experience__item__title">Manager, Design & Development / <i>August 2014 - June 2015</i></h2>
-
-          <ul class="resume-experience__list">
-          <li class="resume-experience__item">
-            <ul class="resume-experience__item__summary--list list">
-              <li>Led the design, development, and optimization of over 200+ conversion-focused marketing websites for Thomas Marketing Services, an award-winning full-service marketing agency for the industrial manufacturing industry and subsidiary of Thomasnet.com.</li>
-              <li>Hired, led, and mentored a ten-person cross-functional team of designers, developers, and managers.  </li>
-              <li>Introduced a service and new subdivision to the organization focused on growth, experimentation, and A/B testing; generating over 500k in revenue within the first 6 months. </li>
-              <li>Onboarded an offshore development team to manage website maintenance and overflow.</li>
-              <li>Introduced a WordPress, Git, and WP Engine based tech stack as the replacement for our proprietary CMS and in-house hosting services; a tech stack powering 600+ client websites&nbsp;today. </li>
-              <li>Optimized our design and development process by standardizing a library of common reusable design patterns and baseline design system.</li>
-            </ul>
-          </li>
-          <li class="resume-experience__item">
-          </li>
-          <li class="resume-experience__item">
-            <h2 class="resume-experience__item__title">Lead Front-End Developer / <i>June 2013 - August 2014</i></h2>
-            <ul class="resume-experience__item__summary--list list">
-              <li>Worked closely with marketing strategists, writers, and designers to bring a new marketing agency division from zero to a $1.5 million-dollar subsidiary.</li>
-              <li>Built a front-end framework to automate the website development and production process. </li>
-              <li>Designed and developed 25+ conversion-focused marketing websites.
-              </li>
-            </ul>
-          </li>
+        </li>
+        <li class="resume-experience__item">
+          <h2 class="resume-experience__item__title">
+            Director, UX & Experimentation / <i>July 2017 - December 2020</i>
+          </h2>
+          <ul class="resume-experience__item__summary--list list">
+            <li>
+              Standardized and scaled design for Thomasnet.com and its family of
+              products; led, mentored, and hired a cross-functional team of
+              product designers and UX engineers.
+            </li>
+            <li>
+              Led the mobile-first redesign and brand unification of
+              Thomasnet.com and its family of products.
+            </li>
+            <li>
+              Established an experimentation framework and growth process that
+              led to the launch of 300+ A/B tests; a process that brought
+              monthly active users from an average of 760k to 1.7 million — an
+              increase of 123.7% over the course of the program.
+            </li>
+            <li>
+              Set the foundational design process for Thomasnet.com, including
+              the architecture and implementation of a scalable design system,
+              Thomas Blueprint, actively serving as the foundation for all
+              Thomasnet.com and its family of products.
+            </li>
+            <li>
+              Proposed, designed, and worked with engineering to create a
+              COVID-19 Response System connecting manufacturers of PPE with
+              front-line organizations; a system which Congress recommended as a
+              critical resource to the Manufacturing Caucus (second to FEMA).
+            </li>
           </ul>
-          
+        </li>
+      </ul>
 
-          <ul class="resume-experience__list">
-          <li class="resume-experience__item">
-            <h2 class="resume-experience__item__title">Web Designer / <i>June 2011 - June 2013</i></h2>
-            <ul class="resume-experience__item__summary--list list mb-0">
-              <li>Designed 60+ custom marketing websites for the industrial manufacturing industry.</li>
-              <li>Introduced responsive web design to the business and manufacturing industry at large.</li>
-              <li class="mb-0">Work featured in The Mobile Web Designer's Idea Book.</li>
-            </ul>
-          </li>
-        </ul>
+      <h2 class="resume-section__title resume-section__title--alternative">
+        Thomas Marketing Services, New York, NY
+      </h2>
 
+      <h2 class="resume-experience__item__title">
+        Director, Design & Development / <i>June 2015 - July 2017</i>
+      </h2>
+      <h2 class="resume-experience__item__title">
+        Manager, Design & Development / <i>August 2014 - June 2015</i>
+      </h2>
+
+      <ul class="resume-experience__list">
+        <li class="resume-experience__item">
+          <ul class="resume-experience__item__summary--list list">
+            <li>
+              Led the design, development, and optimization of over 200+
+              conversion-focused marketing websites for Thomas Marketing
+              Services, an award-winning full-service marketing agency for the
+              industrial manufacturing industry and subsidiary of Thomasnet.com.
+            </li>
+            <li>
+              Hired, led, and mentored a ten-person cross-functional team of
+              designers, developers, and managers.
+            </li>
+            <li>
+              Introduced a service and new subdivision to the organization
+              focused on growth, experimentation, and A/B testing; generating
+              over 500k in revenue within the first 6 months.
+            </li>
+            <li>
+              Onboarded an offshore development team to manage website
+              maintenance and overflow.
+            </li>
+            <li>
+              Introduced a WordPress, Git, and WP Engine based tech stack as the
+              replacement for our proprietary CMS and in-house hosting services;
+              a tech stack powering 600+ client websites&nbsp;today.
+            </li>
+            <li>
+              Optimized our design and development process by standardizing a
+              library of common reusable design patterns and baseline design
+              system.
+            </li>
+          </ul>
+        </li>
+        <li class="resume-experience__item"></li>
+        <li class="resume-experience__item">
+          <h2 class="resume-experience__item__title">
+            Lead Front-End Developer / <i>June 2013 - August 2014</i>
+          </h2>
+          <ul class="resume-experience__item__summary--list list">
+            <li>
+              Worked closely with marketing strategists, writers, and designers
+              to bring a new marketing agency division from zero to a $1.5
+              million-dollar subsidiary.
+            </li>
+            <li>
+              Built a front-end framework to automate the website development
+              and production process.
+            </li>
+            <li>
+              Designed and developed 25+ conversion-focused marketing websites.
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="resume-experience__list">
+        <li class="resume-experience__item">
+          <h2 class="resume-experience__item__title">
+            Web Designer / <i>June 2011 - June 2013</i>
+          </h2>
+          <ul class="resume-experience__item__summary--list list mb-0">
+            <li>
+              Designed 60+ custom marketing websites for the industrial
+              manufacturing industry.
+            </li>
+            <li>
+              Introduced responsive web design to the business and manufacturing
+              industry at large.
+            </li>
+            <li class="mb-0">
+              Work featured in The Mobile Web Designer's Idea Book.
+            </li>
+          </ul>
+        </li>
+      </ul>
     </section>
     <section class="resume-competencies resume-section">
       <h2 class="resume-section__title">Skills</h2>
       <ul class="resume-competencies__list mb-0">
         <li>Design Leadership</li>
         <li>Multi-Sided Platforms</li>
-        <li>UI Design</li> <li>Mobile-First</li> 
-        <li>Design Strategy</li> 
+        <li>UI Design</li>
+        <li>Mobile-First</li>
+        <li>Design Strategy</li>
         <li>A/B Testing</li>
         <li>Growth & Engagement</li>
         <li>Stakeholder Management</li>
@@ -139,34 +317,51 @@
         <li>Typography</li>
         <li>User Research</li>
         <li>Front-End Development</li>
-        <li>Design Process</li>  
+        <li>Design Process</li>
         <li class="mb-0">UX Writing</li>
-        
       </ul>
     </section>
     <section class="resume-highlights resume-section">
       <h2 class="resume-section__title">Highlights</h2>
       <ul class="resume-highlights__list list mb-0">
-        <li>Increased monthly active users by 123% and RFIs sent by 113.9% for Thomasnet.com during my tenure as the head of UX and experimentation.</li>
-        <li><a href="https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/">Proposed and executed on a COVID-19 Response System which led to the recommendation of Thomasnet.com by Congress to the Manufacturing Caucus</a></li>
+        <li>
+          Increased monthly active users by 123% and RFIs sent by 113.9% for
+          Thomasnet.com during my tenure as the head of UX and experimentation.
+        </li>
+        <li>
+          <a
+            href="https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/"
+            >Proposed and executed on a COVID-19 Response System which led to
+            the recommendation of Thomasnet.com by Congress to the Manufacturing
+            Caucus</a
+          >
+        </li>
         <!-- <li class="resume-highlights__item">Case Study: <a href="https://www.fullstory.com/blog/thomas-pivots-mid-crisis-with-fullstory-optimizely/">COVID-19 Response System</a> (A system recommended by Congress to the Manufacturing Caucus in the height of the pandemic)</li> -->
-        <li class="resume-highlights__item"><a href="https://goodui.org/patterns/contributors/">Ranked as a top contributor to GoodUI.org</a>
+        <li class="resume-highlights__item">
+          <a href="https://goodui.org/patterns/contributors/"
+            >Ranked as a top contributor to GoodUI.org</a
+          >
         </li>
-        <li class="resume-highlights__item"><a href="https://xd.adobe.com/ideas/process/user-testing/effective-ab-testing-essential-tips/">Featured by Adobe: 6 Essential Tips for Effective A/B Testing</a>
+        <li class="resume-highlights__item">
+          <a
+            href="https://xd.adobe.com/ideas/process/user-testing/effective-ab-testing-essential-tips/"
+            >Featured by Adobe: 6 Essential Tips for Effective A/B Testing</a
+          >
         </li>
-        <li class="mb-0"><a href="https://julian.is/article/pragmatic-design-principles/">Case Study: A Pragmatic Approach to Design Principles</a></li>
-        
-        
-        
+        <li class="mb-0">
+          <a href="https://julian.is/article/pragmatic-design-principles/"
+            >Case Study: A Pragmatic Approach to Design Principles</a
+          >
+        </li>
       </ul>
     </section>
     <section class="resume-education resume-section">
       <h2 class="resume-section__title">Education</h2>
       <p class="resume-education__item">
-        <b>Bachelor's Degree Graphic Design</b> <br>2007 - 2011 <br> 
+        <b>Bachelor's Degree Graphic Design</b> <br />2007 - 2011 <br />
         Bloomfield College - Bloomfield, NJ
       </p>
     </section>
   </section>
 </div>
- {{ partial "html-footer" . }}
+{{ partial "html-footer" . }}
