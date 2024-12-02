@@ -1,7 +1,5 @@
-
-
 baseURL: "https://julian.is"
-title: "Julian Gaviria — Product Design"
+title: "Courtney Gaviria — Marketing Operations"
 footnoteReturnLinkContents: "↩"
 permalinks:
   articles: /article/:slug/
@@ -12,14 +10,12 @@ params:
   AuthorName: "Julian Gaviria"
   GitHubUser: "juliangav"
   images: ["/img/julian-signature-blue.jpg"]
-  
 
 taxonomies:
   tag: "tags"
   category: "categories"
 
 markup:
-  
   blackfriday:
     hrefTargetBlank: true
   goldmark:
@@ -28,7 +24,7 @@ markup:
       unsafe: true
       xhtml: false
 
-social: 
+social:
   facebook_app_id: "275156446240779"
   twitter: "@juliangav"
 
@@ -37,4 +33,3 @@ security:
     getenv:
       - ^BRANCH
       - ^CONTEXT
-
