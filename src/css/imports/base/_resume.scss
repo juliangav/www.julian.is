@@ -2,6 +2,7 @@
 //   background-color:white !important;
 // }
 $resume-small-font-size: $small-font-size;
+// $resume-small-font-size: 1rem;
 $resume-section-title: $small-font-size;
 
 .resume-header,
@@ -24,6 +25,15 @@ $resume-section-title: $small-font-size;
   h4,
   p {
     color: $white;
+  }
+  p,
+  .resume-highlights__list li {
+    color: $white;
+    font-size: 1rem;
+  }
+  .resume-highlights__list li {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
   }
   .resume-section__title {
     // border-bottom:2px solid rgba(0,0,0, .25);
@@ -329,6 +339,6 @@ $resume-section-title: $small-font-size;
     break-inside: avoid;
   }
   .resume-experience__item__summary--list li {
-    margin-bottom: 0.4rem !important;
+    margin-bottom: 0.5rem !important;
   }
 }
