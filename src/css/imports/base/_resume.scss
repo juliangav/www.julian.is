@@ -155,7 +155,8 @@
 }
 
 .resume-section__title {
-  font-size: $small-font-size;
+  // font-size: $small-font-size;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0 0 0.3em 0;
   // border-bottom:1px solid $light-gray;
@@ -232,7 +233,7 @@
 }
 
 .resume-experience {
-  padding: 1.5rem;
+  padding: 1.75rem;
   grid-column: 2;
   grid-row: 1/-1;
   background-color: rgb(203, 203, 203);
