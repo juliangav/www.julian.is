@@ -1,0 +1,73 @@
+<script type="text/javascript">
+(function() {
+    var headings = Array.prototype.slice.call(document.querySelectorAll('.article__main h2'));
+    var tocLinks = Array.prototype.slice.call(document.querySelectorAll('#TableOfContents a'));
+    var requestFrame = window.requestAnimationFrame || function(callback) {
+        return window.setTimeout(callback, 16);
+    };
+    var ticking = false;
+
+    if (!headings.length || !tocLinks.length) return;
+
+    headings = headings.filter(function(heading) {
+        return heading.id && tocLinks.some(function(link) {
+            return link.getAttribute('href') === '#' + heading.id;
+        });
+    });
+
+    function getHeaderOffset() {
+        var siteHeader = document.querySelector('.site-header');
+        return siteHeader ? siteHeader.getBoundingClientRect().height : 0;
+    }
+
+    function getHeadingTop(heading) {
+        return heading.getBoundingClientRect().top + window.pageYOffset;
+    }
+
+    function getLinkForHeading(heading) {
+        return tocLinks.filter(function(link) {
+            return link.getAttribute('href') === '#' + heading.id;
+        })[0];
+    }
+
+    function setActiveHeading(activeHeading) {
+        tocLinks.forEach(function(link) {
+            link.classList.remove('entered');
+            link.removeAttribute('aria-current');
+        });
+
+        if (!activeHeading) return;
+
+        var activeLink = getLinkForHeading(activeHeading);
+        if (activeLink) {
+            activeLink.classList.add('entered');
+            activeLink.setAttribute('aria-current', 'true');
+        }
+    }
+
+    function updateActiveHeading() {
+        var marker = window.pageYOffset + getHeaderOffset() + 16;
+        var activeHeading = null;
+
+        headings.forEach(function(heading) {
+            if (getHeadingTop(heading) <= marker) {
+                activeHeading = heading;
+            }
+        });
+
+        setActiveHeading(activeHeading);
+        ticking = false;
+    }
+
+    function requestUpdate() {
+        if (!ticking) {
+            ticking = true;
+            requestFrame(updateActiveHeading);
+        }
+    }
+
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+    updateActiveHeading();
+})();
+</script>
