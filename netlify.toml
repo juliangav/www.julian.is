@@ -7,3 +7,8 @@
 
 [context.deploy-preview]
   command = "npm run build-preview"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"

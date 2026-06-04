@@ -8,9 +8,50 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
+        var isControlled = Boolean(navigator.serviceWorker.controller);
+        var hasReloaded = false;
+        var reloadStorageKey = 'service-worker-controller-reloaded';
+
+        function hasReloadedForServiceWorkerUpdate() {
+          try {
+            return sessionStorage.getItem(reloadStorageKey) === 'true';
+          } catch (error) {
+            return false;
+          }
+        }
+
+        function markReloadedForServiceWorkerUpdate() {
+          try {
+            sessionStorage.setItem(reloadStorageKey, 'true');
+          } catch (error) {}
+        }
+
+        navigator.serviceWorker.addEventListener('controllerchange', function() {
+          if (!isControlled || hasReloaded || hasReloadedForServiceWorkerUpdate()) return;
+
+          hasReloaded = true;
+          markReloadedForServiceWorkerUpdate();
+          window.location.reload();
+        });
+
         navigator.serviceWorker.register('/sw.js').then(function(registration) {
           // Registration was successful
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
+
+          if (registration.waiting && navigator.serviceWorker.controller) {
+            registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+          }
+
+          registration.addEventListener('updatefound', function() {
+            var installingWorker = registration.installing;
+            if (!installingWorker) return;
+
+            installingWorker.addEventListener('statechange', function() {
+              if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                installingWorker.postMessage({ type: 'SKIP_WAITING' });
+              }
+            });
+          });
         }).catch(function(err) {
           // registration failed :(
           console.log('ServiceWorker registration failed: ', err);
