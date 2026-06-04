@@ -123,22 +123,28 @@
 		}
 	}
 	@include mq(medium) {
+		display: flex;
+		align-items: stretch;
+		justify-content: flex-end;
 		width: auto;
 		margin-right: 0;
 		float: right;
 		position: relative;
 		.snc-header {
-			float: right;
+			flex: 0 0 auto;
+			float: none;
+			order: 2;
 		}
 		.site-nav {
-			float: right;
-			width: 20em;
-			margin-right: 1em;
+			flex: 0 0 auto;
+			float: none;
+			width: auto;
+			margin-right: 0;
 		}
 	}
 	@include mq(large) {
 		.site-nav {
-			width: 20em;
+			width: auto;
 			margin-right: 1em;
 		}
 	}

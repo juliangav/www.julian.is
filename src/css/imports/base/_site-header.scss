@@ -116,6 +116,7 @@
 	  }
 	}
 	@include mq(medium) {
+	  display: none;
 	  height: $nav-height;
 	  clear: none;
 	  margin-top: 0;
@@ -134,6 +135,7 @@
 	  }
 	}
 	@include mq(large) {
+	  display: block;
 	  .social-wrap {
 		width: 12em;
 	  }
@@ -208,6 +210,9 @@
 		@include mq(medium) {
 		.sn-li-l1 {
 			background-color: transparent;
+			&:hover {
+				background-color: transparent;
+			}
 		}
 		.sn-li-l1 a {
 			color:$white;
